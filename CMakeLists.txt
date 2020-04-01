@@ -39,4 +39,12 @@ target_link_libraries(OpenPokemonTCG PRIVATE eventpp)
 target_link_libraries(OpenPokemonTCG PRIVATE glad)
 target_link_libraries(OpenPokemonTCG PRIVATE imgui::imgui)
 target_link_libraries(OpenPokemonTCG PRIVATE imgui_glfw)
-target_link_libraries(OpenPokemonTCG PRIVATE spd
+target_link_libraries(OpenPokemonTCG PRIVATE spdlog::spdlog spdlog::spdlog_header_only)
+target_link_libraries(OpenPokemonTCG PRIVATE ssl)
+target_link_libraries(OpenPokemonTCG PRIVATE crypto)
+
+if(Boost_FOUND)
+  include_directories(${Boost_INCLUDE_DIRS})
+  target_link_libraries(OpenPokemonTCG PRIVATE ${Boost_LIBRARIES})
+endif()
+

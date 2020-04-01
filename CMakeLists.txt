@@ -29,4 +29,14 @@ add_subdirectory("vendor")
 # Configure executable.
 file(GLOB_RECURSE src_files "src/*.c" "src/*.h" "src/*.cpp" "src/*.hpp")
 add_executable(OpenPokemonTCG "${src_files}")
-t
+target_compile_options(OpenPokemonTCG PRIVATE -Werror -Wall -Wextra)
+file(COPY "res" DESTINATION ".")
+
+# Link dependencies.
+target_link_libraries(OpenPokemonTCG PRIVATE glfw)
+target_link_libraries(OpenPokemonTCG PRIVATE glm)
+target_link_libraries(OpenPokemonTCG PRIVATE eventpp)
+target_link_libraries(OpenPokemonTCG PRIVATE glad)
+target_link_libraries(OpenPokemonTCG PRIVATE imgui::imgui)
+target_link_libraries(OpenPokemonTCG PRIVATE imgui_glfw)
+target_link_libraries(OpenPokemonTCG PRIVATE spd

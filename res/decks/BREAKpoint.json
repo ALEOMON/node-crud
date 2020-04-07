@@ -226,3 +226,129 @@
                 "count": 1
             },
             {
+                "id": "xy9-48",
+                "name": "Blitzle",
+                "rarity": "Common",
+                "count": 2
+            },
+            {
+                "id": "xy9-61",
+                "name": "Doublade",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "xy9-60",
+                "name": "Honedge",
+                "rarity": "Common",
+                "count": 2
+            },
+            {
+                "id": "xy9-51",
+                "name": "Hypno",
+                "rarity": "Rare",
+                "count": 1
+            },
+            {
+                "id": "xy9-50",
+                "name": "Drowzee",
+                "rarity": "Common",
+                "count": 2
+            },
+            {
+                "id": "xy9-59",
+                "name": "Meowstic",
+                "rarity": "Rare",
+                "count": 1
+            },
+            {
+                "id": "xy9-58",
+                "name": "Espurr",
+                "rarity": "Common",
+                "count": 2
+            },
+            {
+                "id": "xy9-53",
+                "name": "Skorupi",
+                "rarity": "Common",
+                "count": 2
+            },
+            {
+                "id": "xy9-94",
+                "name": "Purugly",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "xy9-93",
+                "name": "Glameow",
+                "rarity": "Common",
+                "count": 2
+            },
+            {
+                "id": "xy9-99",
+                "name": "Fighting Fury Belt",
+                "rarity": "Uncommon",
+                "count": 1
+            },
+            {
+                "id": "xy9-100",
+                "name": "Great Ball",
+                "rarity": "Uncommon",
+                "count": 1
+            },
+            {
+                "id": "xy9-102",
+                "name": "Max Elixir",
+                "rarity": "Uncommon",
+                "count": 1
+            },
+            {
+                "id": "xy9-104",
+                "name": "Misty's Determination",
+                "rarity": "Uncommon",
+                "count": 1
+            },
+            {
+                "id": "xy9-106",
+                "name": "Potion",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "xy1-123",
+                "name": "Professor's Letter",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "xy4-104",
+                "name": "Shauna",
+                "rarity": "Uncommon",
+                "count": 1
+            },
+            {
+                "id": "xy9-112",
+                "name": "Tierno",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "xy6-94",
+                "name": "Wally",
+                "rarity": "Uncommon",
+                "count": 1
+            },
+            {
+                "id": "xy1-135",
+                "name": "Lightning Energy",
+                "count": 9
+            },
+            {
+                "id": "xy1-136",
+                "name": "Psychic Energy",
+                "count": 9
+            }
+        ]
+    }
+]

@@ -118,4 +118,22 @@
             {
                 "id": "xy2-93",
                 "name": "Pokémon Center Lady",
-            
+                "rarity": "Uncommon",
+                "count": 1
+            },
+            {
+                "id": "xy2-94",
+                "name": "Pokémon Fan Club",
+                "rarity": "Uncommon",
+                "count": 1
+            },
+            {
+                "id": "xy8-146",
+                "name": "Professor's Letter",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "xy8-147",
+                "name": "Reserved Ticket",
+   

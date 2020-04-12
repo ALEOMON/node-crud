@@ -83,4 +83,22 @@
                 "id": "xy8-23",
                 "name": "Pansear",
                 "rarity": "Common",
-                "coun
+                "count": 2
+            },
+            {
+                "id": "xy8-117",
+                "name": "Dodrio",
+                "rarity": "Rare",
+                "count": 1
+            },
+            {
+                "id": "xy8-116",
+                "name": "Doduo",
+                "rarity": "Common",
+                "count": 2
+            },
+            {
+                "id": "xy8-123",
+                "name": "Smeargle",
+                "rarity": "Rare",
+            

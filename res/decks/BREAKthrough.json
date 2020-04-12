@@ -136,4 +136,22 @@
             {
                 "id": "xy8-147",
                 "name": "Reserved Ticket",
-   
+                "rarity": "Uncommon",
+                "count": 1
+            },
+            {
+                "id": "xy8-149",
+                "name": "Super Rod",
+                "rarity": "Uncommon",
+                "count": 1
+            },
+            {
+                "id": "xy8-148",
+                "name": "Skyla",
+                "rarity": "Uncommon",
+                "count": 1
+            },
+            {
+                "id": "xy0-38",
+                "name": "Switch",
+                "

@@ -194,4 +194,22 @@
                 "rarity": "Rare Holo",
                 "count": 1
             },
-     
+            {
+                "id": "xy8-112",
+                "name": "Noivern",
+                "rarity": "Rare",
+                "count": 1
+            },
+            {
+                "id": "xy8-131",
+                "name": "Noibat",
+                "rarity": "Common",
+                "count": 4
+            },
+            {
+                "id": "xy8-60",
+                "name": "Gengar",
+                "rarity": "Rare",
+                "count": 1
+            },
+         

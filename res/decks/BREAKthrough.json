@@ -154,4 +154,21 @@
             {
                 "id": "xy0-38",
                 "name": "Switch",
-                "
+                "count": 1
+            },
+            {
+                "id": "xy4-107",
+                "name": "Tierno",
+                "rarity": "Uncommon",
+                "count": 1
+            },
+            {
+                "id": "xy6-94",
+                "name": "Wally",
+                "rarity": "Uncommon",
+                "count": 1
+            },
+            {
+                "id": "xy1-135",
+                "name": "Lightning Energy",
+                "count": 10

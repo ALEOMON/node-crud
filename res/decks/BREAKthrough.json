@@ -172,3 +172,26 @@
                 "id": "xy1-135",
                 "name": "Lightning Energy",
                 "count": 10
+            },
+            {
+                "id": "xy1-133",
+                "name": "Fire Energy",
+                "count": 8
+            }
+        ]
+    },
+    {
+        "id": "d-xy8-2",
+        "name": "Night Striker",
+        "types": [
+            "Psychic",
+            "Darkness"
+        ],
+        "cards": [
+            {
+                "id": "xy8-112",
+                "name": "Noivern",
+                "rarity": "Rare Holo",
+                "count": 1
+            },
+     

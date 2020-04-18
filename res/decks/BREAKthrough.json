@@ -212,4 +212,23 @@
                 "rarity": "Rare",
                 "count": 1
             },
-         
+            {
+                "id": "xy8-59",
+                "name": "Haunter",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "xy8-58",
+                "name": "Gastly",
+                "rarity": "Common",
+                "count": 3
+            },
+            {
+                "id": "xy8-69",
+                "name": "Kirlia",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+        

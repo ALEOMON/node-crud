@@ -1,0 +1,137 @@
+
+[
+    {
+        "id": "d-base4-1",
+        "name": "2-Player CD-ROM Starter Set",
+        "types": [
+            "Fighting",
+            "Water",
+            "Colorless"
+        ],
+        "cards": [
+            {
+                "id": "base4-71",
+                "name": "Diglett",
+                "rarity": "Common",
+                "count": 3
+            },
+            {
+                "id": "base4-78",
+                "name": "Machop",
+                "rarity": "Common",
+                "count": 3
+            },
+            {
+                "id": "base4-49",
+                "name": "Machoke",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "base1-8",
+                "name": "Machamp",
+                "rarity": "Rare Holo",
+                "count": 1
+            },
+            {
+                "id": "base4-61",
+                "name": "Seel",
+                "rarity": "Common",
+                "count": 2
+            },
+            {
+                "id": "base4-76",
+                "name": "Goldeen",
+                "rarity": "Common",
+                "count": 4
+            },
+            {
+                "id": "base4-60",
+                "name": "Seaking",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "base4-95",
+                "name": "Staryu",
+                "rarity": "Common",
+                "count": 3
+            },
+            {
+                "id": "base4-80",
+                "name": "Meowth",
+                "rarity": "Common",
+                "count": 2
+            },
+            {
+                "id": "base4-72",
+                "name": "Doduo",
+                "rarity": "Common",
+                "count": 2
+            },
+            {
+                "id": "base4-38",
+                "name": "Dratini",
+                "rarity": "Uncommon",
+                "count": 1
+            },
+            {
+                "id": "base4-118",
+                "name": "Bill",
+                "rarity": "Common",
+                "count": 1
+            },
+            {
+                "id": "base4-119",
+                "name": "Energy Removal",
+                "rarity": "Common",
+                "count": 2
+            },
+            {
+                "id": "base4-120",
+                "name": "Gust of Wind",
+                "rarity": "Common",
+                "count": 1
+            },
+            {
+                "id": "base4-121",
+                "name": "Poké Ball",
+                "rarity": "Common",
+                "count": 2
+            },
+            {
+                "id": "base4-115",
+                "name": "Pokédex",
+                "rarity": "Uncommon",
+                "count": 1
+            },
+            {
+                "id": "base4-123",
+                "name": "Switch",
+                "rarity": "Common",
+                "count": 1
+            },
+            {
+                "id": "base4-125",
+                "name": "Fighting Energy",
+                "count": 14
+            },
+            {
+                "id": "base4-130",
+                "name": "Water Energy",
+                "count": 14
+            }
+        ]
+    },
+    {
+        "id": "d-base4-2",
+        "name": "Grass Chopper",
+        "types": [
+            "Fighting",
+            "Grass"
+        ],
+        "cards": [
+            {
+                "id": "base4-91",
+                "name": "Sandshrew",
+                "rarity": "Common",

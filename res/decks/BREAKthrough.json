@@ -340,4 +340,19 @@
             {
                 "id": "xy6-94",
                 "name": "Wally",
-              
+                "rarity": "Uncommon",
+                "count": 1
+            },
+            {
+                "id": "xy1-136",
+                "name": "Psychic Energy",
+                "count": 11
+            },
+            {
+                "id": "xy1-138",
+                "name": "Darkness Energy",
+                "count": 7
+            }
+        ]
+    }
+]

@@ -633,3 +633,124 @@
             },
             {
                 "id": "base5-65",
+                "name": "Psyduck",
+                "rarity": "Common",
+                "count": 1
+            },
+            {
+                "id": "base3-35",
+                "name": "Golduck",
+                "rarity": "Uncommon",
+                "count": 1
+            },
+            {
+                "id": "base1-48",
+                "name": "Doduo",
+                "rarity": "Common",
+                "count": 1
+            },
+            {
+                "id": "base1-27",
+                "name": "Farfetch'd",
+                "rarity": "Uncommon",
+                "count": 1
+            },
+            {
+                "id": "base2-62",
+                "name": "Spearow",
+                "rarity": "Common",
+                "count": 2
+            },
+            {
+                "id": "base2-36",
+                "name": "Fearow",
+                "rarity": "Uncommon",
+                "count": 1
+            },
+            {
+                "id": "base1-91",
+                "name": "Bill",
+                "rarity": "Common",
+                "count": 2
+            },
+            {
+                "id": "base1-80",
+                "name": "Defender",
+                "rarity": "Uncommon",
+                "count": 1
+            },
+            {
+                "id": "base1-81",
+                "name": "Energy Retrieval",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "base3-59",
+                "name": "Energy Search",
+                "rarity": "Common",
+                "count": 2
+            },
+            {
+                "id": "gym1-114",
+                "name": "Misty's Wrath",
+                "rarity": "Uncommon",
+                "count": 1
+            },
+            {
+                "id": "base2-64",
+                "name": "Poké Ball",
+                "rarity": "Common",
+                "count": 1
+            },
+            {
+                "id": "base1-94",
+                "name": "Potion",
+                "rarity": "Common",
+                "count": 1
+            },
+            {
+                "id": "base1-90",
+                "name": "Super Potion",
+                "rarity": "Uncommon",
+                "count": 1
+            },
+            {
+                "id": "base1-88",
+                "name": "Professor Oak",
+                "rarity": "Uncommon",
+                "count": 1
+            },
+            {
+                "id": "base4-128",
+                "name": "Lightning Energy",
+                "rarity": "Common",
+                "count": 16
+            },
+            {
+                "id": "base4-130",
+                "name": "Water Energy",
+                "rarity": "Common",
+                "count": 8
+            },
+            {
+                "id": "base1-96",
+                "name": "Double Colorless Energy",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "base5-81",
+                "name": "Full Heal Energy",
+                "rarity": "Uncommon",
+                "count": 1
+            },
+            {
+                "id": "base5-82",
+                "name": "Potion Energy",
+                "rarity": "Uncommon",
+                "count": 1
+            }
+        ]
+    }
+]

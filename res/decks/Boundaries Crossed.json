@@ -310,3 +310,171 @@
                 "id": "bw7-134",
                 "name": "Skyla",
                 "rarity": "Uncommon",
+                "count": 1
+            },
+            {
+                "id": "bw1-107",
+                "name": "Water Energy",
+                "rarity": "Common",
+                "count": 11
+            },
+            {
+                "id": "bw1-106",
+                "name": "Fire Energy",
+                "rarity": "Common",
+                "count": 7
+            }
+        ]
+    },
+    {
+        "id": "d-bw7-3",
+        "name": "Red Genesect Collection",
+        "types": [
+            "Grass",
+            "Psychic"
+        ],
+        "cards": [
+            {
+                "id": "bwp-BW101",
+                "name": "Genesect",
+                "count": 2
+            },
+            {
+                "id": "bw10-46",
+                "name": "Golurk",
+                "rarity": "Rare Holo",
+                "count": 2
+            },
+            {
+                "id": "bw10-45",
+                "name": "Golett",
+                "rarity": "Uncommon Holo",
+                "count": 4
+            },
+            {
+                "id": "bw10-5",
+                "name": "Tropius",
+                "rarity": "Uncommon Holo",
+                "count": 2
+            },
+            {
+                "id": "bw10-73",
+                "name": "Porygon2",
+                "rarity": "Uncommon Holo",
+                "count": 2
+            },
+            {
+                "id": "bw10-72",
+                "name": "Porygon",
+                "rarity": "Common Holo",
+                "count": 2
+            },
+            {
+                "id": "bw10-44",
+                "name": "Reuniclus",
+                "rarity": "Rare Holo",
+                "count": 1
+            },
+            {
+                "id": "bw10-43",
+                "name": "Duosion",
+                "rarity": "Uncommon Holo",
+                "count": 2
+            },
+            {
+                "id": "bw10-42",
+                "name": "Solosis",
+                "rarity": "Common Holo",
+                "count": 3
+            },
+            {
+                "id": "bw10-71",
+                "name": "Kangaskhan",
+                "rarity": "Common Holo",
+                "count": 3
+            },
+            {
+                "id": "bw7-135",
+                "name": "Switch",
+                "rarity": "Common Holo",
+                "count": 2
+            },
+            {
+                "id": "bw10-90",
+                "name": "Ultra Ball",
+                "rarity": "Uncommon Holo",
+                "count": 2
+            },
+            {
+                "id": "bw4-86",
+                "name": "Cilan",
+                "rarity": "Uncommon Holo",
+                "count": 2
+            },
+            {
+                "id": "bw7-134",
+                "name": "Skyla",
+                "rarity": "Uncommon Holo",
+                "count": 2
+            },
+            {
+                "id": "bw5-91",
+                "name": "Cheren",
+                "rarity": "Uncommon Holo",
+                "count": 2
+            },
+            {
+                "id": "bw6-116",
+                "name": "Tool Scrapper",
+                "rarity": "Uncommon Holo",
+                "count": 1
+            },
+            {
+                "id": "bw10-88",
+                "name": "Silver Bangle",
+                "rarity": "Uncommon Holo",
+                "count": 1
+            },
+            {
+                "id": "bw10-89",
+                "name": "Silver Mirror",
+                "rarity": "Uncommon Holo",
+                "count": 1
+            },
+            {
+                "id": "bw10-83",
+                "name": "Pokémon Catcher",
+                "rarity": "Uncommon Holo",
+                "count": 2
+            },
+            {
+                "id": "bw10-84",
+                "name": "Professor Juniper",
+                "rarity": "Uncommon Holo",
+                "count": 2
+            },
+            {
+                "id": "bw10-80",
+                "name": "Energy Retrieval",
+                "rarity": "Uncommon Holo",
+                "count": 2
+            },
+            {
+                "id": "bw5-96",
+                "name": "N",
+                "rarity": "Uncommon Holo",
+                "count": 2
+            },
+            {
+                "id": "bw1-109",
+                "name": "Psychic Energy",
+                "count": 8
+            },
+            {
+                "id": "bw1-105",
+                "name": "Grass Energy",
+                "count": 8
+            }
+        ]
+    }
+]

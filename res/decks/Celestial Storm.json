@@ -1,0 +1,109 @@
+
+[
+    {
+        "id": "d-sm7-1",
+        "name": "Leaf Charge",
+        "types": [
+            "Grass",
+            "Lightning"
+        ],
+        "cards": [
+            {
+                "id": "sm7-10",
+                "name": "Sceptile",
+                "rarity": "Rare Holo",
+                "count": 1
+            },
+            {
+                "id": "sm7-10",
+                "name": "Sceptile",
+                "rarity": "Rare",
+                "count": 1
+            },
+            {
+                "id": "sm7-9",
+                "name": "Grovyle",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "sm7-8",
+                "name": "Treecko",
+                "rarity": "Common",
+                "count": 3
+            },
+            {
+                "id": "sm6-4",
+                "name": "Abomasnow",
+                "rarity": "Rare",
+                "count": 2
+            },
+            {
+                "id": "sm6-3",
+                "name": "Snover",
+                "rarity": "Common",
+                "count": 2
+            },
+            {
+                "id": "sm7-52",
+                "name": "Manectric",
+                "rarity": "Rare",
+                "count": 2
+            },
+            {
+                "id": "sm7-51",
+                "name": "Electrike",
+                "rarity": "Common",
+                "count": 3
+            },
+            {
+                "id": "sm7-50",
+                "name": "Lanturn",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "sm7-49",
+                "name": "Chinchou",
+                "rarity": "Common",
+                "count": 2
+            },
+            {
+                "id": "sm7-110",
+                "name": "Dunsparce",
+                "rarity": "Uncommon",
+                "count": 1
+            },
+            {
+                "id": "sm6-99",
+                "name": "Furfrou",
+                "rarity": "Common",
+                "count": 1
+            },
+            {
+                "id": "sm1-113",
+                "name": "Oranguru",
+                "rarity": "Rare",
+                "count": 1
+            },
+            {
+                "id": "sm7-127",
+                "name": "Copycat",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "sm1-118",
+                "name": "Exp. Share",
+                "rarity": "Uncommon",
+                "count": 1
+            },
+            {
+                "id": "sm3-115",
+                "name": "Guzma",
+                "rarity": "Uncommon",
+                "count": 1
+            },
+            {
+                "id": "sm7-132",
+                "name": "Hau",

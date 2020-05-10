@@ -239,3 +239,93 @@
                 "count": 1
             },
             {
+                "id": "sm1-114",
+                "name": "Big Malasada",
+                "rarity": "Uncommon",
+                "count": 1
+            },
+            {
+                "id": "sm4-93",
+                "name": "Devoured Field",
+                "rarity": "Uncommon",
+                "count": 1
+            },
+            {
+                "id": "sm1-116",
+                "name": "Energy Retrieval",
+                "rarity": "Uncommon",
+                "count": 1
+            },
+            {
+                "id": "sm3-114",
+                "name": "Escape Rope",
+                "rarity": "Uncommon",
+                "count": 1
+            },
+            {
+                "id": "sm1-118",
+                "name": "Exp. Share",
+                "rarity": "Uncommon",
+                "count": 1
+            },
+            {
+                "id": "sm1-120",
+                "name": "Hau",
+                "rarity": "Uncommon",
+                "count": 3
+            },
+            {
+                "id": "sm1-122",
+                "name": "Lillie",
+                "rarity": "Uncommon",
+                "count": 1
+            },
+            {
+                "id": "sm1-123",
+                "name": "Nest Ball",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "sm1-128",
+                "name": "Professor Kukui",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "sm2-130",
+                "name": "Rescue Stretcher",
+                "rarity": "Uncommon",
+                "count": 1
+            },
+            {
+                "id": "sm1-132",
+                "name": "Switch",
+                "rarity": "Uncommon",
+                "count": 1
+            },
+            {
+                "id": "sm1-134",
+                "name": "Timer Ball",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "sm1-135",
+                "name": "Ultra Ball",
+                "rarity": "Uncommon",
+                "count": 1
+            },
+            {
+                "id": "sm2-169",
+                "name": "Fighting Energy",
+                "count": 12
+            },
+            {
+                "id": "sm2-168",
+                "name": "Lightning Energy",
+                "count": 8
+            }
+        ]
+    }
+]

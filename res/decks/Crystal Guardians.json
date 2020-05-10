@@ -1,0 +1,19 @@
+[
+    {
+        "id": "d-ex14-1",
+        "name": "Green Cyclone",
+        "types": [
+            "Grass"
+        ],
+        "cards": [
+            {
+                "id": "ex14-45",
+                "name": "Bulbasaur",
+                "rarity": "Common",
+                "count": 4
+            },
+            {
+                "id": "ex14-34",
+                "name": "Ivysaur",
+                "rarity": "Uncommon",
+                "count": 2

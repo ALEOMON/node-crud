@@ -34,4 +34,23 @@
                 "id": "ex14-23",
                 "name": "Loudred",
                 "rarity": "Rare",
-        
+                "count": 2
+            },
+            {
+                "id": "ex14-67",
+                "name": "Treecko",
+                "rarity": "Common",
+                "count": 4
+            },
+            {
+                "id": "ex14-32",
+                "name": "Grovyle",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "ex14-60",
+                "name": "Seedot",
+                "rarity": "Common",
+                "count": 4
+            },

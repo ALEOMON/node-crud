@@ -110,4 +110,23 @@
             "Water",
             "Lightning"
         ],
-        "cards":
+        "cards": [
+            {
+                "id": "ex14-63",
+                "name": "Squirtle",
+                "rarity": "Common",
+                "count": 4
+            },
+            {
+                "id": "ex14-43",
+                "name": "Wartortle",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "ex14-14",
+                "name": "Blastoise",
+                "rarity": "Rare Holo",
+                "count": 1
+            },
+      

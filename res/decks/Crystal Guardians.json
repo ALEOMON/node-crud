@@ -145,4 +145,24 @@
                 "id": "ex14-70",
                 "name": "Wingull",
                 "rarity": "Common",
-                "count":
+                "count": 4
+            },
+            {
+                "id": "ex14-26",
+                "name": "Pelipper δ",
+                "rarity": "Rare",
+                "count": 1
+            },
+            {
+                "id": "ex14-49",
+                "name": "Charmander δ",
+                "rarity": "Common",
+                "count": 4
+            },
+            {
+                "id": "ex14-30",
+                "name": "Charmeleon δ",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+   

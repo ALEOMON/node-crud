@@ -165,4 +165,21 @@
                 "rarity": "Uncommon",
                 "count": 2
             },
-   
+            {
+                "id": "ex14-54",
+                "name": "Krabby",
+                "rarity": "Common",
+                "count": 2
+            },
+            {
+                "id": "ex14-71",
+                "name": "Bill's Maintenance",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "ex14-77",
+                "name": "Double Full Heal",
+                "rarity": "Uncommon",
+                "count": 1
+      

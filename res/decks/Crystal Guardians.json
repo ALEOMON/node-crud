@@ -202,4 +202,24 @@
                 "count": 2
             },
             {
-   
+                "id": "ex14-84",
+                "name": "Warp Point",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "ex13-108",
+                "name": "Lightning Energy",
+                "count": 13
+            },
+            {
+                "id": "ex13-107",
+                "name": "Water Energy",
+                "count": 11
+            }
+        ]
+    },
+    {
+        "id": "d-ex14-3",
+        "name": "Earth Shower",
+        "typ

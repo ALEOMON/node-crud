@@ -222,4 +222,23 @@
     {
         "id": "d-ex14-3",
         "name": "Earth Shower",
-        "typ
+        "types": [
+            "Water",
+            "Fighting"
+        ],
+        "cards": [
+            {
+                "id": "ex14-58",
+                "name": "Mudkip",
+                "rarity": "Common",
+                "count": 4
+            },
+            {
+                "id": "ex14-38",
+                "name": "Marshtomp",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "ex14-27",
+                "name": "Swampe

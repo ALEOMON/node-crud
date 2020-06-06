@@ -278,4 +278,21 @@
             {
                 "id": "ex14-36",
                 "name": "Lairon",
-           
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "ex14-55",
+                "name": "Lotad",
+                "rarity": "Common",
+                "count": 2
+            },
+            {
+                "id": "ex14-71",
+                "name": "Bill's Maintenance",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "ex14-73",
+    

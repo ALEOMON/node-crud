@@ -295,4 +295,21 @@
             },
             {
                 "id": "ex14-73",
-    
+                "name": "Celio's Network",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "ex14-86",
+                "name": "Energy Search",
+                "rarity": "Common",
+                "count": 2
+            },
+            {
+                "id": "ex14-83",
+                "name": "PokéNav",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+             

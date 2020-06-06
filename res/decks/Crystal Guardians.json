@@ -259,4 +259,23 @@
             },
             {
                 "id": "ex14-56",
-                "name"
+                "name": "Meditite",
+                "rarity": "Common",
+                "count": 4
+            },
+            {
+                "id": "ex14-25",
+                "name": "Medicham",
+                "rarity": "Rare",
+                "count": 1
+            },
+            {
+                "id": "ex14-44",
+                "name": "Aron",
+                "rarity": "Common",
+                "count": 4
+            },
+            {
+                "id": "ex14-36",
+                "name": "Lairon",
+           

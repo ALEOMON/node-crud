@@ -155,3 +155,92 @@
                 "id": "ex8-60",
                 "name": "Electrike",
                 "rarity": "Common",
+                "count": 4
+            },
+            {
+                "id": "ex8-38",
+                "name": "Manectric",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "ex8-68",
+                "name": "Numel",
+                "rarity": "Common",
+                "count": 4
+            },
+            {
+                "id": "ex8-4",
+                "name": "Camerupt",
+                "rarity": "Rare",
+                "count": 1
+            },
+            {
+                "id": "ex8-80",
+                "name": "Taillow",
+                "rarity": "Common",
+                "count": 4
+            },
+            {
+                "id": "ex8-49",
+                "name": "Swellow",
+                "rarity": "Uncommon",
+                "count": 1
+            },
+            {
+                "id": "ex8-61",
+                "name": "Goldeen",
+                "rarity": "Common",
+                "count": 2
+            },
+            {
+                "id": "ex8-87",
+                "name": "Lady Outing",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "ex8-88",
+                "name": "Master Ball",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "ex8-92",
+                "name": "Strength Charm",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "ex6-102",
+                "name": "Switch",
+                "rarity": "Common",
+                "count": 2
+            },
+            {
+                "id": "ex6-101",
+                "name": "Potion",
+                "rarity": "Common",
+                "count": 2
+            },
+            {
+                "id": "ex1-106",
+                "name": "Water Energy",
+                "rarity": "Common",
+                "count": 10
+            },
+            {
+                "id": "ex1-109",
+                "name": "Lightning Energy",
+                "rarity": "Common",
+                "count": 9
+            },
+            {
+                "id": "ex1-108",
+                "name": "Fire Energy",
+                "rarity": "Common",
+                "count": 5
+            }
+        ]
+    }
+]

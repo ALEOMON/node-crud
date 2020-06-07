@@ -251,3 +251,67 @@
                 "name": "Tympole",
                 "rarity": "Common",
                 "count": 2
+            },
+            {
+                "id": "bw5-83",
+                "name": "Eevee",
+                "rarity": "Common",
+                "count": 2
+            },
+            {
+                "id": "bw5-86",
+                "name": "Lillipup",
+                "rarity": "Common",
+                "count": 2
+            },
+            {
+                "id": "bw1-93",
+                "name": "Energy Search",
+                "rarity": "Common",
+                "count": 2
+            },
+            {
+                "id": "bw1-95",
+                "name": "Full Heal",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "bw1-92",
+                "name": "Energy Retrieval",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "bw1-99",
+                "name": "Pokémon Communication",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "bw5-91",
+                "name": "Cheren",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "bw4-86",
+                "name": "Cilan",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "bw1-111",
+                "name": "Darkness Energy",
+                "rarity": "Common",
+                "count": 6
+            },
+            {
+                "id": "bw1-107",
+                "name": "Water Energy",
+                "rarity": "Common",
+                "count": 12
+            }
+        ]
+    }
+]

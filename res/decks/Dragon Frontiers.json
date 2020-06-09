@@ -1,4 +1,23 @@
 [
     {
         "id": "d-ex15-1",
-        "name": 
+        "name": "Power Wave",
+        "types": [
+            "Lightning",
+            "Fighting"
+        ],
+        "cards": [
+            {
+                "id": "ex15-2",
+                "name": "Feraligatr δ",
+                "rarity": "Rare Holo",
+                "count": 1
+            },
+            {
+                "id": "ex15-27",
+                "name": "Croconaw δ",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+         

@@ -53,4 +53,23 @@
                 "id": "ex15-52",
                 "name": "Larvitar δ",
                 "rarity": "Common",
-                "co
+                "count": 4
+            },
+            {
+                "id": "ex15-22",
+                "name": "Seadra δ",
+                "rarity": "Rare",
+                "count": 2
+            },
+            {
+                "id": "ex15-50",
+                "name": "Horsea δ",
+                "rarity": "Common",
+                "count": 4
+            },
+            {
+                "id": "ex15-72",
+                "name": "Buffer Piece",
+                "rarity": "Uncommon",
+                "count": 2
+     

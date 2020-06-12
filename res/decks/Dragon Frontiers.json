@@ -106,4 +106,28 @@
             {
                 "id": "ex13-110",
                 "name": "Fighting Energy",
-       
+                "count": 9
+            },
+            {
+                "id": "ex13-108",
+                "name": "Lightning Energy",
+                "count": 15
+            }
+        ]
+    },
+    {
+        "id": "d-ex15-2",
+        "name": "Shadow Blaze",
+        "types": [
+            "Fire",
+            "Psychic"
+        ],
+        "cards": [
+            {
+                "id": "ex15-12",
+                "name": "Typhlosion δ",
+                "rarity": "Rare Holo",
+                "count": 1
+            },
+            {
+   

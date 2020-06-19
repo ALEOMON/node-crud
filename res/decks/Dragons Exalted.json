@@ -1,4 +1,23 @@
 [
     {
         "id": "d-bw6-1",
- 
+        "name": "DragonSnarl",
+        "types": [
+            "Psychic",
+            "Darkness"
+        ],
+        "cards": [
+            {
+                "id": "bw6-98",
+                "name": "Hydreigon",
+                "rarity": "Rare Holo",
+                "count": 1
+            },
+            {
+                "id": "bw6-98",
+                "name": "Hydreigon",
+                "rarity": "Rare",
+                "count": 1
+            },
+            {
+                

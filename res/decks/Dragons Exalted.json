@@ -75,4 +75,22 @@
             },
             {
                 "id": "bw6-55",
-       
+                "name": "Gothita",
+                "rarity": "Common",
+                "count": 3
+            },
+            {
+                "id": "bw6-56",
+                "name": "Gothorita",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "bw6-57",
+                "name": "Gothitelle",
+                "rarity": "Rare",
+                "count": 1
+            },
+            {
+                "id": "bw6-101",
+                "name": "Slak

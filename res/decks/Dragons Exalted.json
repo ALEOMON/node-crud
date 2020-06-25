@@ -129,4 +129,22 @@
             },
             {
                 "id": "bw6-115",
-      
+                "name": "Rescue Scarf",
+                "rarity": "Uncommon",
+                "count": 1
+            },
+            {
+                "id": "bw4-86",
+                "name": "Cilan",
+                "rarity": "Uncommon",
+                "count": 1
+            },
+            {
+                "id": "bw5-91",
+                "name": "Cheren",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "bw6-117",
+                

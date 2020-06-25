@@ -147,4 +147,24 @@
             },
             {
                 "id": "bw6-117",
-                
+                "name": "Blend Energy GFPD",
+                "rarity": "Uncommon",
+                "count": 1
+            },
+            {
+                "id": "bw1-109",
+                "name": "Psychic Energy",
+                "rarity": "Common",
+                "count": 9
+            },
+            {
+                "id": "bw1-111",
+                "name": "Darkness Energy",
+                "rarity": "Common",
+                "count": 8
+            }
+        ]
+    },
+    {
+        "id": "d-bw6-2",
+  

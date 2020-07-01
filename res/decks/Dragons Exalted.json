@@ -167,4 +167,22 @@
     },
     {
         "id": "d-bw6-2",
-  
+        "name": "Dragon Speed",
+        "types": [
+            "Water",
+            "Fighting"
+        ],
+        "cards": [
+            {
+                "id": "bw6-91",
+                "name": "Garchomp",
+                "rarity": "Rare Holo",
+                "count": 1
+            },
+            {
+                "id": "bw6-91",
+                "name": "Garchomp",
+                "rarity": "Rare",
+                "count": 1
+            },
+    

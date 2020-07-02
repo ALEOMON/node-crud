@@ -185,4 +185,23 @@
                 "rarity": "Rare",
                 "count": 1
             },
-    
+            {
+                "id": "bw6-89",
+                "name": "Gabite",
+                "rarity": "Uncommon",
+                "count": 3
+            },
+            {
+                "id": "bw6-87",
+                "name": "Gible",
+                "rarity": "Common",
+                "count": 4
+            },
+            {
+                "id": "bw6-28",
+                "name": "Milotic",
+                "rarity": "Rare",
+                "count": 1
+            },
+            {
+        

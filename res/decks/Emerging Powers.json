@@ -2,4 +2,24 @@
     {
         "id": "d-bw2-1",
         "name": "Power Play",
-        "types"
+        "types": [
+            "Fighting",
+            "Water"
+        ],
+        "cards": [
+            {
+                "id": "bw2-62",
+                "name": "Krookodile",
+                "rarity": "Rare Holo",
+                "count": 1
+            },
+            {
+                "id": "bw2-62",
+                "name": "Krookodile",
+                "rarity": "Rare",
+                "count": 1
+            },
+            {
+                "id": "bw2-61",
+                "name": "Krokorok",
+          

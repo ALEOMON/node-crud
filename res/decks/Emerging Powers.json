@@ -22,4 +22,21 @@
             {
                 "id": "bw2-61",
                 "name": "Krokorok",
-          
+                "rarity": "Uncommon",
+                "count": 3
+            },
+            {
+                "id": "bw2-60",
+                "name": "Sandile",
+                "rarity": "Common",
+                "count": 4
+            },
+            {
+                "id": "bw2-53",
+                "name": "Gigalith",
+                "rarity": "Rare",
+                "count": 1
+            },
+            {
+                "id": "bw2-52",
+                "name": "Boldore",

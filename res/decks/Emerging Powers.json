@@ -40,3 +40,23 @@
             {
                 "id": "bw2-52",
                 "name": "Boldore",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "bw2-50",
+                "name": "Roggenrola",
+                "rarity": "Common",
+                "count": 3
+            },
+            {
+                "id": "bw2-31",
+                "name": "Beartic",
+                "rarity": "Rare",
+                "count": 1
+            },
+            {
+                "id": "bw2-29",
+                "name": "Cubchoo",
+                "rarity": "Common",
+     

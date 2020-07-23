@@ -59,4 +59,23 @@
                 "id": "bw2-29",
                 "name": "Cubchoo",
                 "rarity": "Common",
-     
+                "count": 2
+            },
+            {
+                "id": "bw2-27",
+                "name": "Swanna",
+                "rarity": "Rare",
+                "count": 1
+            },
+            {
+                "id": "bw2-26",
+                "name": "Ducklett",
+                "rarity": "Common",
+                "count": 2
+            },
+            {
+                "id": "bw2-85",
+                "name": "Cinccino",
+                "rarity": "Uncommon",
+                "count": 2
+    

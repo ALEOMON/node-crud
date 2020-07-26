@@ -113,4 +113,21 @@
                 "id": "bw1-100",
                 "name": "Potion",
                 "rarity": "Common",
-                
+                "count": 2
+            },
+            {
+                "id": "bw1-95",
+                "name": "Full Heal",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "bw2-93",
+                "name": "Great Ball",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "bw1-99",
+                "name": "Pokémon Communication",
+                "rarity": "Uncommon",

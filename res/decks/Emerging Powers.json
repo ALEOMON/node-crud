@@ -131,3 +131,22 @@
                 "id": "bw1-99",
                 "name": "Pokémon Communication",
                 "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "bw2-90",
+                "name": "Bianca",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "bw1-110",
+                "name": "Fighting Energy",
+                "rarity": "Common",
+                "count": 12
+            },
+            {
+                "id": "bw1-107",
+                "name": "Water Energy",
+                "rarity": "Common",
+ 

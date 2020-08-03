@@ -172,4 +172,24 @@
                 "name": "Scolipede",
                 "rarity": "Rare",
                 "count": 1
-      
+            },
+            {
+                "id": "bw2-39",
+                "name": "Whirlipede",
+                "rarity": "Uncommon",
+                "count": 3
+            },
+            {
+                "id": "bw2-38",
+                "name": "Venipede",
+                "rarity": "Common",
+                "count": 4
+            },
+            {
+                "id": "bw2-48",
+                "name": "Gothitelle",
+                "rarity": "Rare",
+                "count": 1
+            },
+            {
+                "

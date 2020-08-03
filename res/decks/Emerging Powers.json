@@ -149,4 +149,27 @@
                 "id": "bw1-107",
                 "name": "Water Energy",
                 "rarity": "Common",
- 
+                "count": 6
+            }
+        ]
+    },
+    {
+        "id": "d-bw2-2",
+        "name": "Toxic Tricks",
+        "types": [
+            "Psychic",
+            "Fire"
+        ],
+        "cards": [
+            {
+                "id": "bw2-40",
+                "name": "Scolipede",
+                "rarity": "Rare Holo",
+                "count": 1
+            },
+            {
+                "id": "bw2-40",
+                "name": "Scolipede",
+                "rarity": "Rare",
+                "count": 1
+      

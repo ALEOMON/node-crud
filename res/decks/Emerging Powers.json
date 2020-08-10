@@ -243,4 +243,21 @@
                 "id": "bw2-80",
                 "name": "Pidove",
                 "rarity": "Common",
-    
+                "count": 3
+            },
+            {
+                "id": "bw2-36",
+                "name": "Woobat",
+                "rarity": "Common",
+                "count": 2
+            },
+            {
+                "id": "bw1-93",
+                "name": "Energy Search",
+                "rarity": "Common",
+                "count": 2
+            },
+            {
+                "id": "bw1-104",
+                "name": "Switch",
+                "rarity"

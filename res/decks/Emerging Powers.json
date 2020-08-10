@@ -225,4 +225,22 @@
                 "id": "bw2-18",
                 "name": "Pansear",
                 "rarity": "Common",
-               
+                "count": 2
+            },
+            {
+                "id": "bw2-42",
+                "name": "Sigilyph",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "bw2-81",
+                "name": "Tranquill",
+                "rarity": "Common",
+                "count": 2
+            },
+            {
+                "id": "bw2-80",
+                "name": "Pidove",
+                "rarity": "Common",
+    

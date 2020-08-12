@@ -260,4 +260,21 @@
             {
                 "id": "bw1-104",
                 "name": "Switch",
-                "rarity"
+                "rarity": "Common",
+                "count": 2
+            },
+            {
+                "id": "bw1-92",
+                "name": "Energy Retrieval",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "bw2-93",
+                "name": "Great Ball",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "bw1-99",
+                "nam

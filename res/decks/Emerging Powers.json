@@ -277,4 +277,22 @@
             },
             {
                 "id": "bw1-99",
-                "nam
+                "name": "Pokémon Communication",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "bw2-91",
+                "name": "Cheren",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "bw1-109",
+                "name": "Psychic Energy",
+                "rarity": "Common",
+                "count": 12
+            },
+            {
+                "id": "bw1-106",
+ 

@@ -1,3 +1,23 @@
 [
     {
-    
+        "id": "d-ecard1-1",
+        "name": "Echo",
+        "types": [
+            "Psychic",
+            "Colorless"
+        ],
+        "cards": [
+            {
+                "id": "ecard1-93",
+                "name": "Abra",
+                "rarity": "Common",
+                "count": 4
+            },
+            {
+                "id": "ecard1-84",
+                "name": "Kadabra",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+   

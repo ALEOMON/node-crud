@@ -75,4 +75,20 @@
             },
             {
                 "id": "ecard1-154",
-    
+                "name": "Full Heal",
+                "rarity": "Common",
+                "count": 2
+            },
+            {
+                "id": "ecard1-155",
+                "name": "Moo-Moo Milk",
+                "rarity": "Common",
+                "count": 3
+            },
+            {
+                "id": "ecard1-148",
+                "name": "Professor Elm's Training Method",
+                "rarity": "Uncommon",
+                "count": 3
+            },
+      

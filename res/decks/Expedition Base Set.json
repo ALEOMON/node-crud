@@ -108,4 +108,25 @@
             },
             {
                 "id": "ecard1-163",
-                "name": "Lig
+                "name": "Lightning Energy",
+                "count": 2
+            },
+            {
+                "id": "ecard1-161",
+                "name": "Fire Energy",
+                "count": 2
+            },
+            {
+                "id": "ecard1-160",
+                "name": "Fighting Energy",
+                "count": 2
+            }
+        ]
+    },
+    {
+        "id": "d-ecard1-2",
+        "name": "Electric Garden",
+        "types": [
+            "Grass",
+            "Lightning"
+ 

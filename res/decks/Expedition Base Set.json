@@ -165,4 +165,22 @@
                 "id": "ecard1-70",
                 "name": "Weezing",
                 "rarity": "Rare",
-                "cou
+                "count": 1
+            },
+            {
+                "id": "ecard1-124",
+                "name": "Pikachu",
+                "rarity": "Common",
+                "count": 3
+            },
+            {
+                "id": "ecard1-61",
+                "name": "Raichu",
+                "rarity": "Rare",
+                "count": 1
+            },
+            {
+                "id": "ecard1-119",
+                "name": "Mareep",
+                "rarity": "Common",
+       

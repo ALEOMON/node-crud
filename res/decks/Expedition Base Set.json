@@ -220,3 +220,21 @@
                 "name": "Potion",
                 "rarity": "Common",
                 "count": 3
+            },
+            {
+                "id": "ecard1-147",
+                "name": "Power Charge",
+                "rarity": "Uncommon",
+                "count": 1
+            },
+            {
+                "id": "ecard1-157",
+                "name": "Switch",
+                "rarity": "Common",
+                "count": 2
+            },
+            {
+                "id": "ecard1-162",
+                "name": "Grass Energy",
+                "count": 12
+ 

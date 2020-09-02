@@ -201,4 +201,22 @@
                 "id": "ecard1-137",
                 "name": "Bill's Maintenance",
                 "rarity": "Uncommon",
-        
+                "count": 2
+            },
+            {
+                "id": "ecard1-138",
+                "name": "Copycat",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "ecard1-153",
+                "name": "Energy Search",
+                "rarity": "Common",
+                "count": 1
+            },
+            {
+                "id": "ecard1-156",
+                "name": "Potion",
+                "rarity": "Common",
+                "count": 3

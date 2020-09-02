@@ -237,4 +237,12 @@
                 "id": "ecard1-162",
                 "name": "Grass Energy",
                 "count": 12
- 
+            },
+            {
+                "id": "ecard1-163",
+                "name": "Lightning Energy",
+                "count": 12
+            }
+        ]
+    }
+]

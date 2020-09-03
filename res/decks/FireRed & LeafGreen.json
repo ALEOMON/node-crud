@@ -16,4 +16,23 @@
             {
                 "id": "ex6-31",
                 "name": "Charmeleon",
-                "rarity": "Uncommon"
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "ex6-73",
+                "name": "Pidgey",
+                "rarity": "Common",
+                "count": 4
+            },
+            {
+                "id": "ex6-45",
+                "name": "Pidgeotto",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "ex6-10",
+                "name": "Pidgeot",
+                "rarity": "Rare Holo",
+          

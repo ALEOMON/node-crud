@@ -326,3 +326,18 @@
                 "id": "xy6-94",
                 "name": "Wally",
                 "rarity": "Uncommon",
+                "count": 1
+            },
+            {
+                "id": "g1-80",
+                "name": "Fighting Energy",
+                "count": 10
+            },
+            {
+                "id": "g1-75",
+                "name": "Grass Energy",
+                "count": 8
+            }
+        ]
+    }
+]

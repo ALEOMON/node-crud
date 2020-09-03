@@ -1,0 +1,19 @@
+[
+    {
+        "id": "d-ex6-1",
+        "name": "FireRed",
+        "types": [
+            "Water",
+            "Fire"
+        ],
+        "cards": [
+            {
+                "id": "ex6-58",
+                "name": "Charmander",
+                "rarity": "Common",
+                "count": 4
+            },
+            {
+                "id": "ex6-31",
+                "name": "Charmeleon",
+                "rarity": "Uncommon"

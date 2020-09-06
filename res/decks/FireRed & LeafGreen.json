@@ -89,4 +89,25 @@
                 "id": "ex1-90",
                 "name": "Energy Search",
                 "rarity": "Common",
-                "
+                "count": 2
+            },
+            {
+                "id": "ex1-108",
+                "name": "Fire Energy",
+                "rarity": "Common",
+                "count": 14
+            },
+            {
+                "id": "ex1-106",
+                "name": "Water Energy",
+                "rarity": "Common",
+                "count": 10
+            }
+        ]
+    },
+    {
+        "id": "d-ex6-2",
+        "name": "LeafGreen",
+        "types": [
+            "Grass",
+   

@@ -56,4 +56,20 @@
                 "count": 3
             },
             {
-          
+                "id": "ex6-66",
+                "name": "Krabby",
+                "rarity": "Common",
+                "count": 3
+            },
+            {
+                "id": "ex6-93",
+                "name": "Life Herb",
+                "rarity": "Uncommon",
+                "count": 3
+            },
+            {
+                "id": "ex6-88",
+                "name": "Celio's Network",
+                "rarity": "Uncommon",
+                "count": 2
+     

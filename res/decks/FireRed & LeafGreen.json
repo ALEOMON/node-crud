@@ -35,4 +35,25 @@
                 "id": "ex6-10",
                 "name": "Pidgeot",
                 "rarity": "Rare Holo",
+                "count": 1
+            },
+            {
+                "id": "ex6-64",
+                "name": "Growlithe",
+                "rarity": "Common",
+                "count": 4
+            },
+            {
+                "id": "ex6-18",
+                "name": "Arcanine",
+                "rarity": "Rare",
+                "count": 2
+            },
+            {
+                "id": "ex6-78",
+                "name": "Seel",
+                "rarity": "Common",
+                "count": 3
+            },
+            {
           

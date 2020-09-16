@@ -110,4 +110,22 @@
         "name": "LeafGreen",
         "types": [
             "Grass",
-   
+            "Lightning"
+        ],
+        "cards": [
+            {
+                "id": "ex6-55",
+                "name": "Bulbasaur",
+                "rarity": "Common",
+                "count": 4
+            },
+            {
+                "id": "ex6-35",
+                "name": "Ivysaur",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "ex6-86",
+                "name": "Weedle",
+                "rarity": 

@@ -128,4 +128,21 @@
             {
                 "id": "ex6-86",
                 "name": "Weedle",
-                "rarity": 
+                "rarity": "Common",
+                "count": 4
+            },
+            {
+                "id": "ex6-36",
+                "name": "Kakuna",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "ex6-1",
+                "name": "Beedrill",
+                "rarity": "Rare Holo",
+                "count": 1
+            },
+            {
+                "id": "ex6-68",
+                "name": "Magnem

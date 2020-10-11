@@ -199,4 +199,16 @@
             },
             {
                 "id": "ex1-104",
-        
+                "name": "Grass Energy",
+                "rarity": "Common",
+                "count": 15
+            },
+            {
+                "id": "ex1-109",
+                "name": "Lightning Energy",
+                "rarity": "Common",
+                "count": 9
+            }
+        ]
+    }
+]

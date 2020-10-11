@@ -187,3 +187,145 @@
             {
                 "id": "xy2-42",
                 "name": "Espurr",
+                "rarity": "Common",
+                "count": 3
+            },
+            {
+                "id": "xy2-39",
+                "name": "Dusclops",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "xy2-38",
+                "name": "Duskull",
+                "rarity": "Common",
+                "count": 2
+            },
+            {
+                "id": "xy2-23",
+                "name": "Milotic",
+                "rarity": "Rare",
+                "count": 1
+            },
+            {
+                "id": "xy2-22",
+                "name": "Feebas",
+                "rarity": "Common",
+                "count": 2
+            },
+            {
+                "id": "xy2-26",
+                "name": "Walrein",
+                "rarity": "Rare",
+                "count": 1
+            },
+            {
+                "id": "xy2-25",
+                "name": "Sealeo",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "xy2-24",
+                "name": "Spheal",
+                "rarity": "Common",
+                "count": 4
+            },
+            {
+                "id": "xy2-28",
+                "name": "Buizel",
+                "rarity": "Common",
+                "count": 2
+            },
+            {
+                "id": "xy2-82",
+                "name": "Furret",
+                "rarity": "Rare",
+                "count": 1
+            },
+            {
+                "id": "xy2-81",
+                "name": "Sentret",
+                "rarity": "Common",
+                "count": 2
+            },
+            {
+                "id": "xy2-83",
+                "name": "Miltank",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "xy2-87",
+                "name": "Furfrou",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "xy2-44",
+                "name": "Skrelp",
+                "rarity": "Common",
+                "count": 2
+            },
+            {
+                "id": "xy0-35",
+                "name": "Poké Ball",
+                "rarity": "Uncommon",
+                "count": 1
+            },
+            {
+                "id": "xy1-116",
+                "name": "Evosoda",
+                "rarity": "Uncommon",
+                "count": 1
+            },
+            {
+                "id": "xy1-121",
+                "name": "Muscle Band",
+                "rarity": "Uncommon",
+                "count": 1
+            },
+            {
+                "id": "xy2-93",
+                "name": "Pokémon Center Lady",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "xy2-94",
+                "name": "Pokémon Fan Club",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "xy1-123",
+                "name": "Professor's Letter",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "xy1-122",
+                "name": "Professor Sycamore",
+                "rarity": "Uncommon",
+                "count": 1
+            },
+            {
+                "id": "xy1-125",
+                "name": "Roller Skates",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "xy1-134",
+                "name": "Water Energy",
+                "count": 9
+            },
+            {
+                "id": "xy1-136",
+                "name": "Psychic Energy",
+                "count": 9
+            }
+        ]
+    }
+]

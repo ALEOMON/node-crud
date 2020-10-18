@@ -261,3 +261,52 @@
                 "rarity": "Uncommon",
                 "count": 2
             },
+            {
+                "id": "xy3-89",
+                "name": "Energy Switch",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "xy1-116",
+                "name": "Evosoda",
+                "rarity": "Uncommon",
+                "count": 1
+            },
+            {
+                "id": "xy2-93",
+                "name": "Pokémon Center Lady",
+                "rarity": "Uncommon",
+                "count": 1
+            },
+            {
+                "id": "xy1-123",
+                "name": "Professor's Letter",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "xy1-122",
+                "name": "Professor Sycamore",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "xy1-125",
+                "name": "Roller Skates",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "xy1-137",
+                "name": "Fighting Energy",
+                "count": 12
+            },
+            {
+                "id": "xy1-138",
+                "name": "Darkness Energy",
+                "count": 6
+            }
+        ]
+    }
+]

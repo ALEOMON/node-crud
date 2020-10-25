@@ -51,4 +51,23 @@
             },
             {
                 "id": "dp4-33",
-            
+                "name": "Arbok",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "dp4-66",
+                "name": "Ekans",
+                "rarity": "Common",
+                "count": 4
+            },
+            {
+                "id": "dp4-75",
+                "name": "Krabby",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "dp2-110",
+                "name": "Dusk Ball",
+  

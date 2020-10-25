@@ -33,4 +33,22 @@
             },
             {
                 "id": "dp4-28",
-     
+                "name": "Slowking",
+                "rarity": "Rare",
+                "count": 1
+            },
+            {
+                "id": "dp4-82",
+                "name": "Slowpoke",
+                "rarity": "Common",
+                "count": 4
+            },
+            {
+                "id": "dp4-61",
+                "name": "Buizel",
+                "rarity": "Common",
+                "count": 4
+            },
+            {
+                "id": "dp4-33",
+            

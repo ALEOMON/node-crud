@@ -104,4 +104,26 @@
                 "count": 2
             },
             {
-                "id": "dp1-125"
+                "id": "dp1-125",
+                "name": "Water Energy",
+                "count": 16
+            },
+            {
+                "id": "dp1-127",
+                "name": "Psychic Energy",
+                "count": 8
+            }
+        ]
+    },
+    {
+        "id": "d-dp4-2",
+        "name": "Eternal Time",
+        "types": [
+            "Fighting",
+            "Metal"
+        ],
+        "cards": [
+            {
+                "id": "dp4-16",
+                "name": "Dialga",
+                "rari

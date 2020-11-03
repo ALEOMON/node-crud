@@ -126,4 +126,22 @@
             {
                 "id": "dp4-16",
                 "name": "Dialga",
-                "rari
+                "rarity": "Rare Holo",
+                "count": 1
+            },
+            {
+                "id": "dp4-6",
+                "name": "Porygon-Z",
+                "rarity": "Rare",
+                "count": 1
+            },
+            {
+                "id": "dp4-49",
+                "name": "Porygon2",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "dp4-81",
+                "name": "Porygon",
+                "rarity": "Common"

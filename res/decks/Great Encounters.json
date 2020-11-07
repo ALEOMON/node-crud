@@ -144,4 +144,22 @@
             {
                 "id": "dp4-81",
                 "name": "Porygon",
-                "rarity": "Common"
+                "rarity": "Common",
+                "count": 4
+            },
+            {
+                "id": "dp4-85",
+                "name": "Solrock",
+                "rarity": "Common",
+                "count": 2
+            },
+            {
+                "id": "dp4-76",
+                "name": "Lunatone",
+                "rarity": "Common",
+                "count": 2
+            },
+            {
+                "id": "dp4-27",
+                "name": "Primeape",
+                "rarity"

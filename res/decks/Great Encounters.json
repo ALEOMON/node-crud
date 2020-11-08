@@ -217,4 +217,26 @@
                 "id": "dp3-122",
                 "name": "Professor Oak's Visit",
                 "rarity": "Uncommon",
-                "count"
+                "count": 2
+            },
+            {
+                "id": "dp4-99",
+                "name": "Leftovers",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "dp1-128",
+                "name": "Fighting Energy",
+                "count": 16
+            },
+            {
+                "id": "dp3-130",
+                "name": "Metal Energy",
+                "count": 8
+            }
+        ]
+    },
+    {
+        "id": "d-dp4-3",
+        "name": "Endless Night"

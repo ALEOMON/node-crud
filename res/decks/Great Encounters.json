@@ -199,4 +199,22 @@
                 "id": "dp1-117",
                 "name": "Energy Search",
                 "rarity": "Common",
-    
+                "count": 2
+            },
+            {
+                "id": "dp1-119",
+                "name": "Switch",
+                "rarity": "Common",
+                "count": 2
+            },
+            {
+                "id": "dp4-97",
+                "name": "Amulet Coin",
+                "rarity": "Uncommon",
+                "count": 1
+            },
+            {
+                "id": "dp3-122",
+                "name": "Professor Oak's Visit",
+                "rarity": "Uncommon",
+                "count"

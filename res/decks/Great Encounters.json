@@ -162,4 +162,22 @@
             {
                 "id": "dp4-27",
                 "name": "Primeape",
-                "rarity"
+                "rarity": "Rare",
+                "count": 1
+            },
+            {
+                "id": "dp4-79",
+                "name": "Mankey",
+                "rarity": "Common",
+                "count": 4
+            },
+            {
+                "id": "dp4-78",
+                "name": "Makuhita",
+                "rarity": "Common",
+                "count": 4
+            },
+            {
+                "id": "dp4-88",
+                "name": "Togepi",
+                "rari

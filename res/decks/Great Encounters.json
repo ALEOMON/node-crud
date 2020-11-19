@@ -239,4 +239,24 @@
     },
     {
         "id": "d-dp4-3",
-        "name": "Endless Night"
+        "name": "Endless Night",
+        "types": [
+            "Grass",
+            "Fire",
+            "Darkness"
+        ],
+        "cards": [
+            {
+                "id": "dp4-4",
+                "name": "Darkrai",
+                "rarity": "Rare Holo",
+                "count": 1
+            },
+            {
+                "id": "dp4-34",
+                "name": "Cacturne",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+        

@@ -276,4 +276,20 @@
                 "rarity": "Common",
                 "count": 2
             },
-          
+            {
+                "id": "dp4-93",
+                "name": "Weedle",
+                "rarity": "Common",
+                "count": 4
+            },
+            {
+                "id": "dp4-18",
+                "name": "Houndoom",
+                "rarity": "Rare",
+                "count": 1
+            },
+            {
+                "id": "dp4-69",
+                "name": "Houndour",
+                "rarity": "Common",
+                "count"

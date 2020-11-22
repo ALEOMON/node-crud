@@ -292,4 +292,24 @@
                 "id": "dp4-69",
                 "name": "Houndour",
                 "rarity": "Common",
-                "count"
+                "count": 4
+            },
+            {
+                "id": "dp4-83",
+                "name": "Slugma",
+                "rarity": "Common",
+                "count": 4
+            },
+            {
+                "id": "dp4-59",
+                "name": "Zangoose",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "dp2-114",
+                "name": "Quick Ball",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+     

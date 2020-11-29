@@ -329,4 +329,23 @@
                 "name": "Leftovers",
                 "rarity": "Uncommon",
                 "count": 1
-        
+            },
+            {
+                "id": "dp3-125",
+                "name": "Roseanne's Research",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "dp4-97",
+                "name": "Amulet Coin",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "dp1-123",
+                "name": "Grass Energy",
+                "count": 10
+            },
+            {
+       

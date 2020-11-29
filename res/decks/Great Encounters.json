@@ -312,4 +312,21 @@
                 "rarity": "Uncommon",
                 "count": 2
             },
-     
+            {
+                "id": "dp1-117",
+                "name": "Energy Search",
+                "rarity": "Common",
+                "count": 2
+            },
+            {
+                "id": "dp1-118",
+                "name": "Potion",
+                "rarity": "Common",
+                "count": 2
+            },
+            {
+                "id": "dp4-99",
+                "name": "Leftovers",
+                "rarity": "Uncommon",
+                "count": 1
+        

@@ -28,4 +28,23 @@
             {
                 "id": "sm1-64",
                 "name": "Cosmog",
-                "rarity":
+                "rarity": "Common",
+                "count": 3
+            },
+            {
+                "id": "sm2-84",
+                "name": "Metang",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "sm2-83",
+                "name": "Beldum",
+                "rarity": "Common",
+                "count": 2
+            },
+            {
+                "id": "sm2-49",
+                "name": "Slowbro",
+                "rarity": "Uncommon",
+ 

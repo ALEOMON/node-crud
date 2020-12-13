@@ -65,4 +65,22 @@
                 "id": "sm2-55",
                 "name": "Oricorio",
                 "rarity": "Rare",
-   
+                "count": 1
+            },
+            {
+                "id": "sm2-113",
+                "name": "Bewear",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "sm2-112",
+                "name": "Stufful",
+                "rarity": "Common",
+                "count": 2
+            },
+            {
+                "id": "sm2-104",
+                "name": "Swellow",
+                "rarity": "Rare",
+  

@@ -47,4 +47,22 @@
                 "id": "sm2-49",
                 "name": "Slowbro",
                 "rarity": "Uncommon",
- 
+                "count": 1
+            },
+            {
+                "id": "sm2-48",
+                "name": "Slowpoke",
+                "rarity": "Common",
+                "count": 2
+            },
+            {
+                "id": "sm2-59",
+                "name": "Dhelmise",
+                "rarity": "Rare",
+                "count": 1
+            },
+            {
+                "id": "sm2-55",
+                "name": "Oricorio",
+                "rarity": "Rare",
+   

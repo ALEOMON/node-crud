@@ -100,4 +100,22 @@
             {
                 "id": "sm2-118",
                 "name": "Altar of the Sunne",
-                "rarity"
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "sm1-114",
+                "name": "Big Malasada",
+                "rarity": "Uncommon",
+                "count": 1
+            },
+            {
+                "id": "sm1-116",
+                "name": "Energy Retrieval",
+                "rarity": "Uncommon",
+                "count": 1
+            },
+            {
+                "id": "sm1-120",
+                "name": "Hau",
+                "rarity": "

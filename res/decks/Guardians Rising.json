@@ -83,4 +83,21 @@
                 "id": "sm2-104",
                 "name": "Swellow",
                 "rarity": "Rare",
-  
+                "count": 1
+            },
+            {
+                "id": "sm2-103",
+                "name": "Taillow",
+                "rarity": "Common",
+                "count": 2
+            },
+            {
+                "id": "sm2-105",
+                "name": "Castform",
+                "rarity": "Common",
+                "count": 1
+            },
+            {
+                "id": "sm2-118",
+                "name": "Altar of the Sunne",
+                "rarity"

@@ -136,4 +136,21 @@
             {
                 "id": "sm2-130",
                 "name": "Rescue Stretcher",
-        
+                "rarity": "Uncommon",
+                "count": 1
+            },
+            {
+                "id": "sm1-132",
+                "name": "Switch",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "sm1-134",
+                "name": "Timer Ball",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "sm1-171",
+                "name": "Metal 

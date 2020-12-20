@@ -153,4 +153,28 @@
             },
             {
                 "id": "sm1-171",
-                "name": "Metal 
+                "name": "Metal Energy",
+                "count": 12
+            },
+            {
+                "id": "sm1-162",
+                "name": "Psychic Energy",
+                "count": 8
+            }
+        ]
+    },
+    {
+        "id": "d-sm2-2",
+        "name": "Hidden Moon",
+        "types": [
+            "Psychic",
+            "Fire"
+        ],
+        "cards": [
+            {
+                "id": "sm2-61",
+                "name": "Lunala",
+                "rarity": "Rare Holo",
+                "count": 1
+            },
+          

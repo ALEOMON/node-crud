@@ -118,4 +118,22 @@
             {
                 "id": "sm1-120",
                 "name": "Hau",
-                "rarity": "
+                "rarity": "Uncommon",
+                "count": 3
+            },
+            {
+                "id": "sm1-123",
+                "name": "Nest Ball",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "sm1-128",
+                "name": "Professor Kukui",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "sm2-130",
+                "name": "Rescue Stretcher",
+        

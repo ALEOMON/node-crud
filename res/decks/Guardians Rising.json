@@ -196,4 +196,22 @@
                 "count": 3
             },
             {
-                "i
+                "id": "sm2-53",
+                "name": "Gothorita",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "sm2-52",
+                "name": "Gothita",
+                "rarity": "Common",
+                "count": 2
+            },
+            {
+                "id": "sm2-58",
+                "name": "Mimikyu",
+                "rarity": "Rare",
+                "count": 1
+            },
+            {
+                "id": "sm2-56"

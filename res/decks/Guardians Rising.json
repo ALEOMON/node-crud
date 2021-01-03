@@ -233,4 +233,22 @@
             },
             {
                 "id": "sm2-12",
-             
+                "name": "Lampent",
+                "rarity": "Uncommon",
+                "count": 1
+            },
+            {
+                "id": "sm2-11",
+                "name": "Litwick",
+                "rarity": "Common",
+                "count": 2
+            },
+            {
+                "id": "sm2-113",
+                "name": "Bewear",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "sm2-112",
+               

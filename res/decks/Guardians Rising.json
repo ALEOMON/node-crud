@@ -251,4 +251,22 @@
             },
             {
                 "id": "sm2-112",
-               
+                "name": "Stufful",
+                "rarity": "Common",
+                "count": 3
+            },
+            {
+                "id": "sm2-117",
+                "name": "Altar of the Moone",
+                "rarity": "Uncommon",
+                "count": 1
+            },
+            {
+                "id": "sm2-122",
+                "name": "Energy Loto",
+                "rarity": "Uncommon",
+                "count": 1
+            },
+            {
+                "id": "sm1-116",
+                "name": "Energy Retrie

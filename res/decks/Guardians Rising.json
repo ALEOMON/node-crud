@@ -286,4 +286,21 @@
                 "count": 2
             },
             {
-                "id": "
+                "id": "sm1-127",
+                "name": "Potion",
+                "rarity": "Uncommon",
+                "count": 1
+            },
+            {
+                "id": "sm1-128",
+                "name": "Professor Kukui",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "sm2-130",
+                "name": "Rescue Stretcher",
+                "rarity": "Uncommon",
+                "count": 1
+            },
+       

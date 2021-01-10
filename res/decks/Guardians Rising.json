@@ -303,4 +303,23 @@
                 "rarity": "Uncommon",
                 "count": 1
             },
+            {
+                "id": "sm1-132",
+                "name": "Switch",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "sm1-134",
+                "name": "Timer Ball",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "sm1-162",
+                "name": "Psychic Energy",
+                "count": 12
+            },
+            {
+                "id": "sm1-165",
        

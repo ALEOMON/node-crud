@@ -1,0 +1,138 @@
+
+[
+    {
+        "name": "Daybreak",
+        "types": [
+            "Psychic",
+            "Grass"
+        ],
+        "cards": [
+            {
+                "id": "hgss3-2",
+                "name": "Espeon",
+                "rarity": "Rare Holo",
+                "count": 1
+            },
+            {
+                "id": "hgss3-2",
+                "name": "Espeon",
+                "rarity": "Rare",
+                "count": 1
+            },
+            {
+                "id": "hgss3-48",
+                "name": "Eevee",
+                "rarity": "Common",
+                "count": 4
+            },
+            {
+                "id": "hgss3-1",
+                "name": "Bellossom",
+                "rarity": "Rare",
+                "count": 1
+            },
+            {
+                "id": "hgss3-27",
+                "name": "Gloom",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "hgss3-60",
+                "name": "Oddish",
+                "rarity": "Common",
+                "count": 2
+            },
+            {
+                "id": "hgss3-11",
+                "name": "Dodrio",
+                "rarity": "Rare",
+                "count": 1
+            },
+            {
+                "id": "hgss3-45",
+                "name": "Doduo",
+                "rarity": "Common",
+                "count": 2
+            },
+            {
+                "id": "hgss3-31",
+                "name": "Muk",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "hgss3-50",
+                "name": "Grimer",
+                "rarity": "Common",
+                "count": 2
+            },
+            {
+                "id": "hgss3-9",
+                "name": "Togekiss",
+                "rarity": "Rare",
+                "count": 1
+            },
+            {
+                "id": "hgss3-39",
+                "name": "Togetic",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "hgss3-70",
+                "name": "Togepi",
+                "rarity": "Common",
+                "count": 2
+            },
+            {
+                "id": "hgss3-34",
+                "name": "Raticate",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "hgss3-64",
+                "name": "Rattata",
+                "rarity": "Common",
+                "count": 2
+            },
+            {
+                "id": "hgss3-36",
+                "name": "Scyther",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "hgss3-73",
+                "name": "Energy Exchanger",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "hgss4-77",
+                "name": "Interviewer's Questions",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "hgss4-79",
+                "name": "Life Herb",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "hgss1-95",
+                "name": "Poké Ball",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "hgss3-76",
+                "name": "Ruins of Alph",
+                "rarity": "Uncommon",
+                "count": 1
+            },
+            {
+                "id": "hgss3-77",
+                "name": "Sage's Training",

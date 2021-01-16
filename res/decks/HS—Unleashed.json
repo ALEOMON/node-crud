@@ -1,0 +1,17 @@
+[
+    {
+        "name": "Chaos Control",
+        "types": [
+            "Psychic",
+            "Fighting",
+            "Darkness"
+        ],
+        "cards": [
+            {
+                "id": "hgss2-26",
+                "name": "Tyranitar",
+                "rarity": "Rare Holo",
+                "count": 1
+            },
+            {
+      

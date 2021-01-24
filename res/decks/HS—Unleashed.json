@@ -126,4 +126,23 @@
     {
         "name": "Steel Sentinel",
         "types": [
-  
+            "Grass",
+            "Fighting",
+            "Metal"
+        ],
+        "cards": [
+            {
+                "id": "hgss2-24",
+                "name": "Steelix",
+                "rarity": "Rare Holo",
+                "count": 1
+            },
+            {
+                "id": "hgss2-57",
+                "name": "Onix",
+                "rarity": "Common",
+                "count": 4
+            },
+            {
+                "id": "hgss2-22",
+                "na

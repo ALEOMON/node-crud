@@ -145,4 +145,23 @@
             },
             {
                 "id": "hgss2-22",
-                "na
+                "name": "Primeape",
+                "rarity": "Rare",
+                "count": 1
+            },
+            {
+                "id": "hgss2-53",
+                "name": "Mankey",
+                "rarity": "Common",
+                "count": 4
+            },
+            {
+                "id": "hgss2-23",
+                "name": "Roserade",
+                "rarity": "Rare",
+                "count": 1
+            },
+            {
+                "id": "hgss2-61",
+                "name": "Roselia",
+           

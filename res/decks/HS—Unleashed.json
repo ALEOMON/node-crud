@@ -105,4 +105,25 @@
             },
             {
                 "id": "hgss1-119",
-    
+                "name": "Psychic Energy",
+                "rarity": "Common",
+                "count": 11
+            },
+            {
+                "id": "hgss1-120",
+                "name": "Fighting Energy",
+                "rarity": "Common",
+                "count": 10
+            },
+            {
+                "id": "hgss1-121",
+                "name": "Darkness Energy",
+                "rarity": "Common",
+                "count": 3
+            }
+        ]
+    },
+    {
+        "name": "Steel Sentinel",
+        "types": [
+  

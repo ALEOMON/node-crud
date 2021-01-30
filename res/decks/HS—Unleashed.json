@@ -164,4 +164,22 @@
             {
                 "id": "hgss2-61",
                 "name": "Roselia",
-           
+                "rarity": "Common",
+                "count": 4
+            },
+            {
+                "id": "hgss2-28",
+                "name": "Cherrim",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "hgss2-47",
+                "name": "Cherubi",
+                "rarity": "Common",
+                "count": 4
+            },
+            {
+                "id": "hgss2-41",
+                "name": "Tauros",
+                "rarity": "Uncommo

@@ -182,4 +182,22 @@
             {
                 "id": "hgss2-41",
                 "name": "Tauros",
-                "rarity": "Uncommo
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "hgss2-67",
+                "name": "Turtwig",
+                "rarity": "Common",
+                "count": 2
+            },
+            {
+                "id": "hgss1-89",
+                "name": "Bill",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "hgss1-102",
+                "name": "Switch",
+                "rarity": "

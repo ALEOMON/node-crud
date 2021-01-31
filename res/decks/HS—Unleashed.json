@@ -200,4 +200,21 @@
             {
                 "id": "hgss1-102",
                 "name": "Switch",
-                "rarity": "
+                "rarity": "Common",
+                "count": 2
+            },
+            {
+                "id": "hgss2-74",
+                "name": "Energy Returner",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "hgss2-79",
+                "name": "Life Herb",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "hgss2-71",
+                "name": "Cheerleader's 

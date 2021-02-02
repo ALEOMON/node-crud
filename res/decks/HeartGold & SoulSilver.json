@@ -5,4 +5,22 @@
         "types": [
             "Grass",
             "Fighting"
-  
+        ],
+        "cards": [
+            {
+                "id": "hgss1-26",
+                "name": "Meganium",
+                "rarity": "Rare Holo",
+                "count": 1
+            },
+            {
+                "id": "hgss1-35",
+                "name": "Bayleef",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "hgss1-59",
+                "name": "Chikorita",
+                "rarity": "Common",
+             

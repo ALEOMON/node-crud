@@ -23,4 +23,23 @@
                 "id": "hgss1-59",
                 "name": "Chikorita",
                 "rarity": "Common",
-             
+                "count": 4
+            },
+            {
+                "id": "hgss1-21",
+                "name": "Furret",
+                "rarity": "Rare",
+                "count": 1
+            },
+            {
+                "id": "hgss1-80",
+                "name": "Sentret",
+                "rarity": "Common",
+                "count": 4
+            },
+            {
+                "id": "hgss1-29",
+                "name": "Sandslash",
+                "rarity": "Rare",
+                "count": 1
+  

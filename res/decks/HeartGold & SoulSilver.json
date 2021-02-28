@@ -80,4 +80,23 @@
                 "count": 1
             },
             {
-   
+                "id": "hgss1-98",
+                "name": "Pokémon Communication",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "hgss1-99",
+                "name": "Pokémon Reversal",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "hgss1-102",
+                "name": "Switch",
+                "rarity": "Common",
+                "count": 2
+            },
+            {
+                "id": "hgss1-101",
+           

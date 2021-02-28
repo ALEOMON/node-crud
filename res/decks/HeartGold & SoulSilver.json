@@ -60,4 +60,24 @@
                 "name": "Caterpie",
                 "rarity": "Common",
                 "count": 4
-           
+            },
+            {
+                "id": "hgss1-75",
+                "name": "Meowth",
+                "rarity": "Common",
+                "count": 2
+            },
+            {
+                "id": "hgss1-89",
+                "name": "Bill",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "hgss1-94",
+                "name": "Moomoo Milk",
+                "rarity": "Uncommon",
+                "count": 1
+            },
+            {
+   

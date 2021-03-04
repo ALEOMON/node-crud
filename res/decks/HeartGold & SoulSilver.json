@@ -116,4 +116,24 @@
                 "count": 13
             },
             {
-                
+                "id": "hgss1-120",
+                "name": "Fighting Energy",
+                "rarity": "Common",
+                "count": 11
+            }
+        ]
+    },
+    {
+        "id": "d-hgss1-2",
+        "name": "Ember Spark",
+        "types": [
+            "Fire",
+            "Lightning"
+        ],
+        "cards": [
+            {
+                "id": "hgss1-32",
+                "name": "Typhlosion",
+                "rarity": "Rare Holo",
+                "count": 1
+     

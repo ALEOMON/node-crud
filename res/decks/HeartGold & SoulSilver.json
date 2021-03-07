@@ -190,4 +190,22 @@
                 "name": "Pikachu",
                 "rarity": "Common",
                 "count": 2
-         
+            },
+            {
+                "id": "hgss1-90",
+                "name": "Copycat",
+                "rarity": "Uncommon",
+                "count": 1
+            },
+            {
+                "id": "hgss1-94",
+                "name": "Moomoo Milk",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "hgss1-98",
+                "name": "Pokémon Communication",
+                "rarity": "Uncommon",
+                "count": 2
+ 

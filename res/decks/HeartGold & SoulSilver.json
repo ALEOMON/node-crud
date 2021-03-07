@@ -136,4 +136,24 @@
                 "name": "Typhlosion",
                 "rarity": "Rare Holo",
                 "count": 1
-     
+            },
+            {
+                "id": "hgss1-49",
+                "name": "Quilava",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "hgss1-61",
+                "name": "Cyndaquil",
+                "rarity": "Common",
+                "count": 4
+            },
+            {
+                "id": "hgss1-1",
+                "name": "Arcanine",
+                "rarity": "Rare",
+                "count": 1
+            },
+            {
+    

@@ -173,4 +173,21 @@
                 "rarity": "Common",
                 "count": 4
             },
-     
+            {
+                "id": "hgss1-42",
+                "name": "Flaaffy",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "hgss1-73",
+                "name": "Mareep",
+                "rarity": "Common",
+                "count": 4
+            },
+            {
+                "id": "hgss1-78",
+                "name": "Pikachu",
+                "rarity": "Common",
+                "count": 2
+         

@@ -208,4 +208,22 @@
                 "name": "Pokémon Communication",
                 "rarity": "Uncommon",
                 "count": 2
- 
+            },
+            {
+                "id": "hgss1-99",
+                "name": "Pokémon Reversal",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "hgss1-101",
+                "name": "Professor Oak's New Theory",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "hgss1-102",
+                "name": "Switch",
+                "rarity": "Uncommon",
+                "count": 2
+            },

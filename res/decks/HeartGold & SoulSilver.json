@@ -227,3 +227,24 @@
                 "rarity": "Uncommon",
                 "count": 2
             },
+            {
+                "id": "hgss1-116",
+                "name": "Fire Energy",
+                "rarity": "Common",
+                "count": 14
+            },
+            {
+                "id": "hgss1-118",
+                "name": "Lightning Energy",
+                "rarity": "Common",
+                "count": 10
+            }
+        ]
+    },
+    {
+        "id": "d-hgss1-3",
+        "name": "Mind Flood",
+        "types": [
+            "Water",
+            "Psychic"
+  

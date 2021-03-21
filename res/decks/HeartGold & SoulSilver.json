@@ -283,4 +283,22 @@
                 "id": "hgss1-23",
                 "name": "Hypno",
                 "rarity": "Rare",
-               
+                "count": 1
+            },
+            {
+                "id": "hgss1-62",
+                "name": "Drowzee",
+                "rarity": "Common",
+                "count": 4
+            },
+            {
+                "id": "hgss1-52",
+                "name": "Slowbro",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "hgss1-81",
+                "name": "Slowpoke",
+                "rarity": "Common",
+       

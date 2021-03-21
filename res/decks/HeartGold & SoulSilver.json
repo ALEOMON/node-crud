@@ -265,4 +265,22 @@
                 "id": "hgss1-86",
                 "name": "Totodile",
                 "rarity": "Common",
-              
+                "count": 4
+            },
+            {
+                "id": "hgss1-18",
+                "name": "Exeggutor",
+                "rarity": "Rare",
+                "count": 1
+            },
+            {
+                "id": "hgss1-63",
+                "name": "Exeggcute",
+                "rarity": "Common",
+                "count": 4
+            },
+            {
+                "id": "hgss1-23",
+                "name": "Hypno",
+                "rarity": "Rare",
+               

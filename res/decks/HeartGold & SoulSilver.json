@@ -247,4 +247,22 @@
         "types": [
             "Water",
             "Psychic"
-  
+        ],
+        "cards": [
+            {
+                "id": "hgss1-20",
+                "name": "Feraligatr",
+                "rarity": "Rare Holo",
+                "count": 1
+            },
+            {
+                "id": "hgss1-38",
+                "name": "Croconaw",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "hgss1-86",
+                "name": "Totodile",
+                "rarity": "Common",
+              

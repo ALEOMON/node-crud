@@ -321,4 +321,19 @@
                 "rarity": "Uncommon",
                 "count": 1
             },
-  
+            {
+                "id": "hgss1-95",
+                "name": "Poké Ball",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "hgss1-100",
+                "name": "Professor Elm's Training Method",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "hgss1-101",
+                "name": "Professor Oak's New Theory",
+                "rari

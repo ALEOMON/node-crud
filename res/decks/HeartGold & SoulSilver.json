@@ -301,4 +301,24 @@
                 "id": "hgss1-81",
                 "name": "Slowpoke",
                 "rarity": "Common",
-       
+                "count": 4
+            },
+            {
+                "id": "hgss1-69",
+                "name": "Jynx",
+                "rarity": "Common",
+                "count": 2
+            },
+            {
+                "id": "hgss1-89",
+                "name": "Bill",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "hgss1-93",
+                "name": "Full Heal",
+                "rarity": "Uncommon",
+                "count": 1
+            },
+  

@@ -336,4 +336,21 @@
             {
                 "id": "hgss1-101",
                 "name": "Professor Oak's New Theory",
-                "rari
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "hgss1-94",
+                "name": "Moomoo Milk",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "hgss1-117",
+                "name": "Water Energy",
+                "rarity": "Common",
+                "count": 13
+            },
+            {
+                "id": "hgss1-119",
+                "name

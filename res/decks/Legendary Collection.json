@@ -1,0 +1,17 @@
+[
+    {
+        "id": "d-base6-1",
+        "name": "Turmoil",
+        "types": [
+            "Lightning",
+            "Water"
+        ],
+        "cards": [
+            {
+                "id": "base6-95",
+                "name": "Squirtle",
+                "rarity": "Common",
+                "count": 4
+            },
+            {
+                "id": "base6-39

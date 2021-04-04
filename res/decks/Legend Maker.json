@@ -118,3 +118,118 @@
     },
     {
         "id": "d-ex12-2",
+        "name": "Shadowquake",
+        "types": [
+            "Water",
+            "Psychic"
+        ],
+        "cards": [
+            {
+                "id": "ex12-52",
+                "name": "Gastly",
+                "rarity": "Common",
+                "count": 4
+            },
+            {
+                "id": "ex12-35",
+                "name": "Haunter",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "ex12-5",
+                "name": "Gengar",
+                "rarity": "Rare Holo",
+                "count": 1
+            },
+            {
+                "id": "ex12-66",
+                "name": "Tentacool",
+                "rarity": "Common",
+                "count": 4
+            },
+            {
+                "id": "ex12-45",
+                "name": "Tentacruel",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "ex12-51",
+                "name": "Clamperl",
+                "rarity": "Common",
+                "count": 4
+            },
+            {
+                "id": "ex12-18",
+                "name": "Huntail",
+                "rarity": "Rare",
+                "count": 1
+            },
+            {
+                "id": "ex12-17",
+                "name": "Gorebyss",
+                "rarity": "Rare",
+                "count": 1
+            },
+            {
+                "id": "ex12-65",
+                "name": "Spheal",
+                "rarity": "Common",
+                "count": 4
+            },
+            {
+                "id": "ex12-43",
+                "name": "Sealeo",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "ex12-64",
+                "name": "Skitty",
+                "rarity": "Common",
+                "count": 3
+            },
+            {
+                "id": "ex12-73",
+                "name": "Fieldworker",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "ex10-94",
+                "name": "Energy Search",
+                "rarity": "Common",
+                "count": 2
+            },
+            {
+                "id": "ex11-101",
+                "name": "Potion",
+                "rarity": "Common",
+                "count": 2
+            },
+            {
+                "id": "ex12-76",
+                "name": "Power Tree",
+                "rarity": "Uncommon",
+                "count": 1
+            },
+            {
+                "id": "ex12-82",
+                "name": "React Energy",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "ex9-103",
+                "name": "Water Energy",
+                "count": 14
+            },
+            {
+                "id": "ex9-105",
+                "name": "Psychic Energy",
+                "count": 9
+            }
+        ]
+    }
+]

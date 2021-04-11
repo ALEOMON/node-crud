@@ -104,4 +104,25 @@
             },
             {
                 "id": "neo1-111",
-                "name
+                "name": "Water Energy",
+                "count": 12
+            }
+        ]
+    },
+    {
+        "id": "d-base6-2",
+        "name": "Lava",
+        "types": [
+            "Fighting",
+            "Fire"
+        ],
+        "cards": [
+            {
+                "id": "base6-70",
+                "name": "Charmander",
+                "rarity": "Common",
+                "count": 4
+            },
+            {
+                "id": "base6-37",
+           

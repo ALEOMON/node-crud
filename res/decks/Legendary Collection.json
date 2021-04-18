@@ -125,4 +125,23 @@
             },
             {
                 "id": "base6-37",
-           
+                "name": "Charmeleon",
+                "rarity": "Uncommon",
+                "count": 3
+            },
+            {
+                "id": "base6-3",
+                "name": "Charizard",
+                "rarity": "Rare",
+                "count": 1
+            },
+            {
+                "id": "base6-87",
+                "name": "Ponyta",
+                "rarity": "Common",
+                "count": 3
+            },
+            {
+                "id": "base6-60",
+                "name": "Rapidash",
+                "rarit

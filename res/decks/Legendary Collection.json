@@ -181,4 +181,21 @@
                 "id": "base6-89",
                 "name": "Rattata",
                 "rarity": "Common",
-                "count"
+                "count": 2
+            },
+            {
+                "id": "base6-103",
+                "name": "Pokémon Trader",
+                "rarity": "Rare",
+                "count": 1
+            },
+            {
+                "id": "base6-108",
+                "name": "Bill",
+                "rarity": "Common",
+                "count": 3
+            },
+            {
+                "id": "base6-110",
+                "name": "Potion",
+                "rarity": "Common"

@@ -162,4 +162,23 @@
             {
                 "id": "base6-81",
                 "name": "Mankey",
-                "rarity": "Common
+                "rarity": "Common",
+                "count": 3
+            },
+            {
+                "id": "base6-59",
+                "name": "Primeape",
+                "rarity": "Uncommon",
+                "count": 1
+            },
+            {
+                "id": "base6-84",
+                "name": "Onix",
+                "rarity": "Common",
+                "count": 2
+            },
+            {
+                "id": "base6-89",
+                "name": "Rattata",
+                "rarity": "Common",
+                "count"

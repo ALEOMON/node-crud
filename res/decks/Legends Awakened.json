@@ -11,4 +11,22 @@
                 "id": "dp6-37",
                 "name": "Regigigas",
                 "rarity": "Rare Holo",
-         
+                "count": 1
+            },
+            {
+                "id": "dp6-9",
+                "name": "Mamoswine",
+                "rarity": "Rare",
+                "count": 1
+            },
+            {
+                "id": "dp6-69",
+                "name": "Piloswine",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "dp6-123",
+                "name": "Swinub",
+                "rarity": "Common",
+                "count":

@@ -29,4 +29,22 @@
                 "id": "dp6-123",
                 "name": "Swinub",
                 "rarity": "Common",
-                "count":
+                "count": 4
+            },
+            {
+                "id": "dp6-5",
+                "name": "Gliscor",
+                "rarity": "Rare",
+                "count": 1
+            },
+            {
+                "id": "dp6-94",
+                "name": "Gligar",
+                "rarity": "Common",
+                "count": 4
+            },
+            {
+                "id": "dp6-63",
+                "name": "Marowak",
+                "rarity": "Uncommon",
+   

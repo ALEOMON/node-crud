@@ -47,4 +47,22 @@
                 "id": "dp6-63",
                 "name": "Marowak",
                 "rarity": "Uncommon",
-   
+                "count": 2
+            },
+            {
+                "id": "dp6-90",
+                "name": "Cubone",
+                "rarity": "Common",
+                "count": 4
+            },
+            {
+                "id": "dp6-124",
+                "name": "Taillow",
+                "rarity": "Common",
+                "count": 4
+            },
+            {
+                "id": "dp6-117",
+                "name": "Riolu",
+                "rarity": "Common",
+                "co

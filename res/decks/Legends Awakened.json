@@ -120,4 +120,26 @@
                 "count": 16
             }
         ]
-    }
+    },
+    {
+        "id": "d-dp6-2",
+        "name": "Metal Surge",
+        "types": [
+            "Metal",
+            "Grass"
+        ],
+        "cards": [
+            {
+                "id": "dp6-30",
+                "name": "Heatran",
+                "rarity": "Rare Holo",
+                "count": 1
+            },
+            {
+                "id": "dp6-10",
+                "name": "Metagross",
+                "rarity": "Rare",
+                "count": 1
+            },
+            {
+                "i

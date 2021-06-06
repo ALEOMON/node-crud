@@ -1,0 +1,40 @@
+
+[
+    {
+        "id": "d-dp5-1",
+        "name": "Forest Force",
+        "types": [
+            "Grass",
+            "Psychic"
+        ],
+        "cards": [
+            {
+                "id": "dp5-24",
+                "name": "Leafeon",
+                "rarity": "Rare Holo",
+                "count": 1
+            },
+            {
+                "id": "dp5-18",
+                "name": "Espeon",
+                "rarity": "Rare",
+                "count": 1
+            },
+            {
+                "id": "dp5-62",
+                "name": "Eevee",
+                "rarity": "Common",
+                "count": 4
+            },
+            {
+                "id": "dp5-30",
+                "name": "Torterra",
+                "rarity": "Rare",
+                "count": 1
+            },
+            {
+                "id": "dp5-37",
+                "name": "Grotle",
+                "rarity": "Uncommon",
+                "count": 2
+            },

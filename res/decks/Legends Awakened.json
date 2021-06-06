@@ -179,4 +179,22 @@
             },
             {
                 "id": "dp6-106",
-             
+                "name": "Meowth",
+                "rarity": "Common",
+                "count": 4
+            },
+            {
+                "id": "dp6-113",
+                "name": "Pineco",
+                "rarity": "Common",
+                "count": 2
+            },
+            {
+                "id": "dp6-130",
+                "name": "Buck's Training",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "dp6-131",
+              

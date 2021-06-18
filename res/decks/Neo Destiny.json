@@ -2,4 +2,23 @@
     {
         "id": "d-neo4-1",
         "name": "Light",
-        "types"
+        "types": [
+            "Fighting",
+            "Water"
+        ],
+        "cards": [
+            {
+                "id": "neo4-67",
+                "name": "Gligar",
+                "rarity": "Common",
+                "count": 4
+            },
+            {
+                "id": "neo4-42",
+                "name": "Hitmonlee",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "neo4-73",
+             

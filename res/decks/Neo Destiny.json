@@ -21,4 +21,22 @@
             },
             {
                 "id": "neo4-73",
-             
+                "name": "Machop",
+                "rarity": "Common",
+                "count": 4
+            },
+            {
+                "id": "neo4-49",
+                "name": "Light Machoke",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "neo4-25",
+                "name": "Light Machamp",
+                "rarity": "Rare",
+                "count": 1
+            },
+            {
+                "id": "neo1-66",
+                "na

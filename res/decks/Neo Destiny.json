@@ -75,4 +75,25 @@
             },
             {
                 "id": "neo3-62",
-                "name": "Pokém
+                "name": "Pokémon Breeder Fields",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "neo1-106",
+                "name": "Fighting Energy",
+                "count": 15
+            },
+            {
+                "id": "neo1-111",
+                "name": "Water Energy",
+                "count": 13
+            }
+        ]
+    },
+    {
+        "id": "d-neo4-2",
+        "name": "Dark",
+        "types": [
+            "Fire",
+       

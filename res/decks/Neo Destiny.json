@@ -114,4 +114,22 @@
             {
                 "id": "neo4-39",
                 "name": "Dark Quilava",
-                "rarity":
+                "rarity": "Uncommon",
+                "count": 3
+            },
+            {
+                "id": "neo4-10",
+                "name": "Dark Typhlosion",
+                "rarity": "Rare Holo",
+                "count": 1
+            },
+            {
+                "id": "neo4-68",
+                "name": "Growlithe",
+                "rarity": "Common",
+                "count": 1
+            },
+            {
+                "id": "neo4-82",
+                "name": "Slugma",
+                "rarity": "Common

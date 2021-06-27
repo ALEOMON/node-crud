@@ -132,4 +132,22 @@
             {
                 "id": "neo4-82",
                 "name": "Slugma",
-                "rarity": "Common
+                "rarity": "Common",
+                "count": 3
+            },
+            {
+                "id": "neo3-33",
+                "name": "Magcargo",
+                "rarity": "Uncommon",
+                "count": 1
+            },
+            {
+                "id": "neo4-18",
+                "name": "Dark Magcargo",
+                "rarity": "Rare",
+                "count": 1
+            },
+            {
+                "id": "neo4-91",
+                "name": "Vulpix",
+                "rarity": "C

@@ -96,4 +96,22 @@
         "name": "Dark",
         "types": [
             "Fire",
-       
+            "Psychic"
+        ],
+        "cards": [
+            {
+                "id": "neo4-61",
+                "name": "Cyndaquil",
+                "rarity": "Common",
+                "count": 3
+            },
+            {
+                "id": "neo1-57",
+                "name": "Cyndaquil",
+                "rarity": "Common",
+                "count": 1
+            },
+            {
+                "id": "neo4-39",
+                "name": "Dark Quilava",
+                "rarity":

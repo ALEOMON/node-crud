@@ -150,4 +150,22 @@
             {
                 "id": "neo4-91",
                 "name": "Vulpix",
-                "rarity": "C
+                "rarity": "Common",
+                "count": 2
+            },
+            {
+                "id": "neo4-65",
+                "name": "Gastly",
+                "rarity": "Common",
+                "count": 2
+            },
+            {
+                "id": "neo4-36",
+                "name": "Dark Haunter",
+                "rarity": "Uncommon",
+                "count": 1
+            },
+            {
+                "id": "neo2-67",
+                "name": "Unown E",
+    

@@ -186,4 +186,22 @@
             {
                 "id": "neo4-66",
                 "name": "Girafarig",
-      
+                "rarity": "Common",
+                "count": 1
+            },
+            {
+                "id": "neo1-99",
+                "name": "Berry",
+                "rarity": "Common",
+                "count": 2
+            },
+            {
+                "id": "neo4-97",
+                "name": "Counterattack Claws",
+                "rarity": "Uncommon",
+                "count": 1
+            },
+            {
+                "id": "neo4-99",
+                "name": "Energy Stadium",
+  

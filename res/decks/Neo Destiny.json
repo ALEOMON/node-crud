@@ -168,4 +168,22 @@
             {
                 "id": "neo2-67",
                 "name": "Unown E",
-    
+                "rarity": "Common",
+                "count": 1
+            },
+            {
+                "id": "neo4-87",
+                "name": "Unown S",
+                "rarity": "Common",
+                "count": 1
+            },
+            {
+                "id": "neo4-88",
+                "name": "Unown T",
+                "rarity": "Common",
+                "count": 1
+            },
+            {
+                "id": "neo4-66",
+                "name": "Girafarig",
+      

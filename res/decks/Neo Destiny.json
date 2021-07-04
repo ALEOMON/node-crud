@@ -204,4 +204,21 @@
             {
                 "id": "neo4-99",
                 "name": "Energy Stadium",
-  
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "neo4-105",
+                "name": "Mail from Bill",
+                "rarity": "Common",
+                "count": 1
+            },
+            {
+                "id": "neo3-63",
+                "name": "Rocket's Hideout",
+                "rarity": "Common",
+                "count": 1
+            },
+            {
+                "id": "neo1-103",
+                "name": "Super Rod"

@@ -221,4 +221,20 @@
             },
             {
                 "id": "neo1-103",
-                "name": "Super Rod"
+                "name": "Super Rod",
+                "rarity": "Common",
+                "count": 2
+            },
+            {
+                "id": "neo1-107",
+                "name": "Fire Energy",
+                "count": 20
+            },
+            {
+                "id": "neo1-110",
+                "name": "Psychic Energy",
+                "count": 8
+            }
+        ]
+    }
+]

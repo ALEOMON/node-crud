@@ -149,3 +149,87 @@
                 "count": 4
             },
             {
+                "id": "neo2-3",
+                "name": "Hitmontop",
+                "rarity": "Rare Holo",
+                "count": 1
+            },
+            {
+                "id": "neo2-63",
+                "name": "Sentret",
+                "rarity": "Common",
+                "count": 4
+            },
+            {
+                "id": "neo2-53",
+                "name": "Caterpie",
+                "rarity": "Common",
+                "count": 4
+            },
+            {
+                "id": "neo2-42",
+                "name": "Metapod",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "neo2-19",
+                "name": "Butterfree",
+                "rarity": "Rare",
+                "count": 1
+            },
+            {
+                "id": "neo2-46",
+                "name": "Scyther",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "neo1-100",
+                "name": "Double Gust",
+                "rarity": "Common",
+                "count": 1
+            },
+            {
+                "id": "neo2-75",
+                "name": "Energy Ark",
+                "rarity": "Common",
+                "count": 2
+            },
+            {
+                "id": "neo2-73",
+                "name": "Hyper Devolution Spray",
+                "rarity": "Uncommon",
+                "count": 1
+            },
+            {
+                "id": "neo1-101",
+                "name": "Moo-Moo Milk",
+                "rarity": "Common",
+                "count": 1
+            },
+            {
+                "id": "neo1-96",
+                "name": "Professor Elm",
+                "rarity": "Uncommon",
+                "count": 1
+            },
+            {
+                "id": "neo1-103",
+                "name": "Super Rod",
+                "rarity": "Common",
+                "count": 3
+            },
+            {
+                "id": "neo1-106",
+                "name": "Fighting Energy",
+                "count": 12
+            },
+            {
+                "id": "neo1-108",
+                "name": "Grass Energy",
+                "count": 16
+            }
+        ]
+    }
+]

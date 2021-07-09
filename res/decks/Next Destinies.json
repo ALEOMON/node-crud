@@ -63,4 +63,22 @@
             },
             {
                 "id": "bw4-37",
-  
+                "name": "Beartic",
+                "rarity": "Rare",
+                "count": 1
+            },
+            {
+                "id": "bw4-36",
+                "name": "Cubchoo",
+                "rarity": "Common",
+                "count": 2
+            },
+            {
+                "id": "bw4-32",
+                "name": "Vanillish",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "bw4-31",
+                "nam

@@ -81,4 +81,21 @@
             },
             {
                 "id": "bw4-31",
-                "nam
+                "name": "Vanillite",
+                "rarity": "Common",
+                "count": 2
+            },
+            {
+                "id": "bw4-30",
+                "name": "Basculin",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "bw4-81",
+                "name": "Persian",
+                "rarity": "Rare",
+                "count": 1
+            },
+            {
+               

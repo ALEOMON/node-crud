@@ -136,4 +136,23 @@
             {
                 "id": "bw1-99",
                 "name": "Pokémon Communication",
-                "rarity":
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "bw4-91",
+                "name": "Skyarrow Bridge",
+                "rarity": "Uncommon",
+                "count": 1
+            },
+            {
+                "id": "bw1-106",
+                "name": "Fire Energy",
+                "rarity": "Common",
+                "count": 12
+            },
+            {
+                "id": "bw1-107",
+                "name": "Water Energy",
+                "rarity": "Common",
+          

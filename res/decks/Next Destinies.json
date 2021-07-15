@@ -155,4 +155,24 @@
                 "id": "bw1-107",
                 "name": "Water Energy",
                 "rarity": "Common",
-          
+                "count": 6
+            }
+        ]
+    },
+    {
+        "id": "d-bw4-2",
+        "name": "Voltage Vortex",
+        "types": [
+            "Lightning",
+            "Darkness"
+        ],
+        "cards": [
+            {
+                "id": "bw4-50",
+                "name": "Zekrom",
+                "rarity": "Rare Holo",
+                "count": 1
+            },
+            {
+                "id": "bw4-50",
+                "name": "Zekr

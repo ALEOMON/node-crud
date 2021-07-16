@@ -175,4 +175,23 @@
             },
             {
                 "id": "bw4-50",
-                "name": "Zekr
+                "name": "Zekrom",
+                "rarity": "Rare",
+                "count": 1
+            },
+            {
+                "id": "bw4-40",
+                "name": "Raichu",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "bw4-39",
+                "name": "Pikachu",
+                "rarity": "Common",
+                "count": 2
+            },
+            {
+                "id": "bw4-46",
+                "name": "Luxray",
+  

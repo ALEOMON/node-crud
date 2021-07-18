@@ -194,4 +194,22 @@
             {
                 "id": "bw4-46",
                 "name": "Luxray",
-  
+                "rarity": "Rare",
+                "count": 1
+            },
+            {
+                "id": "bw4-45",
+                "name": "Luxio",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "bw4-42",
+                "name": "Shinx",
+                "rarity": "Common",
+                "count": 4
+            },
+            {
+                "id": "bw4-49",
+                "name": "Emolga",
+                "rarity": "Un

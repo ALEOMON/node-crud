@@ -212,4 +212,24 @@
             {
                 "id": "bw4-49",
                 "name": "Emolga",
-                "rarity": "Un
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "bw4-47",
+                "name": "Blitzle",
+                "rarity": "Common",
+                "count": 2
+            },
+            {
+                "id": "bw4-70",
+                "name": "Weavile",
+                "rarity": "Rare",
+                "count": 1
+            },
+            {
+                "id": "bw4-69",
+                "name": "Sneasel",
+                "rarity": "Common",
+                "count": 2
+       

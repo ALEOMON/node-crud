@@ -270,4 +270,20 @@
                 "count": 2
             },
             {
-      
+                "id": "bw4-90",
+                "name": "Pokémon Center",
+                "rarity": "Uncommon",
+                "count": 1
+            },
+            {
+                "id": "bw1-99",
+                "name": "Pokémon Communication",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "bw1-101",
+                "name": "Professor Juniper",
+                "rarity": "Uncommon",
+                "count": 2
+ 

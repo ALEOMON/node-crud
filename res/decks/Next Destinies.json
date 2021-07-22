@@ -286,4 +286,23 @@
                 "name": "Professor Juniper",
                 "rarity": "Uncommon",
                 "count": 2
+            },
+            {
+                "id": "bw4-86",
+                "name": "Cilan",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "bw4-89",
+                "name": "Level Ball",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "bw1-108",
+                "name": "Lightning Energy",
+                "rarity": "Common",
+                "count": 12
+            },
  

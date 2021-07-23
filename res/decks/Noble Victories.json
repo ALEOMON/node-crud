@@ -12,4 +12,22 @@
                 "name": "Accelgor",
                 "rarity": "Rare Holo",
                 "count": 1
-    
+            },
+            {
+                "id": "bw3-12",
+                "name": "Accelgor",
+                "rarity": "Rare",
+                "count": 1
+            },
+            {
+                "id": "bw3-11",
+                "name": "Shelmet",
+                "rarity": "Common",
+                "count": 4
+            },
+            {
+                "id": "bw3-3",
+                "name": "Leavanny",
+                "rarity": "Rare",
+                "count": 1
+   

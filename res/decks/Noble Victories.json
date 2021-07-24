@@ -46,4 +46,22 @@
             {
                 "id": "bw3-5",
                 "name": "Lilligant",
-                "rarity": "R
+                "rarity": "Rare",
+                "count": 1
+            },
+            {
+                "id": "bw3-4",
+                "name": "Petilil",
+                "rarity": "Common",
+                "count": 2
+            },
+            {
+                "id": "bw3-7",
+                "name": "Crustle",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "bw3-6",
+                "name": "Dwebble",
+                "rarity": "C

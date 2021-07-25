@@ -64,4 +64,21 @@
             {
                 "id": "bw3-6",
                 "name": "Dwebble",
-                "rarity": "C
+                "rarity": "Common",
+                "count": 2
+            },
+            {
+                "id": "bw3-9",
+                "name": "Foongus",
+                "rarity": "Common",
+                "count": 3
+            },
+            {
+                "id": "bw3-21",
+                "name": "Volcarona",
+                "rarity": "Rare",
+                "count": 1
+            },
+            {
+                "id": "bw3-20",
+                "nam

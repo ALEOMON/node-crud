@@ -81,4 +81,23 @@
             },
             {
                 "id": "bw3-20",
-                "nam
+                "name": "Larvesta",
+                "rarity": "Common",
+                "count": 2
+            },
+            {
+                "id": "bw3-17",
+                "name": "Simisear",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "bw3-16",
+                "name": "Pansear",
+                "rarity": "Common",
+                "count": 2
+            },
+            {
+                "id": "bw1-93",
+                "name": "Energy Search",
+           

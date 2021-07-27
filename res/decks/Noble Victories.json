@@ -119,4 +119,24 @@
                 "id": "bw2-93",
                 "name": "Great Ball",
                 "rarity": "Uncommon",
-            
+                "count": 2
+            },
+            {
+                "id": "bw3-92",
+                "name": "N",
+                "rarity": "Uncommon",
+                "count": 1
+            },
+            {
+                "id": "bw1-99",
+                "name": "Pokémon Communication",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "bw3-95",
+                "name": "Super Rod",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+   

@@ -160,4 +160,21 @@
             "Metal",
             "Lightning"
         ],
-  
+        "cards": [
+            {
+                "id": "bw3-80",
+                "name": "Escavalier",
+                "rarity": "Rare Holo",
+                "count": 1
+            },
+            {
+                "id": "bw3-80",
+                "name": "Escavalier",
+                "rarity": "Rare",
+                "count": 1
+            },
+            {
+                "id": "bw3-8",
+                "name": "Karrablast",
+                "rarity": "Common",
+                "count": 4

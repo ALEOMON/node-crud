@@ -139,4 +139,25 @@
                 "rarity": "Uncommon",
                 "count": 2
             },
-   
+            {
+                "id": "bw1-105",
+                "name": "Grass Energy",
+                "rarity": "Common",
+                "count": 12
+            },
+            {
+                "id": "bw1-106",
+                "name": "Fire Energy",
+                "rarity": "Common",
+                "count": 6
+            }
+        ]
+    },
+    {
+        "id": "d-bw3-2",
+        "name": "Furious Knights",
+        "types": [
+            "Metal",
+            "Lightning"
+        ],
+  

@@ -196,3 +196,22 @@
                 "name": "Eelektrik",
                 "rarity": "Uncommon",
                 "count": 2
+            },
+            {
+                "id": "bw3-39",
+                "name": "Tynamo",
+                "rarity": "Common",
+                "count": 3
+            },
+            {
+                "id": "bw3-36",
+                "name": "Zebstrika",
+                "rarity": "Rare",
+                "count": 1
+            },
+            {
+                "id": "bw3-35",
+                "name": "Blitzle",
+                "rarity": "Common",
+                "count": 2
+     

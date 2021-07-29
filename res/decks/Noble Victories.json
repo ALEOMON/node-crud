@@ -178,3 +178,21 @@
                 "name": "Karrablast",
                 "rarity": "Common",
                 "count": 4
+            },
+            {
+                "id": "bw3-83",
+                "name": "Durant",
+                "rarity": "Uncommon",
+                "count": 3
+            },
+            {
+                "id": "bw3-41",
+                "name": "Eelektross",
+                "rarity": "Rare",
+                "count": 1
+            },
+            {
+                "id": "bw3-40",
+                "name": "Eelektrik",
+                "rarity": "Uncommon",
+                "count": 2

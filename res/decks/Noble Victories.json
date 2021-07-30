@@ -214,4 +214,23 @@
                 "name": "Blitzle",
                 "rarity": "Common",
                 "count": 2
-     
+            },
+            {
+                "id": "bw3-37",
+                "name": "Emolga",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "bw3-42",
+                "name": "Stunfisk",
+                "rarity": "Common",
+                "count": 2
+            },
+            {
+                "id": "bw3-89",
+                "name": "Druddigon",
+                "rarity": "Rare",
+                "count": 1
+            },
+           

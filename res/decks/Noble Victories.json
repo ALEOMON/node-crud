@@ -253,4 +253,22 @@
             },
             {
                 "id": "bw1-93",
-    
+                "name": "Energy Search",
+                "rarity": "Common",
+                "count": 2
+            },
+            {
+                "id": "bw1-104",
+                "name": "Switch",
+                "rarity": "Common",
+                "count": 2
+            },
+            {
+                "id": "bw2-90",
+                "name": "Bianca",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "bw2-93",
+          

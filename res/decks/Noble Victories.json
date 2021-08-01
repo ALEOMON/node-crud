@@ -288,4 +288,23 @@
                 "count": 2
             },
             {
-            
+                "id": "bw3-95",
+                "name": "Super Rod",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "bw1-108",
+                "name": "Lightning Energy",
+                "rarity": "Common",
+                "count": 12
+            },
+            {
+                "id": "bw1-112",
+                "name": "Metal Energy",
+                "rarity": "Common",
+                "count": 6
+            }
+        ]
+    }
+]

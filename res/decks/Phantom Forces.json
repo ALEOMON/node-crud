@@ -1,2 +1,20 @@
 [
-  
+    {
+        "id": "d-xy4-1",
+        "name": "Burning Winds",
+        "types": [
+            "Fire",
+            "Grass"
+        ],
+        "cards": [
+            {
+                "id": "xy4-10",
+                "name": "Talonflame",
+                "rarity": "Rare Holo",
+                "count": 1
+            },
+            {
+                "id": "xy4-10",
+                "name": "Talonflame",
+                "rarity": "Rare",
+            

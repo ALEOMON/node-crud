@@ -17,4 +17,21 @@
                 "id": "xy4-10",
                 "name": "Talonflame",
                 "rarity": "Rare",
-            
+                "count": 1
+            },
+            {
+                "id": "xy4-9",
+                "name": "Fletchinder",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "xy4-89",
+                "name": "Fletchling",
+                "rarity": "Common",
+                "count": 4
+            },
+            {
+                "id": "xy4-12",
+                "name": "Pyroar",
+              

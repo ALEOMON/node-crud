@@ -34,4 +34,21 @@
             {
                 "id": "xy4-12",
                 "name": "Pyroar",
-              
+                "rarity": "Rare",
+                "count": 1
+            },
+            {
+                "id": "xy4-11",
+                "name": "Litleo",
+                "rarity": "Common",
+                "count": 2
+            },
+            {
+                "id": "xy4-4",
+                "name": "Yanmega",
+                "rarity": "Rare",
+                "count": 1
+            },
+            {
+                "id": "xy4-3",
+                "name": "Yanma

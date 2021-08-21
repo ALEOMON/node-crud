@@ -174,4 +174,27 @@
                 "count": 10
             },
             {
-                "id": "xy1-132"
+                "id": "xy1-132",
+                "name": "Grass Energy",
+                "count": 8
+            }
+        ]
+    },
+    {
+        "id": "d-xy4-2",
+        "name": "Bolt Twister",
+        "types": [
+            "Lightning",
+            "Water"
+        ],
+        "cards": [
+            {
+                "id": "xy4-27",
+                "name": "Galvantula",
+                "rarity": "Rare Holo",
+                "count": 1
+            },
+            {
+                "id": "xy4-27",
+                "name": "Galvantula",
+  

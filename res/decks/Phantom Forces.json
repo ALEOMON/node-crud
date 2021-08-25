@@ -197,4 +197,22 @@
             {
                 "id": "xy4-27",
                 "name": "Galvantula",
-  
+                "rarity": "Rare",
+                "count": 1
+            },
+            {
+                "id": "xy4-26",
+                "name": "Joltik",
+                "rarity": "Common",
+                "count": 4
+            },
+            {
+                "id": "xy4-30",
+                "name": "Heliolisk",
+                "rarity": "Rare",
+                "count": 1
+            },
+            {
+                "id": "xy4-28",
+                "name": "Helioptile",
+          

@@ -215,4 +215,22 @@
             {
                 "id": "xy4-28",
                 "name": "Helioptile",
-          
+                "rarity": "Common",
+                "count": 2
+            },
+            {
+                "id": "xy4-17",
+                "name": "Feraligatr",
+                "rarity": "Rare",
+                "count": 1
+            },
+            {
+                "id": "xy4-16",
+                "name": "Croconaw",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "xy4-15",
+                "name": "Totodile",
+                "rarity"

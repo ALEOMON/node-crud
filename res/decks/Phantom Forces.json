@@ -233,4 +233,24 @@
             {
                 "id": "xy4-15",
                 "name": "Totodile",
-                "rarity"
+                "rarity": "Common",
+                "count": 3
+            },
+            {
+                "id": "xy4-14",
+                "name": "Kingler",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "xy4-13",
+                "name": "Krabby",
+                "rarity": "Common",
+                "count": 2
+            },
+            {
+                "id": "xy4-21",
+                "name": "Jellicent",
+                "rarity": "Rare",
+                "count": 1
+            },

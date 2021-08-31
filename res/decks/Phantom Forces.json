@@ -254,3 +254,21 @@
                 "rarity": "Rare",
                 "count": 1
             },
+            {
+                "id": "xy4-20",
+                "name": "Frillish",
+                "rarity": "Common",
+                "count": 2
+            },
+            {
+                "id": "xy4-18",
+                "name": "Finneon",
+                "rarity": "Common",
+                "count": 2
+            },
+            {
+                "id": "xy4-79",
+                "name": "Fearow",
+                "rarity": "Uncommon",
+                "count": 2
+            

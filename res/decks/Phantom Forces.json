@@ -309,4 +309,19 @@
             },
             {
                 "id": "xy1-123",
-                "n
+                "name": "Professor's Letter",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "xy4-101",
+                "name": "Professor Sycamore",
+                "rarity": "Uncommon",
+                "count": 1
+            },
+            {
+                "id": "xy4-103",
+                "name": "Roller Skates",
+                "rarity": "Uncommon",
+                "count": 1
+            }

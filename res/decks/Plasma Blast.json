@@ -1,0 +1,22 @@
+[
+    {
+        "id": "d-bw10-1",
+        "name": "Mind Wipe",
+        "types": [
+            "Grass",
+            "Psychic"
+        ],
+        "cards": [
+            {
+                "id": "bw10-10",
+                "name": "Genesect",
+                "rarity": "Rare Holo",
+                "count": 1
+            },
+            {
+                "id": "bw10-10",
+                "name": "Genesect",
+                "rarity": "Rare",
+                "count": 1
+            },
+   

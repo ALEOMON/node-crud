@@ -129,4 +129,22 @@
             },
             {
                 "id": "bw5-91",
-                
+                "name": "Cheren",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "bw7-128",
+                "name": "Energy Search",
+                "rarity": "Common",
+                "count": 2
+            },
+            {
+                "id": "bw10-80",
+                "name": "Energy Retrieval",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "bw1-109",
+                "nam

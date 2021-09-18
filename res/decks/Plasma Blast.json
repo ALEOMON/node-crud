@@ -168,4 +168,22 @@
             {
                 "id": "bw10-13",
                 "name": "Volcarona",
-                "rarity": "Rar
+                "rarity": "Rare Holo",
+                "count": 1
+            },
+            {
+                "id": "bw10-13",
+                "name": "Volcarona",
+                "rarity": "Rare",
+                "count": 1
+            },
+            {
+                "id": "bw10-12",
+                "name": "Larvesta",
+                "rarity": "Common",
+                "count": 3
+            },
+            {
+                "id": "bw10-16",
+                "name": "Blastoise",
+                "rari

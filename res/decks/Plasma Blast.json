@@ -186,4 +186,23 @@
             {
                 "id": "bw10-16",
                 "name": "Blastoise",
-                "rari
+                "rarity": "Rare",
+                "count": 1
+            },
+            {
+                "id": "bw10-15",
+                "name": "Wartortle",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "bw10-14",
+                "name": "Squirtle",
+                "rarity": "Common",
+                "count": 3
+            },
+            {
+                "id": "bw10-20",
+                "name": "Suicune",
+                "rarity": "Rare",
+                

@@ -205,4 +205,25 @@
                 "id": "bw10-20",
                 "name": "Suicune",
                 "rarity": "Rare",
-                
+                "count": 1
+            },
+            {
+                "id": "bw10-23",
+                "name": "Froslass",
+                "rarity": "Rare",
+                "count": 1
+            },
+            {
+                "id": "bw10-22",
+                "name": "Glalie",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "bw10-21",
+                "name": "Snorunt",
+                "rarity": "Common",
+                "count": 3
+            },
+            {
+                "id": "

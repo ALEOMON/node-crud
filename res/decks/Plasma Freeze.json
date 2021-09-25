@@ -1,0 +1,79 @@
+
+[
+    {
+        "id": "d-bw9-1",
+        "name": "Frost Ray",
+        "types": [
+            "Water",
+            "Lightning"
+        ],
+        "cards": [
+            {
+                "id": "bw9-23",
+                "name": "Glaceon",
+                "rarity": "Rare Holo",
+                "count": 1
+            },
+            {
+                "id": "bw9-23",
+                "name": "Glaceon",
+                "rarity": "Rare",
+                "count": 1
+            },
+            {
+                "id": "bw9-20",
+                "name": "Vaporeon",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "bw9-34",
+                "name": "Jolteon",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "bw9-89",
+                "name": "Eevee",
+                "rarity": "Common",
+                "count": 4
+            },
+            {
+                "id": "bw9-29",
+                "name": "Vanilluxe",
+                "rarity": "Rare",
+                "count": 1
+            },
+            {
+                "id": "bw9-28",
+                "name": "Vanillish",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "bw9-27",
+                "name": "Vanillite",
+                "rarity": "Common",
+                "count": 3
+            },
+            {
+                "id": "bw9-33",
+                "name": "Electrode",
+                "rarity": "Rare",
+                "count": 1
+            },
+            {
+                "id": "bw9-32",
+                "name": "Voltorb",
+                "rarity": "Common",
+                "count": 2
+            },
+            {
+                "id": "bw9-88",
+                "name": "Raticate",
+                "rarity": "Rare",
+                "count": 1
+            },
+            {
+                "id": "bw9-87",
+                "name": "Rattata",

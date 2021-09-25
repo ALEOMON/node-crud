@@ -299,4 +299,20 @@
             },
             {
                 "id": "bw10-86",
-      
+                "name": "Reversal Trigger",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "bw1-107",
+                "name": "Water Energy",
+                "count": 12
+            },
+            {
+                "id": "bw1-106",
+                "name": "Fire Energy",
+                "count": 6
+            }
+        ]
+    }
+]

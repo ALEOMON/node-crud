@@ -7,4 +7,22 @@
             "Psychic"
         ],
         "cards": [
-    
+            {
+                "id": "ex16-14",
+                "name": "Dusclops",
+                "rarity": "Rare Holo",
+                "count": 1
+            },
+            {
+                "id": "ex16-50",
+                "name": "Duskull",
+                "rarity": "Common",
+                "count": 4
+            },
+            {
+                "id": "ex16-9",
+                "name": "Gardevoir",
+                "rarity": "Rare",
+                "count": 1
+            },
+      

@@ -229,3 +229,96 @@
                 "rarity": "Uncommon",
                 "count": 2
             },
+            {
+                "id": "bw8-35",
+                "name": "Vanillite",
+                "rarity": "Common",
+                "count": 2
+            },
+            {
+                "id": "bw8-20",
+                "name": "Simisear",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "bw8-19",
+                "name": "Pansear",
+                "rarity": "Common",
+                "count": 3
+            },
+            {
+                "id": "bw8-22",
+                "name": "Lampent",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "bw8-21",
+                "name": "Litwick",
+                "rarity": "Common",
+                "count": 2
+            },
+            {
+                "id": "bw8-29",
+                "name": "Lotad",
+                "rarity": "Common",
+                "count": 2
+            },
+            {
+                "id": "bw8-40",
+                "name": "Cubchoo",
+                "rarity": "Common",
+                "count": 2
+            },
+            {
+                "id": "bw7-128",
+                "name": "Energy Search",
+                "rarity": "Common",
+                "count": 2
+            },
+            {
+                "id": "bw8-119",
+                "name": "Colress",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "bw8-123",
+                "name": "Hypnotoxic Laser",
+                "rarity": "Uncommon",
+                "count": 1
+            },
+            {
+                "id": "bw1-99",
+                "name": "Pokémon Communication",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "bw7-132",
+                "name": "Potion",
+                "rarity": "Common",
+                "count": 2
+            },
+            {
+                "id": "bw8-125",
+                "name": "Team Plasma Grunt",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "bw1-107",
+                "name": "Water Energy",
+                "rarity": "Common",
+                "count": 9
+            },
+            {
+                "id": "bw1-106",
+                "name": "Fire Energy",
+                "rarity": "Common",
+                "count": 9
+            }
+        ]
+    }
+]

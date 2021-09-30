@@ -25,4 +25,22 @@
                 "rarity": "Rare",
                 "count": 1
             },
-      
+            {
+                "id": "ex16-31",
+                "name": "Kirlia",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "ex16-59",
+                "name": "Ralts",
+                "rarity": "Common",
+                "count": 4
+            },
+            {
+                "id": "ex16-33",
+                "name": "Machoke",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+  

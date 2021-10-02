@@ -77,4 +77,25 @@
                 "id": "ex16-78",
                 "name": "Master Ball",
                 "rarity": "Uncommon",
-                "co
+                "count": 1
+            },
+            {
+                "id": "ex16-80",
+                "name": "Professor Birch",
+                "rarity": "Uncommon",
+                "count": 1
+            },
+            {
+                "id": "ex16-81",
+                "name": "Scott",
+                "rarity": "Uncommon",
+                "count": 1
+            },
+            {
+                "id": "ex16-79",
+                "name": "Phoebe's Stadium",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+ 

@@ -60,4 +60,21 @@
                 "name": "Meditite",
                 "rarity": "Common",
                 "count": 4
-            
+            },
+            {
+                "id": "ex16-63",
+                "name": "Slakoth",
+                "rarity": "Common",
+                "count": 2
+            },
+            {
+                "id": "ex16-75",
+                "name": "Energy Switch",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "ex16-78",
+                "name": "Master Ball",
+                "rarity": "Uncommon",
+                "co

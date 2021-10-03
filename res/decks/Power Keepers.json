@@ -115,4 +115,26 @@
                 "count": 14
             },
             {
-                "id": "ex16-108
+                "id": "ex16-108",
+                "name": "Fighting Energy",
+                "count": 10
+            }
+        ]
+    },
+    {
+        "id": "d-ex16-2",
+        "name": "Dark Blast",
+        "types": [
+            "Darkness",
+            "Fire"
+        ],
+        "cards": [
+            {
+                "id": "ex16-18",
+                "name": "Mightyena",
+                "rarity": "Rare Holo",
+                "count": 1
+            },
+            {
+                "id": "ex16-58",
+     

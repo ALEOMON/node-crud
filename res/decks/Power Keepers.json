@@ -137,4 +137,22 @@
             },
             {
                 "id": "ex16-58",
-     
+                "name": "Poochyena",
+                "rarity": "Common",
+                "count": 4
+            },
+            {
+                "id": "ex16-28",
+                "name": "Charmeleon",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "ex16-48",
+                "name": "Charmander",
+                "rarity": "Common",
+                "count": 4
+            },
+            {
+                "id": "ex16-29",
+                "n

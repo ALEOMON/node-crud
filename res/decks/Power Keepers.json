@@ -173,4 +173,22 @@
             },
             {
                 "id": "ex16-8",
-         
+                "name": "Delcatty",
+                "rarity": "Rare",
+                "count": 1
+            },
+            {
+                "id": "ex16-62",
+                "name": "Skitty",
+                "rarity": "Common",
+                "count": 4
+            },
+            {
+                "id": "ex16-43",
+                "name": "Bagon",
+                "rarity": "Common",
+                "count": 2
+            },
+            {
+                "id": "ex16-74",
+        

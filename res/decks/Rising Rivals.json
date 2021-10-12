@@ -1,0 +1,75 @@
+
+[
+    {
+        "id": "d-pl2-1",
+        "name": "Drill Point",
+        "types": [
+            "Fighting",
+            "Water"
+        ],
+        "cards": [
+            {
+                "id": "pl2-32",
+                "name": "Rhyperior",
+                "rarity": "Rare Holo",
+                "count": 1
+            },
+            {
+                "id": "pl2-5",
+                "name": "Flygon",
+                "rarity": "Rare",
+                "count": 1
+            },
+            {
+                "id": "pl2-53",
+                "name": "Vibrava",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "pl2-84",
+                "name": "Trapinch",
+                "rarity": "Common",
+                "count": 4
+            },
+            {
+                "id": "pl2-42",
+                "name": "Hippowdon",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "pl2-25",
+                "name": "Hippowdon",
+                "rarity": "Rare",
+                "count": 1
+            },
+            {
+                "id": "pl2-64",
+                "name": "Hippopotas",
+                "rarity": "Common",
+                "count": 4
+            },
+            {
+                "id": "pl2-50",
+                "name": "Starmie",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "pl2-83",
+                "name": "Staryu",
+                "rarity": "Common",
+                "count": 4
+            },
+            {
+                "id": "pl2-55",
+                "name": "Aerodactyl",
+                "rarity": "Common",
+                "count": 4
+            },
+            {
+                "id": "dp7-92",
+                "name": "Potion",
+                "rarity": "Common",
+                "count": 2

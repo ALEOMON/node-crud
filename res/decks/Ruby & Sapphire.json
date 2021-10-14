@@ -1,0 +1,23 @@
+[
+    {
+        "id": "d-ex1-1",
+        "name": "Ruby",
+        "types": [
+            "Fighting",
+            "Fire"
+        ],
+        "cards": [
+            {
+                "id": "ex1-73",
+                "name": "Torchic",
+                "rarity": "Common",
+                "count": 4
+            },
+            {
+                "id": "ex1-27",
+                "name": "Combusken",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+          

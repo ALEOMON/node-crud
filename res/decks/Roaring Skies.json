@@ -318,3 +318,56 @@
             },
             {
                 "id": "xy6-90",
+                "name": "Steven",
+                "rarity": "Uncommon",
+                "count": 1
+            },
+            {
+                "id": "base1-95",
+                "name": "Switch",
+                "rarity": "Common",
+                "count": 2
+            },
+            {
+                "id": "xy0-39",
+                "name": "Tierno",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "xy6-92",
+                "name": "Trainers' Mail",
+                "rarity": "Uncommon",
+                "count": 1
+            },
+            {
+                "id": "bw5-102",
+                "name": "Ultra Ball",
+                "rarity": "Uncommon",
+                "count": 1
+            },
+            {
+                "id": "xy6-94",
+                "name": "Wally",
+                "rarity": "Uncommon",
+                "count": 1
+            },
+            {
+                "id": "xy6-97",
+                "name": "Double Dragon Energy",
+                "rarity": "Uncommon",
+                "count": 1
+            },
+            {
+                "id": "xy1-135",
+                "name": "Lightning Energy",
+                "count": 9
+            },
+            {
+                "id": "xy1-132",
+                "name": "Grass Energy",
+                "count": 8
+            }
+        ]
+    }
+]

@@ -57,4 +57,23 @@
             },
             {
                 "id": "ex1-33",
-                "name": "Hari
+                "name": "Hariyama",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "ex1-63",
+                "name": "Poochyena",
+                "rarity": "Common",
+                "count": 2
+            },
+            {
+                "id": "ex1-91",
+                "name": "Potion",
+                "rarity": "Common",
+                "count": 3
+            },
+            {
+                "id": "ex1-86",
+                "name": "Poké Ball",
+              

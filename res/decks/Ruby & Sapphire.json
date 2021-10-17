@@ -94,4 +94,22 @@
             {
                 "id": "ex1-89",
                 "name": "Professor Birch",
-          
+                "rarity": "Uncommon",
+                "count": 1
+            },
+            {
+                "id": "ex1-95",
+                "name": "Rainbow Energy",
+                "rarity": "Rare",
+                "count": 1
+            },
+            {
+                "id": "ex1-108",
+                "name": "Fire Energy",
+                "rarity": "Common",
+                "count": 12
+            },
+            {
+                "id": "ex1-105",
+                "name": "Fighting Energy",
+                "rarity": 

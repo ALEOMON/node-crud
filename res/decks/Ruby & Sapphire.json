@@ -112,4 +112,25 @@
             {
                 "id": "ex1-105",
                 "name": "Fighting Energy",
-                "rarity": 
+                "rarity": "Common",
+                "count": 12
+            }
+        ]
+    },
+    {
+        "id": "d-ex1-2",
+        "name": "Sapphire",
+        "types": [
+            "Water",
+            "Grass"
+        ],
+        "cards": [
+            {
+                "id": "ex1-60",
+                "name": "Mudkip",
+                "rarity": "Common",
+                "count": 4
+            },
+            {
+                "id": "ex1-40",
+                "name": "Ma

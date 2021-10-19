@@ -153,4 +153,22 @@
                 "id": "ex1-77",
                 "name": "Wingull",
                 "rarity": "Common",
- 
+                "count": 3
+            },
+            {
+                "id": "ex1-19",
+                "name": "Pelipper",
+                "rarity": "Rare",
+                "count": 1
+            },
+            {
+                "id": "ex1-54",
+                "name": "Koffing",
+                "rarity": "Common",
+                "count": 3
+            },
+            {
+                "id": "ex1-24",
+                "name": "Weezing",
+                "rarity": "Rare",
+              

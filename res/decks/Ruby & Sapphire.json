@@ -133,4 +133,24 @@
             },
             {
                 "id": "ex1-40",
-                "name": "Ma
+                "name": "Marshtomp",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "ex1-23",
+                "name": "Swampert",
+                "rarity": "Rare",
+                "count": 1
+            },
+            {
+                "id": "ex1-48",
+                "name": "Wailmer",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "ex1-77",
+                "name": "Wingull",
+                "rarity": "Common",
+ 

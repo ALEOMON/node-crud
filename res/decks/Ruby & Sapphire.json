@@ -188,4 +188,22 @@
             {
                 "id": "ex1-69",
                 "name": "Shroomish",
-                "rari
+                "rarity": "Common",
+                "count": 2
+            },
+            {
+                "id": "ex1-80",
+                "name": "Energy Removal 2",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "ex1-88",
+                "name": "PokéNav",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "ex1-89",
+                "name": "Professor Birch",
+                "ra

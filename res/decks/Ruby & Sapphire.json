@@ -171,4 +171,21 @@
                 "id": "ex1-24",
                 "name": "Weezing",
                 "rarity": "Rare",
-              
+                "count": 1
+            },
+            {
+                "id": "ex1-75",
+                "name": "Treecko",
+                "rarity": "Common",
+                "count": 4
+            },
+            {
+                "id": "ex1-31",
+                "name": "Grovyle",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "ex1-69",
+                "name": "Shroomish",
+                "rari

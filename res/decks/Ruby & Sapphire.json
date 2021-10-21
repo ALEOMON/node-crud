@@ -224,4 +224,15 @@
             {
                 "id": "ex1-106",
                 "name": "Water Energy",
-                "rarity": "Com
+                "rarity": "Common",
+                "count": 12
+            },
+            {
+                "id": "ex1-104",
+                "name": "Grass Energy",
+                "rarity": "Common",
+                "count": 12
+            }
+        ]
+    }
+]

@@ -1,0 +1,99 @@
+
+[
+    {
+        "id": "d-ecard3-1",
+        "name": "Eeveelution",
+        "types": [
+            "Fire",
+            "Water",
+            "Lightning"
+        ],
+        "cards": [
+            {
+                "id": "ecard3-54",
+                "name": "Eevee",
+                "rarity": "Common",
+                "count": 4
+            },
+            {
+                "id": "ecard3-33",
+                "name": "Vaporeon",
+                "rarity": "Rare",
+                "count": 1
+            },
+            {
+                "id": "ecard3-8",
+                "name": "Flareon",
+                "rarity": "Rare",
+                "count": 1
+            },
+            {
+                "id": "ecard3-13",
+                "name": "Jolteon",
+                "rarity": "Rare",
+                "count": 1
+            },
+            {
+                "id": "ecard3-113",
+                "name": "Voltorb",
+                "rarity": "Common",
+                "count": 3
+            },
+            {
+                "id": "ecard3-36",
+                "name": "Electrode",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "ecard3-62",
+                "name": "Growlithe",
+                "rarity": "Common",
+                "count": 3
+            },
+            {
+                "id": "ecard3-71",
+                "name": "Lapras",
+                "rarity": "Common",
+                "count": 3
+            },
+            {
+                "id": "ecard3-109",
+                "name": "Teddiursa",
+                "rarity": "Common",
+                "count": 2
+            },
+            {
+                "id": "ecard3-110",
+                "name": "Ursaring",
+                "rarity": "Common",
+                "count": 1
+            },
+            {
+                "id": "ecard1-137",
+                "name": "Bill's Maintenance",
+                "rarity": "Common",
+                "count": 3
+            },
+            {
+                "id": "ecard1-156",
+                "name": "Potion",
+                "rarity": "Common",
+                "count": 4
+            },
+            {
+                "id": "ecard3-124",
+                "name": "Fast Ball",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "ecard2-136",
+                "name": "Town Volunteers",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "ecard3-125",
+                "name": "Fisherman",
+                "rarity": "Uncommon",

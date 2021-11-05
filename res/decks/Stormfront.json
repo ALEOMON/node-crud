@@ -1,4 +1,25 @@
 [
     {
         "id": "d-dp7-1",
-        "name": 
+        "name": "Raging Sea",
+        "types": [
+            "Water",
+            "Grass"
+        ],
+        "cards": [
+            {
+                "id": "dp7-19",
+                "name": "Gyarados",
+                "rarity": "Rare Holo",
+                "count": 1
+            },
+            {
+                "id": "dp7-65",
+                "name": "Magikarp",
+                "rarity": "Common",
+                "count": 4
+            },
+            {
+                "id": "dp7-10",
+                "name": "Sceptile",
+  

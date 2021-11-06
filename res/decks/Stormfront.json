@@ -22,4 +22,22 @@
             {
                 "id": "dp7-10",
                 "name": "Sceptile",
-  
+                "rarity": "Rare",
+                "count": 1
+            },
+            {
+                "id": "dp7-39",
+                "name": "Grovyle",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "dp7-79",
+                "name": "Treecko",
+                "rarity": "Common",
+                "count": 4
+            },
+            {
+                "id": "dp7-12",
+                "name": "Abomasnow",
+             

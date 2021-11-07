@@ -40,4 +40,22 @@
             {
                 "id": "dp7-12",
                 "name": "Abomasnow",
-             
+                "rarity": "Rare",
+                "count": 1
+            },
+            {
+                "id": "dp7-74",
+                "name": "Snover",
+                "rarity": "Common",
+                "count": 4
+            },
+            {
+                "id": "dp7-32",
+                "name": "Bibarel",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "dp7-54",
+                "name": "Bidoof",
+                "rarity": "Com

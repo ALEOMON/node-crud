@@ -58,4 +58,23 @@
             {
                 "id": "dp7-54",
                 "name": "Bidoof",
-                "rarity": "Com
+                "rarity": "Common",
+                "count": 4
+            },
+            {
+                "id": "dp7-61",
+                "name": "Finneon",
+                "rarity": "Common",
+                "count": 2
+            },
+            {
+                "id": "dp7-92",
+                "name": "Potion",
+                "rarity": "Common",
+                "count": 2
+            },
+            {
+                "id": "dp7-93",
+                "name": "Switch",
+                "rarity": "Common",
+                "coun

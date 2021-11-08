@@ -77,4 +77,23 @@
                 "id": "dp7-93",
                 "name": "Switch",
                 "rarity": "Common",
-                "coun
+                "count": 2
+            },
+            {
+                "id": "dp5-83",
+                "name": "Mom's Kindness",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "dp7-84",
+                "name": "Energy Switch",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "dp5-80",
+                "name": "Dusk Ball",
+                "rarity": "Uncommon",
+                "count": 2
+  

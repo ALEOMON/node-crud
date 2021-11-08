@@ -96,4 +96,25 @@
                 "name": "Dusk Ball",
                 "rarity": "Uncommon",
                 "count": 2
-  
+            },
+            {
+                "id": "dp7-86",
+                "name": "Luxury Ball",
+                "rarity": "Uncommon",
+                "count": 1
+            },
+            {
+                "id": "dp1-125",
+                "name": "Water Energy",
+                "count": 15
+            },
+            {
+                "id": "dp1-123",
+                "name": "Grass Energy",
+                "count": 9
+            }
+        ]
+    },
+    {
+        "id": "d-dp7-2",
+        "name": "Da

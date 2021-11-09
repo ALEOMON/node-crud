@@ -117,4 +117,23 @@
     },
     {
         "id": "d-dp7-2",
-        "name": "Da
+        "name": "Dark Rampage",
+        "types": [
+            "Darkness",
+            "Fighting"
+        ],
+        "cards": [
+            {
+                "id": "dp7-30",
+                "name": "Tyranitar",
+                "rarity": "Rare Holo",
+                "count": 1
+            },
+            {
+                "id": "dp7-47",
+                "name": "Pupitar",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "dp7-

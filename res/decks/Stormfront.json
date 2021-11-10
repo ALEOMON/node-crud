@@ -155,4 +155,23 @@
             },
             {
                 "id": "dp7-75",
-                "name": 
+                "name": "Starly",
+                "rarity": "Common",
+                "count": 4
+            },
+            {
+                "id": "dp7-26",
+                "name": "Skuntank",
+                "rarity": "Rare",
+                "count": 1
+            },
+            {
+                "id": "dp7-76",
+                "name": "Stunky",
+                "rarity": "Common",
+                "count": 4
+            },
+            {
+                "id": "dp7-64",
+                "name": "Machop",
+                "rarity": 

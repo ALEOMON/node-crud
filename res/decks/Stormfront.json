@@ -193,4 +193,37 @@
                 "id": "dp5-90",
                 "name": "Energy Search",
                 "rarity": "Common",
-   
+                "count": 2
+            },
+            {
+                "id": "dp6-131",
+                "name": "Cynthia's Feelings",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "dp7-84",
+                "name": "Energy Switch",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "dp7-85",
+                "name": "Great Ball",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "dp7-86",
+                "name": "Luxury Ball",
+                "rarity": "Uncommon",
+                "count": 1
+            },
+            {
+                "id": "dp5-93",
+                "name": "Darkness Energy",
+                "count": 13
+            },
+            {
+                "id": "dp1-128",
+                "name": "Fighti

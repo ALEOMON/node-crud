@@ -24,4 +24,21 @@
                 "name": "Team Magma's Aggron",
                 "rarity": "Rare Holo",
                 "count": 1
-   
+            },
+            {
+                "id": "ex4-9",
+                "name": "Team Magma's Groudon",
+                "rarity": "Rare",
+                "count": 2
+            },
+            {
+                "id": "ex4-62",
+                "name": "Team Magma's Houndour",
+                "rarity": "Common",
+                "count": 4
+            },
+            {
+                "id": "ex4-34",
+                "name": "Team Magma's Houndoom",
+                "rarity": "Uncommon",
+       

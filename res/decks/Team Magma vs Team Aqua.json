@@ -8,4 +8,20 @@
         ],
         "cards": [
             {
-        
+                "id": "ex4-58",
+                "name": "Team Magma's Aron",
+                "rarity": "Common",
+                "count": 4
+            },
+            {
+                "id": "ex4-36",
+                "name": "Team Magma's Lairon",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "ex4-7",
+                "name": "Team Magma's Aggron",
+                "rarity": "Rare Holo",
+                "count": 1
+   

@@ -57,4 +57,21 @@
             },
             {
                 "id": "ex4-68",
-                "name": "Team Magma's R
+                "name": "Team Magma's Rhyhorn",
+                "rarity": "Common",
+                "count": 4
+            },
+            {
+                "id": "ex4-83",
+                "name": "Team Magma Hideout",
+                "rarity": "Uncommon",
+                "count": 1
+            },
+            {
+                "id": "ex4-82",
+                "name": "Team Magma Conspirator",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id"

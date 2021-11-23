@@ -113,4 +113,20 @@
     },
     {
         "id": "d-ex4-2",
-      
+        "name": "Team Aqua",
+        "types": [
+            "Water",
+            "Lightning"
+        ],
+        "cards": [
+            {
+                "id": "ex4-56",
+                "name": "Team Aqua's Spheal",
+                "rarity": "Common",
+                "count": 4
+            },
+            {
+                "id": "ex4-31",
+                "name": "Team Aqua's Sealeo",
+                "rarity": "Uncommon",
+                "count":

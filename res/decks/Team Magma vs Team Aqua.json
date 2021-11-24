@@ -129,4 +129,21 @@
                 "id": "ex4-31",
                 "name": "Team Aqua's Sealeo",
                 "rarity": "Uncommon",
-                "count":
+                "count": 2
+            },
+            {
+                "id": "ex4-6",
+                "name": "Team Aqua's Walrein",
+                "rarity": "Rare Holo",
+                "count": 1
+            },
+            {
+                "id": "ex4-3",
+                "name": "Team Aqua's Kyogre",
+                "rarity": "Rare",
+                "count": 2
+            },
+            {
+                "id": "ex4-54",
+                "name": "Team Aqua's Poochyena",
+                "rarity": "Commo

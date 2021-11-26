@@ -146,4 +146,22 @@
             {
                 "id": "ex4-54",
                 "name": "Team Aqua's Poochyena",
-                "rarity": "Commo
+                "rarity": "Common",
+                "count": 4
+            },
+            {
+                "id": "ex4-30",
+                "name": "Team Aqua's Mightyena",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "ex4-49",
+                "name": "Team Aqua's Chinchou",
+                "rarity": "Common",
+                "count": 4
+            },
+            {
+                "id": "ex4-28",
+                "name": "Team Aqua's Lanturn",
+                "rarity": 

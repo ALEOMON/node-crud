@@ -164,4 +164,22 @@
             {
                 "id": "ex4-28",
                 "name": "Team Aqua's Lanturn",
-                "rarity": 
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "ex4-48",
+                "name": "Team Aqua's Carvanha",
+                "rarity": "Common",
+                "count": 4
+            },
+            {
+                "id": "ex4-78",
+                "name": "Team Aqua Hideout",
+                "rarity": "Uncommon",
+                "count": 1
+            },
+            {
+                "id": "ex4-77",
+                "name": "Team Aqua Conspirator",
+                "rarity": "Un

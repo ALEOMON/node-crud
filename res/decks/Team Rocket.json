@@ -4,4 +4,23 @@
         "name": "Devastation",
         "types": [
             "Grass",
-  
+            "Water"
+        ],
+        "cards": [
+            {
+                "id": "base4-100",
+                "name": "Weedle",
+                "rarity": "Common",
+                "count": 3
+            },
+            {
+                "id": "base5-63",
+                "name": "Oddish",
+                "rarity": "Common",
+                "count": 3
+            },
+            {
+                "id": "base5-36",
+                "name": "Dark Gloom",
+                "rarity": "Uncommon",
+           

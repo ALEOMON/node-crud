@@ -23,4 +23,21 @@
                 "id": "base5-36",
                 "name": "Dark Gloom",
                 "rarity": "Uncommon",
-           
+                "count": 1
+            },
+            {
+                "id": "base5-58",
+                "name": "Koffing",
+                "rarity": "Common",
+                "count": 4
+            },
+            {
+                "id": "base5-14",
+                "name": "Dark Weezing",
+                "rarity": "Rare Holo",
+                "count": 1
+            },
+            {
+                "id": "base4-96",
+                "name": "Tangela",
+     

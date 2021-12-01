@@ -40,4 +40,20 @@
             {
                 "id": "base4-96",
                 "name": "Tangela",
-     
+                "rarity": "Common",
+                "count": 3
+            },
+            {
+                "id": "base4-93",
+                "name": "Squirtle",
+                "rarity": "Common",
+                "count": 3
+            },
+            {
+                "id": "base4-63",
+                "name": "Wartortle",
+                "rarity": "Uncommon",
+                "count": 1
+            },
+            {
+                "id

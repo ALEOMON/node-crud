@@ -110,4 +110,24 @@
                 "count": 1
             },
             {
-            
+                "id": "base4-127",
+                "name": "Grass Energy",
+                "count": 18
+            },
+            {
+                "id": "base4-130",
+                "name": "Water Energy",
+                "count": 10
+            }
+        ]
+    },
+    {
+        "id": "d-base5-2",
+        "name": "Trouble",
+        "types": [
+            "Psychic",
+            "Grass"
+        ],
+        "cards": [
+            {
+                "id": "base4-

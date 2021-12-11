@@ -149,4 +149,21 @@
             },
             {
                 "id": "base5-39",
-            
+                "name": "Dark Kadabra",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "base4-75",
+                "name": "Gastly",
+                "rarity": "Common",
+                "count": 2
+            },
+            {
+                "id": "base4-43",
+                "name": "Haunter",
+                "rarity": "Uncommon",
+                "count": 1
+            },
+            {
+          

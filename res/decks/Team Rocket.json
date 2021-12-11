@@ -130,4 +130,23 @@
         ],
         "cards": [
             {
-                "id": "base4-
+                "id": "base4-65",
+                "name": "Abra",
+                "rarity": "Common",
+                "count": 2
+            },
+            {
+                "id": "base5-49",
+                "name": "Abra",
+                "rarity": "Common",
+                "count": 2
+            },
+            {
+                "id": "base4-46",
+                "name": "Kadabra",
+                "rarity": "Uncommon",
+                "count": 1
+            },
+            {
+                "id": "base5-39",
+            

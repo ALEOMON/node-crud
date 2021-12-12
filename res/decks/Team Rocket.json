@@ -202,4 +202,22 @@
                 "count": 2
             },
             {
-     
+                "id": "base4-40",
+                "name": "Farfetch'd",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "base4-118",
+                "name": "Bill",
+                "rarity": "Common",
+                "count": 1
+            },
+            {
+                "id": "base4-120",
+                "name": "Gust of Wind",
+                "rarity": "Common",
+                "count": 1
+            },
+            {
+   

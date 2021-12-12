@@ -238,4 +238,20 @@
                 "count": 1
             },
             {
-                "i
+                "id": "base4-129",
+                "name": "Psychic Energy",
+                "count": 18
+            },
+            {
+                "id": "base4-127",
+                "name": "Grass Energy",
+                "count": 10
+            },
+            {
+                "id": "base5-81",
+                "name": "Full Heal Energy",
+                "count": 1
+            }
+        ]
+    }
+]

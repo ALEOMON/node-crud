@@ -1,0 +1,79 @@
+
+[
+    {
+        "id": "d-sm9-1",
+        "name": "Relentless Flame",
+        "types": [
+            "Fire"
+        ],
+        "cards": [
+            {
+                "id": "sm9-14",
+                "name": "Charizard",
+                "rarity": "Rare Holo",
+                "count": 1
+            },
+            {
+                "id": "sm9-14",
+                "name": "Charizard",
+                "rarity": "Rare",
+                "count": 1
+            },
+            {
+                "id": "sm9-13",
+                "name": "Charmeleon",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "sm9-12",
+                "name": "Charmander",
+                "rarity": "Common",
+                "count": 3
+            },
+            {
+                "id": "sm9-56",
+                "name": "Nidoqueen",
+                "rarity": "Rare",
+                "count": 2
+            },
+            {
+                "id": "sm9-55",
+                "name": "Nidorina",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "sm9-54",
+                "name": "Nidoran♀",
+                "rarity": "Common",
+                "count": 3
+            },
+            {
+                "id": "sm9-18",
+                "name": "Rapidash",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "sm9-17",
+                "name": "Ponyta",
+                "rarity": "Common",
+                "count": 3
+            },
+            {
+                "id": "sm9-127",
+                "name": "Farfetch'd",
+                "rarity": "Uncommon",
+                "count": 3
+            },
+            {
+                "id": "sm9-135",
+                "name": "Brock's Grit",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "sm7-127",
+                "name": "Copycat",
+                "rarity": "Uncommon",

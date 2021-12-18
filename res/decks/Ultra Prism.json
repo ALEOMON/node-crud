@@ -1,0 +1,24 @@
+
+[
+    {
+        "id": "d-sm5-1",
+        "name": "Mach Strike",
+        "types": [
+            "Fighting"
+        ],
+        "cards": [
+            {
+                "id": "sm5-99",
+                "name": "Garchomp",
+                "rarity": "Rare Holo",
+                "count": 1
+            },
+            {
+                "id": "sm5-99",
+                "name": "Garchomp",
+                "rarity": "Rare",
+                "count": 1
+            },
+            {
+                "id": "sm5-98",
+                "name": "Gabite",

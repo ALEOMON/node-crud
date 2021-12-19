@@ -200,3 +200,48 @@
                 "id": "sm7-130",
                 "name": "Fisherman",
                 "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "sm7-132",
+                "name": "Hau",
+                "rarity": "Uncommon",
+                "count": 4
+            },
+            {
+                "id": "sm5-125",
+                "name": "Lillie",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "sm5-126",
+                "name": "Looker",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "sm7-147",
+                "name": "Switch",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "sm10-189",
+                "name": "Welder",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "sm3-167",
+                "name": "Fire Energy",
+                "count": 15
+            },
+            {
+                "id": "sm1-162",
+                "name": "Psychic Energy",
+                "count": 5
+            }
+        ]
+    }
+]

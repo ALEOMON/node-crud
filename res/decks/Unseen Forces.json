@@ -1,0 +1,21 @@
+[
+    {
+        "id": "d-ex10-1",
+        "name": "Golden Sky",
+        "types": [
+            "Fire",
+            "Fighting"
+        ],
+        "cards": [
+            {
+                "id": "ex10-27",
+                "name": "Ho-Oh",
+                "rarity": "Rare Holo",
+                "count": 1
+            },
+            {
+                "id": "ex10-54",
+                "name": "Cyndaquil",
+                "rarity": "Common",
+                "count": 4
+       

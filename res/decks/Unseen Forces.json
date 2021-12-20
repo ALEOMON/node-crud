@@ -18,4 +18,24 @@
                 "name": "Cyndaquil",
                 "rarity": "Common",
                 "count": 4
-       
+            },
+            {
+                "id": "ex10-45",
+                "name": "Quilava",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "ex10-17",
+                "name": "Typhlosion",
+                "rarity": "Rare",
+                "count": 1
+            },
+            {
+                "id": "ex10-61",
+                "name": "Larvitar",
+                "rarity": "Common",
+                "count": 4
+            },
+            {
+           

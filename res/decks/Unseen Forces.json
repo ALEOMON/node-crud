@@ -108,4 +108,27 @@
                 "name": "Energy Search",
                 "rarity": "Common",
                 "count": 2
-         
+            },
+            {
+                "id": "ex9-102",
+                "name": "Fire Energy",
+                "count": 13
+            },
+            {
+                "id": "ex9-106",
+                "name": "Fighting Energy",
+                "count": 11
+            }
+        ]
+    },
+    {
+        "id": "d-ex10-2",
+        "name": "Silvery Ocean",
+        "types": [
+            "Grass",
+            "Psychic"
+        ],
+        "cards": [
+            {
+                "id": "ex10-29",
+                "na

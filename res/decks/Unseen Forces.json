@@ -131,4 +131,23 @@
         "cards": [
             {
                 "id": "ex10-29",
-                "na
+                "name": "Lugia",
+                "rarity": "Rare Holo",
+                "count": 1
+            },
+            {
+                "id": "ex10-51",
+                "name": "Chikorita",
+                "rarity": "Common",
+                "count": 4
+            },
+            {
+                "id": "ex10-35",
+                "name": "Bayleef",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "ex10-9",
+                "name": "Meganium",
+                "rari

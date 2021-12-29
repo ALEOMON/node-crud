@@ -150,4 +150,23 @@
             {
                 "id": "ex10-9",
                 "name": "Meganium",
-                "rari
+                "rarity": "Rare",
+                "count": 1
+            },
+            {
+                "id": "ex10-74",
+                "name": "Snubbull",
+                "rarity": "Common",
+                "count": 4
+            },
+            {
+                "id": "ex10-39",
+                "name": "Granbull",
+                "rarity": "Uncommon",
+                "count": 1
+            },
+            {
+                "id": "ex10-63",
+                "name": "Natu",
+                "rarity": "Common",
+    

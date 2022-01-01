@@ -189,4 +189,22 @@
                 "rarity": "Common",
                 "count": 3
             },
-          
+            {
+                "id": "ex10-32",
+                "name": "Stantler",
+                "rarity": "Rare",
+                "count": 1
+            },
+            {
+                "id": "ex10-89",
+                "name": "Professor Elm's Training Method",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "ex10-90",
+                "name": "Protective Orb",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+   

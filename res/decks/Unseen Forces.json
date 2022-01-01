@@ -207,4 +207,23 @@
                 "rarity": "Uncommon",
                 "count": 2
             },
-   
+            {
+                "id": "ex10-85",
+                "name": "Fluffy Berry",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "ex10-94",
+                "name": "Energy Search",
+                "rarity": "Common",
+                "count": 2
+            },
+            {
+                "id": "ex10-95",
+                "name": "Potion",
+                "rarity": "Common",
+                "count": 2
+            },
+            {
+         

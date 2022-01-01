@@ -169,4 +169,24 @@
                 "id": "ex10-63",
                 "name": "Natu",
                 "rarity": "Common",
-    
+                "count": 4
+            },
+            {
+                "id": "ex10-49",
+                "name": "Xatu",
+                "rarity": "Uncommon",
+                "count": 1
+            },
+            {
+                "id": "ex10-64",
+                "name": "Oddish",
+                "rarity": "Common",
+                "count": 3
+            },
+            {
+                "id": "ex10-75",
+                "name": "Spinarak",
+                "rarity": "Common",
+                "count": 3
+            },
+          

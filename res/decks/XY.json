@@ -1,0 +1,62 @@
+
+[
+    {
+        "id": "d-xy1-1",
+        "name": "Resilient Life",
+        "types": [
+            "Fairy",
+            "Psychic"
+        ],
+        "cards": [
+            {
+                "id": "xy1-96",
+                "name": "Xerneas",
+                "rarity": "Rare Holo",
+                "count": 1
+            },
+            {
+                "id": "xy1-96",
+                "name": "Xerneas",
+                "rarity": "Rare",
+                "count": 1
+            },
+            {
+                "id": "xy1-93",
+                "name": "Aromatisse",
+                "rarity": "Rare",
+                "count": 1
+            },
+            {
+                "id": "xy1-92",
+                "name": "Spritzee",
+                "rarity": "Common",
+                "count": 2
+            },
+            {
+                "id": "xy1-95",
+                "name": "Slurpuff",
+                "rarity": "Rare",
+                "count": 1
+            },
+            {
+                "id": "xy1-94",
+                "name": "Swirlix",
+                "rarity": "Common",
+                "count": 2
+            },
+            {
+                "id": "xy1-91",
+                "name": "Mr. Mime",
+                "rarity": "Uncommon",
+                "count": 2
+            },
+            {
+                "id": "xy1-88",
+                "name": "Jigglypuff",
+                "rarity": "Common",
+                "count": 2
+            },
+            {
+                "id": "xy1-53",
+                "name": "Scolipede",
+                "rarity": "Rare",

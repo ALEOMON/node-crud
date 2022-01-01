@@ -226,4 +226,21 @@
                 "count": 2
             },
             {
-         
+                "id": "ex10-86",
+                "name": "Mary's Request",
+                "rarity": "Uncommon",
+                "count": 1
+            },
+            {
+                "id": "ex9-101",
+                "name": "Grass Energy",
+                "count": 18
+            },
+            {
+                "id": "ex9-105",
+                "name": "Psychic Energy",
+                "count": 6
+            }
+        ]
+    }
+]

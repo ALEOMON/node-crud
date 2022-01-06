@@ -30,4 +30,19 @@ void DebugDrawer::render(const glm::mat4 &view_projection_matrix) {
   for (auto &line : this->line_queue) {
     for (int i = 0; i < 2; i++) {
       colors.emplace_back(line.color.x);
- 
+      colors.emplace_back(line.color.y);
+      colors.emplace_back(line.color.z);
+    }
+  }
+
+  unsigned int color_buffer;
+  glGenBuffers(1, &color_buffer);
+  glBindBuffer(GL_ARRAY_BUFFER, color_buffer);
+  glBufferData(GL_ARRAY_BUFFER, sizeof(float) * colors.size(), colors.data(), GL_STATIC_DRAW);
+
+  GLuint vao;
+  glGenVertexArrays(1, &vao);
+  glBindVertexArray(vao);
+
+  glBindBuffer(GL_ARRAY_BUFFER, pos_buffer);
+  glVertexAttribPointer(0, 3, 

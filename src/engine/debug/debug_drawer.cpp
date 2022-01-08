@@ -45,4 +45,21 @@ void DebugDrawer::render(const glm::mat4 &view_projection_matrix) {
   glBindVertexArray(vao);
 
   glBindBuffer(GL_ARRAY_BUFFER, pos_buffer);
-  glVertexAttribPointer(0, 3, 
+  glVertexAttribPointer(0, 3, GL_FLOAT, false, 0, 0);
+  glEnableVertexAttribArray(0);
+
+	glBindBuffer(GL_ARRAY_BUFFER, color_buffer);
+	glVertexAttribPointer(1, 3, GL_FLOAT, false, 0, 0);
+  glEnableVertexAttribArray(1);
+
+  glBindVertexArray(vao);
+
+  this->shader.set_uniform("modelViewProjectionMatrix", &view_projection_matrix[0].x);
+
+  glLineWidth(this->line_width);
+  glDrawArrays(GL_LINES, 0, 6 * this->line_queue.size()); // NOTE: 6 floats per line
+  this->line_queue.clear();
+}
+
+void DebugDrawer::draw_line(glm::vec3 from, glm::vec3 to) {
+ 

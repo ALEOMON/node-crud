@@ -62,4 +62,13 @@ void DebugDrawer::render(const glm::mat4 &view_projection_matrix) {
 }
 
 void DebugDrawer::draw_line(glm::vec3 from, glm::vec3 to) {
- 
+  this->line_queue.emplace_back(from, to);
+}
+
+void DebugDrawer::draw_transform(geometry::Transform transform) {
+  this->line_queue.emplace_back(transform.position, transform.position + transform.right()  , glm::vec3(1.0f, 0.0f, 0.0f));
+  this->line_queue.emplace_back(transform.position, transform.position + transform.up()     , glm::vec3(0.0f, 1.0f, 0.0f));
+  this->line_queue.emplace_back(transform.position, transform.position + transform.forward(), glm::vec3(0.0f, 0.0f, 1.0f));
+}
+
+void DebugDrawer::draw_rectangle

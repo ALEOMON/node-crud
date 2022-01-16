@@ -8,4 +8,15 @@
 
 using namespace open_pokemon_tcg::engine::geometry;
 
-Transform::Transform
+Transform::Transform() : Transform(glm::vec3(0.0f)) {}
+Transform::Transform(glm::vec3 position) : Transform(position, glm::vec3(0.0f)) {}
+Transform::Transform(glm::vec3 position, glm::vec3 rotation) : Transform(position, rotation, glm::vec3(1.0f)) {}
+Transform::Transform(glm::vec3 position, glm::vec3 rotation, glm::vec3 scale) {
+  this->position = position;
+  this->rotation = rotation;
+  this->scale = scale;
+}
+
+Transform::~Transform() {}
+
+void Transform::set_rotation(float yaw,

@@ -30,4 +30,23 @@ void Transform::flip_rotation() {
   // NOTE: we negate each angle due to rotation_matrix() negating the angles.
   float yaw   = -std::atan2(m[2][0], m[2][2]);
   float pitch = -std::asin(-m[2][1]);
-  float roll  = -std::atan2(m[0
+  float roll  = -std::atan2(m[0][1], m[1][1]);
+
+  set_rotation(yaw, pitch, roll);
+}
+
+Transform Transform::operator+(const Transform &other) const {
+  return Transform(this->position + other.position, this->rotation + other.rotation, this->scale + other.scale);
+}
+
+glm::mat4 Transform::matrix() const {
+  glm::mat4 m = glm::mat4(1.0f);
+
+  // Scale -> Rotate -> Translate
+  m = glm::scale(m, this->scale);
+  m = rotation_matrix() * m;
+  m = glm::translate(glm::mat4(1.0f), this->position) * m;
+
+  return m;
+}
+

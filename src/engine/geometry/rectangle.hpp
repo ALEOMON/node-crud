@@ -20,4 +20,20 @@ namespace open_pokemon_tcg::engine::geometry {
     glm::vec3 topleft() const;
     glm::vec3 topright() const;
     glm::vec3 botleft() const;
-    glm::vec3 botr
+    glm::vec3 botright() const;
+
+  private:
+    Transform _transform;
+    float _width;
+    float _height;
+
+    glm::vec3 _topleft;
+    glm::vec3 _topright;
+    glm::vec3 _botleft;
+    glm::vec3 _botright;
+
+    // Mutators
+    void update_corners();
+
+  };
+}

@@ -19,4 +19,15 @@ Transform::Transform(glm::vec3 position, glm::vec3 rotation, glm::vec3 scale) {
 
 Transform::~Transform() {}
 
-void Transform::set_rotation(float yaw,
+void Transform::set_rotation(float yaw, float pitch, float roll) {
+  this->rotation = glm::vec3(pitch, yaw, roll);
+}
+
+void Transform::flip_rotation() {
+  glm::mat4 m = glm::rotate(rotation_matrix(), glm::pi<float>(), glm::vec3(this->world_up));
+
+  // See: https://github.com/jzrake/glm/blob/d3313421c664db5bd1b672d39ba3faec0d430117/glm/gtx/euler_angles.inl#L213
+  // NOTE: we negate each angle due to rotation_matrix() negating the angles.
+  float yaw   = -std::atan2(m[2][0], m[2][2]);
+  float pitch = -std::asin(-m[2][1]);
+  float roll  = -std::atan2(m[0

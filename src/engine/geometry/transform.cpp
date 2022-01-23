@@ -50,3 +50,20 @@ glm::mat4 Transform::matrix() const {
   return m;
 }
 
+glm::vec3 Transform::forward() const {
+  return rotation_matrix() * this->world_forward;
+}
+
+glm::vec3 Transform::up() const {
+  return rotation_matrix() * this->world_up;
+}
+
+glm::vec3 Transform::right() const {
+  return rotation_matrix() * this->world_right;
+}
+
+// https://www.wikiwand.com/en/Rotation_matrix
+// https://www.wikiwand.com/en/Euler_angles
+// https://www.wikiwand.com/simple/Pitch,_yaw,_and_roll
+//
+// Here we apply y-rotation (yaw), then x-rotation (pitch), and finally z-rotation (ro

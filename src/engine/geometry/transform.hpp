@@ -26,3 +26,20 @@ namespace open_pokemon_tcg::engine::geometry {
     Transform operator+(const Transform &other) const;
 
     glm::mat4 matrix() const;
+    glm::vec3 forward() const;
+    glm::vec3 up() const;
+    glm::vec3 right() const;
+
+    float yaw() const { return rotation.y; };
+    float pitch() const { return rotation.x; };
+    float roll() const { return rotation.z; };
+
+    glm::vec3 position;
+    glm::vec3 rotation;
+    glm::vec3 scale;
+
+  private:
+    // Accessors
+    glm::mat4 rotation_matrix() const;
+  };
+}

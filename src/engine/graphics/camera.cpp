@@ -41,4 +41,22 @@ void Camera::move(Direction move_dir) {
     displacement_dir = this->transform.up();
     break;
   case Direction::DOWN:
-    displacement_dir 
+    displacement_dir = -this->transform.up();
+    break;
+  default:
+    LOG_ERROR("Direction type not supported: " + std::to_string(move_dir));
+  }
+  this->transform.position += this->movement_speed * displacement_dir;
+}
+
+// void Camera::look_at(glm::vec3 target) {
+//   this->orientation = Orientation(target - this->pos);
+// }
+
+void Camera::set_zoom(float zoom_level) {
+  // FIXME: name constant
+  this->perspective.fov = 45.0f - zoom_level;
+}
+
+void Camera::lookat_mouse(float mouse_xpos, float mouse_ypos) {
+  if (firstMou

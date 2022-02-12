@@ -24,4 +24,21 @@ Camera::~Camera() = default;
 
 void Camera::move(Direction move_dir) {
   glm::vec3 displacement_dir;
-  sw
+  switch (move_dir) {
+  case Direction::FORWARD:
+    displacement_dir = this->transform.forward();
+    break;
+  case Direction::BACKWARD:
+    displacement_dir = -this->transform.forward();
+    break;
+  case Direction::RIGHT:
+    displacement_dir = this->transform.right();
+    break;
+  case Direction::LEFT:
+    displacement_dir = -this->transform.right();
+    break;
+  case Direction::UP:
+    displacement_dir = this->transform.up();
+    break;
+  case Direction::DOWN:
+    displacement_dir 

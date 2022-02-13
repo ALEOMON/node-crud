@@ -84,3 +84,15 @@ void Camera::lookat_mouse(float mouse_xpos, float mouse_ypos) {
 }
 
 glm::mat4 Camera::view_matrix() const {
+  glm::mat3 base_vectors_in_world_space(this->transform.right(), this->transform.up(), -this->transform.forward());
+
+  // NOTE: transpose = inverse, since the matrix is an orthonormal base.
+  glm::mat3 inverse_base = glm::transpose(base_vectors_in_world_space);
+
+  return glm::mat4(inverse_base) * glm::translate(-this->transform.position);
+}
+
+glm::mat4 Camera::projection_matrix(ProjectionType projection_type) const {
+  switch (projection_type) {
+  case ProjectionType::PERSPECTIVE:
+    return glm::persp

@@ -59,4 +59,28 @@ void Camera::set_zoom(float zoom_level) {
 }
 
 void Camera::lookat_mouse(float mouse_xpos, float mouse_ypos) {
-  if (firstMou
+  if (firstMouse)
+    {
+      lastX = mouse_xpos;
+      lastY = mouse_ypos;
+      firstMouse = false;
+    }
+
+  float xoffset = mouse_xpos - lastX;
+  float yoffset = mouse_ypos - lastY;
+  lastX = mouse_xpos;
+  lastY = mouse_ypos;
+
+  float sensitivity = 0.003f;
+  xoffset *= sensitivity;
+  yoffset *= sensitivity;
+
+  yaw   -= xoffset;
+  pitch += yoffset;
+
+  pitch = std::clamp(pitch, -glm::half_pi<double>(), glm::half_pi<double>());
+
+  this->transform.set_rotation(yaw, pitch, 0.0f);
+}
+
+glm::mat4 Camera::view_matrix() const {

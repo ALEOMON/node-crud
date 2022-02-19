@@ -111,4 +111,7 @@ glm::mat4 Camera::projection_matrix(ProjectionType projection_type) const {
       this->orthographic.far
     );
   default:
-    LOG_ERROR("Projection type not supported: " + std::to_string(proj
+    LOG_ERROR("Projection type not supported: " + std::to_string(projection_type));
+    assert(false);
+  }
+}

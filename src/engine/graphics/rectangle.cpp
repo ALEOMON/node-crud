@@ -39,4 +39,21 @@ Rectangle::Rectangle(geometry::Rectangle rectangle, const Texture *texture) : _t
       1.0f, 1.0f, // (u,v) for v2
       0.0f, 1.0f, // (u,v) for v3
     };
-    glBuffer
+    glBufferData(GL_ARRAY_BUFFER, sizeof(float) * uv_coords.size(), uv_coords.data(), GL_STATIC_DRAW);
+  }
+
+  GLuint vao;
+	glGenVertexArrays(1, &vao);
+	glBindVertexArray(vao);
+
+  unsigned int index_buffer;
+  const int indices[] = {
+    0, 1, 2, // Triangle 1
+    2, 3, 0, // Triangle 2
+  };
+
+	glGenBuffers(1, &index_buffer);
+	glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, index_buffer);
+  glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indices), indices, GL_STATIC_DRAW);
+
+  // Assign position attribute of vertex shader

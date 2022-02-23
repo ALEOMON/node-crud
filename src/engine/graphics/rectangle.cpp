@@ -57,3 +57,20 @@ Rectangle::Rectangle(geometry::Rectangle rectangle, const Texture *texture) : _t
   glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indices), indices, GL_STATIC_DRAW);
 
   // Assign position attribute of vertex shader
+  glBindBuffer(GL_ARRAY_BUFFER, pos_buffer);
+  glVertexAttribPointer(0, 3, GL_FLOAT, false, 0, 0);
+  glEnableVertexAttribArray(0);
+
+  if (_texture != nullptr) {
+    glBindBuffer(GL_ARRAY_BUFFER, uv_buffer);
+    glVertexAttribPointer(1, 2, GL_FLOAT, false, 0, 0);
+    glEnableVertexAttribArray(1);
+  }
+
+  _vao = vao;
+}
+
+void Rectangle::render(const glm::mat4 &view_projection_matrix) {
+  _shader->use();
+
+  glm::mat4 model_view_project

@@ -73,4 +73,15 @@ Rectangle::Rectangle(geometry::Rectangle rectangle, const Texture *texture) : _t
 void Rectangle::render(const glm::mat4 &view_projection_matrix) {
   _shader->use();
 
-  glm::mat4 model_view_project
+  glm::mat4 model_view_projection = view_projection_matrix * this->transform.matrix();
+  _shader->set_uniform("mvp_matrix", &model_view_projection[0].x);
+  // _shader->set_uniform("modelViewProjectionMatrix", &model_view_projection[0].x);
+
+  if (_texture != nullptr) {
+    glActiveTexture(GL_TEXTURE0);
+    glBindTexture(GL_TEXTURE_2D, _texture->id());
+  }
+
+  glBindVertexArray(_vao);
+  glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
+}

@@ -48,3 +48,17 @@ GLuint Shader::load_shader_file(std::string shader_path, GLenum shader_type) {
   std::string full_shader_path = res_path + shader_path;
 
 	std::ifstream file(full_shader_path);
+	std::string src((std::istreambuf_iterator<char>(file)), std::istreambuf_iterator<char>());
+
+	const char* raw_shader = src.c_str();
+	glShaderSource(shader, 1, &raw_shader, nullptr);
+
+	glCompileShader(shader);
+
+	int ok = 0;
+	glGetShaderiv(shader, GL_COMPILE_STATUS, &ok);
+	if(!ok)
+    LOG_ERROR("Could not compile shader: " + shader_path);
+
+  return _cache[shader_path] = shader;
+}

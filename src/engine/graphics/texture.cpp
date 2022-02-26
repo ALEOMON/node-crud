@@ -42,4 +42,11 @@ Texture::Texture(std::string img_path) {
   glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR);
   glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
 
-  // Max samples (EXT stands for 
+  // Max samples (EXT stands for extension, and thus not from OpenGL specification)
+  float anisotropy = 16.0f;
+  glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_MAX_ANISOTROPY_EXT, anisotropy);
+
+  _cache[img_path] = _texture;
+}
+
+Texture::~Texture() {}

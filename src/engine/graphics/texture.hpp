@@ -13,4 +13,6 @@ namespace open_pokemon_tcg::engine::graphics {
     // Accessors
     GLuint id() const { return _texture; }
   private:
-    GLu
+    GLuint _texture;
+  };
+}

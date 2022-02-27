@@ -16,4 +16,14 @@ Window::Window(int width, int height, const char* title) {
     LOG_CRITICAL("Failed to init glfw.");
   }
 
-  GLFWwindow* window = glfwCreateWindow
+  GLFWwindow* window = glfwCreateWindow(width, height, title, NULL, NULL);
+  if (!window) {
+    glfwTerminate();
+    LOG_CRITICAL("Failed to create glfw window.");
+  }
+
+  glfwMakeContextCurrent(window);
+  glfwSetWindowUserPointer(window, reinterpret_cast<void *>(this));
+
+  glfwSetKeyCallback(window, [](GLFWwindow* window, [[maybe_unused]] int key, [[maybe_unused]] int scancode, int action, [[maybe_unused]] int mods) {
+    Window* w = reinterpret_cast<Window*>(glfwGetWindowUserPointer(windo

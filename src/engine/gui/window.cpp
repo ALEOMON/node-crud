@@ -26,4 +26,15 @@ Window::Window(int width, int height, const char* title) {
   glfwSetWindowUserPointer(window, reinterpret_cast<void *>(this));
 
   glfwSetKeyCallback(window, [](GLFWwindow* window, [[maybe_unused]] int key, [[maybe_unused]] int scancode, int action, [[maybe_unused]] int mods) {
-    Window* w = reinterpret_cast<Window*>(glfwGetWindowUserPointer(windo
+    Window* w = reinterpret_cast<Window*>(glfwGetWindowUserPointer(window));
+    for (std::function<void(GLFWwindow*, int)> c : w->on_key_callbacks)
+      c(window, action);
+  });
+
+  glfwSetMouseButtonCallback(window, [](GLFWwindow* window, int button, int action, [[maybe_unused]] int mods) {
+    Window* w = reinterpret_cast<Window*>(glfwGetWindowUserPointer(window));
+    for (std::function<void(GLFWwindow*, int, int)> c : w->on_mouse_click_callbacks)
+      c(window, button, action);
+  });
+
+  glfwSetCursorPosCallback(window, [](GLFWwindow* 

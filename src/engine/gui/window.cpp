@@ -37,4 +37,12 @@ Window::Window(int width, int height, const char* title) {
       c(window, button, action);
   });
 
-  glfwSetCursorPosCallback(window, [](GLFWwindow* 
+  glfwSetCursorPosCallback(window, [](GLFWwindow* window, double xpos, double ypos) {
+    Window* w = reinterpret_cast<Window*>(glfwGetWindowUserPointer(window));
+    for (std::function<void(GLFWwindow*, float, float)> c : w->on_mouse_move_callbacks)
+      c(window, xpos, ypos);
+  });
+
+  glfwSetScrollCallback(window, [](GLFWwindow* window, double xoffset, double yoffset) {
+    Window* w = reinterpret_cast<Window*>(glfwGetWindowUserPointer(window));
+    for (std::function<void(GLFWwindow*, float, float)> c : w-

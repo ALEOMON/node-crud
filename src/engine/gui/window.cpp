@@ -45,4 +45,28 @@ Window::Window(int width, int height, const char* title) {
 
   glfwSetScrollCallback(window, [](GLFWwindow* window, double xoffset, double yoffset) {
     Window* w = reinterpret_cast<Window*>(glfwGetWindowUserPointer(window));
-    for (std::function<void(GLFWwindow*, float, float)> c : w-
+    for (std::function<void(GLFWwindow*, float, float)> c : w->on_mouse_scroll_callbacks)
+      c(window, xoffset, yoffset);
+  });
+
+  this->window = window;
+}
+
+void Window::init_gui() {
+  IMGUI_CHECKVERSION();
+  ImGui::CreateContext();
+  ImGuiIO& io = ImGui::GetIO(); (void)io;
+  ImGui::StyleColorsDark();
+
+  std::string glsl_version = "#version 420";
+  ImGui_ImplGlfw_InitForOpenGL(this->window, true);
+  ImGui_ImplOpenGL3_Init(glsl_version.c_str());
+}
+
+Window::~Window() {
+  glfwTerminate();
+}
+
+void Window::update() {
+  glfwSwapBuffers(window);
+  glfwPollEvents(

@@ -69,4 +69,21 @@ Window::~Window() {
 
 void Window::update() {
   glfwSwapBuffers(window);
-  glfwPollEvents(
+  glfwPollEvents();
+}
+
+void Window::clear_screen() {
+  glClearColor(0.2f, 0.2f, 0.2f, 1.0);
+  glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+}
+
+bool Window::is_closing() {
+  return glfwWindowShouldClose(this->window);
+}
+
+void Window::add_on_key_callback(std::function<void(GLFWwindow*, int)> callback) {
+  this->on_key_callbacks.push_back(callback);
+}
+
+void Window::add_on_mouse_click_callback(std::function<void(GLFWwindow*, int, int)> callback) {
+  this->on_mouse_click_ca

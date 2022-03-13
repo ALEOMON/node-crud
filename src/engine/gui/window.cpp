@@ -86,4 +86,13 @@ void Window::add_on_key_callback(std::function<void(GLFWwindow*, int)> callback)
 }
 
 void Window::add_on_mouse_click_callback(std::function<void(GLFWwindow*, int, int)> callback) {
-  this->on_mouse_click_ca
+  this->on_mouse_click_callbacks.push_back(callback);
+}
+
+void Window::add_on_mouse_move_callback(std::function<void(GLFWwindow*, float, float)> callback) {
+  this->on_mouse_move_callbacks.push_back(callback);
+}
+
+void Window::add_on_mouse_scroll_callback(std::function<void(GLFWwindow*, float, float)> callback) {
+  this->on_mouse_scroll_callbacks.push_back(callback);
+}

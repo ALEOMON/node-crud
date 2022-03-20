@@ -36,4 +36,22 @@ int main() {
   srand(time(NULL));
 
   engine::debug::Logger::set_profile(engine::debug::Logger::Profile::DEBUG);
-  LOG_INFO("Progra
+  LOG_INFO("Program started.");
+  auto start = std::chrono::system_clock::now();
+
+  engine::gui::Window *window;
+  try {
+    window = new engine::gui::Window(1920/2, 1080-30, "OpenPokemonTCG");
+  } catch(const std::exception& e) {
+    LOG_ERROR(e.what());
+    return -1;
+  }
+
+  int status = gladLoadGLLoader((GLADloadproc) glfwGetProcAddress);
+  if (!status) {
+    LOG_ERROR("Failed to init GLAD");
+    glfwTerminate();
+    return -1;
+  }
+
+  LOG_INFO("OpenGL version: " + st

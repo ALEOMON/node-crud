@@ -180,3 +180,52 @@ std::unique_ptr<model::IEnergyCard> PokemonTcgApi::parse_energy_card_data(nlohma
 
   if (data["subtype"] != "Basic")
     LOG_ERROR("Only basic energy cards are supported right now.");
+
+  std::string energy_name = name.substr(0, name.length() - 7); // Remove " Energy" suffix
+  return std::make_unique<model::BasicEnergy>(id, name, to_energy_type(energy_name));
+}
+
+std::unique_ptr<model::ItemCard> PokemonTcgApi::parse_item_card_data(nlohmann::json data) const {
+  model::CardId id = data["id"].get<std::string>();
+  model::CardName name = data["name"].get<std::string>();
+  return std::unique_ptr<model::ItemCard>(new model::ItemCard(id, name, CardEffectDB::load(id)));
+}
+
+std::unique_ptr<model::SupporterCard> PokemonTcgApi::parse_supporter_card_data(nlohmann::json data) const {
+  model::CardId id = data["id"].get<std::string>();
+  model::CardName name = data["name"].get<std::string>();
+  return std::unique_ptr<model::SupporterCard>(new model::SupporterCard(id, name, CardEffectDB::load(id)));
+}
+
+std::unique_ptr<model::StadiumCard> PokemonTcgApi::parse_stadium_card_data(nlohmann::json data) const {
+  model::CardId id = data["id"].get<std::string>();
+  model::CardName name = data["name"].get<std::string>();
+  return std::unique_ptr<model::StadiumCard>(new model::StadiumCard(id, name, CardEffectDB::load(id)));
+}
+
+model::EnergyType PokemonTcgApi::to_energy_type(std::string name) const {
+  if (name == "Grass")
+    return model::EnergyType::GRASS;
+  else if (name == "Fire")
+    return model::EnergyType::FIRE;
+  else if (name == "Water")
+    return model::EnergyType::WATER;
+  else if (name == "Lightning")
+    return model::EnergyType::LIGHTNING;
+  else if (name == "Psychic")
+    return model::EnergyType::PSYCHIC;
+  else if (name == "Fighting")
+    return model::EnergyType::FIGHTING;
+  else if (name == "Darkness")
+    return model::EnergyType::DARKNESS;
+  else if (name == "Metal")
+    return model::EnergyType::METAL;
+  else if (name == "Fairy")
+    return model::EnergyType::FAIRY;
+  else if (name == "Dragon")
+    return model::EnergyType::DRAGON;
+  else if (name == "Colorless")
+    return model::EnergyType::COLORLESS;
+  else
+    LOG_ERROR("Could not convert " + name + " to an energy type.");
+}

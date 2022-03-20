@@ -12,3 +12,28 @@
 #include <imgui.h>
 #include <imgui_impl_glfw.h>
 #include <imgui_impl_opengl3.h>
+
+#include <chrono>
+#include <cstdlib>
+#include <ctime>
+#include <string>
+
+
+using namespace open_pokemon_tcg;
+
+void gui(engine::scene::IScene* scene) {
+  ImGui_ImplOpenGL3_NewFrame();
+  ImGui_ImplGlfw_NewFrame();
+  ImGui::NewFrame();
+
+  scene->gui();
+
+  ImGui::Render();
+  ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
+}
+
+int main() {
+  srand(time(NULL));
+
+  engine::debug::Logger::set_profile(engine::debug::Logger::Profile::DEBUG);
+  LOG_INFO("Progra

@@ -54,4 +54,12 @@ int main() {
     return -1;
   }
 
-  LOG_INFO("OpenGL version: " + st
+  LOG_INFO("OpenGL version: " + std::string((const char*)glGetString(GL_VERSION)));
+  LOG_INFO("OpenGL renderer: " + std::string((const char*)glGetString(GL_RENDERER)));
+  LOG_INFO("OpenGL vendor: " + std::string((const char*)glGetString(GL_VENDOR)));
+
+  CHECK_GL_ERROR();
+  engine::scene::IScene* scene = new game::scenes::Duel(window);
+  // engine::scene::IScene* scene = new game::scenes::CardTransform(window);
+  // engine::scene::IScene* scene = new game::scenes::DeckLoading(window);
+  // engine::sce

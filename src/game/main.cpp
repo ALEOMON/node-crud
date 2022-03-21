@@ -62,4 +62,27 @@ int main() {
   engine::scene::IScene* scene = new game::scenes::Duel(window);
   // engine::scene::IScene* scene = new game::scenes::CardTransform(window);
   // engine::scene::IScene* scene = new game::scenes::DeckLoading(window);
-  // engine::sce
+  // engine::scene::IScene* scene = new game::scenes::PlaymatSlots(window);
+  // engine::scene::IScene* scene = new game::scenes::Model(window);
+
+  CHECK_GL_ERROR();
+
+  glEnable(GL_DEPTH_TEST);
+  glEnable(GL_CULL_FACE);
+
+  glEnable(GL_BLEND);
+  glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+
+  window->init_gui();
+
+  CHECK_GL_ERROR();
+  while (!window->is_closing()) {
+    window->clear_screen();
+
+    CHECK_GL_ERROR();
+    scene->update();
+    CHECK_GL_ERROR();
+    scene->render();
+    CHECK_GL_ERROR();
+
+    glUseProgram(

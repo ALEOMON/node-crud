@@ -85,4 +85,16 @@ int main() {
     scene->render();
     CHECK_GL_ERROR();
 
-    glUseProgram(
+    glUseProgram(0);
+    gui(scene);
+
+    window->update();
+  }
+
+  auto end = std::chrono::system_clock::now();
+  LOG_INFO("Program terminated.");
+
+  std::chrono::duration<double> elapsed_seconds = end - start;
+  LOG_INFO("Uptime: " + std::to_string(elapsed_seconds.count()) + " seconds.");
+}
+

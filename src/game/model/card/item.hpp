@@ -21,4 +21,9 @@ namespace open_pokemon_tcg::game::model {
 
   private:
     CardId _id;
-    Ca
+    CardId _name;
+    mutable std::unique_ptr<ICardEffect> _effect;
+
+  };
+
+}

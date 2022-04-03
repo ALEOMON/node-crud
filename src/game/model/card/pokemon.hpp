@@ -37,4 +37,17 @@ namespace open_pokemon_tcg::game::model {
     void heal(unsigned int amount);
     void attach_energy(BasicEnergy& energy_card);
 
-    BasicEnergy& detach_en
+    BasicEnergy& detach_energy(unsigned int index);
+    BasicEnergy& detach_energy(const BasicEnergy& energy_card);
+
+    // Accessors
+    void on_energy_attached(std::function<void (const BasicEnergy& energy_card)> callback) const;
+    void on_energy_detached(std::function<void (unsigned int index)> callback) const;
+
+    std::string to_string() const override;
+    CardId id() const override;
+    CardName name() const override;
+
+    unsigned int max_hp() const;
+    unsigned int hp() const;
+

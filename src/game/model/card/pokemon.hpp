@@ -17,4 +17,24 @@ namespace open_pokemon_tcg::game::model {
     CardId id;
     CardName name;
 
-  
+    bool is_gx;
+    bool is_alolan;
+    EvolutionStage stage;
+    CardName evolves_from;
+    int hp;
+    EnergyType energy_type;
+    EnergyAmount retreat_cost;
+    std::vector<Attack*> attacks;
+  };
+
+  class PokemonCard : public ICard {
+  public:
+    PokemonCard(PokemonCardData data);
+    ~PokemonCard();
+
+    // Mutators
+    void take_damage(unsigned int amount, EnergyType type);
+    void heal(unsigned int amount);
+    void attach_energy(BasicEnergy& energy_card);
+
+    BasicEnergy& detach_en

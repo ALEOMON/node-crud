@@ -51,3 +51,18 @@ namespace open_pokemon_tcg::game::model {
     unsigned int max_hp() const;
     unsigned int hp() const;
 
+    const PokemonCardData& data() const;
+    const std::vector<std::reference_wrapper<BasicEnergy>>& attached_energy() const;
+    bool can_use_attack(unsigned int attack_index) const;
+
+  private:
+    mutable engine::event::CallbackList<void (const BasicEnergy& energy_card)> _on_energy_attached;
+    mutable engine::event::CallbackList<void (unsigned int index)> _on_energy_detached;
+
+    PokemonCardData _data;
+    int _hp;
+    std::vector<std::reference_wrapper<BasicEnergy>> _attached_energy;
+
+  };
+
+}

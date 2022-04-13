@@ -1,3 +1,4 @@
+
 #pragma once
 
 #include "card.hpp"
@@ -8,10 +9,10 @@
 
 namespace open_pokemon_tcg::game::model {
 
-  class StadiumCard : public ICard {
+  class SupporterCard : public ICard {
   public:
-    StadiumCard(CardId id, CardName name, std::unique_ptr<ICardEffect> effect);
-    ~StadiumCard();
+    SupporterCard(CardId id, CardName name, std::unique_ptr<ICardEffect> effect);
+    ~SupporterCard();
 
     CardId id() const override;
     CardName name() const override;

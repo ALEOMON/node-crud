@@ -18,4 +18,7 @@ IAttackEffect* Attack::effect() const {
   return _effect.get();
 }
 
-// A
+// Accessors
+std::string Attack::name() const { return _name; }
+unsigned int Attack::damage() const { return _damage; }
+EnergyAmount Attack::cost() const { return _cost; }

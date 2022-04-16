@@ -28,4 +28,5 @@ void DeckPile::shuffle() {
   random_shuffle(_cards.begin(), _cards.end());
 }
 
-unsigned i
+unsigned int DeckPile::size() const {return _cards.size(); }
+const std::vector<std::reference_wrapper<ICard>>& DeckPile::cards() const { return _cards; }

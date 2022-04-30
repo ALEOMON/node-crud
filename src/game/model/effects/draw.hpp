@@ -16,4 +16,7 @@ namespace open_pokemon_tcg::game::model {
     bool can_activate(Player &self, Player &opponent) const override;
 
   private:
-    unsigned int _a
+    unsigned int _amount;
+  };
+
+}

@@ -10,4 +10,15 @@ namespace open_pokemon_tcg::game::model {
     ~Heal();
 
     // Mutators
-    void activate(Player &self, Player &opponent, std::vector<std::reference_wrapper<const ICard>> targets) o
+    void activate(Player &self, Player &opponent, std::vector<std::reference_wrapper<const ICard>> targets) override;
+
+    // Accessors
+    std::vector<CardEffectTarget> required_targets() const override;
+
+  private:
+    CardEffectTarget _scope;
+    unsigned int _heal_amount;
+
+  };
+
+}

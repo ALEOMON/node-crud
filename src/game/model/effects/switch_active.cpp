@@ -19,4 +19,9 @@ void SwitchActive::activate(Player &self, Player &opponent, std::vector<std::ref
   else if (_scope == ENEMY_BENCH_POKEMON)
     opponent.switch_active(*pokemon_target);
   else
-    LOG_ERROR("Scope is wrong. Check construction of object
+    LOG_ERROR("Scope is wrong. Check construction of object.");
+}
+
+std::vector<CardEffectTarget> SwitchActive::required_targets() const {
+  return { _scope };
+}

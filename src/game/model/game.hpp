@@ -23,4 +23,18 @@ namespace open_pokemon_tcg::game::model {
     void end_turn();
 
     // Accessors
-    void on_game_over(std::fu
+    void on_game_over(std::function<void ()> callback) const;
+    unsigned int turn() const;
+    const Player* winner() const;
+    const Player& current_player() const;
+    const Player& next_player() const;
+
+  private:
+    std::unique_ptr<SandboxGame> _sandbox_game;
+
+    void start_turn();
+    Player& _current_player();
+    Player& _next_player();
+  };
+
+}

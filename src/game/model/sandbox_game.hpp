@@ -33,4 +33,23 @@ namespace open_pokemon_tcg::game::model {
 
     // Accessors
     void on_game_over(std::function<void ()> callback) const;
-    // void on_turn_ended(std::function<void ()> c
+    // void on_turn_ended(std::function<void ()> callback) const; // TODO
+
+    unsigned int turn() const;
+    const Player* winner() const;
+    const Player& current_player() const;
+    const Player& next_player() const;
+
+  private:
+    mutable engine::event::CallbackList<void ()> _on_game_over;
+
+    const Player* _winner;
+    std::array<std::unique_ptr<Player>, 2> _players;
+    std::array<std::shared_ptr<Playmat>, 2> _playmats;
+    unsigned int _current_player;
+    unsigned int _turn;
+
+    unsigned int _next_player() const;
+  };
+
+}

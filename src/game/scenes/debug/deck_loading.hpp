@@ -14,4 +14,25 @@
 #include <glm/gtx/string_cast.hpp>
 #include <imgui.h>
 
-namespace open_pokemon_tcg::game
+namespace open_pokemon_tcg::game::scenes {
+
+class DeckLoading : public engine::scene::IScene {
+  public:
+    DeckLoading(engine::gui::Window* window);
+    ~DeckLoading();
+
+    void update() override;
+    void render() override;
+    void gui() override;
+
+  private:
+    PokemonTcgApi* api;
+    DebugCamera camera;
+    std::vector<Card> cards;
+    engine::graphics::Shader *shader;
+
+    // GUI options
+    char deck_id[100] = { 0 };
+    bool one_card_type_per_row = false;
+
+    void load_deck(std:

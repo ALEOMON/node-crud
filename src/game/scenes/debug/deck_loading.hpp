@@ -35,4 +35,19 @@ class DeckLoading : public engine::scene::IScene {
     char deck_id[100] = { 0 };
     bool one_card_type_per_row = false;
 
-    void load_deck(std:
+    void load_deck(std::string deck_id);
+  };
+
+  DeckLoading::DeckLoading(engine::gui::Window* window) :
+    camera(DebugCamera(window,
+                       engine::geometry::Transform(glm::vec3(0.0f, 2.0f, 0.0f),
+                                 glm::vec3(-glm::half_pi<float>(), 0.0f, 0.0f)))) {
+
+    this->shader = new engine::graphics::Shader("simple.vert", "simple.frag");
+
+    this->api = new PokemonTcgApi();
+  }
+  DeckLoading::~DeckLoading() {}
+
+  void DeckLoading::update() {}
+  void

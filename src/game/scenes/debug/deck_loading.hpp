@@ -50,4 +50,18 @@ class DeckLoading : public engine::scene::IScene {
   DeckLoading::~DeckLoading() {}
 
   void DeckLoading::update() {}
-  void
+  void DeckLoading::render() {
+    this->shader->use();
+
+    glm::mat4 viewMatrix = this->camera.view_matrix();
+    glm::mat4 projectionMatrix = this->camera.projection_matrix();
+    glm::mat4 view_projection_matrix = projectionMatrix * viewMatrix;
+
+    for (Card &c : cards)
+      c.render(view_projection_matrix, this->shader);
+  }
+
+  void DeckLoading::gui() {
+    ImGui::Begin("Deck Load Debugging");
+    ImGui::InputText("Deck ID", deck_id, IM_ARRAYSIZE(deck_id));
+    if (Im

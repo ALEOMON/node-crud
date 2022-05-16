@@ -64,4 +64,19 @@ class DeckLoading : public engine::scene::IScene {
   void DeckLoading::gui() {
     ImGui::Begin("Deck Load Debugging");
     ImGui::InputText("Deck ID", deck_id, IM_ARRAYSIZE(deck_id));
-    if (Im
+    if (ImGui::Button("Load Deck"))
+      load_deck(deck_id);
+    ImGui::Checkbox("One card type per row", &one_card_type_per_row);
+    ImGui::End();
+  }
+
+  void DeckLoading::load_deck(std::string deck_id) {
+    nlohmann::json deck = this->api->load_deck(deck_id).data;
+    this->cards.clear();
+
+    int card_counter = 0;
+    int row = 0;
+    for(auto &card : deck[0]["cards"]) {
+      for(int i = 0; i < card["count"]; i++) {
+        std::string id = card["id"];
+        engine::graphics::Texture tex = api->lo

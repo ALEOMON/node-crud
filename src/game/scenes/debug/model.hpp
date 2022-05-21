@@ -77,3 +77,32 @@ namespace open_pokemon_tcg::game::scenes {
   }
 
   void Model::on_key(GLFWwindow* window, int action) {
+    if (action != GLFW_PRESS || _end_game)
+      return;
+
+    const game::model::Player& player = _game->current_player();
+
+    if (glfwGetKey(window, GLFW_KEY_D)) {
+      LOG_DEBUG("Cards in deck: " + std::to_string(player.playmat().deck_pile.size()));
+      for (unsigned int i = 0; i < player.playmat().deck_pile.size(); i++)
+        LOG_DEBUG(std::to_string(i+1) + ". " + player.playmat().deck_pile[i]->debug());
+    }
+
+    if (glfwGetKey(window, GLFW_KEY_E)) {
+      LOG_DEBUG("Ended turn");
+      _game->end_turn();
+      start_turn();
+    }
+
+    if (glfwGetKey(window, GLFW_KEY_H)) {
+      LOG_DEBUG("Cards in hand: " + std::to_string(player.hand().size()));
+      for (unsigned int i = 0; i < player.hand().size(); i++)
+        LOG_DEBUG(std::to_string(i+1) + ". " + player.hand()[i]->debug());
+    }
+
+    if (glfwGetKey(window, GLFW_KEY_K)) {
+      LOG_DEBUG("Forced game to end!");
+      _end_game = true;
+    }
+  }
+}

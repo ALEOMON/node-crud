@@ -79,4 +79,18 @@ class DeckLoading : public engine::scene::IScene {
     for(auto &card : deck[0]["cards"]) {
       for(int i = 0; i < card["count"]; i++) {
         std::string id = card["id"];
-        engine::graphics::Texture tex = api->lo
+        engine::graphics::Texture tex = api->load_card(id).texture;
+
+        if (one_card_type_per_row)
+          this->cards.push_back(Card(engine::geometry::Transform(glm::vec3(i, 0.0f, row)), tex.id()));
+        else
+          this->cards.push_back(Card(engine::geometry::Transform(glm::vec3(card_counter % 10, 0.0f, card_counter / 10)), tex.id()));
+
+        card_counter++;
+      }
+      row++;
+    }
+
+    LOG_INFO("This deck contains " + std::to_string(card_counter) + "cards.");
+  }
+}

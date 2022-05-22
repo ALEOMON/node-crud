@@ -29,4 +29,15 @@ void DebugCamera::set_transform(engine::geometry::Transform transform) {
 void DebugCamera::on_key(GLFWwindow* window) {
   if (glfwGetKey(window, GLFW_KEY_W))
     this->camera.move(engine::graphics::Direction::FORWARD);
-  if (glfw
+  if (glfwGetKey(window, GLFW_KEY_S))
+    this->camera.move(engine::graphics::Direction::BACKWARD);
+  if (glfwGetKey(window, GLFW_KEY_D))
+    this->camera.move(engine::graphics::Direction::RIGHT);
+  if (glfwGetKey(window, GLFW_KEY_A))
+    this->camera.move(engine::graphics::Direction::LEFT);
+  if (glfwGetKey(window, GLFW_KEY_E))
+    this->camera.move(engine::graphics::Direction::UP);
+  if (glfwGetKey(window, GLFW_KEY_Q))
+    this->camera.move(engine::graphics::Direction::DOWN);
+
+  if (glfwGetKey(window, GLFW_KEY_P))

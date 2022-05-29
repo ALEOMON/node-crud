@@ -52,4 +52,17 @@ void DebugCamera::on_key(GLFWwindow* window) {
     if (this->free_look_mode)
       glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
     else
-      glfwSetInputMode(window, GLFW_CURSO
+      glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_NORMAL);
+  }
+}
+
+void DebugCamera::on_cursor(GLFWwindow* window, float xpos, float ypos) {
+  int width, height;
+  glfwGetWindowSize(window, &width, &height);
+
+  // Viewport Space [0:width, 0:height]
+  float x = xpos;
+  float y = height - ypos; // In OpenGL, (0, 0) is top-left. We want (0, 0) to be bot-left.
+
+  // Normalized Device Space [-1:1, -1:1, -1:1]
+  glm::vec3 ndc(2.0f * (x / width) - 1.0f, 2.0f * (y / height) - 1.0f, -1.0f); // z = -1.0f since cursor points along camera's

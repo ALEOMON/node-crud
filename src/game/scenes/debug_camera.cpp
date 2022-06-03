@@ -77,4 +77,13 @@ void DebugCamera::on_cursor(GLFWwindow* window, float xpos, float ypos) {
   glm::vec4 world_coords = glm::inverse(view_matrix()) * view_coords;
 
   // Normalized 3D vector form
-  th
+  this->_mouse_ray = glm::normalize(glm::vec3(world_coords));
+
+  if (this->free_look_mode)
+    this->camera.lookat_mouse(x, y);
+}
+
+void DebugCamera::on_scroll([[maybe_unused]] GLFWwindow* window, [[maybe_unused]] float xoffset, float yoffset) {
+  this->zoom = std::clamp(this->zoom + yoffset, this->zoom_min, this->zoom_max);
+  this->camera.set_zoom(this->zoom);
+}

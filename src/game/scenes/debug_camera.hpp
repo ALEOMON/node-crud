@@ -28,4 +28,13 @@ namespace open_pokemon_tcg::game::scenes {
     engine::gui::Window* window;
 
     glm::vec3 _mouse_ray;
-    engine::graphics::ProjectionType projection_type = engine::graphics::ProjectionType::PERSPEC
+    engine::graphics::ProjectionType projection_type = engine::graphics::ProjectionType::PERSPECTIVE;
+    bool free_look_mode = false;
+    float zoom = 0.0f;
+
+    // Mutators
+    void on_key(GLFWwindow* window);
+    void on_cursor(GLFWwindow* window, float xpos, float ypos);
+    void on_scroll(GLFWwindow* window, float xoffset, float yoffset);
+  };
+}

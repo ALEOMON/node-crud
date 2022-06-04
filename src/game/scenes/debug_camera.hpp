@@ -16,4 +16,16 @@ namespace open_pokemon_tcg::game::scenes {
 
     // Accessors
     engine::geometry::Transform transform() const { return this->camera.transform; };
-    glm::mat4 view_matrix(
+    glm::mat4 view_matrix() const { return this->camera.view_matrix(); };
+    glm::mat4 projection_matrix() const {return this->camera.projection_matrix(this->projection_type); };
+    glm::vec3 mouse_ray() const { return this->_mouse_ray; }
+
+  private:
+    static constexpr float zoom_min = 0.0f;
+    static constexpr float zoom_max = 45.0f;
+
+    engine::graphics::Camera camera;
+    engine::gui::Window* window;
+
+    glm::vec3 _mouse_ray;
+    engine::graphics::ProjectionType projection_type = engine::graphics::ProjectionType::PERSPEC

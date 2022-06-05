@@ -278,3 +278,157 @@ namespace open_pokemon_tcg::game::scenes {
       engine::geometry::Ray ray;
       ray.origin = this->camera.transform().position;
       ray.direction = glm::normalize(this->camera.mouse_ray());
+
+      view::IPlaymat::Side current_side = (this->current_player == this->player1) ? view::IPlaymat::Side::PLAYER1 : view::IPlaymat::Side::PLAYER2;
+      view::IPlaymat::Side opponent_side = (this->current_player == this->player1) ? view::IPlaymat::Side::PLAYER2 : view::IPlaymat::Side::PLAYER1;
+
+      if (_activated_effect != nullptr && _activated_effect_targets.size() < _activated_effect->required_targets().size()) {
+
+        int i = _activated_effect_targets.size();
+        auto next_target = _activated_effect->required_targets()[i];
+        LOG_DEBUG("Next target: " + std::to_string(next_target));
+
+        if (next_target == model::CardEffectTarget::ENEMY_POKEMON) {
+
+          // Check active
+          if (_game->model().next_player().playmat().active_pokemon != nullptr && engine::geometry::ray_rectangle_intersection(ray, this->playmat->active_slot(opponent_side)))
+            _activated_effect_targets.push_back(*_game->model().next_player().playmat().active_pokemon);
+
+          // Check bench
+          else {
+            int i = 0;
+            for (auto& slot : playmat->bench_slots(opponent_side)) {
+              if (_game->model().next_player().playmat().bench->cards()[i] != nullptr && engine::geometry::ray_rectangle_intersection(ray, slot)) {
+                _activated_effect_targets.push_back(*_game->model().next_player().playmat().bench->cards()[i]);
+                break;
+              }
+              i++;
+            }
+          }
+        }
+        else if (next_target == model::CardEffectTarget::FRIENDLY_POKEMON) {
+
+          // Check active
+          if (_game->model().current_player().playmat().active_pokemon != nullptr && engine::geometry::ray_rectangle_intersection(ray, this->playmat->active_slot(current_side)))
+            _activated_effect_targets.push_back(*_game->model().current_player().playmat().active_pokemon);
+
+          // Check bench
+          else {
+            int i = 0;
+            for (auto& slot : playmat->bench_slots(current_side)) {
+              if (_game->model().current_player().playmat().bench->cards()[i] != nullptr && engine::geometry::ray_rectangle_intersection(ray, slot)) {
+                _activated_effect_targets.push_back(*_game->model().current_player().playmat().bench->cards()[i]);
+                break;
+              }
+              i++;
+            }
+          }
+        }
+        else if (next_target == model::CardEffectTarget::ENEMY_BENCH_POKEMON) {
+          int i = 0;
+          for (auto& slot : playmat->bench_slots(opponent_side)) {
+            if (_game->model().next_player().playmat().bench->cards()[i] != nullptr && engine::geometry::ray_rectangle_intersection(ray, slot)) {
+              _activated_effect_targets.push_back(*_game->model().next_player().playmat().bench->cards()[i]);
+              break;
+            }
+            i++;
+          }
+        }
+        else if (next_target == model::CardEffectTarget::FRIENDLY_BENCH_POKEMON) {
+          int i = 0;
+          for (auto& slot : playmat->bench_slots(current_side)) {
+            if (_game->model().current_player().playmat().bench->cards()[i] != nullptr && engine::geometry::ray_rectangle_intersection(ray, slot)) {
+              _activated_effect_targets.push_back(*_game->model().current_player().playmat().bench->cards()[i]);
+              break;
+            }
+            i++;
+          }
+        }
+        else if (next_target == model::CardEffectTarget::ENERGY_FROM_PREVIOUS_POKEMON) {
+
+          auto prev = _activated_effect_targets[i-1];
+
+          // Check active
+          if (&prev.get() == _game->model().next_player().playmat().active_pokemon) {
+            for (auto& energy_view : next_player->active_pokemon->energy_views()) {
+              if (engine::geometry::ray_rectangle_intersection(ray, energy_view->shape())) {
+                _activated_effect_targets.push_back(energy_view->_model);
+                break;
+              }
+            }
+          }
+
+          // // Check bench
+          else {
+            int i = 0;
+            for (auto& pokemon : _game->model().next_player().playmat().bench->cards()) {
+              if (&prev.get() == pokemon) {
+                for (auto& energy_view : next_player->bench->cards()[i]->energy_views()) {
+                  if (engine::geometry::ray_rectangle_intersection(ray, energy_view->shape())) {
+                    _activated_effect_targets.push_back(energy_view->_model);
+                    break;
+                  }
+                }
+              }
+              i++;
+            }
+          }
+        }
+
+        return;
+      }
+
+      if (_selected_card != nullptr) {
+        if (engine::geometry::ray_rectangle_intersection(ray, this->playmat->active_slot(current_side))) {
+
+          if (_game->model().current_player().playmat().active_pokemon == nullptr)
+            _game->model().place_on_active_slot_from_hand(_selected_card->_model);
+          else
+            _game->model().attach_to_active_pokemon(_selected_card->_model);
+
+          _selected_card = nullptr;
+          return;
+        }
+
+        auto slots = playmat->bench_slots(current_side);
+        for (auto &slot : slots) {
+          if (engine::geometry::ray_rectangle_intersection(ray, slot)) {
+
+            int index = -1;
+            for (unsigned int i = 0; i < slots.size(); i++) {
+              if (&slot == &slots[i]) {
+                index = i;
+                break;
+              }
+            }
+
+            if (index == -1)
+              LOG_ERROR("Didn't figure out what bench slot was clicked on. This should never happen.");
+
+            if (_game->model().current_player().playmat().bench->cards()[index] == nullptr)
+              _game->model().place_on_bench_from_hand(_selected_card->_model, index);
+            else
+              _game->model().attach_to_bench_pokemon(_selected_card->_model, index);
+
+            _selected_card = nullptr;
+          }
+        }
+
+        if (engine::geometry::ray_rectangle_intersection(ray, this->playmat->active_slot(current_side))) {
+        }
+      }
+
+      float best_dist = 1e9;
+      for (auto &card : this->current_player->hand->cards()) {
+        auto hit = card->does_intersect(ray);
+        if (hit != nullptr) {
+          float dist = glm::distance(hit->point, this->camera.transform().position);
+          if (dist < best_dist) {
+            best_dist = dist;
+            _selected_card = card;
+          }
+        }
+      }
+    }
+  }
+}

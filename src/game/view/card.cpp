@@ -19,4 +19,23 @@ Card::Card(const game::model::ICard &model, engine::geometry::Transform transfor
     back_texture(engine::graphics::Texture("img/cardback.png")) {
 
   engine::geometry::Rectangle rect(engine::geometry::Transform(), this->width, this->height);
-  glm::vec3 botleft  = rect.botlef
+  glm::vec3 botleft  = rect.botleft();
+  glm::vec3 botright = rect.botright();
+  glm::vec3 topleft  = rect.topleft();
+  glm::vec3 topright = rect.topright();
+
+  this->vao = create_vao({
+    //	 X      Y     Z
+    botleft.x , botleft.y , botleft.z,
+    botright.x, botright.y, botright.z,
+    topright.x, topright.y, topright.z,
+    topleft.x , topleft.y , topleft.z,
+  }, {
+      0.0f, 0.0f, // (u,v) for v0
+      1.0f, 0.0f, // (u,v) for v1
+      1.0f, 1.0f, // (u,v) for v2
+      0.0f, 1.0f, // (u,v) for v3
+  });
+}
+
+Card:

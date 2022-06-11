@@ -38,4 +38,15 @@ Card::Card(const game::model::ICard &model, engine::geometry::Transform transfor
   });
 }
 
-Card:
+Card::~Card() {}
+
+void Card::render(const glm::mat4 &view_projection_matrix, engine::graphics::Shader *shader) {
+  shader->use();
+
+  glm::mat4 front_matrix = this->transform.matrix();
+  glm::mat4 modelViewProjectionMatrix = view_projection_matrix * front_matrix;
+  shader->set_uniform("modelViewProjectionMatrix", &modelViewProjectionMatrix[0].x);
+
+  glActiveTexture(GL_TEXTURE0);
+  glBindTexture(GL_TEXTURE_2D, this->front_texture.id());
+  glBindVertexArr

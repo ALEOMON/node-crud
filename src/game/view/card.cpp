@@ -49,4 +49,15 @@ void Card::render(const glm::mat4 &view_projection_matrix, engine::graphics::Sha
 
   glActiveTexture(GL_TEXTURE0);
   glBindTexture(GL_TEXTURE_2D, this->front_texture.id());
-  glBindVertexArr
+  glBindVertexArray(this->vao);
+  glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
+
+  glm::mat4 back_matrix = glm::rotate(front_matrix, glm::pi<float>(), glm::vec3(0.0f, 1.0f, 0.0f));
+  modelViewProjectionMatrix = view_projection_matrix * back_matrix;
+  shader->set_uniform("modelViewProjectionMatrix", &modelViewProjectionMatrix[0].x);
+
+  glBindTexture(GL_TEXTURE_2D, this->back_texture.id());
+  glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
+}
+
+engine::geometry::Intersection* Card::d

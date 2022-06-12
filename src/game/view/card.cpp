@@ -60,4 +60,18 @@ void Card::render(const glm::mat4 &view_projection_matrix, engine::graphics::Sha
   glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
 }
 
-engine::geometry::Intersection* Card::d
+engine::geometry::Intersection* Card::does_intersect(engine::geometry::Ray ray) const {
+  return engine::geometry::ray_rectangle_intersection(ray, shape());
+}
+
+const engine::graphics::Texture& Card::texture() const {
+  return this->front_texture;
+}
+
+engine::geometry::Rectangle Card::shape() const {
+  return engine::geometry::Rectangle(transform, width, height);
+}
+
+GLuint Card::create_vao(const std::vector<float> positions, const std::vector<float> uv_coords) const {
+  unsigned int pos_buffer;
+  glGenBuffers(1, &pos_buffer); // Gen buffer objec

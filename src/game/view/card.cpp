@@ -74,4 +74,19 @@ engine::geometry::Rectangle Card::shape() const {
 
 GLuint Card::create_vao(const std::vector<float> positions, const std::vector<float> uv_coords) const {
   unsigned int pos_buffer;
-  glGenBuffers(1, &pos_buffer); // Gen buffer objec
+  glGenBuffers(1, &pos_buffer); // Gen buffer object and store buffer id
+  glBindBuffer(GL_ARRAY_BUFFER, pos_buffer);
+  glBufferData(GL_ARRAY_BUFFER, sizeof(float) * positions.size(), positions.data(), GL_STATIC_DRAW);
+
+  unsigned int uv_buffer;
+  glGenBuffers(1, &uv_buffer);
+  glBindBuffer(GL_ARRAY_BUFFER, uv_buffer);
+  glBufferData(GL_ARRAY_BUFFER, sizeof(float) * uv_coords.size(), uv_coords.data(), GL_STATIC_DRAW);
+
+  GLuint vao;
+	glGenVertexArrays(1, &vao);
+	glBindVertexArray(vao);
+
+  unsigned int index_buffer;
+  const int indices[] = {
+    0,

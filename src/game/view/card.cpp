@@ -89,4 +89,19 @@ GLuint Card::create_vao(const std::vector<float> positions, const std::vector<fl
 
   unsigned int index_buffer;
   const int indices[] = {
-    0,
+    0, 1, 2, // Triangle 1
+    2, 3, 0  // Triangle 2
+  };
+
+	glGenBuffers(1, &index_buffer);
+	glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, index_buffer);
+  glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indices), indices, GL_STATIC_DRAW);
+
+  glBindBuffer(GL_ARRAY_BUFFER, pos_buffer);
+	glVertexAttribPointer(0, 3, GL_FLOAT, false, 0, 0);
+
+	glBindBuffer(GL_ARRAY_BUFFER, uv_buffer);
+	glVertexAttribPointer(2, 2, GL_FLOAT, false, 0, 0);
+
+	glEnableVertexAttribArray(0); // Enable the vertex position attribute
+	

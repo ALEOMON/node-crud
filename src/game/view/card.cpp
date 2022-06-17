@@ -104,4 +104,7 @@ GLuint Card::create_vao(const std::vector<float> positions, const std::vector<fl
 	glVertexAttribPointer(2, 2, GL_FLOAT, false, 0, 0);
 
 	glEnableVertexAttribArray(0); // Enable the vertex position attribute
-	
+	glEnableVertexAttribArray(2); // Enable the uv coord attribute
+
+  return vao;
+}

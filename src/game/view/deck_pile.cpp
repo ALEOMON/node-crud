@@ -29,4 +29,7 @@ void DeckPile::render(const glm::mat4 &view_projection_matrix, engine::graphics:
 
 void DeckPile::update_card_positions() {
   for (unsigned int h = 0; h < _cards.size(); h++) {
-    _cards[h].transform.position = this->transform.position
+    _cards[h].transform.position = this->transform.position + glm::vec3(0.0f, this->card_spacing * h, 0.0f);
+    _cards[h].transform.rotation = this->transform.rotation + glm::vec3(-glm::pi<float>(), -glm::pi<float>(), 0.0f);
+  }
+}

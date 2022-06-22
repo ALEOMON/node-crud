@@ -4,4 +4,17 @@
 
 using namespace open_pokemon_tcg::game::view;
 
-DiscardPile::Dis
+DiscardPile::DiscardPile(const model::DiscardPile &model, const engine::geometry::Transform& transform)
+  : _model(model),
+    transform(transform) {
+
+  _model.on_push([this](model::ICard& card) {
+    _cards.push_back(Card(card, engine::geometry::Transform()));
+  });
+}
+
+DiscardPile::~DiscardPile() = default;
+
+void DiscardPile::render(const glm::mat4 &view_projection_matrix, engine::graphics::Shader *shader) {
+  for (unsigned int i = 0; i < _cards.size(); i++) {
+    _cards[i].transform.position = this->transform.

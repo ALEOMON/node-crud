@@ -31,3 +31,18 @@ Hand::~Hand() {}
 // Mutators
 void Hand::update() {
   int count = _cards.size();
+  if (count == 0)
+    return;
+
+  float mid = (1.0f + count) / 2.0f;
+  float xspacing = std::min(0.8f, _max_width / count);
+  float zspacing = 0.001f;
+
+  for (int i = 0; i < count; i++) {
+    float p = i+1;
+    _cards[i]->transform.position = _transform.position + glm::vec3(xspacing * (p - mid), 0.0f, zspacing * (p - mid));
+    _cards[i]->transform.rotation = _transform.rotation;
+  }
+}
+
+void Hand::render(const glm::mat4 &view_projection_matrix, engine::graphics::Shader

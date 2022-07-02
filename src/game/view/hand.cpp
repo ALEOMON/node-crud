@@ -45,4 +45,7 @@ void Hand::update() {
   }
 }
 
-void Hand::render(const glm::mat4 &view_projection_matrix, engine::graphics::Shader
+void Hand::render(const glm::mat4 &view_projection_matrix, engine::graphics::Shader *shader) {
+  for (auto &c : _cards)
+    c->render(view_projection_matrix, shader);
+}

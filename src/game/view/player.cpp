@@ -30,4 +30,15 @@ Player::Player(const model::Player &model, const IPlaymat &playmat, IPlaymat::Si
                                                  glm::vec3(0.5f * glm::half_pi<float>(), 0.0f, 0.0f)));
 
   std::array<engine::geometry::Rectangle, 6> prize_slots = this->playmat->prize_slots(this->playmat_side);
-  std::arra
+  std::array<engine::geometry::Transform, 6> prize_slot_transforms;
+  std::transform(prize_slots.begin(),
+                prize_slots.end(),
+                prize_slot_transforms.begin(),
+                [](engine::geometry::Rectangle r) { return r.transform(); });
+
+  this->prize_card_pool = new PrizeCardPool(*_model.playmat().prize_card_pool, prize_slot_transforms);
+
+  this->bench = new Bench(*_model.playmat().bench, this->playmat->bench_slots(this->playmat_side));
+
+  this->active_pokemon = nullptr;
+  this->supporter_card 

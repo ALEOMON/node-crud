@@ -41,4 +41,22 @@ Player::Player(const model::Player &model, const IPlaymat &playmat, IPlaymat::Si
   this->bench = new Bench(*_model.playmat().bench, this->playmat->bench_slots(this->playmat_side));
 
   this->active_pokemon = nullptr;
-  this->supporter_card 
+  this->supporter_card = nullptr;
+  this->stadium_card   = nullptr;
+
+  _model.on_update_active(std::bind(&Player::on_update_active, this, std::placeholders::_1));
+}
+
+Player::~Player() {}
+
+void Player::update() {
+  this->hand->update();
+}
+
+void Player::render(const glm::mat4 &view_projection) {
+  _shader->use();
+
+  this->deck_pile->render(view_projection, _shader);
+  this->discard_pile->render(view_projection, _shader);
+  this->hand->render(view_projection, _shader);
+  this->prize

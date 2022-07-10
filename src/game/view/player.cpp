@@ -73,4 +73,23 @@ void Player::render(const glm::mat4 &view_projection) {
 void Player::on_update_active(model::PokemonCard* card) {
   if (active_pokemon != nullptr) {
     delete active_pokemon;
-    active_pokemon = 
+    active_pokemon = nullptr;
+  }
+
+  if (card != nullptr)
+    active_pokemon = new PokemonCard(*card, playmat->active_slot(this->playmat_side).transform());
+}
+
+/*
+void Player::on_update_suppoter(model::TrainerCard* card) {
+  if (supporter_card != nullptr)
+    delete supporter_card;
+
+  supporter_card = new Card(*card, playmat->supporter_slot(this->playmat_side).transform());
+}
+
+void Player::on_update_stadium(model::TrainerCard* card) {
+  if (stadium_card != nullptr)
+    delete stadium_card;
+
+  stadium_card = new Card(*card, playmat

@@ -92,4 +92,6 @@ void Player::on_update_stadium(model::TrainerCard* card) {
   if (stadium_card != nullptr)
     delete stadium_card;
 
-  stadium_card = new Card(*card, playmat
+  stadium_card = new Card(*card, playmat->stadium_slot(this->playmat_side).transform());
+}
+ */

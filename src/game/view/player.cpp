@@ -59,4 +59,18 @@ void Player::render(const glm::mat4 &view_projection) {
   this->deck_pile->render(view_projection, _shader);
   this->discard_pile->render(view_projection, _shader);
   this->hand->render(view_projection, _shader);
-  this->prize
+  this->prize_card_pool->render(view_projection, _shader);
+  this->bench->render(view_projection, _shader);
+
+  if (this->active_pokemon != nullptr)
+    this->active_pokemon->render(view_projection, _shader);
+  if (this->supporter_card != nullptr)
+    this->supporter_card->render(view_projection, _shader);
+  if (this->stadium_card != nullptr)
+    this->stadium_card->render(view_projection, _shader);
+}
+
+void Player::on_update_active(model::PokemonCard* card) {
+  if (active_pokemon != nullptr) {
+    delete active_pokemon;
+    active_pokemon = 

@@ -37,4 +37,11 @@ namespace open_pokemon_tcg::game::view {
     const model::Player &_model;
     engine::graphics::Shader *_shader; // TODO: remove
 
-    const open_pokemon_tcg
+    const open_pokemon_tcg::game::view::IPlaymat *playmat;
+    IPlaymat::Side playmat_side;
+    void on_update_active(model::PokemonCard* card);
+    //void on_update_suppoter(model::TrainerCard* card);
+    //void on_update_stadium(model::TrainerCard* card);
+
+  };
+}

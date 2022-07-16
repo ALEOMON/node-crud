@@ -16,3 +16,25 @@ namespace open_pokemon_tcg::game::view {
   class Player {
   public:
     Player(const model::Player &model, const IPlaymat &playmat, IPlaymat::Side playmat_side);
+    ~Player();
+
+    DeckPile *deck_pile;
+    DiscardPile *discard_pile;
+    Hand *hand;
+    PokemonCard *active_pokemon;
+    Card *supporter_card;
+    Card *stadium_card;
+    Bench *bench;
+    PrizeCardPool *prize_card_pool;
+
+    // Mutators
+    void update();
+    void render(const glm::mat4 &view_projection);
+
+  private:
+    static const int start_hand = 7;
+
+    const model::Player &_model;
+    engine::graphics::Shader *_shader; // TODO: remove
+
+    const open_pokemon_tcg

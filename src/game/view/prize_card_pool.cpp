@@ -20,4 +20,8 @@ PrizeCardPool::PrizeCardPool(const model::PrizeCardPool &model, std::array<engin
 PrizeCardPool::~PrizeCardPool() = default;
 
 // Mutators
-vo
+void PrizeCardPool::render(const glm::mat4 &view_projection_matrix, engine::graphics::Shader *shader) {
+  for (auto &c : _prize_cards)
+    if (c != nullptr)
+      c->render(view_projection_matrix, shader);
+}

@@ -34,4 +34,7 @@ namespace open_pokemon_tcg::game::view {
     virtual std::array<engine::geometry::Rectangle, 6> prize_slots(Side side) const = 0;
 
   protected:
-    static engine::geometry::Transform mirro
+    static engine::geometry::Transform mirror_transform(engine::geometry::Transform transform);
+
+  };
+}

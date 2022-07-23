@@ -35,4 +35,24 @@ template <
 class CallbackListBase;
 
 template <
-	
+	typename PoliciesType,
+	typename ReturnType, typename ...Args
+>
+class CallbackListBase<
+	ReturnType (Args...),
+	PoliciesType
+>
+{
+private:
+	using Policies = PoliciesType;
+
+	using Threading = typename SelectThreading<Policies, HasTypeThreading<Policies>::value>::Type;
+
+	using Callback_ = typename SelectCallback<
+		Policies,
+		HasTypeCallback<Policies>::value,
+		std::function<ReturnType (Args...)>
+	>::Type;
+
+	using CanContinueInvoking = typename SelectCanContinueInvoking<
+		Policies, HasFunctionCan

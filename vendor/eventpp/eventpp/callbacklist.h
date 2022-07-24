@@ -116,4 +116,22 @@ public:
 	}
 
 	CallbackListBase(CallbackListBase && other) noexcept
-		: Callba
+		: CallbackListBase()
+	{
+		swap(other);
+	}
+
+	// If we use pass by value idiom and omit the 'this' check,
+	// when assigning to self there is a deep copy which is inefficient.
+	CallbackListBase & operator = (const CallbackListBase & other) {
+		if(this != &other) {
+			CallbackListBase copied(other);
+			swap(copied);
+		}
+		return *this;
+	}
+
+	CallbackListBase & operator = (CallbackListBase && other) noexcept {
+		if(this != &other) {
+			head = std::move(other.head);
+			tail = std::

@@ -55,4 +55,33 @@ private:
 	>::Type;
 
 	using CanContinueInvoking = typename SelectCanContinueInvoking<
-		Policies, HasFunctionCan
+		Policies, HasFunctionCanContinueInvoking<Policies, Args...>::value
+	>::Type;
+
+	struct Node;
+	using NodePtr = std::shared_ptr<Node>;
+
+	struct Node
+	{
+		using Counter = unsigned int;
+
+		Node(const Callback_ & callback, const Counter counter)
+			: callback(callback), counter(counter)
+		{
+		}
+
+		NodePtr previous;
+		NodePtr next;
+		Callback_ callback;
+		Counter counter;
+	};
+
+	class Handle_ : public std::weak_ptr<Node>
+	{
+	private:
+		using super = std::weak_ptr<Node>;
+
+	public:
+		using super::super;
+
+		operator bool

@@ -84,4 +84,36 @@ private:
 	public:
 		using super::super;
 
-		operator bool
+		operator bool () const noexcept {
+			return ! this->expired();
+		}
+	};
+
+	using Counter = typename Node::Counter;
+	enum : Counter {
+		removedCounter = 0
+	};
+
+public:
+	using Callback = Callback_;
+	using Handle = Handle_;
+	using Mutex = typename Threading::Mutex;
+
+public:
+	CallbackListBase() noexcept
+		:
+			head(),
+			tail(),
+			mutex(),
+			currentCounter(0)
+	{
+	}
+
+	CallbackListBase(const CallbackListBase & other)
+		: CallbackListBase()
+	{
+		cloneFrom(other.head);
+	}
+
+	CallbackListBase(CallbackListBase && other) noexcept
+		: Callba

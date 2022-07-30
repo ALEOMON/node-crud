@@ -158,4 +158,15 @@ public:
 		using std::swap;
 		
 		swap(head, other.head);
-		swap(tail, other.
+		swap(tail, other.tail);
+
+		const auto value = currentCounter.load();
+		currentCounter.exchange(other.currentCounter.load());
+		other.currentCounter.exchange(value);
+	}
+
+	bool empty() const {
+		// Don't lock the mutex for performance reason.
+		// !head still works even when the underlying raw pointer is garbled (for other thread is writting to head)
+		// And empty() doesn't guarantee the list is still empty after the function returned.
+		//std::lock_guard<Mutex> lock

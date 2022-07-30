@@ -230,3 +230,30 @@ public:
 		}
 
 		return append(callback);
+	}
+
+	bool remove(const Handle & handle)
+	{
+		std::lock_guard<Mutex> lockGuard(mutex);
+		auto node = handle.lock();
+		if(node) {
+			doFreeNode(node);
+			return true;
+		}
+
+		return false;
+	}
+
+	template <typename Func>
+	void forEach(Func && func) const
+	{
+		doForEachIf([&func, this](NodePtr & node) -> bool {
+			doForEachInvoke<void>(func, node);
+			return true;
+		});
+	}
+
+	template <typename Func>
+	bool forEachIf(Func && func) const
+	{
+		return doForEachIf([&func, this](NodePtr & no

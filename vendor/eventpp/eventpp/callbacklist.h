@@ -169,4 +169,36 @@ public:
 		// Don't lock the mutex for performance reason.
 		// !head still works even when the underlying raw pointer is garbled (for other thread is writting to head)
 		// And empty() doesn't guarantee the list is still empty after the function returned.
-		//std::lock_guard<Mutex> lock
+		//std::lock_guard<Mutex> lockGuard(mutex);
+
+		return ! head;
+	}
+
+	operator bool() const {
+		return ! empty();
+	}
+
+	Handle append(const Callback & callback)
+	{
+		NodePtr node(doAllocateNode(callback));
+
+		std::lock_guard<Mutex> lockGuard(mutex);
+
+		if(head) {
+			node->previous = tail;
+			tail->next = node;
+			tail = node;
+		}
+		else {
+			head = node;
+			tail = node;
+		}
+
+		return Handle(node);
+	}
+
+	Handle prepend(const Callback & callback)
+	{
+		NodePtr node(doAllocateNode(callback));
+
+		std::lock_guard<Mutex> lockG

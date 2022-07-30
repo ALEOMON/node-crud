@@ -134,4 +134,28 @@ public:
 	CallbackListBase & operator = (CallbackListBase && other) noexcept {
 		if(this != &other) {
 			head = std::move(other.head);
-			tail = std::
+			tail = std::move(other.tail);
+			currentCounter = other.currentCounter.load();
+		}
+		return *this;
+	}
+
+	~CallbackListBase()	{
+		// Don't lock mutex here since it may throw exception
+
+		NodePtr node = head;
+		head.reset();
+		while(node) {
+			NodePtr next = node->next;
+			node->previous.reset();
+			node->next.reset();
+			node = next;
+		}
+		node.reset();
+	}
+	
+	void swap(CallbackListBase & other) noexcept {
+		using std::swap;
+		
+		swap(head, other.head);
+		swap(tail, other.

@@ -201,4 +201,32 @@ public:
 	{
 		NodePtr node(doAllocateNode(callback));
 
-		std::lock_guard<Mutex> lockG
+		std::lock_guard<Mutex> lockGuard(mutex);
+
+		if(head) {
+			node->next = head;
+			head->previous = node;
+			head = node;
+		}
+		else {
+			head = node;
+			tail = node;
+		}
+
+		return Handle(node);
+	}
+
+	Handle insert(const Callback & callback, const Handle & before)
+	{
+		NodePtr beforeNode = before.lock();
+		if(beforeNode) {
+			NodePtr node(doAllocateNode(callback));
+
+			std::lock_guard<Mutex> lockGuard(mutex);
+
+			doInsert(node, beforeNode);
+
+			return Handle(node);
+		}
+
+		return append(callback);

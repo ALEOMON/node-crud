@@ -256,4 +256,28 @@ public:
 	template <typename Func>
 	bool forEachIf(Func && func) const
 	{
-		return doForEachIf([&func, this](NodePtr & no
+		return doForEachIf([&func, this](NodePtr & node) -> bool {
+			return doForEachInvoke<bool>(func, node);
+		});
+	}
+
+	void operator() (Args ...args) const
+	{
+		forEachIf([&args...](Callback & callback) -> bool {
+			callback(args...);
+			return CanContinueInvoking::canContinueInvoking(args...);
+		});
+	}
+
+private:
+	template <typename F>
+	bool doForEachIf(F && f) const
+	{
+		NodePtr node;
+
+		{
+			std::lock_guard<Mutex> lockGuard(mutex);
+			node = head;
+		}
+
+		const Counter counter = currentCounter.load(std::memory_order_acqu

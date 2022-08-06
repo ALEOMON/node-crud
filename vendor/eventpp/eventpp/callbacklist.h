@@ -280,4 +280,29 @@ private:
 			node = head;
 		}
 
-		const Counter counter = currentCounter.load(std::memory_order_acqu
+		const Counter counter = currentCounter.load(std::memory_order_acquire);
+
+		while(node) {
+			if(node->counter != removedCounter && counter >= node->counter) {
+				if(! f(node)) {
+					return false;
+				}
+			}
+
+			{
+				std::lock_guard<Mutex> lockGuard(mutex);
+				node = node->next;
+			}
+		}
+
+		return true;
+	}
+
+	template <typename RT, typename Func>
+	auto doForEachInvoke(Func && func, NodePtr & node) const
+		-> typename std::enable_if<CanInvoke<Func, Handle, Callback &>::value, RT>::type
+	{
+		return func(Handle(node), node->callback);
+	}
+
+	template 

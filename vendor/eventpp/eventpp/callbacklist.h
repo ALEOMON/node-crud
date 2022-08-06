@@ -326,4 +326,29 @@ private:
 		}
 	}
 	
-	NodePtr doAllocateNode(const Callback &
+	NodePtr doAllocateNode(const Callback & callback)
+	{
+		return std::make_shared<Node>(callback, getNextCounter());
+	}
+	
+	void doFreeNode(NodePtr & node)
+	{
+		if(node->next) {
+			node->next->previous = node->previous;
+		}
+		if(node->previous) {
+			node->previous->next = node->next;
+		}
+
+		if(head == node) {
+			head = node->next;
+		}
+		if(tail == node) {
+			tail = node->previous;
+		}
+
+		// Mark it as deleted
+		node->counter = removedCounter;
+
+		// don't modify node->previous or node->next
+		// because node may be still used in

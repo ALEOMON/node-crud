@@ -305,4 +305,25 @@ private:
 		return func(Handle(node), node->callback);
 	}
 
-	template 
+	template <typename RT, typename Func>
+	auto doForEachInvoke(Func && func, NodePtr & node) const
+		-> typename std::enable_if<CanInvoke<Func, Callback &>::value, RT>::type
+	{
+		return func(node->callback);
+	}
+
+	void doInsert(NodePtr & node, NodePtr & beforeNode)
+	{
+		node->previous = beforeNode->previous;
+		node->next = beforeNode;
+		if(beforeNode->previous) {
+			beforeNode->previous->next = node;
+		}
+		beforeNode->previous = node;
+
+		if(beforeNode == head) {
+			head = node;
+		}
+	}
+	
+	NodePtr doAllocateNode(const Callback &

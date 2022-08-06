@@ -375,4 +375,39 @@ private:
 	void cloneFrom(const NodePtr & fromHead) {
 		NodePtr fromNode(fromHead);
 		NodePtr node;
-		const Counter counte
+		const Counter counter = getNextCounter();
+		while(fromNode) {
+			const NodePtr nextNode(std::make_shared<Node>(fromNode->callback, counter));
+
+			nextNode->previous = node;
+
+			if(node) {
+				node->next = nextNode;
+			}
+			else {
+				node = nextNode;
+				head = node;
+			}
+		
+			node = nextNode;
+			fromNode = fromNode->next;
+		}
+
+		tail = node;
+	}
+
+private:
+	NodePtr head;
+	NodePtr tail;
+	mutable Mutex mutex;
+	typename Threading::template Atomic<Counter> currentCounter;
+
+};
+
+
+} //namespace internal_
+
+
+template <
+	typename Prototype_,
+	typename Policies_ = Defau

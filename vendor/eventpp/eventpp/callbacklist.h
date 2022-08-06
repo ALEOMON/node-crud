@@ -351,4 +351,28 @@ private:
 		node->counter = removedCounter;
 
 		// don't modify node->previous or node->next
-		// because node may be still used in
+		// because node may be still used in a loop.
+	}
+
+	Counter getNextCounter()
+	{
+		Counter result = ++currentCounter;;
+		if(result == 0) { // overflow, let's reset all nodes' counters.
+			{
+				std::lock_guard<Mutex> lockGuard(mutex);
+				NodePtr node = head;
+				while(node) {
+					node->counter = 1;
+					node = node->next;
+				}
+			}
+			result = ++currentCounter;
+		}
+
+		return result;
+	}
+	
+	void cloneFrom(const NodePtr & fromHead) {
+		NodePtr fromNode(fromHead);
+		NodePtr node;
+		const Counter counte

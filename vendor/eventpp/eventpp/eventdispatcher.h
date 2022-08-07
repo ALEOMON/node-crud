@@ -167,3 +167,148 @@ public:
 
 		return false;
 	}
+
+	template <typename Func>
+	void forEach(const Event & event, Func && func) const
+	{
+		const CallbackList_ * callableList = doFindCallableList(event);
+		if(callableList) {
+			callableList->forEach(std::forward<Func>(func));
+		}
+	}
+
+	template <typename Func>
+	bool forEachIf(const Event & event, Func && func) const
+	{
+		const CallbackList_ * callableList = doFindCallableList(event);
+		if (callableList) {
+			return callableList->forEachIf(std::forward<Func>(func));
+		}
+
+		return true;
+	}
+
+	void dispatch(Args ...args) const
+	{
+		static_assert(ArgumentPassingMode::canIncludeEventType, "Dispatching arguments count doesn't match required (Event type should be included).");
+
+		using GetEvent = typename SelectGetEvent<Policies_, EventType_, HasFunctionGetEvent<Policies_, Args...>::value>::Type;
+
+		// can't std::forward<Args>(args) in GetEvent::getEvent because the pass by value arguments will be moved to getEvent
+		// then the other std::forward<Args>(args) to directDispatch will get empty values.
+		directDispatch(
+			GetEvent::getEvent(args...),
+			std::forward<Args>(args)...
+		);
+	}
+
+	template <typename T>
+	void dispatch(T && first, Args ...args) const
+	{
+		static_assert(ArgumentPassingMode::canExcludeEventType, "Dispatching arguments count doesn't match required (Event type should NOT be included).");
+
+		using GetEvent = typename SelectGetEvent<Policies_, EventType_, HasFunctionGetEvent<Policies_, T &&, Args...>::value>::Type;
+
+		directDispatch(
+			GetEvent::getEvent(std::forward<T>(first), args...),
+			std::forward<Args>(args)...
+		);
+	}
+
+	// Bypass any getEvent policy. The first argument is the event type.
+	// Most used for internal purpose.
+	void directDispatch(const Event & e, Args ...args) const
+	{
+		if(! internal_::ForEachMixins<MixinRoot, Mixins, DoMixinBeforeDispatch>::forEach(
+			this, typename std::add_lvalue_reference<Args>::type(args)...)) {
+			return;
+		}
+
+		const CallbackList_ * callableList = doFindCallableList(e);
+		if(callableList) {
+			(*callableList)(std::forward<Args>(args)...);
+		}
+	}
+
+protected:
+	const CallbackList_ * doFindCallableList(const Event & e) const
+	{
+		return doFindCallableListHelper(this, e);
+	}
+
+	CallbackList_ * doFindCallableList(const Event & e)
+	{
+		return doFindCallableListHelper(this, e);
+	}
+
+private:
+	// template helper to avoid code duplication in doFindCallableList
+	template <typename T>
+	static auto doFindCallableListHelper(T * self, const Event & e)
+		-> typename std::conditional<std::is_const<T>::value, const CallbackList_ *, CallbackList_ *>::type
+	{
+		std::lock_guard<Mutex> lockGuard(self->listenerMutex);
+
+		auto it = self->eventCallbackListMap.find(e);
+		if(it != self->eventCallbackListMap.end()) {
+			return &it->second;
+		}
+		else {
+			return nullptr;
+		}
+	}
+
+private:
+	// Mixin related
+	struct DoMixinBeforeDispatch
+	{
+		template <typename T, typename Self, typename ...A>
+		static auto forEach(const Self * self, A && ...args)
+			-> typename std::enable_if<HasFunctionMixinBeforeDispatch<T, A...>::value, bool>::type {
+			return static_cast<const T *>(self)->mixinBeforeDispatch(std::forward<A>(args)...);
+		}
+
+		template <typename T, typename Self, typename ...A>
+		static auto forEach(const Self * self, A && ...args)
+			-> typename std::enable_if<! HasFunctionMixinBeforeDispatch<T, A...>::value, bool>::type {
+			return true;
+		}
+	};
+
+private:
+	Map eventCallbackListMap;
+	mutable Mutex listenerMutex;
+};
+
+
+} //namespace internal_
+
+template <
+	typename Event_,
+	typename Prototype_,
+	typename Policies_ = DefaultPolicies
+>
+class EventDispatcher : public internal_::InheritMixins<
+		internal_::EventDispatcherBase<Event_, Prototype_, Policies_, void>,
+		typename internal_::SelectMixins<Policies_, internal_::HasTypeMixins<Policies_>::value >::Type
+	>::Type, public TagEventDispatcher
+{
+private:
+	using super = typename internal_::InheritMixins<
+		internal_::EventDispatcherBase<Event_, Prototype_, Policies_, void>,
+		typename internal_::SelectMixins<Policies_, internal_::HasTypeMixins<Policies_>::value >::Type
+	>::Type;
+
+public:
+	using super::super;
+	
+	friend void swap(EventDispatcher & first, EventDispatcher & second) noexcept {
+		first.swap(second);
+	}
+};
+
+
+} //namespace eventpp
+
+
+#endif

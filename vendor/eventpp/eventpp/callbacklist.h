@@ -410,4 +410,23 @@ private:
 
 template <
 	typename Prototype_,
-	typename Policies_ = Defau
+	typename Policies_ = DefaultPolicies
+>
+class CallbackList : public internal_::CallbackListBase<Prototype_, Policies_>, public TagCallbackList
+{
+private:
+	using super = internal_::CallbackListBase<Prototype_, Policies_>;
+	
+public:
+	using super::super;
+	
+	friend void swap(CallbackList & first, CallbackList & second) noexcept {
+		first.swap(second);
+	}
+};
+
+
+} //namespace eventpp
+
+
+#endif

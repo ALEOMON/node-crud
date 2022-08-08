@@ -142,3 +142,345 @@ public:
 		super::operator = (std::move(other));
 		return *this;
 	}
+
+	template <typename ...A>
+	auto enqueue(A ...args) -> typename std::enable_if<sizeof...(A) == sizeof...(Args), void>::type
+	{
+		static_assert(super::ArgumentPassingMode::canIncludeEventType, "Enqueuing arguments count doesn't match required (Event type should be included).");
+
+		using GetEvent = typename SelectGetEvent<Policies_, EventType_, HasFunctionGetEvent<Policies_, A...>::value>::Type;
+
+		doEnqueue(QueuedEvent{
+			GetEvent::getEvent(args...),
+			std::make_tuple(std::forward<A>(args)...)
+		});
+
+		if(doCanProcess()) {
+			queueListConditionVariable.notify_one();
+		}
+	}
+
+	template <typename T, typename ...A>
+	auto enqueue(T && first, A ...args) -> typename std::enable_if<sizeof...(A) == sizeof...(Args), void>::type
+	{
+		static_assert(super::ArgumentPassingMode::canExcludeEventType, "Enqueuing arguments count doesn't match required (Event type should NOT be included).");
+
+		using GetEvent = typename SelectGetEvent<Policies_, EventType_, HasFunctionGetEvent<Policies_, T &&, A...>::value>::Type;
+
+		doEnqueue(QueuedEvent{
+			GetEvent::getEvent(std::forward<T>(first), args...),
+			std::make_tuple(std::forward<A>(args)...)
+		});
+
+		if(doCanProcess()) {
+			queueListConditionVariable.notify_one();
+		}
+	}
+
+	bool emptyQueue() const
+	{
+		return queueList.empty() && (queueEmptyCounter.load(std::memory_order_acquire) == 0);
+	}
+	
+	void clearEvents()
+	{
+		if(! queueList.empty()) {
+			BufferedItemList tempList;
+
+			{
+				std::lock_guard<Mutex> queueListLock(queueListMutex);
+				std::swap(queueList, tempList);
+			}
+
+			if(! tempList.empty()) {
+				for(auto & item : tempList) {
+					item.clear();
+				}
+
+				std::lock_guard<Mutex> queueListLock(freeListMutex);
+				freeList.splice(freeList.end(), tempList);
+			}
+		}
+	}
+
+	bool process()
+	{
+		if(! queueList.empty()) {
+			BufferedItemList tempList;
+
+			// Use a counter to tell the queue list is not empty during processing
+			// even though queueList is swapped to empty.
+			CounterGuard<decltype(queueEmptyCounter)> counterGuard(queueEmptyCounter);
+
+			{
+				std::lock_guard<Mutex> queueListLock(queueListMutex);
+				std::swap(queueList, tempList);
+			}
+
+			if(! tempList.empty()) {
+				for(auto & item : tempList) {
+					doDispatchQueuedEvent(
+						item.template get<QueuedEvent_>(),
+						typename MakeIndexSequence<sizeof...(Args)>::Type()
+					);
+					item.clear();
+				}
+
+				std::lock_guard<Mutex> queueListLock(freeListMutex);
+				freeList.splice(freeList.end(), tempList);
+				
+				return true;
+			}
+		}
+		
+		return false;
+	}
+
+	bool processOne()
+	{
+		if(! queueList.empty()) {
+			BufferedItemList tempList;
+
+			// Use a counter to tell the queue list is not empty during processing
+			// even though queueList is swapped to empty.
+			CounterGuard<decltype(queueEmptyCounter)> counterGuard(queueEmptyCounter);
+
+			{
+				std::lock_guard<Mutex> queueListLock(queueListMutex);
+				if(! queueList.empty()) {
+					tempList.splice(tempList.end(), queueList, queueList.begin());
+				}
+			}
+
+			if(! tempList.empty()) {
+				auto & item = tempList.front();
+				doDispatchQueuedEvent(
+					item.template get<QueuedEvent_>(),
+					typename MakeIndexSequence<sizeof...(Args)>::Type()
+				);
+				item.clear();
+
+				std::lock_guard<Mutex> queueListLock(freeListMutex);
+				freeList.splice(freeList.end(), tempList);
+				
+				return true;
+			}
+		}
+		
+		return false;
+	}
+
+	template <typename F>
+	bool processIf(F && func)
+	{
+		if(! queueList.empty()) {
+			BufferedItemList tempList;
+			BufferedItemList idleList;
+
+			// Use a counter to tell the queue list is not empty during processing
+			// even though queueList is swapped to empty.
+			CounterGuard<decltype(queueEmptyCounter)> counterGuard(queueEmptyCounter);
+
+			{
+				std::lock_guard<Mutex> queueListLock(queueListMutex);
+				std::swap(queueList, tempList);
+			}
+
+			if(! tempList.empty()) {
+				for(auto it = tempList.begin(); it != tempList.end(); ) {
+					if(doInvokeFuncWithQueuedEvent(
+							func,
+							it->template get<QueuedEvent_>(),
+							typename MakeIndexSequence<sizeof...(Args)>::Type())
+						) {
+						doDispatchQueuedEvent(
+							it->template get<QueuedEvent_>(),
+							typename MakeIndexSequence<sizeof...(Args)>::Type()
+						);
+						it->clear();
+						
+						auto tempIt = it;
+						++it;
+						idleList.splice(idleList.end(), tempList, tempIt);
+					}
+					else {
+						++it;
+					}
+				}
+
+				if (! tempList.empty()) {
+					std::lock_guard<Mutex> queueListLock(queueListMutex);
+					queueList.splice(queueList.begin(), tempList);
+				}
+
+				if(! idleList.empty()) {
+					std::lock_guard<Mutex> queueListLock(freeListMutex);
+					freeList.splice(freeList.end(), idleList);
+					
+					return true;
+				}
+			}
+		}
+		
+		return false;
+	}
+	
+	void wait() const
+	{
+		std::unique_lock<Mutex> queueListLock(queueListMutex);
+		queueListConditionVariable.wait(queueListLock, [this]() -> bool {
+			return doCanProcess();
+		});
+	}
+
+	template <class Rep, class Period>
+	bool waitFor(const std::chrono::duration<Rep, Period> & duration) const
+	{
+		std::unique_lock<Mutex> queueListLock(queueListMutex);
+		return queueListConditionVariable.wait_for(queueListLock, duration, [this]() -> bool {
+			return doCanProcess();
+		});
+	}
+
+	using super::dispatch;
+
+	template <typename U>
+	auto dispatch(const U & queuedEvent)
+		-> typename std::enable_if<std::is_same<U, QueuedEvent>::value, void>::type
+	{
+		doDispatchQueuedEvent(
+			queuedEvent,
+			typename MakeIndexSequence<sizeof...(Args)>::Type()
+		);
+	}
+
+	bool peekEvent(QueuedEvent * queuedEvent)
+	{
+		if(! queueList.empty()) {
+			std::lock_guard<Mutex> queueListLock(queueListMutex);
+			
+			if(! queueList.empty()) {
+				*queuedEvent = queueList.front().template get<QueuedEvent_>();
+				return true;
+			}
+		}
+
+		return false;
+	}
+
+	bool takeEvent(QueuedEvent * queuedEvent)
+	{
+		if(! queueList.empty()) {
+			BufferedItemList tempList;
+
+			{
+				std::lock_guard<Mutex> queueListLock(queueListMutex);
+
+				if(! queueList.empty()) {
+					tempList.splice(tempList.end(), queueList, queueList.begin());
+				}
+			}
+
+			if(! tempList.empty()) {
+				*queuedEvent = std::move(tempList.front().template get<QueuedEvent_>());
+				tempList.front().clear();
+
+				std::lock_guard<Mutex> queueListLock(freeListMutex);
+				freeList.splice(freeList.end(), tempList);
+
+				return true;
+			}
+		}
+
+		return false;
+	}
+
+protected:
+	bool doCanProcess() const
+	{
+		return ! emptyQueue() && doCanNotifyQueueAvailable();
+	}
+
+	bool doCanNotifyQueueAvailable() const
+	{
+		return queueNotifyCounter.load(std::memory_order_acquire) == 0;
+	}
+
+	template <typename T, size_t ...Indexes>
+	void doDispatchQueuedEvent(T && item, IndexSequence<Indexes...>)
+	{
+		this->directDispatch(item.event, std::get<Indexes>(item.arguments)...);
+	}
+
+	template <typename F, typename T, size_t ...Indexes>
+	bool doInvokeFuncWithQueuedEvent(F && func, T && item, IndexSequence<Indexes...>) const
+	{
+		return doInvokeFuncWithQueuedEventHelper(std::forward<F>(func), item.event, std::get<Indexes>(item.arguments)...);
+	}
+	
+	template <typename F>
+	bool doInvokeFuncWithQueuedEventHelper(F && func, const typename super::Event & /*e*/, Args ...args) const
+	{
+		return func(std::forward<Args>(args)...);
+	}
+
+	void doEnqueue(QueuedEvent && item)
+	{
+		BufferedItemList tempList;
+		if(! freeList.empty()) {
+			{
+				std::lock_guard<Mutex> queueListLock(freeListMutex);
+				if(! freeList.empty()) {
+					tempList.splice(tempList.end(), freeList, freeList.begin());
+				}
+			}
+		}
+
+		if(tempList.empty()) {
+			tempList.emplace_back();
+		}
+
+		auto it = tempList.begin();
+		it->set(std::move(item));
+
+		std::lock_guard<Mutex> queueListLock(queueListMutex);
+		queueList.splice(queueList.end(), tempList, it);
+	}
+
+private:
+	mutable ConditionVariable queueListConditionVariable;
+	typename Threading::template Atomic<int> queueEmptyCounter;
+	typename Threading::template Atomic<int> queueNotifyCounter;
+	mutable Mutex queueListMutex;
+	BufferedItemList queueList;
+	Mutex freeListMutex;
+	BufferedItemList freeList;
+};
+
+} //namespace internal_
+
+template <
+	typename Event_,
+	typename Prototype_,
+	typename Policies_ = DefaultPolicies
+>
+class EventQueue : public internal_::InheritMixins<
+		internal_::EventQueueBase<Event_, Prototype_, Policies_>,
+		typename internal_::SelectMixins<Policies_, internal_::HasTypeMixins<Policies_>::value >::Type
+	>::Type, public TagEventDispatcher, public TagEventQueue
+{
+private:
+	using super = typename internal_::InheritMixins<
+		internal_::EventQueueBase<Event_, Prototype_, Policies_>,
+		typename internal_::SelectMixins<Policies_, internal_::HasTypeMixins<Policies_>::value >::Type
+	>::Type;
+
+public:
+	using super::super;
+};
+
+
+} //namespace eventpp
+
+
+#endif

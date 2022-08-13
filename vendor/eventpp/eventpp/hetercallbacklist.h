@@ -9,4 +9,33 @@
 // distributed under the License is distributed on an "AS IS" BASIS,
 // WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 // See the License for the specific language governing permissions and
-// lim
+// limitations under the License.
+
+#ifndef HETERCALLBACKLIST_H_966730936077
+#define HETERCALLBACKLIST_H_966730936077
+
+#include "internal/hetercallbacklist_i.h"
+#include "callbacklist.h"
+
+#include <array>
+#include <functional>
+#include <type_traits>
+#include <mutex>
+#include <memory>
+#include <tuple>
+
+namespace eventpp {
+
+namespace internal_ {
+
+template <
+	typename PrototypeList_,
+	typename Policies_
+>
+class HeterCallbackListBase
+{
+protected:
+	struct HeterHandle_
+	{
+		int index;
+		std::weak_ptr<void> homoHandle

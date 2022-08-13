@@ -38,4 +38,27 @@ protected:
 	struct HeterHandle_
 	{
 		int index;
-		std::weak_ptr<void> homoHandle
+		std::weak_ptr<void> homoHandle;
+
+		operator bool () const noexcept {
+			return (bool)homoHandle;
+		}
+	};
+
+	struct UnderlyingPoliciesType_
+	{
+	};
+
+	class HomoCallbackListTypeBase
+	{
+	public:
+		virtual bool empty() = 0;
+		virtual bool doRemove(const HeterHandle_ & handle) = 0;
+		virtual std::shared_ptr<HomoCallbackListTypeBase> doClone() = 0;
+	};
+
+	template <typename T>
+	class HomoCallbackListType : public CallbackList<T, UnderlyingPoliciesType_>, public HomoCallbackListTypeBase
+	{
+	private:
+		using super = CallbackList<T, Und

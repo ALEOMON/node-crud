@@ -61,4 +61,20 @@ protected:
 	class HomoCallbackListType : public CallbackList<T, UnderlyingPoliciesType_>, public HomoCallbackListTypeBase
 	{
 	private:
-		using super = CallbackList<T, Und
+		using super = CallbackList<T, UnderlyingPoliciesType_>;
+
+	public:
+		virtual bool empty() override {
+			return super::empty();
+		}
+
+		virtual bool doRemove(const HeterHandle_ & handle) override {
+			auto sp = handle.homoHandle.lock();
+			if(! sp) {
+				return false;
+			}
+			return this->remove(typename super::Handle(std::static_pointer_cast<typename super::Handle::element_type>(sp)));
+		}
+
+		virtual std::shared_ptr<HomoCallbackListTypeBase> doClone() override {
+			return std::make_shared<Homo

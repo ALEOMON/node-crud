@@ -77,4 +77,27 @@ protected:
 		}
 
 		virtual std::shared_ptr<HomoCallbackListTypeBase> doClone() override {
-			return std::make_shared<Homo
+			return std::make_shared<HomoCallbackListType<T> >(*this);
+		}
+	};
+
+	using Policies = Policies_;
+	using Threading = typename SelectThreading<Policies, HasTypeThreading<Policies>::value>::Type;
+
+	using PrototypeList = PrototypeList_;
+
+public:
+	using Handle = HeterHandle_;
+	using Mutex = typename Threading::Mutex;
+
+public:
+	HeterCallbackListBase()
+		:
+			callbackListList(),
+			callbackListListMutex()
+	{
+	}
+
+	HeterCallbackListBase(const HeterCallbackListBase & other)
+		:
+			callbac

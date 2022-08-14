@@ -100,4 +100,22 @@ public:
 
 	HeterCallbackListBase(const HeterCallbackListBase & other)
 		:
-			callbac
+			callbackListList(),
+			callbackListListMutex()
+	{
+		for(size_t i = 0; i < callbackListList.size(); ++i) {
+			if(other.callbackListList[i]) {
+				callbackListList[i] = other.callbackListList[i]->doClone();
+			}
+		}
+	}
+
+	HeterCallbackListBase(HeterCallbackListBase && other) noexcept
+		:
+			callbackListList(std::move(other.callbackListList)),
+			callbackListListMutex()
+	{
+	}
+
+	// If we use pass by value idiom and omit the 'this' check,
+	// when assigning to self there is a deep copy which is inefficient

@@ -139,4 +139,28 @@ public:
 		return *this;
 	}
 
-	void swap(HeterCallbackListB
+	void swap(HeterCallbackListBase & other) noexcept {
+		using std::swap;
+
+		swap(callbackListList, other.callbackListList);
+	}
+
+	bool empty() const {
+		for(const auto & callbackList : callbackListList) {
+			if(callbackList && ! callbackList->empty()) {
+				return false;
+			}
+		}
+
+		return true;
+	}
+
+	operator bool() const {
+		return ! empty();
+	}
+
+	template <typename C>
+	Handle append(const C & callback)
+	{
+		using PrototypeInfo = FindPrototypeByCallable<PrototypeList_, C>;
+		static_assert(PrototypeI

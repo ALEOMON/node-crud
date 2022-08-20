@@ -118,4 +118,25 @@ public:
 	}
 
 	// If we use pass by value idiom and omit the 'this' check,
-	// when assigning to self there is a deep copy which is inefficient
+	// when assigning to self there is a deep copy which is inefficient.
+	HeterCallbackListBase & operator = (const HeterCallbackListBase & other) noexcept
+	{
+		if(this != &other) {
+			HeterCallbackListBase copied(other);
+			swap(copied);
+		}
+		return *this;
+	}
+
+	HeterCallbackListBase & operator = (HeterCallbackListBase && other) noexcept
+	{
+		if(this != &other) {
+			for(size_t i = 0; i < callbackListList.size(); ++i) {
+				callbackListList[i] = std::move(other.callbackListList[i]);
+			}
+		}
+
+		return *this;
+	}
+
+	void swap(HeterCallbackListB

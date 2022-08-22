@@ -163,4 +163,20 @@ public:
 	Handle append(const C & callback)
 	{
 		using PrototypeInfo = FindPrototypeByCallable<PrototypeList_, C>;
-		static_assert(PrototypeI
+		static_assert(PrototypeInfo::index >= 0, "Can't find invoker for the given argument types.");
+
+		auto callbackList= doGetCallbackList<PrototypeInfo>();
+		return Handle {
+			PrototypeInfo::index,
+			callbackList->append(callback)
+		};
+	}
+
+	template <typename C>
+	Handle prepend(const C & callback)
+	{
+		using PrototypeInfo = FindPrototypeByCallable<PrototypeList_, C>;
+		static_assert(PrototypeInfo::index >= 0, "Can't find invoker for the given argument types.");
+
+		auto callbackList= doGetCallbackList<PrototypeInfo>();
+		ret

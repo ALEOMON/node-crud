@@ -196,4 +196,26 @@ public:
 		if(before.index != PrototypeInfo::index) {
 			return Handle {
 				PrototypeInfo::index,
-				c
+				callbackList->append(callback)
+			};
+		}
+
+		using UnderlyingHandle = typename decltype(callbackList)::element_type::Handle;
+
+		return Handle {
+			PrototypeInfo::index,
+			callbackList->insert(
+				callback,
+				UnderlyingHandle(std::static_pointer_cast<typename UnderlyingHandle::element_type>(before.homoHandle.lock()))
+			)
+		};
+	}
+
+	bool remove(const Handle & handle)
+	{
+		auto callbackList = callbackListList[handle.index];
+		if(callbackList) {
+			return callbackList->doRemove(handle);
+		}
+
+		ret

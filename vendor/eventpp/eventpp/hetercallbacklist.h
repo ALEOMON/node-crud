@@ -229,4 +229,16 @@ public:
 
 		auto callbackList= doGetCallbackList<PrototypeInfo>();
 		using CL = typename decltype(callbackList)::element_type;
-		callbackList->forEach([this, &func](const typename CL::Handle & handle, const typen
+		callbackList->forEach([this, &func](const typename CL::Handle & handle, const typename CL::Callback & callback) {
+			doForEachInvoke<void, PrototypeInfo::index>(func, handle, callback);
+		});
+	}
+
+	template <typename Prototype, typename Func>
+	bool forEachIf(Func && func) const
+	{
+		using PrototypeInfo = FindPrototypeByCallable<PrototypeList, Prototype>;
+		static_assert(PrototypeInfo::index >= 0, "Can't find invoker for the given argument types.");
+
+		auto callbackList= doGetCallbackList<PrototypeInfo>();
+		using CL = typename decltype(callbackLis

@@ -241,4 +241,16 @@ public:
 		static_assert(PrototypeInfo::index >= 0, "Can't find invoker for the given argument types.");
 
 		auto callbackList= doGetCallbackList<PrototypeInfo>();
-		using CL = typename decltype(callbackLis
+		using CL = typename decltype(callbackList)::element_type;
+		return callbackList->forEachIf([this, &func](const typename CL::Handle & handle, const typename CL::Callback & callback) {
+			return doForEachInvoke<bool, PrototypeInfo::index>(func, handle, callback);
+		});
+	}
+
+	template <typename ...Args>
+	void operator() (Args && ...args) const
+	{
+		using PrototypeInfo = FindPrototypeByArgs<PrototypeList, Args...>;
+		static_assert(PrototypeInfo::index >= 0, "Can't find invoker for the given argument types.");
+
+		auto callbackList= doGetCallbackList

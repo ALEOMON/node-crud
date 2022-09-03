@@ -253,4 +253,16 @@ public:
 		using PrototypeInfo = FindPrototypeByArgs<PrototypeList, Args...>;
 		static_assert(PrototypeInfo::index >= 0, "Can't find invoker for the given argument types.");
 
-		auto callbackList= doGetCallbackList
+		auto callbackList= doGetCallbackList<PrototypeInfo>();
+		(*callbackList)(std::forward<Args>(args)...);
+	}
+
+private:
+	template <typename RT, int PrototypeIndex, typename Func, typename H, typename CL>
+	auto doForEachInvoke(Func && func, const H & handle, CL && callback) const
+		-> typename std::enable_if<CanInvoke<Func, Handle, CL>::value, RT>::type
+	{
+		return func(Handle { PrototypeIndex, handle }, callback);
+	}
+
+	template <typename RT, int PrototypeIndex, typename Func, typename H, typena

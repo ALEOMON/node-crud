@@ -218,4 +218,15 @@ public:
 			return callbackList->doRemove(handle);
 		}
 
-		ret
+		return false;
+	}
+
+	template <typename Prototype, typename Func>
+	void forEach(Func && func) const
+	{
+		using PrototypeInfo = FindPrototypeByCallable<PrototypeList, Prototype>;
+		static_assert(PrototypeInfo::index >= 0, "Can't find invoker for the given argument types.");
+
+		auto callbackList= doGetCallbackList<PrototypeInfo>();
+		using CL = typename decltype(callbackList)::element_type;
+		callbackList->forEach([this, &func](const typename CL::Handle & handle, const typen

@@ -279,4 +279,16 @@ private:
 		static_assert(PrototypeInfo::index >= 0, "Can't find invoker for the given argument types.");
 
 		if(! callbackListList[PrototypeInfo::index]) {
-			std::l
+			std::lock_guard<Mutex> lockGuard(callbackListListMutex);
+
+			if(! callbackListList[PrototypeInfo::index]) {
+				callbackListList[PrototypeInfo::index] = std::make_shared<HomoCallbackListType<typename PrototypeInfo::Prototype> >();
+			}
+		}
+
+		return std::static_pointer_cast<HomoCallbackListType<typename PrototypeInfo::Prototype> >(callbackListList[PrototypeInfo::index]);
+	}
+
+private:
+	// the postfix 'ListList' is not good, but it's better to use consistent naming convention.
+	mutable std::array<std::shared_pt

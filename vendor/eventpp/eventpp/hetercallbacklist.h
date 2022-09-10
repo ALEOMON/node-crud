@@ -291,4 +291,23 @@ private:
 
 private:
 	// the postfix 'ListList' is not good, but it's better to use consistent naming convention.
-	mutable std::array<std::shared_pt
+	mutable std::array<std::shared_ptr<HomoCallbackListTypeBase>, HeterTupleSize<PrototypeList_>::value> callbackListList;
+	mutable Mutex callbackListListMutex;
+};
+
+
+} //namespace internal_
+
+template <
+	typename PrototypeList_,
+	typename Policies_ = DefaultPolicies
+>
+class HeterCallbackList : public internal_::HeterCallbackListBase<PrototypeList_, Policies_>, public TagCallbackList, public TagHeterCallbackList
+{
+private:
+	using super = internal_::HeterCallbackListBase<PrototypeList_, Policies_>;
+
+public:
+	using super::super;
+
+	f

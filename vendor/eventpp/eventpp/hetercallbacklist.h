@@ -310,4 +310,12 @@ private:
 public:
 	using super::super;
 
-	f
+	friend void swap(HeterCallbackList & first, HeterCallbackList & second) noexcept {
+		first.swap(second);
+	}
+};
+
+
+} //namespace eventpp
+
+#endif

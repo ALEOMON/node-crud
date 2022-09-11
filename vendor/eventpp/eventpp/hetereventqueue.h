@@ -53,4 +53,22 @@ private:
 
 	using Policies = typename super::Policies;
 	using Threading = typename super::Threading;
-	using ConditionVariable = typename Threading::Cond
+	using ConditionVariable = typename Threading::ConditionVariable;
+
+	struct QueuedItemBase;
+	using ItemDispatcher = void (*)(const HeterEventQueueBase *, const QueuedItemBase &);
+
+	struct QueuedItemBase
+	{
+		QueuedItemBase(const int callableIndex, const EventType_ & event, const ItemDispatcher dispatcher)
+			: callableIndex(callableIndex), event(event), dispatcher(dispatcher)
+		{
+		}
+
+		int callableIndex;
+		EventType_ event;
+		ItemDispatcher dispatcher;
+	};
+
+	template <typename T>
+	struct QueuedItem : public QueuedItemBase

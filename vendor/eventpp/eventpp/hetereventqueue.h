@@ -28,3 +28,29 @@ template <
 	typename PrototypeList_,
 	typename Policies_
 >
+class HeterEventQueueBase : public HeterEventDispatcherBase<
+		EventType_,
+		PrototypeList_,
+		Policies_,
+		HeterEventQueueBase <
+			EventType_,
+			PrototypeList_,
+			Policies_
+		>
+	>
+{
+private:
+	using super = HeterEventDispatcherBase<
+		EventType_,
+		PrototypeList_,
+		Policies_,
+		HeterEventQueueBase <
+			EventType_,
+			PrototypeList_,
+			Policies_
+		>
+	>;
+
+	using Policies = typename super::Policies;
+	using Threading = typename super::Threading;
+	using ConditionVariable = typename Threading::Cond

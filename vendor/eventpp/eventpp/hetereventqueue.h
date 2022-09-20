@@ -72,3 +72,16 @@ private:
 
 	template <typename T>
 	struct QueuedItem : public QueuedItemBase
+	{
+		QueuedItem(const int callableIndex, const EventType_ & event, const ItemDispatcher dispatcher, T && arguments)
+			: QueuedItemBase(callableIndex, event, dispatcher), arguments(std::move(arguments))
+		{
+		}
+
+		T arguments;
+	};
+
+	template <typename ...Args>
+	using QueuedItemSizer = QueuedItem<std::tuple<typename std::remove_cv<typename std::remove_reference<Args>::type>::type...> >;
+
+	using BufferedQueuedItem = Buffe

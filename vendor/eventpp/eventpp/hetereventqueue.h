@@ -84,4 +84,24 @@ private:
 	template <typename ...Args>
 	using QueuedItemSizer = QueuedItem<std::tuple<typename std::remove_cv<typename std::remove_reference<Args>::type>::type...> >;
 
-	using BufferedQueuedItem = Buffe
+	using BufferedQueuedItem = BufferedItem<GetCallablePrototypeMaxSize<PrototypeList_, QueuedItemSizer>::value>;
+
+	using BufferedItemList = std::list<BufferedQueuedItem>;
+
+	using PrototypeList = typename super::PrototypeList;
+
+	using ArgumentPassingMode = typename super::ArgumentPassingMode;
+
+public:
+	using super::Event;
+	using super::Handle;
+	using Mutex = typename super::Mutex;
+
+public:
+	HeterEventQueueBase()
+		:
+		super(),
+		queueListConditionVariable(),
+		queueEmptyCounter(0),
+		queueNotifyCounter(0),
+		queueListMutex(),

@@ -105,3 +105,33 @@ public:
 		queueEmptyCounter(0),
 		queueNotifyCounter(0),
 		queueListMutex(),
+		queueList(),
+		freeListMutex(),
+		freeList()
+	{
+	}
+
+	HeterEventQueueBase(const HeterEventQueueBase & other)
+		: super(other)
+	{
+	}
+
+	HeterEventQueueBase(HeterEventQueueBase && other) noexcept
+		: super(std::move(other))
+	{
+	}
+
+	HeterEventQueueBase & operator = (const HeterEventQueueBase & other)
+	{
+		super::operator = (other);
+		return *this;
+	}
+
+	HeterEventQueueBase & operator = (HeterEventQueueBase && other) noexcept
+	{
+		super::operator = (std::move(other));
+		return *this;
+	}
+
+	template <typename T, typename ...Args>
+	void enqueue(T && f

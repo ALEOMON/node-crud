@@ -134,4 +134,26 @@ public:
 	}
 
 	template <typename T, typename ...Args>
-	void enqueue(T && f
+	void enqueue(T && first, Args && ...args)
+	{
+		doEnqueue<ArgumentPassingMode>(std::forward<T>(first), std::forward<Args>(args)...);
+	}
+
+	bool emptyQueue() const
+	{
+		return queueList.empty() && (queueEmptyCounter.load(std::memory_order_acquire) == 0);
+	}
+
+	void clearEvents()
+	{
+		if(! queueList.empty()) {
+			BufferedItemList tempList;
+
+			{
+				std::lock_guard<Mutex> queueListLock(queueListMutex);
+				std::swap(queueList, tempList);
+			}
+
+			if(! tempList.empty()) {
+				for(auto & item : tempList) {
+					item.

@@ -176,4 +176,28 @@ public:
 
 			{
 				std::lock_guard<Mutex> queueListLock(queueListMutex);
-				std::swap(queueList, t
+				std::swap(queueList, tempList);
+			}
+
+			if(! tempList.empty()) {
+				for(auto & item : tempList) {
+					doDispatchQueuedEvent(item.template get<QueuedItemBase>());
+					item.clear();
+				}
+
+				std::lock_guard<Mutex> queueListLock(freeListMutex);
+				freeList.splice(freeList.end(), tempList);
+
+				return true;
+			}
+		}
+
+		return false;
+	}
+
+	bool processOne()
+	{
+		if(! queueList.empty()) {
+			BufferedItemList tempList;
+
+			// Use a counter to tell

@@ -156,4 +156,24 @@ public:
 
 			if(! tempList.empty()) {
 				for(auto & item : tempList) {
-					item.
+					item.clear();
+				}
+
+				std::lock_guard<Mutex> queueListLock(freeListMutex);
+				freeList.splice(freeList.end(), tempList);
+			}
+		}
+	}
+
+	bool process()
+	{
+		if(! queueList.empty()) {
+			BufferedItemList tempList;
+
+			// Use a counter to tell the queue list is not empty during processing
+			// even though queueList is swapped to empty.
+			CounterGuard<decltype(queueEmptyCounter)> counterGuard(queueEmptyCounter);
+
+			{
+				std::lock_guard<Mutex> queueListLock(queueListMutex);
+				std::swap(queueList, t

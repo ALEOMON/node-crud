@@ -200,4 +200,18 @@ public:
 		if(! queueList.empty()) {
 			BufferedItemList tempList;
 
-			// Use a counter to tell
+			// Use a counter to tell the queue list is not empty during processing
+			// even though queueList is swapped to empty.
+			CounterGuard<decltype(queueEmptyCounter)> counterGuard(queueEmptyCounter);
+
+			{
+				std::lock_guard<Mutex> queueListLock(queueListMutex);
+				if(! queueList.empty()) {
+					tempList.splice(tempList.end(), queueList, queueList.begin());
+				}
+			}
+
+			if(! tempList.empty()) {
+				auto & item = tempList.front();
+				doDispatchQueuedEvent(item.template get<QueuedItemBase>());
+				item.

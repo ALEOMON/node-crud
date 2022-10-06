@@ -214,4 +214,30 @@ public:
 			if(! tempList.empty()) {
 				auto & item = tempList.front();
 				doDispatchQueuedEvent(item.template get<QueuedItemBase>());
-				item.
+				item.clear();
+
+				std::lock_guard<Mutex> queueListLock(freeListMutex);
+				freeList.splice(freeList.end(), tempList);
+
+				return true;
+			}
+		}
+
+		return false;
+	}
+
+	template <typename F>
+	bool processIf(F && func)
+	{
+		if(queueList.empty()) {
+			return false;
+		}
+
+		using PrototypeInfo = FindPrototypeByCallable<PrototypeList, F>;
+		return doProcessIf<PrototypeInfo>(std::forward<F>(func));
+	}
+
+	void wait() const
+	{
+		std::unique_lock<Mutex> queueListLock(queueListMutex);
+		queueLi

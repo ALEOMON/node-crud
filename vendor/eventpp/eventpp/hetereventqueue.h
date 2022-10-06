@@ -240,4 +240,23 @@ public:
 	void wait() const
 	{
 		std::unique_lock<Mutex> queueListLock(queueListMutex);
-		queueLi
+		queueListConditionVariable.wait(queueListLock, [this]() -> bool {
+			return doCanProcess();
+		});
+	}
+
+	template <class Rep, class Period>
+	bool waitFor(const std::chrono::duration<Rep, Period> & duration) const
+	{
+		std::unique_lock<Mutex> queueListLock(queueListMutex);
+		return queueListConditionVariable.wait_for(queueListLock, duration, [this]() -> bool {
+			return doCanProcess();
+		});
+	}
+
+	using super::dispatch;
+
+private:
+	bool doCanProcess() const
+	{
+		return ! emptyQueue() && doCan

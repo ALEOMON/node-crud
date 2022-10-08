@@ -276,4 +276,18 @@ private:
 	static void doDispatchItem(const HeterEventQueueBase * self, const QueuedItemBase & baseItem)
 	{
 		const auto & item = static_cast<const QueuedItem<typename PrototypeInfo::ArgsTuple> &>(baseItem);
-		self->doDispatchQueuedItem<PrototypeInf
+		self->doDispatchQueuedItem<PrototypeInfo>(
+			item,
+			typename MakeIndexSequence<std::tuple_size<typename PrototypeInfo::ArgsTuple>::value>::Type()
+		);
+	}
+
+	template <typename PrototypeInfo, typename T, size_t ...Indexes>
+	void doDispatchQueuedItem(T && item, IndexSequence<Indexes...>) const
+	{
+		this->directDispatch(item.event, std::get<Indexes>(item.arguments)...);
+	}
+
+	template <typename PrototypeInfo, typename F>
+	auto doProcessIf(F && func)
+		-> typename std::enable_if<(Protot

@@ -259,4 +259,21 @@ public:
 private:
 	bool doCanProcess() const
 	{
-		return ! emptyQueue() && doCan
+		return ! emptyQueue() && doCanNotifyQueueAvailable();
+	}
+
+	bool doCanNotifyQueueAvailable() const
+	{
+		return queueNotifyCounter.load(std::memory_order_acquire) == 0;
+	}
+
+	void doDispatchQueuedEvent(const QueuedItemBase & item)
+	{
+		item.dispatcher(this, item);
+	}
+
+	template <typename PrototypeInfo>
+	static void doDispatchItem(const HeterEventQueueBase * self, const QueuedItemBase & baseItem)
+	{
+		const auto & item = static_cast<const QueuedItem<typename PrototypeInfo::ArgsTuple> &>(baseItem);
+		self->doDispatchQueuedItem<PrototypeInf

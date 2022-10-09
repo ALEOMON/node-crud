@@ -305,4 +305,24 @@ private:
 		}
 
 		if(! tempList.empty()) {
-			for(auto it = tempList.begin(); it != tempList.end();
+			for(auto it = tempList.begin(); it != tempList.end(); ) {
+				using ArgsTuple = typename PrototypeInfo::ArgsTuple;
+				auto item = it->template get<QueuedItem<ArgsTuple> >();
+
+				if(item.callableIndex != PrototypeInfo::index) {
+					++it;
+					continue;
+				}
+				if(doInvokeFuncWithQueuedEvent(
+					func,
+					item,
+					typename MakeIndexSequence<std::tuple_size<ArgsTuple>::value>::Type())
+					) {
+					doDispatchQueuedEvent(item);
+					it->clear();
+
+					auto tempIt = it;
+					++it;
+					idleList.splice(idleList.end(), tempList, tempIt);
+				}
+				els

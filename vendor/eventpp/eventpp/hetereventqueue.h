@@ -290,4 +290,19 @@ private:
 
 	template <typename PrototypeInfo, typename F>
 	auto doProcessIf(F && func)
-		-> typename std::enable_if<(Protot
+		-> typename std::enable_if<(PrototypeInfo::index >= 0), bool>::type
+	{
+		BufferedItemList tempList;
+		BufferedItemList idleList;
+
+		// Use a counter to tell the queue list is not empty during processing
+		// even though queueList is swapped to empty.
+		CounterGuard<decltype(queueEmptyCounter)> counterGuard(queueEmptyCounter);
+
+		{
+			std::lock_guard<Mutex> queueListLock(queueListMutex);
+			std::swap(queueList, tempList);
+		}
+
+		if(! tempList.empty()) {
+			for(auto it = tempList.begin(); it != tempList.end();

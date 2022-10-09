@@ -363,3 +363,15 @@ private:
 	{
 		return doInvokeFuncWithQueuedEventHelper(std::forward<F>(func), std::get<Indexes>(item.arguments)...);
 	}
+
+	template <typename F, typename ...Args>
+	bool doInvokeFuncWithQueuedEventHelper(F && func, Args && ...args) const
+	{
+		return func(std::forward<Args>(args)...);
+	}
+
+	template <typename ArgumentMode, typename T, typename ...Args>
+	auto doEnqueue(T && first, Args && ...args)
+		-> typename std::enable_if<std::is_same<ArgumentMode, ArgumentPassingIncludeEvent>::value>::type
+	{
+		using GetEvent = typename SelectGetEvent<Policies_, EventType_, HasFunctionGetEvent<Policies_, T &&, Args...>::value

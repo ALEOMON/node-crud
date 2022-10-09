@@ -325,4 +325,23 @@ private:
 					++it;
 					idleList.splice(idleList.end(), tempList, tempIt);
 				}
-				els
+				else {
+					++it;
+				}
+			}
+
+			if (! tempList.empty()) {
+				std::lock_guard<Mutex> queueListLock(queueListMutex);
+				queueList.splice(queueList.begin(), tempList);
+			}
+
+			if(! idleList.empty()) {
+				std::lock_guard<Mutex> queueListLock(freeListMutex);
+				freeList.splice(freeList.end(), idleList);
+
+				return true;
+			}
+		}
+
+		using NextPrototypeInfo = FindPrototypeByCallableFromIndex<PrototypeInfo::index + 1, PrototypeList, F>;
+		if(doProcessIf<NextPrototypeInfo>(std::forward<F>(func))) {

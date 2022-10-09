@@ -345,3 +345,21 @@ private:
 
 		using NextPrototypeInfo = FindPrototypeByCallableFromIndex<PrototypeInfo::index + 1, PrototypeList, F>;
 		if(doProcessIf<NextPrototypeInfo>(std::forward<F>(func))) {
+			return true;
+		}
+
+		return false;
+	}
+
+	template <typename PrototypeInfo, typename F>
+	auto doProcessIf(F && /*func*/)
+		-> typename std::enable_if<(PrototypeInfo::index < 0), bool>::type
+	{
+		return false;
+	}
+
+	template <typename F, typename T, size_t ...Indexes>
+	bool doInvokeFuncWithQueuedEvent(F && func, T && item, IndexSequence<Indexes...>) const
+	{
+		return doInvokeFuncWithQueuedEventHelper(std::forward<F>(func), std::get<Indexes>(item.arguments)...);
+	}

@@ -383,4 +383,18 @@ private:
 
 		doEnqueueItem(QueuedItemType(
 			PrototypeInfo::index,
-			GetEvent::getEvent(std::forward<T>(fi
+			GetEvent::getEvent(std::forward<T>(first), args...),
+			&HeterEventQueueBase::doDispatchItem<PrototypeInfo>,
+			typename PrototypeInfo::ArgsTuple(std::forward<T>(first), std::forward<Args>(args)...)
+		));
+
+		if(doCanProcess()) {
+			queueListConditionVariable.notify_one();
+		}
+	}
+
+	template <typename ArgumentMode, typename T, typename ...Args>
+	auto doEnqueue(T && first, Args && ...args)
+		-> typename std::enable_if<std::is_same<ArgumentMode, ArgumentPassingExcludeEvent>::value>::type
+	{
+		using GetEvent = typename SelectGetEven

@@ -397,4 +397,11 @@ private:
 	auto doEnqueue(T && first, Args && ...args)
 		-> typename std::enable_if<std::is_same<ArgumentMode, ArgumentPassingExcludeEvent>::value>::type
 	{
-		using GetEvent = typename SelectGetEven
+		using GetEvent = typename SelectGetEvent<Policies_, EventType_, HasFunctionGetEvent<Policies_, T &&, Args...>::value>::Type;
+		using PrototypeInfo = FindPrototypeByArgs<PrototypeList_, Args...>;
+		using QueuedItemType = QueuedItem<typename PrototypeInfo::ArgsTuple>;
+
+		static_assert(PrototypeInfo::index >= 0, "Can't find invoker for the given argument types.");
+		static_assert(std::tuple_size<typename PrototypeInfo::ArgsTuple>::value == sizeof...(Args), "Arguments count mismatch.");
+
+		doEnq

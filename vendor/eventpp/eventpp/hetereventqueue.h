@@ -404,4 +404,22 @@ private:
 		static_assert(PrototypeInfo::index >= 0, "Can't find invoker for the given argument types.");
 		static_assert(std::tuple_size<typename PrototypeInfo::ArgsTuple>::value == sizeof...(Args), "Arguments count mismatch.");
 
-		doEnq
+		doEnqueueItem(QueuedItemType(
+			PrototypeInfo::index,
+			GetEvent::getEvent(std::forward<T>(first), args...),
+			&HeterEventQueueBase::doDispatchItem<PrototypeInfo>,
+			typename PrototypeInfo::ArgsTuple(std::forward<Args>(args)...)
+		));
+
+		if(doCanProcess()) {
+			queueListConditionVariable.notify_one();
+		}
+	}
+
+	template <typename T>
+	void doEnqueueItem(T && item)
+	{
+		BufferedItemList tempList;
+		if(! freeList.empty()) {
+			{
+				std::lock_guard<Mutex> queueList

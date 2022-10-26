@@ -422,4 +422,25 @@ private:
 		BufferedItemList tempList;
 		if(! freeList.empty()) {
 			{
-				std::lock_guard<Mutex> queueList
+				std::lock_guard<Mutex> queueListLock(freeListMutex);
+				if(! freeList.empty()) {
+					tempList.splice(tempList.end(), freeList, freeList.begin());
+				}
+			}
+		}
+
+		if(tempList.empty()) {
+			tempList.emplace_back();
+		}
+
+		auto it = tempList.begin();
+		it->set(std::move(item));
+
+		std::lock_guard<Mutex> queueListLock(queueListMutex);
+		queueList.splice(queueList.end(), tempList, it);
+	}
+
+private:
+	mutable ConditionVariable queueListConditionVariable;
+	typename Threading::template Atomic<int> queueEmptyCounter;
+	typename Thr

@@ -443,4 +443,23 @@ private:
 private:
 	mutable ConditionVariable queueListConditionVariable;
 	typename Threading::template Atomic<int> queueEmptyCounter;
-	typename Thr
+	typename Threading::template Atomic<int> queueNotifyCounter;
+	mutable Mutex queueListMutex;
+	BufferedItemList queueList;
+	Mutex freeListMutex;
+	BufferedItemList freeList;
+};
+
+
+
+} //namespace internal_
+
+template <
+	typename Event_,
+	typename PrototypeList_,
+	typename Policies_ = DefaultPolicies
+>
+class HeterEventQueue : public internal_::InheritMixins<
+		internal_::HeterEventQueueBase<Event_, PrototypeList_, Policies_>,
+		typename internal_::SelectMixins<Policies_, internal_::HasTypeMixins<Policies_>::value >::Type
+	>::Type, public TagEventDispatcher, p

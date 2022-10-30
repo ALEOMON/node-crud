@@ -134,3 +134,42 @@ struct InheritMixins <Root, MixinList<> >
 
 template <typename Root, typename TList, typename Func>
 struct ForEachMixins;
+
+template <typename Func, typename Root, template <typename> class T, template <typename> class ...Args>
+struct ForEachMixins <Root, MixinList<T, Args...>, Func>
+{
+	using Type = typename InheritMixins<Root, MixinList<T, Args...> >::Type;
+
+	template <typename ...A>
+	static bool forEach(A && ...args) {
+		if(Func::template forEach<Type>(std::forward<A>(args)...)) {
+			return ForEachMixins<Root, MixinList<Args...>, Func>::forEach(std::forward<A>(args)...);
+		}
+		return false;
+	}
+};
+
+template <typename Root, typename Func>
+struct ForEachMixins <Root, MixinList<>, Func>
+{
+	using Type = Root;
+
+	template <typename ...A>
+	static bool forEach(A && .../*args*/) {
+		return true;
+	}
+};
+
+template <typename T, typename ...Args>
+struct HasFunctionMixinBeforeDispatch
+{
+	template <typename C> static std::true_type test(
+		decltype(std::declval<C>().mixinBeforeDispatch(std::declval<Args>()...)) *
+	);
+	template <typename C> static std::false_type test(...);    
+
+	enum { value = !! decltype(test<T>(0))() };
+};
+
+
+} //namespace internal_

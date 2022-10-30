@@ -24,4 +24,42 @@ struct MakeIndexSequence<0, Indexes...>
 	using Type = IndexSequence<Indexes...>;
 };
 
-te
+template <typename T>
+struct CounterGuard
+{
+	explicit CounterGuard(T & v) : value(v) {
+		++value;
+	}
+
+	~CounterGuard() {
+		--value;
+	}
+
+	T & value;
+};
+
+using DtorFunc = void (*)(void *);
+
+template <typename T>
+void commonDtor(void * instance)
+{
+	reinterpret_cast<T *>(instance)->~T();
+}
+
+template <size_t Size>
+class BufferedItem
+{
+public:
+	explicit BufferedItem() : buffer(), dtor(nullptr)
+	{
+	}
+
+	~BufferedItem()
+	{
+		if(dtor != nullptr) {
+			clear();
+		}
+	}
+
+	BufferedItem(BufferedItem &&) = delete;
+	BufferedIt

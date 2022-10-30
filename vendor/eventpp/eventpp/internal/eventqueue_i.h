@@ -62,4 +62,26 @@ public:
 	}
 
 	BufferedItem(BufferedItem &&) = delete;
-	BufferedIt
+	BufferedItem(const BufferedItem &) = delete;
+	BufferedItem & operator = (const BufferedItem &) = delete;
+
+	template <typename U>
+	void set(U && item) {
+		static_assert(sizeof(U) <= Size, "Item is too large to fit in BufferedItem");
+		assert(dtor == nullptr);
+
+		new (buffer.data()) U(std::forward<U>(item));
+		dtor = &commonDtor<U>;
+	}
+
+	template <typename U>
+	U & get() {
+		assert(dtor != nullptr);
+
+		return *reinterpret_cast<U *>(buffer.data());
+	}
+
+	void clear() {
+		assert(dtor != nullptr);
+
+		dtor

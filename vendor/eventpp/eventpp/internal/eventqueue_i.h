@@ -84,4 +84,20 @@ public:
 	void clear() {
 		assert(dtor != nullptr);
 
-		dtor
+		dtor(buffer.data());
+		dtor = nullptr;
+	}
+
+private:
+	std::array<char, Size> buffer;
+	DtorFunc dtor;
+};
+
+
+} //namespace internal_
+
+} //namespace eventpp
+
+
+#endif
+

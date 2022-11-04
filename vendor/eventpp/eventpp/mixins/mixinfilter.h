@@ -20,4 +20,26 @@
 #include <functional>
 #include <type_traits>
 
-namespace e
+namespace eventpp {
+
+template <typename Base>
+class MixinFilter : public Base
+{
+private:
+	using super = Base;
+
+	using BoolReferencePrototype = typename internal_::ReplaceReturnType<
+		typename internal_::TransformArguments<
+			typename super::Prototype,
+			std::add_lvalue_reference
+		>::Type,
+		bool
+	>::Type;
+
+	using Filter = std::function<BoolReferencePrototype>;
+	using FilterList = CallbackList<BoolReferencePrototype>;
+
+public:
+	using FilterHandle = typename FilterList::Handle;
+
+public:

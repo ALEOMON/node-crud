@@ -43,3 +43,29 @@ public:
 	using FilterHandle = typename FilterList::Handle;
 
 public:
+	FilterHandle appendFilter(const Filter & filter)
+	{
+		return filterList.append(filter);
+	}
+
+	bool removeFilter(const FilterHandle & filterHandle)
+	{
+		return filterList.remove(filterHandle);
+	}
+
+	template <typename ...Args>
+	bool mixinBeforeDispatch(Args && ...args) const {
+		if(! filterList.empty()) {
+			if(! filterList.forEachIf([&args...](typename FilterList::Callback & callback) {
+					return callback(args...);
+				})
+			) {
+				return false;
+			}
+		}
+
+		return true;
+	}
+
+private:
+	FilterList filterList

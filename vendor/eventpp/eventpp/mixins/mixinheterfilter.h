@@ -23,4 +23,24 @@
 namespace eventpp {
 
 template <typename Base>
-class MixinHeterFilt
+class MixinHeterFilter : public Base
+{
+private:
+	using super = Base;
+
+	using BoolReferencePrototypeList = typename internal_::ReplaceReturnTypeList<
+		typename internal_::TransformArgumentsList<
+			typename super::PrototypeList,
+			std::add_lvalue_reference
+		>::Type,
+		bool
+	>::Type;
+
+	using FilterList = HeterCallbackList<BoolReferencePrototypeList>;
+
+public:
+	using FilterHandle = typename FilterList::Handle;
+
+public:
+	template <typename Callback>
+	FilterHandle appendFilter

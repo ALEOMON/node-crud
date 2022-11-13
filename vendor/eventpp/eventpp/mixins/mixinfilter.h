@@ -68,4 +68,12 @@ public:
 	}
 
 private:
-	FilterList filterList
+	FilterList filterList;
+};
+
+
+} //namespace eventpp
+
+
+#endif
+

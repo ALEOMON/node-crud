@@ -6,4 +6,21 @@
 // You may obtain a copy of the License at
 //   http://www.apache.org/licenses/LICENSE-2.0
 // Unless required by applicable law or agreed to in writing, software
-// distributed under the Licens
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+#ifndef MIXINHETERFILTER_H_990158796753
+#define MIXINHETERFILTER_H_990158796753
+
+#include "../hetercallbacklist.h"
+#include "../internal/typeutil_i.h"
+
+#include <functional>
+#include <type_traits>
+
+namespace eventpp {
+
+template <typename Base>
+class MixinHeterFilt

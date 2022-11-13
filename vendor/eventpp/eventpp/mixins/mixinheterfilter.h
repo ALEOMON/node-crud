@@ -43,4 +43,23 @@ public:
 
 public:
 	template <typename Callback>
-	FilterHandle appendFilter
+	FilterHandle appendFilter(const Callback & filter)
+	{
+		return filterList.append(filter);
+	}
+
+	bool removeFilter(const FilterHandle & filterHandle)
+	{
+		return filterList.remove(filterHandle);
+	}
+
+	template <typename ...Args>
+	bool mixinBeforeDispatch(Args && ...args) const {
+		if(! filterList.template forEachIf<void (Args...)>([&args...](const typename std::function<bool (Args...)> & callback) -> bool {
+			return callback(std::forward<Args>(args)...);
+		})
+			) {
+			return false;
+		}
+
+		return tru

@@ -20,4 +20,26 @@
 
 namespace eventpp {
 
-template <typename DispatcherType, typename Enabled 
+template <typename DispatcherType, typename Enabled = void>
+class ConditionalRemover;
+
+template <typename DispatcherType>
+class ConditionalRemover <
+		DispatcherType,
+		typename std::enable_if<std::is_base_of<TagEventDispatcher, DispatcherType>::value>::type
+	>
+{
+private:
+	template <typename Callback, typename Condition>
+	struct ItemByCondition
+	{
+		struct Data
+		{
+			Condition shouldRemove;
+			DispatcherType & dispatcher;
+			typename DispatcherType::Event event;
+			Callback listener;
+			typename DispatcherType::Handle handle;
+		};
+
+		template <typ

@@ -62,4 +62,16 @@ public:
 			return false;
 		}
 
-		return tru
+		return true;
+	}
+
+private:
+	FilterList filterList;
+};
+
+
+} //namespace eventpp
+
+
+#endif
+

@@ -42,4 +42,23 @@ private:
 			typename DispatcherType::Handle handle;
 		};
 
-		template <typ
+		template <typename ...Args>
+		void operator() (Args && ...args) const {
+			if(data->shouldRemove()) {
+				data->dispatcher.removeListener(data->event, data->handle);
+			}
+			data->listener(std::forward(args)...);
+		}
+		
+		std::shared_ptr<Data> data;
+	};
+
+public:
+	explicit ConditionalRemover(DispatcherType & dispatcher)
+		: dispatcher(dispatcher)
+	{
+	}
+	
+	template <typename Callback, typename Condition>
+	typename DispatcherType::Handle appendListener(
+			const typename DispatcherType::E

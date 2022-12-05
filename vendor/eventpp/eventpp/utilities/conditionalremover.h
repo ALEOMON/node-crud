@@ -89,4 +89,16 @@ public:
 		return data->handle;
 	}
 
-	template <typename Callback, typena
+	template <typename Callback, typename Condition>
+	typename DispatcherType::Handle insertListener(
+			const typename DispatcherType::Event & event,
+			const Callback & listener,
+			const typename DispatcherType::Handle & before,
+			const Condition & condition
+		)
+	{
+		using Wrapper = ItemByCondition<Callback, Condition>;
+		auto data = std::make_shared<typename Wrapper::Data>(typename Wrapper::Data {
+			condition, dispatcher, event, listener, typename DispatcherType::Handle()
+		});
+		data->handle = dispatcher.insertListener(e

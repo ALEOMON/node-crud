@@ -101,4 +101,25 @@ public:
 		auto data = std::make_shared<typename Wrapper::Data>(typename Wrapper::Data {
 			condition, dispatcher, event, listener, typename DispatcherType::Handle()
 		});
-		data->handle = dispatcher.insertListener(e
+		data->handle = dispatcher.insertListener(event, Wrapper{data}, before);
+		return data->handle;
+	}
+
+private:
+	DispatcherType & dispatcher;
+};
+
+template <typename CallbackListType>
+class ConditionalRemover <
+		CallbackListType,
+		typename std::enable_if<std::is_base_of<TagCallbackList, CallbackListType>::value>::type
+	>
+{
+private:
+	template <typename Callback, typename Condition>
+	struct ItemByCondition
+	{
+		struct Data
+		{
+			Condition shouldRemove;
+			CallbackListType & callbackList

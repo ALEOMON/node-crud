@@ -144,4 +144,20 @@ public:
 	{
 	}
 	
-	template <typename Callback, typename Con
+	template <typename Callback, typename Condition>
+	typename CallbackListType::Handle append(
+			const Callback & listener,
+			const Condition & condition
+		)
+	{
+		using Wrapper = ItemByCondition<Callback, Condition>;
+		auto data = std::make_shared<typename Wrapper::Data>(typename Wrapper::Data {
+			condition, callbackList, listener, typename CallbackListType::Handle()
+		});
+		data->handle = callbackList.append(Wrapper{data});
+		return data->handle;
+	}
+
+	template <typename Callback, typename Condition>
+	typename CallbackListType::Handle prepend(
+			const Call

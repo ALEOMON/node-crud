@@ -122,4 +122,26 @@ private:
 		struct Data
 		{
 			Condition shouldRemove;
-			CallbackListType & callbackList
+			CallbackListType & callbackList;
+			Callback listener;
+			typename CallbackListType::Handle handle;
+		};
+
+		template <typename ...Args>
+		void operator() (Args && ...args) const {
+			if(data->shouldRemove()) {
+				data->callbackList.remove(data->handle);
+			}
+			data->listener(std::forward(args)...);
+		}
+		
+		std::shared_ptr<Data> data;
+	};
+
+public:
+	explicit ConditionalRemover(CallbackListType & callbackList)
+		: callbackList(callbackList)
+	{
+	}
+	
+	template <typename Callback, typename Con

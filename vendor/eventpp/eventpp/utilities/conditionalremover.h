@@ -175,4 +175,21 @@ public:
 	template <typename Callback, typename Condition>
 	typename CallbackListType::Handle insert(
 			const Callback & listener,
-			const typename CallbackListTy
+			const typename CallbackListType::Handle & before,
+			const Condition & condition
+		)
+	{
+		using Wrapper = ItemByCondition<Callback, Condition>;
+		auto data = std::make_shared<typename Wrapper::Data>(typename Wrapper::Data {
+			condition, callbackList, listener, typename CallbackListType::Handle()
+		});
+		data->handle = callbackList.insert(Wrapper{data}, before);
+		return data->handle;
+	}
+
+private:
+	CallbackListType & callbackList;
+};
+
+template <typename DispatcherType>
+ConditionalRemover<DispatcherType> conditionalRemover(DispatcherType & 

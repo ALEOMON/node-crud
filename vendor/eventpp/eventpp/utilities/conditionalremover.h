@@ -192,4 +192,13 @@ private:
 };
 
 template <typename DispatcherType>
-ConditionalRemover<DispatcherType> conditionalRemover(DispatcherType & 
+ConditionalRemover<DispatcherType> conditionalRemover(DispatcherType & dispatcher)
+{
+	return ConditionalRemover<DispatcherType>(dispatcher);
+}
+
+
+} //namespace eventpp
+
+#endif
+

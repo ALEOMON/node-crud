@@ -44,4 +44,26 @@ private:
 
 		template <typename ...Args>
 		void operator() (Args && ...args) const {
-			if(--data->triggerCount 
+			if(--data->triggerCount <= 0) {
+				data->dispatcher.removeListener(data->event, data->handle);
+			}
+			data->listener(std::forward(args)...);
+		}
+		
+		std::shared_ptr<Data> data;
+	};
+	
+public:
+	explicit CounterRemover(DispatcherType & dispatcher)
+		: dispatcher(dispatcher)
+	{
+	}
+	
+	template <typename Callback>
+	typename DispatcherType::Handle appendListener(
+			const typename DispatcherType::Event & event,
+			const Callback & listener,
+			const int triggerCount = 1
+		)
+	{
+		auto data = std::make_shared<typename Wrapper<Callback>::Data>(type

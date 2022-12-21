@@ -23,4 +23,25 @@ namespace eventpp {
 template <typename DispatcherType, typename Enabled = void>
 class CounterRemover;
 
-template 
+template <typename DispatcherType>
+class CounterRemover <
+		DispatcherType,
+		typename std::enable_if<std::is_base_of<TagEventDispatcher, DispatcherType>::value>::type
+	>
+{
+private:
+	template <typename Callback>
+	struct Wrapper
+	{
+		struct Data
+		{
+			int triggerCount;
+			DispatcherType & dispatcher;
+			typename DispatcherType::Event event;
+			Callback listener;
+			typename DispatcherType::Handle handle;
+		};
+
+		template <typename ...Args>
+		void operator() (Args && ...args) const {
+			if(--data->triggerCount 

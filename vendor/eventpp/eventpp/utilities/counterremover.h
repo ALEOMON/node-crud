@@ -80,4 +80,17 @@ public:
 			const int triggerCount = 1
 		)
 	{
-		auto data = std::make_shared<typename Wrapper<Callback>::Data>(typename Wrapper<Cal
+		auto data = std::make_shared<typename Wrapper<Callback>::Data>(typename Wrapper<Callback>::Data {
+			triggerCount, dispatcher, event, listener, typename DispatcherType::Handle()
+		});
+		data->handle = dispatcher.prependListener(event, Wrapper<Callback>{data});
+		return data->handle;
+	}
+
+	template <typename Callback>
+	typename DispatcherType::Handle insertListener(
+			const typename DispatcherType::Event & event,
+			const Callback & listener,
+			const typename DispatcherType::Handle & before,
+			const int triggerCount = 1
+	

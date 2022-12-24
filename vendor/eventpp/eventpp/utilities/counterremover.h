@@ -93,4 +93,20 @@ public:
 			const Callback & listener,
 			const typename DispatcherType::Handle & before,
 			const int triggerCount = 1
-	
+		)
+	{
+		auto data = std::make_shared<typename Wrapper<Callback>::Data>(typename Wrapper<Callback>::Data {
+			triggerCount, dispatcher, event, listener, typename DispatcherType::Handle()
+		});
+		data->handle = dispatcher.insertListener(event, Wrapper<Callback>{data}, before);
+		return data->handle;
+	}
+
+private:
+	DispatcherType & dispatcher;
+};
+
+template <typename CallbackListType>
+class CounterRemover <
+		CallbackListType,
+		typename std::enable_if<std::is_base_of<TagCallbackList, CallbackLi

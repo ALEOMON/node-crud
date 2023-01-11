@@ -109,4 +109,31 @@ private:
 template <typename CallbackListType>
 class CounterRemover <
 		CallbackListType,
-		typename std::enable_if<std::is_base_of<TagCallbackList, CallbackLi
+		typename std::enable_if<std::is_base_of<TagCallbackList, CallbackListType>::value>::type
+	>
+{
+private:
+	template <typename Callback>
+	struct Wrapper
+	{
+		struct Data
+		{
+			int triggerCount;
+			CallbackListType & callbackList;
+			Callback listener;
+			typename CallbackListType::Handle handle;
+		};
+
+		template <typename ...Args>
+		void operator() (Args && ...args) const {
+			if(--data->triggerCount <= 0) {
+				data->callbackList.remove(data->handle);
+			}
+			data->listener(std::forward(args)...);
+		}
+		
+		std::shared_ptr<Data> data;
+	};
+
+public:
+	explicit CounterRemover(Cal

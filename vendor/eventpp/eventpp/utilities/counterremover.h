@@ -136,4 +136,18 @@ private:
 	};
 
 public:
-	explicit CounterRemover(Cal
+	explicit CounterRemover(CallbackListType & callbackList)
+		: callbackList(callbackList)
+	{
+	}
+	
+	template <typename Callback>
+	typename CallbackListType::Handle append(
+			const Callback & listener,
+			const int triggerCount = 1
+		)
+	{
+		auto data = std::make_shared<typename Wrapper<Callback>::Data>(typename Wrapper<Callback>::Data {
+			triggerCount, callbackList, listener, typename CallbackListType::Handle()
+		});
+		data->handle = callbackList.append(Wrapper<Callbac

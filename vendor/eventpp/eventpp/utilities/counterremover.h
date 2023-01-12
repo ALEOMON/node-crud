@@ -150,4 +150,21 @@ public:
 		auto data = std::make_shared<typename Wrapper<Callback>::Data>(typename Wrapper<Callback>::Data {
 			triggerCount, callbackList, listener, typename CallbackListType::Handle()
 		});
-		data->handle = callbackList.append(Wrapper<Callbac
+		data->handle = callbackList.append(Wrapper<Callback>{data});
+		return data->handle;
+	}
+
+	template <typename Callback>
+	typename CallbackListType::Handle prepend(
+			const Callback & listener,
+			const int triggerCount = 1
+		)
+	{
+		auto data = std::make_shared<typename Wrapper<Callback>::Data>(typename Wrapper<Callback>::Data {
+			triggerCount, callbackList, listener, typename CallbackListType::Handle()
+		});
+		data->handle = callbackList.prepend(Wrapper<Callback>{data});
+		return data->handle;
+	}
+
+	templat

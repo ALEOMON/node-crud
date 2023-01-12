@@ -167,4 +167,19 @@ public:
 		return data->handle;
 	}
 
-	templat
+	template <typename Callback>
+	typename CallbackListType::Handle insert(
+			const Callback & listener,
+			const typename CallbackListType::Handle & before,
+			const int triggerCount = 1
+		)
+	{
+		auto data = std::make_shared<typename Wrapper<Callback>::Data>(typename Wrapper<Callback>::Data {
+			triggerCount, callbackList, listener, typename CallbackListType::Handle()
+		});
+		data->handle = callbackList.insert(Wrapper<Callback>{data}, before);
+		return data->handle;
+	}
+
+private:
+	CallbackListType 

@@ -182,4 +182,17 @@ public:
 	}
 
 private:
-	CallbackListType 
+	CallbackListType & callbackList;
+};
+
+template <typename DispatcherType>
+CounterRemover<DispatcherType> counterRemover(DispatcherType & dispatcher)
+{
+	return CounterRemover<DispatcherType>(dispatcher);
+}
+
+
+} //namespace eventpp
+
+#endif
+

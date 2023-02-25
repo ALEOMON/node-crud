@@ -9015,3 +9015,515 @@ GLAPI int GLAD_GL_ARB_seamless_cube_map;
 #ifndef GL_ARB_seamless_cubemap_per_texture
 #define GL_ARB_seamless_cubemap_per_texture 1
 GLAPI int GLAD_GL_ARB_seamless_cubemap_per_texture;
+#endif
+#ifndef GL_ARB_separate_shader_objects
+#define GL_ARB_separate_shader_objects 1
+GLAPI int GLAD_GL_ARB_separate_shader_objects;
+#endif
+#ifndef GL_ARB_shader_atomic_counter_ops
+#define GL_ARB_shader_atomic_counter_ops 1
+GLAPI int GLAD_GL_ARB_shader_atomic_counter_ops;
+#endif
+#ifndef GL_ARB_shader_atomic_counters
+#define GL_ARB_shader_atomic_counters 1
+GLAPI int GLAD_GL_ARB_shader_atomic_counters;
+#endif
+#ifndef GL_ARB_shader_ballot
+#define GL_ARB_shader_ballot 1
+GLAPI int GLAD_GL_ARB_shader_ballot;
+#endif
+#ifndef GL_ARB_shader_bit_encoding
+#define GL_ARB_shader_bit_encoding 1
+GLAPI int GLAD_GL_ARB_shader_bit_encoding;
+#endif
+#ifndef GL_ARB_shader_clock
+#define GL_ARB_shader_clock 1
+GLAPI int GLAD_GL_ARB_shader_clock;
+#endif
+#ifndef GL_ARB_shader_draw_parameters
+#define GL_ARB_shader_draw_parameters 1
+GLAPI int GLAD_GL_ARB_shader_draw_parameters;
+#endif
+#ifndef GL_ARB_shader_group_vote
+#define GL_ARB_shader_group_vote 1
+GLAPI int GLAD_GL_ARB_shader_group_vote;
+#endif
+#ifndef GL_ARB_shader_image_load_store
+#define GL_ARB_shader_image_load_store 1
+GLAPI int GLAD_GL_ARB_shader_image_load_store;
+#endif
+#ifndef GL_ARB_shader_image_size
+#define GL_ARB_shader_image_size 1
+GLAPI int GLAD_GL_ARB_shader_image_size;
+#endif
+#ifndef GL_ARB_shader_objects
+#define GL_ARB_shader_objects 1
+GLAPI int GLAD_GL_ARB_shader_objects;
+typedef void (APIENTRYP PFNGLDELETEOBJECTARBPROC)(GLhandleARB obj);
+GLAPI PFNGLDELETEOBJECTARBPROC glad_glDeleteObjectARB;
+#define glDeleteObjectARB glad_glDeleteObjectARB
+typedef GLhandleARB (APIENTRYP PFNGLGETHANDLEARBPROC)(GLenum pname);
+GLAPI PFNGLGETHANDLEARBPROC glad_glGetHandleARB;
+#define glGetHandleARB glad_glGetHandleARB
+typedef void (APIENTRYP PFNGLDETACHOBJECTARBPROC)(GLhandleARB containerObj, GLhandleARB attachedObj);
+GLAPI PFNGLDETACHOBJECTARBPROC glad_glDetachObjectARB;
+#define glDetachObjectARB glad_glDetachObjectARB
+typedef GLhandleARB (APIENTRYP PFNGLCREATESHADEROBJECTARBPROC)(GLenum shaderType);
+GLAPI PFNGLCREATESHADEROBJECTARBPROC glad_glCreateShaderObjectARB;
+#define glCreateShaderObjectARB glad_glCreateShaderObjectARB
+typedef void (APIENTRYP PFNGLSHADERSOURCEARBPROC)(GLhandleARB shaderObj, GLsizei count, const GLcharARB **string, const GLint *length);
+GLAPI PFNGLSHADERSOURCEARBPROC glad_glShaderSourceARB;
+#define glShaderSourceARB glad_glShaderSourceARB
+typedef void (APIENTRYP PFNGLCOMPILESHADERARBPROC)(GLhandleARB shaderObj);
+GLAPI PFNGLCOMPILESHADERARBPROC glad_glCompileShaderARB;
+#define glCompileShaderARB glad_glCompileShaderARB
+typedef GLhandleARB (APIENTRYP PFNGLCREATEPROGRAMOBJECTARBPROC)(void);
+GLAPI PFNGLCREATEPROGRAMOBJECTARBPROC glad_glCreateProgramObjectARB;
+#define glCreateProgramObjectARB glad_glCreateProgramObjectARB
+typedef void (APIENTRYP PFNGLATTACHOBJECTARBPROC)(GLhandleARB containerObj, GLhandleARB obj);
+GLAPI PFNGLATTACHOBJECTARBPROC glad_glAttachObjectARB;
+#define glAttachObjectARB glad_glAttachObjectARB
+typedef void (APIENTRYP PFNGLLINKPROGRAMARBPROC)(GLhandleARB programObj);
+GLAPI PFNGLLINKPROGRAMARBPROC glad_glLinkProgramARB;
+#define glLinkProgramARB glad_glLinkProgramARB
+typedef void (APIENTRYP PFNGLUSEPROGRAMOBJECTARBPROC)(GLhandleARB programObj);
+GLAPI PFNGLUSEPROGRAMOBJECTARBPROC glad_glUseProgramObjectARB;
+#define glUseProgramObjectARB glad_glUseProgramObjectARB
+typedef void (APIENTRYP PFNGLVALIDATEPROGRAMARBPROC)(GLhandleARB programObj);
+GLAPI PFNGLVALIDATEPROGRAMARBPROC glad_glValidateProgramARB;
+#define glValidateProgramARB glad_glValidateProgramARB
+typedef void (APIENTRYP PFNGLUNIFORM1FARBPROC)(GLint location, GLfloat v0);
+GLAPI PFNGLUNIFORM1FARBPROC glad_glUniform1fARB;
+#define glUniform1fARB glad_glUniform1fARB
+typedef void (APIENTRYP PFNGLUNIFORM2FARBPROC)(GLint location, GLfloat v0, GLfloat v1);
+GLAPI PFNGLUNIFORM2FARBPROC glad_glUniform2fARB;
+#define glUniform2fARB glad_glUniform2fARB
+typedef void (APIENTRYP PFNGLUNIFORM3FARBPROC)(GLint location, GLfloat v0, GLfloat v1, GLfloat v2);
+GLAPI PFNGLUNIFORM3FARBPROC glad_glUniform3fARB;
+#define glUniform3fARB glad_glUniform3fARB
+typedef void (APIENTRYP PFNGLUNIFORM4FARBPROC)(GLint location, GLfloat v0, GLfloat v1, GLfloat v2, GLfloat v3);
+GLAPI PFNGLUNIFORM4FARBPROC glad_glUniform4fARB;
+#define glUniform4fARB glad_glUniform4fARB
+typedef void (APIENTRYP PFNGLUNIFORM1IARBPROC)(GLint location, GLint v0);
+GLAPI PFNGLUNIFORM1IARBPROC glad_glUniform1iARB;
+#define glUniform1iARB glad_glUniform1iARB
+typedef void (APIENTRYP PFNGLUNIFORM2IARBPROC)(GLint location, GLint v0, GLint v1);
+GLAPI PFNGLUNIFORM2IARBPROC glad_glUniform2iARB;
+#define glUniform2iARB glad_glUniform2iARB
+typedef void (APIENTRYP PFNGLUNIFORM3IARBPROC)(GLint location, GLint v0, GLint v1, GLint v2);
+GLAPI PFNGLUNIFORM3IARBPROC glad_glUniform3iARB;
+#define glUniform3iARB glad_glUniform3iARB
+typedef void (APIENTRYP PFNGLUNIFORM4IARBPROC)(GLint location, GLint v0, GLint v1, GLint v2, GLint v3);
+GLAPI PFNGLUNIFORM4IARBPROC glad_glUniform4iARB;
+#define glUniform4iARB glad_glUniform4iARB
+typedef void (APIENTRYP PFNGLUNIFORM1FVARBPROC)(GLint location, GLsizei count, const GLfloat *value);
+GLAPI PFNGLUNIFORM1FVARBPROC glad_glUniform1fvARB;
+#define glUniform1fvARB glad_glUniform1fvARB
+typedef void (APIENTRYP PFNGLUNIFORM2FVARBPROC)(GLint location, GLsizei count, const GLfloat *value);
+GLAPI PFNGLUNIFORM2FVARBPROC glad_glUniform2fvARB;
+#define glUniform2fvARB glad_glUniform2fvARB
+typedef void (APIENTRYP PFNGLUNIFORM3FVARBPROC)(GLint location, GLsizei count, const GLfloat *value);
+GLAPI PFNGLUNIFORM3FVARBPROC glad_glUniform3fvARB;
+#define glUniform3fvARB glad_glUniform3fvARB
+typedef void (APIENTRYP PFNGLUNIFORM4FVARBPROC)(GLint location, GLsizei count, const GLfloat *value);
+GLAPI PFNGLUNIFORM4FVARBPROC glad_glUniform4fvARB;
+#define glUniform4fvARB glad_glUniform4fvARB
+typedef void (APIENTRYP PFNGLUNIFORM1IVARBPROC)(GLint location, GLsizei count, const GLint *value);
+GLAPI PFNGLUNIFORM1IVARBPROC glad_glUniform1ivARB;
+#define glUniform1ivARB glad_glUniform1ivARB
+typedef void (APIENTRYP PFNGLUNIFORM2IVARBPROC)(GLint location, GLsizei count, const GLint *value);
+GLAPI PFNGLUNIFORM2IVARBPROC glad_glUniform2ivARB;
+#define glUniform2ivARB glad_glUniform2ivARB
+typedef void (APIENTRYP PFNGLUNIFORM3IVARBPROC)(GLint location, GLsizei count, const GLint *value);
+GLAPI PFNGLUNIFORM3IVARBPROC glad_glUniform3ivARB;
+#define glUniform3ivARB glad_glUniform3ivARB
+typedef void (APIENTRYP PFNGLUNIFORM4IVARBPROC)(GLint location, GLsizei count, const GLint *value);
+GLAPI PFNGLUNIFORM4IVARBPROC glad_glUniform4ivARB;
+#define glUniform4ivARB glad_glUniform4ivARB
+typedef void (APIENTRYP PFNGLUNIFORMMATRIX2FVARBPROC)(GLint location, GLsizei count, GLboolean transpose, const GLfloat *value);
+GLAPI PFNGLUNIFORMMATRIX2FVARBPROC glad_glUniformMatrix2fvARB;
+#define glUniformMatrix2fvARB glad_glUniformMatrix2fvARB
+typedef void (APIENTRYP PFNGLUNIFORMMATRIX3FVARBPROC)(GLint location, GLsizei count, GLboolean transpose, const GLfloat *value);
+GLAPI PFNGLUNIFORMMATRIX3FVARBPROC glad_glUniformMatrix3fvARB;
+#define glUniformMatrix3fvARB glad_glUniformMatrix3fvARB
+typedef void (APIENTRYP PFNGLUNIFORMMATRIX4FVARBPROC)(GLint location, GLsizei count, GLboolean transpose, const GLfloat *value);
+GLAPI PFNGLUNIFORMMATRIX4FVARBPROC glad_glUniformMatrix4fvARB;
+#define glUniformMatrix4fvARB glad_glUniformMatrix4fvARB
+typedef void (APIENTRYP PFNGLGETOBJECTPARAMETERFVARBPROC)(GLhandleARB obj, GLenum pname, GLfloat *params);
+GLAPI PFNGLGETOBJECTPARAMETERFVARBPROC glad_glGetObjectParameterfvARB;
+#define glGetObjectParameterfvARB glad_glGetObjectParameterfvARB
+typedef void (APIENTRYP PFNGLGETOBJECTPARAMETERIVARBPROC)(GLhandleARB obj, GLenum pname, GLint *params);
+GLAPI PFNGLGETOBJECTPARAMETERIVARBPROC glad_glGetObjectParameterivARB;
+#define glGetObjectParameterivARB glad_glGetObjectParameterivARB
+typedef void (APIENTRYP PFNGLGETINFOLOGARBPROC)(GLhandleARB obj, GLsizei maxLength, GLsizei *length, GLcharARB *infoLog);
+GLAPI PFNGLGETINFOLOGARBPROC glad_glGetInfoLogARB;
+#define glGetInfoLogARB glad_glGetInfoLogARB
+typedef void (APIENTRYP PFNGLGETATTACHEDOBJECTSARBPROC)(GLhandleARB containerObj, GLsizei maxCount, GLsizei *count, GLhandleARB *obj);
+GLAPI PFNGLGETATTACHEDOBJECTSARBPROC glad_glGetAttachedObjectsARB;
+#define glGetAttachedObjectsARB glad_glGetAttachedObjectsARB
+typedef GLint (APIENTRYP PFNGLGETUNIFORMLOCATIONARBPROC)(GLhandleARB programObj, const GLcharARB *name);
+GLAPI PFNGLGETUNIFORMLOCATIONARBPROC glad_glGetUniformLocationARB;
+#define glGetUniformLocationARB glad_glGetUniformLocationARB
+typedef void (APIENTRYP PFNGLGETACTIVEUNIFORMARBPROC)(GLhandleARB programObj, GLuint index, GLsizei maxLength, GLsizei *length, GLint *size, GLenum *type, GLcharARB *name);
+GLAPI PFNGLGETACTIVEUNIFORMARBPROC glad_glGetActiveUniformARB;
+#define glGetActiveUniformARB glad_glGetActiveUniformARB
+typedef void (APIENTRYP PFNGLGETUNIFORMFVARBPROC)(GLhandleARB programObj, GLint location, GLfloat *params);
+GLAPI PFNGLGETUNIFORMFVARBPROC glad_glGetUniformfvARB;
+#define glGetUniformfvARB glad_glGetUniformfvARB
+typedef void (APIENTRYP PFNGLGETUNIFORMIVARBPROC)(GLhandleARB programObj, GLint location, GLint *params);
+GLAPI PFNGLGETUNIFORMIVARBPROC glad_glGetUniformivARB;
+#define glGetUniformivARB glad_glGetUniformivARB
+typedef void (APIENTRYP PFNGLGETSHADERSOURCEARBPROC)(GLhandleARB obj, GLsizei maxLength, GLsizei *length, GLcharARB *source);
+GLAPI PFNGLGETSHADERSOURCEARBPROC glad_glGetShaderSourceARB;
+#define glGetShaderSourceARB glad_glGetShaderSourceARB
+#endif
+#ifndef GL_ARB_shader_precision
+#define GL_ARB_shader_precision 1
+GLAPI int GLAD_GL_ARB_shader_precision;
+#endif
+#ifndef GL_ARB_shader_stencil_export
+#define GL_ARB_shader_stencil_export 1
+GLAPI int GLAD_GL_ARB_shader_stencil_export;
+#endif
+#ifndef GL_ARB_shader_storage_buffer_object
+#define GL_ARB_shader_storage_buffer_object 1
+GLAPI int GLAD_GL_ARB_shader_storage_buffer_object;
+#endif
+#ifndef GL_ARB_shader_subroutine
+#define GL_ARB_shader_subroutine 1
+GLAPI int GLAD_GL_ARB_shader_subroutine;
+#endif
+#ifndef GL_ARB_shader_texture_image_samples
+#define GL_ARB_shader_texture_image_samples 1
+GLAPI int GLAD_GL_ARB_shader_texture_image_samples;
+#endif
+#ifndef GL_ARB_shader_texture_lod
+#define GL_ARB_shader_texture_lod 1
+GLAPI int GLAD_GL_ARB_shader_texture_lod;
+#endif
+#ifndef GL_ARB_shader_viewport_layer_array
+#define GL_ARB_shader_viewport_layer_array 1
+GLAPI int GLAD_GL_ARB_shader_viewport_layer_array;
+#endif
+#ifndef GL_ARB_shading_language_100
+#define GL_ARB_shading_language_100 1
+GLAPI int GLAD_GL_ARB_shading_language_100;
+#endif
+#ifndef GL_ARB_shading_language_420pack
+#define GL_ARB_shading_language_420pack 1
+GLAPI int GLAD_GL_ARB_shading_language_420pack;
+#endif
+#ifndef GL_ARB_shading_language_include
+#define GL_ARB_shading_language_include 1
+GLAPI int GLAD_GL_ARB_shading_language_include;
+typedef void (APIENTRYP PFNGLNAMEDSTRINGARBPROC)(GLenum type, GLint namelen, const GLchar *name, GLint stringlen, const GLchar *string);
+GLAPI PFNGLNAMEDSTRINGARBPROC glad_glNamedStringARB;
+#define glNamedStringARB glad_glNamedStringARB
+typedef void (APIENTRYP PFNGLDELETENAMEDSTRINGARBPROC)(GLint namelen, const GLchar *name);
+GLAPI PFNGLDELETENAMEDSTRINGARBPROC glad_glDeleteNamedStringARB;
+#define glDeleteNamedStringARB glad_glDeleteNamedStringARB
+typedef void (APIENTRYP PFNGLCOMPILESHADERINCLUDEARBPROC)(GLuint shader, GLsizei count, const GLchar *const*path, const GLint *length);
+GLAPI PFNGLCOMPILESHADERINCLUDEARBPROC glad_glCompileShaderIncludeARB;
+#define glCompileShaderIncludeARB glad_glCompileShaderIncludeARB
+typedef GLboolean (APIENTRYP PFNGLISNAMEDSTRINGARBPROC)(GLint namelen, const GLchar *name);
+GLAPI PFNGLISNAMEDSTRINGARBPROC glad_glIsNamedStringARB;
+#define glIsNamedStringARB glad_glIsNamedStringARB
+typedef void (APIENTRYP PFNGLGETNAMEDSTRINGARBPROC)(GLint namelen, const GLchar *name, GLsizei bufSize, GLint *stringlen, GLchar *string);
+GLAPI PFNGLGETNAMEDSTRINGARBPROC glad_glGetNamedStringARB;
+#define glGetNamedStringARB glad_glGetNamedStringARB
+typedef void (APIENTRYP PFNGLGETNAMEDSTRINGIVARBPROC)(GLint namelen, const GLchar *name, GLenum pname, GLint *params);
+GLAPI PFNGLGETNAMEDSTRINGIVARBPROC glad_glGetNamedStringivARB;
+#define glGetNamedStringivARB glad_glGetNamedStringivARB
+#endif
+#ifndef GL_ARB_shading_language_packing
+#define GL_ARB_shading_language_packing 1
+GLAPI int GLAD_GL_ARB_shading_language_packing;
+#endif
+#ifndef GL_ARB_shadow
+#define GL_ARB_shadow 1
+GLAPI int GLAD_GL_ARB_shadow;
+#endif
+#ifndef GL_ARB_shadow_ambient
+#define GL_ARB_shadow_ambient 1
+GLAPI int GLAD_GL_ARB_shadow_ambient;
+#endif
+#ifndef GL_ARB_sparse_buffer
+#define GL_ARB_sparse_buffer 1
+GLAPI int GLAD_GL_ARB_sparse_buffer;
+typedef void (APIENTRYP PFNGLBUFFERPAGECOMMITMENTARBPROC)(GLenum target, GLintptr offset, GLsizeiptr size, GLboolean commit);
+GLAPI PFNGLBUFFERPAGECOMMITMENTARBPROC glad_glBufferPageCommitmentARB;
+#define glBufferPageCommitmentARB glad_glBufferPageCommitmentARB
+typedef void (APIENTRYP PFNGLNAMEDBUFFERPAGECOMMITMENTEXTPROC)(GLuint buffer, GLintptr offset, GLsizeiptr size, GLboolean commit);
+GLAPI PFNGLNAMEDBUFFERPAGECOMMITMENTEXTPROC glad_glNamedBufferPageCommitmentEXT;
+#define glNamedBufferPageCommitmentEXT glad_glNamedBufferPageCommitmentEXT
+typedef void (APIENTRYP PFNGLNAMEDBUFFERPAGECOMMITMENTARBPROC)(GLuint buffer, GLintptr offset, GLsizeiptr size, GLboolean commit);
+GLAPI PFNGLNAMEDBUFFERPAGECOMMITMENTARBPROC glad_glNamedBufferPageCommitmentARB;
+#define glNamedBufferPageCommitmentARB glad_glNamedBufferPageCommitmentARB
+#endif
+#ifndef GL_ARB_sparse_texture
+#define GL_ARB_sparse_texture 1
+GLAPI int GLAD_GL_ARB_sparse_texture;
+typedef void (APIENTRYP PFNGLTEXPAGECOMMITMENTARBPROC)(GLenum target, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLsizei width, GLsizei height, GLsizei depth, GLboolean commit);
+GLAPI PFNGLTEXPAGECOMMITMENTARBPROC glad_glTexPageCommitmentARB;
+#define glTexPageCommitmentARB glad_glTexPageCommitmentARB
+#endif
+#ifndef GL_ARB_sparse_texture2
+#define GL_ARB_sparse_texture2 1
+GLAPI int GLAD_GL_ARB_sparse_texture2;
+#endif
+#ifndef GL_ARB_sparse_texture_clamp
+#define GL_ARB_sparse_texture_clamp 1
+GLAPI int GLAD_GL_ARB_sparse_texture_clamp;
+#endif
+#ifndef GL_ARB_spirv_extensions
+#define GL_ARB_spirv_extensions 1
+GLAPI int GLAD_GL_ARB_spirv_extensions;
+#endif
+#ifndef GL_ARB_stencil_texturing
+#define GL_ARB_stencil_texturing 1
+GLAPI int GLAD_GL_ARB_stencil_texturing;
+#endif
+#ifndef GL_ARB_sync
+#define GL_ARB_sync 1
+GLAPI int GLAD_GL_ARB_sync;
+#endif
+#ifndef GL_ARB_tessellation_shader
+#define GL_ARB_tessellation_shader 1
+GLAPI int GLAD_GL_ARB_tessellation_shader;
+#endif
+#ifndef GL_ARB_texture_barrier
+#define GL_ARB_texture_barrier 1
+GLAPI int GLAD_GL_ARB_texture_barrier;
+#endif
+#ifndef GL_ARB_texture_border_clamp
+#define GL_ARB_texture_border_clamp 1
+GLAPI int GLAD_GL_ARB_texture_border_clamp;
+#endif
+#ifndef GL_ARB_texture_buffer_object
+#define GL_ARB_texture_buffer_object 1
+GLAPI int GLAD_GL_ARB_texture_buffer_object;
+typedef void (APIENTRYP PFNGLTEXBUFFERARBPROC)(GLenum target, GLenum internalformat, GLuint buffer);
+GLAPI PFNGLTEXBUFFERARBPROC glad_glTexBufferARB;
+#define glTexBufferARB glad_glTexBufferARB
+#endif
+#ifndef GL_ARB_texture_buffer_object_rgb32
+#define GL_ARB_texture_buffer_object_rgb32 1
+GLAPI int GLAD_GL_ARB_texture_buffer_object_rgb32;
+#endif
+#ifndef GL_ARB_texture_buffer_range
+#define GL_ARB_texture_buffer_range 1
+GLAPI int GLAD_GL_ARB_texture_buffer_range;
+#endif
+#ifndef GL_ARB_texture_compression
+#define GL_ARB_texture_compression 1
+GLAPI int GLAD_GL_ARB_texture_compression;
+typedef void (APIENTRYP PFNGLCOMPRESSEDTEXIMAGE3DARBPROC)(GLenum target, GLint level, GLenum internalformat, GLsizei width, GLsizei height, GLsizei depth, GLint border, GLsizei imageSize, const void *data);
+GLAPI PFNGLCOMPRESSEDTEXIMAGE3DARBPROC glad_glCompressedTexImage3DARB;
+#define glCompressedTexImage3DARB glad_glCompressedTexImage3DARB
+typedef void (APIENTRYP PFNGLCOMPRESSEDTEXIMAGE2DARBPROC)(GLenum target, GLint level, GLenum internalformat, GLsizei width, GLsizei height, GLint border, GLsizei imageSize, const void *data);
+GLAPI PFNGLCOMPRESSEDTEXIMAGE2DARBPROC glad_glCompressedTexImage2DARB;
+#define glCompressedTexImage2DARB glad_glCompressedTexImage2DARB
+typedef void (APIENTRYP PFNGLCOMPRESSEDTEXIMAGE1DARBPROC)(GLenum target, GLint level, GLenum internalformat, GLsizei width, GLint border, GLsizei imageSize, const void *data);
+GLAPI PFNGLCOMPRESSEDTEXIMAGE1DARBPROC glad_glCompressedTexImage1DARB;
+#define glCompressedTexImage1DARB glad_glCompressedTexImage1DARB
+typedef void (APIENTRYP PFNGLCOMPRESSEDTEXSUBIMAGE3DARBPROC)(GLenum target, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLsizei width, GLsizei height, GLsizei depth, GLenum format, GLsizei imageSize, const void *data);
+GLAPI PFNGLCOMPRESSEDTEXSUBIMAGE3DARBPROC glad_glCompressedTexSubImage3DARB;
+#define glCompressedTexSubImage3DARB glad_glCompressedTexSubImage3DARB
+typedef void (APIENTRYP PFNGLCOMPRESSEDTEXSUBIMAGE2DARBPROC)(GLenum target, GLint level, GLint xoffset, GLint yoffset, GLsizei width, GLsizei height, GLenum format, GLsizei imageSize, const void *data);
+GLAPI PFNGLCOMPRESSEDTEXSUBIMAGE2DARBPROC glad_glCompressedTexSubImage2DARB;
+#define glCompressedTexSubImage2DARB glad_glCompressedTexSubImage2DARB
+typedef void (APIENTRYP PFNGLCOMPRESSEDTEXSUBIMAGE1DARBPROC)(GLenum target, GLint level, GLint xoffset, GLsizei width, GLenum format, GLsizei imageSize, const void *data);
+GLAPI PFNGLCOMPRESSEDTEXSUBIMAGE1DARBPROC glad_glCompressedTexSubImage1DARB;
+#define glCompressedTexSubImage1DARB glad_glCompressedTexSubImage1DARB
+typedef void (APIENTRYP PFNGLGETCOMPRESSEDTEXIMAGEARBPROC)(GLenum target, GLint level, void *img);
+GLAPI PFNGLGETCOMPRESSEDTEXIMAGEARBPROC glad_glGetCompressedTexImageARB;
+#define glGetCompressedTexImageARB glad_glGetCompressedTexImageARB
+#endif
+#ifndef GL_ARB_texture_compression_bptc
+#define GL_ARB_texture_compression_bptc 1
+GLAPI int GLAD_GL_ARB_texture_compression_bptc;
+#endif
+#ifndef GL_ARB_texture_compression_rgtc
+#define GL_ARB_texture_compression_rgtc 1
+GLAPI int GLAD_GL_ARB_texture_compression_rgtc;
+#endif
+#ifndef GL_ARB_texture_cube_map
+#define GL_ARB_texture_cube_map 1
+GLAPI int GLAD_GL_ARB_texture_cube_map;
+#endif
+#ifndef GL_ARB_texture_cube_map_array
+#define GL_ARB_texture_cube_map_array 1
+GLAPI int GLAD_GL_ARB_texture_cube_map_array;
+#endif
+#ifndef GL_ARB_texture_env_add
+#define GL_ARB_texture_env_add 1
+GLAPI int GLAD_GL_ARB_texture_env_add;
+#endif
+#ifndef GL_ARB_texture_env_combine
+#define GL_ARB_texture_env_combine 1
+GLAPI int GLAD_GL_ARB_texture_env_combine;
+#endif
+#ifndef GL_ARB_texture_env_crossbar
+#define GL_ARB_texture_env_crossbar 1
+GLAPI int GLAD_GL_ARB_texture_env_crossbar;
+#endif
+#ifndef GL_ARB_texture_env_dot3
+#define GL_ARB_texture_env_dot3 1
+GLAPI int GLAD_GL_ARB_texture_env_dot3;
+#endif
+#ifndef GL_ARB_texture_filter_anisotropic
+#define GL_ARB_texture_filter_anisotropic 1
+GLAPI int GLAD_GL_ARB_texture_filter_anisotropic;
+#endif
+#ifndef GL_ARB_texture_filter_minmax
+#define GL_ARB_texture_filter_minmax 1
+GLAPI int GLAD_GL_ARB_texture_filter_minmax;
+#endif
+#ifndef GL_ARB_texture_float
+#define GL_ARB_texture_float 1
+GLAPI int GLAD_GL_ARB_texture_float;
+#endif
+#ifndef GL_ARB_texture_gather
+#define GL_ARB_texture_gather 1
+GLAPI int GLAD_GL_ARB_texture_gather;
+#endif
+#ifndef GL_ARB_texture_mirror_clamp_to_edge
+#define GL_ARB_texture_mirror_clamp_to_edge 1
+GLAPI int GLAD_GL_ARB_texture_mirror_clamp_to_edge;
+#endif
+#ifndef GL_ARB_texture_mirrored_repeat
+#define GL_ARB_texture_mirrored_repeat 1
+GLAPI int GLAD_GL_ARB_texture_mirrored_repeat;
+#endif
+#ifndef GL_ARB_texture_multisample
+#define GL_ARB_texture_multisample 1
+GLAPI int GLAD_GL_ARB_texture_multisample;
+#endif
+#ifndef GL_ARB_texture_non_power_of_two
+#define GL_ARB_texture_non_power_of_two 1
+GLAPI int GLAD_GL_ARB_texture_non_power_of_two;
+#endif
+#ifndef GL_ARB_texture_query_levels
+#define GL_ARB_texture_query_levels 1
+GLAPI int GLAD_GL_ARB_texture_query_levels;
+#endif
+#ifndef GL_ARB_texture_query_lod
+#define GL_ARB_texture_query_lod 1
+GLAPI int GLAD_GL_ARB_texture_query_lod;
+#endif
+#ifndef GL_ARB_texture_rectangle
+#define GL_ARB_texture_rectangle 1
+GLAPI int GLAD_GL_ARB_texture_rectangle;
+#endif
+#ifndef GL_ARB_texture_rg
+#define GL_ARB_texture_rg 1
+GLAPI int GLAD_GL_ARB_texture_rg;
+#endif
+#ifndef GL_ARB_texture_rgb10_a2ui
+#define GL_ARB_texture_rgb10_a2ui 1
+GLAPI int GLAD_GL_ARB_texture_rgb10_a2ui;
+#endif
+#ifndef GL_ARB_texture_stencil8
+#define GL_ARB_texture_stencil8 1
+GLAPI int GLAD_GL_ARB_texture_stencil8;
+#endif
+#ifndef GL_ARB_texture_storage
+#define GL_ARB_texture_storage 1
+GLAPI int GLAD_GL_ARB_texture_storage;
+#endif
+#ifndef GL_ARB_texture_storage_multisample
+#define GL_ARB_texture_storage_multisample 1
+GLAPI int GLAD_GL_ARB_texture_storage_multisample;
+#endif
+#ifndef GL_ARB_texture_swizzle
+#define GL_ARB_texture_swizzle 1
+GLAPI int GLAD_GL_ARB_texture_swizzle;
+#endif
+#ifndef GL_ARB_texture_view
+#define GL_ARB_texture_view 1
+GLAPI int GLAD_GL_ARB_texture_view;
+#endif
+#ifndef GL_ARB_timer_query
+#define GL_ARB_timer_query 1
+GLAPI int GLAD_GL_ARB_timer_query;
+#endif
+#ifndef GL_ARB_transform_feedback2
+#define GL_ARB_transform_feedback2 1
+GLAPI int GLAD_GL_ARB_transform_feedback2;
+#endif
+#ifndef GL_ARB_transform_feedback3
+#define GL_ARB_transform_feedback3 1
+GLAPI int GLAD_GL_ARB_transform_feedback3;
+#endif
+#ifndef GL_ARB_transform_feedback_instanced
+#define GL_ARB_transform_feedback_instanced 1
+GLAPI int GLAD_GL_ARB_transform_feedback_instanced;
+#endif
+#ifndef GL_ARB_transform_feedback_overflow_query
+#define GL_ARB_transform_feedback_overflow_query 1
+GLAPI int GLAD_GL_ARB_transform_feedback_overflow_query;
+#endif
+#ifndef GL_ARB_transpose_matrix
+#define GL_ARB_transpose_matrix 1
+GLAPI int GLAD_GL_ARB_transpose_matrix;
+typedef void (APIENTRYP PFNGLLOADTRANSPOSEMATRIXFARBPROC)(const GLfloat *m);
+GLAPI PFNGLLOADTRANSPOSEMATRIXFARBPROC glad_glLoadTransposeMatrixfARB;
+#define glLoadTransposeMatrixfARB glad_glLoadTransposeMatrixfARB
+typedef void (APIENTRYP PFNGLLOADTRANSPOSEMATRIXDARBPROC)(const GLdouble *m);
+GLAPI PFNGLLOADTRANSPOSEMATRIXDARBPROC glad_glLoadTransposeMatrixdARB;
+#define glLoadTransposeMatrixdARB glad_glLoadTransposeMatrixdARB
+typedef void (APIENTRYP PFNGLMULTTRANSPOSEMATRIXFARBPROC)(const GLfloat *m);
+GLAPI PFNGLMULTTRANSPOSEMATRIXFARBPROC glad_glMultTransposeMatrixfARB;
+#define glMultTransposeMatrixfARB glad_glMultTransposeMatrixfARB
+typedef void (APIENTRYP PFNGLMULTTRANSPOSEMATRIXDARBPROC)(const GLdouble *m);
+GLAPI PFNGLMULTTRANSPOSEMATRIXDARBPROC glad_glMultTransposeMatrixdARB;
+#define glMultTransposeMatrixdARB glad_glMultTransposeMatrixdARB
+#endif
+#ifndef GL_ARB_uniform_buffer_object
+#define GL_ARB_uniform_buffer_object 1
+GLAPI int GLAD_GL_ARB_uniform_buffer_object;
+#endif
+#ifndef GL_ARB_vertex_array_bgra
+#define GL_ARB_vertex_array_bgra 1
+GLAPI int GLAD_GL_ARB_vertex_array_bgra;
+#endif
+#ifndef GL_ARB_vertex_array_object
+#define GL_ARB_vertex_array_object 1
+GLAPI int GLAD_GL_ARB_vertex_array_object;
+#endif
+#ifndef GL_ARB_vertex_attrib_64bit
+#define GL_ARB_vertex_attrib_64bit 1
+GLAPI int GLAD_GL_ARB_vertex_attrib_64bit;
+#endif
+#ifndef GL_ARB_vertex_attrib_binding
+#define GL_ARB_vertex_attrib_binding 1
+GLAPI int GLAD_GL_ARB_vertex_attrib_binding;
+#endif
+#ifndef GL_ARB_vertex_blend
+#define GL_ARB_vertex_blend 1
+GLAPI int GLAD_GL_ARB_vertex_blend;
+typedef void (APIENTRYP PFNGLWEIGHTBVARBPROC)(GLint size, const GLbyte *weights);
+GLAPI PFNGLWEIGHTBVARBPROC glad_glWeightbvARB;
+#define glWeightbvARB glad_glWeightbvARB
+typedef void (APIENTRYP PFNGLWEIGHTSVARBPROC)(GLint size, const GLshort *weights);
+GLAPI PFNGLWEIGHTSVARBPROC glad_glWeightsvARB;
+#define glWeightsvARB glad_glWeightsvARB
+typedef void (APIENTRYP PFNGLWEIGHTIVARBPROC)(GLint size, const GLint *weights);
+GLAPI PFNGLWEIGHTIVARBPROC glad_glWeightivARB;
+#define glWeightivARB glad_glWeightivARB
+typedef void (APIENTRYP PFNGLWEIGHTFVARBPROC)(GLint size, const GLfloat *weights);
+GLAPI PFNGLWEIGHTFVARBPROC glad_glWeightfvARB;
+#define glWeightfvARB glad_glWeightfvARB
+typedef void (APIENTRYP PFNGLWEIGHTDVARBPROC)(GLint size, const GLdouble *weights);
+GLAPI PFNGLWEIGHTDVARBPROC glad_glWeightdvARB;
+#define glWeightdvARB glad_glWeightdvARB
+typedef void (APIENTRYP PFNGLWEIGHTUBVARBPROC)(GLint size, const GLubyte *weights);
+GLAPI PFNGLWEIGHTUBVARBPROC glad_glWeightubvARB;
+#define glWeightubvARB glad_glWeightubvARB
+typedef void (APIENTRYP PFNGLWEIGHTUSVARBPROC)(GLint size, const GLushort *weights);
+GLAPI PFNGLWEIGHTUSVARBPROC glad_glWeightusvARB;
+#define glWeightusvARB glad_glWeightusvARB
+typedef void (APIENTRYP PFNGLWEIGHTUIVARBPROC)(GLint size, const GLuint *weights);
+GLAPI PFNGLWEIGHTUIVARBPROC glad_glWeightuivARB;
+#define glWeightuivARB glad_glWeightuivARB
+typedef void (APIENTRYP PFNGLWEIGHTPOINTERARBPROC)(GLint size, GLenum type, GLsizei stride, const void *pointer);

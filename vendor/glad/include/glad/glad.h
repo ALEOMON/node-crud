@@ -11445,3 +11445,506 @@ typedef void (APIENTRYP PFNGLTEXSTORAGEMEM3DEXTPROC)(GLenum target, GLsizei leve
 GLAPI PFNGLTEXSTORAGEMEM3DEXTPROC glad_glTexStorageMem3DEXT;
 #define glTexStorageMem3DEXT glad_glTexStorageMem3DEXT
 typedef void (APIENTRYP PFNGLTEXSTORAGEMEM3DMULTISAMPLEEXTPROC)(GLenum target, GLsizei samples, GLenum internalFormat, GLsizei width, GLsizei height, GLsizei depth, GLboolean fixedSampleLocations, GLuint memory, GLuint64 offset);
+GLAPI PFNGLTEXSTORAGEMEM3DMULTISAMPLEEXTPROC glad_glTexStorageMem3DMultisampleEXT;
+#define glTexStorageMem3DMultisampleEXT glad_glTexStorageMem3DMultisampleEXT
+typedef void (APIENTRYP PFNGLBUFFERSTORAGEMEMEXTPROC)(GLenum target, GLsizeiptr size, GLuint memory, GLuint64 offset);
+GLAPI PFNGLBUFFERSTORAGEMEMEXTPROC glad_glBufferStorageMemEXT;
+#define glBufferStorageMemEXT glad_glBufferStorageMemEXT
+typedef void (APIENTRYP PFNGLTEXTURESTORAGEMEM2DEXTPROC)(GLuint texture, GLsizei levels, GLenum internalFormat, GLsizei width, GLsizei height, GLuint memory, GLuint64 offset);
+GLAPI PFNGLTEXTURESTORAGEMEM2DEXTPROC glad_glTextureStorageMem2DEXT;
+#define glTextureStorageMem2DEXT glad_glTextureStorageMem2DEXT
+typedef void (APIENTRYP PFNGLTEXTURESTORAGEMEM2DMULTISAMPLEEXTPROC)(GLuint texture, GLsizei samples, GLenum internalFormat, GLsizei width, GLsizei height, GLboolean fixedSampleLocations, GLuint memory, GLuint64 offset);
+GLAPI PFNGLTEXTURESTORAGEMEM2DMULTISAMPLEEXTPROC glad_glTextureStorageMem2DMultisampleEXT;
+#define glTextureStorageMem2DMultisampleEXT glad_glTextureStorageMem2DMultisampleEXT
+typedef void (APIENTRYP PFNGLTEXTURESTORAGEMEM3DEXTPROC)(GLuint texture, GLsizei levels, GLenum internalFormat, GLsizei width, GLsizei height, GLsizei depth, GLuint memory, GLuint64 offset);
+GLAPI PFNGLTEXTURESTORAGEMEM3DEXTPROC glad_glTextureStorageMem3DEXT;
+#define glTextureStorageMem3DEXT glad_glTextureStorageMem3DEXT
+typedef void (APIENTRYP PFNGLTEXTURESTORAGEMEM3DMULTISAMPLEEXTPROC)(GLuint texture, GLsizei samples, GLenum internalFormat, GLsizei width, GLsizei height, GLsizei depth, GLboolean fixedSampleLocations, GLuint memory, GLuint64 offset);
+GLAPI PFNGLTEXTURESTORAGEMEM3DMULTISAMPLEEXTPROC glad_glTextureStorageMem3DMultisampleEXT;
+#define glTextureStorageMem3DMultisampleEXT glad_glTextureStorageMem3DMultisampleEXT
+typedef void (APIENTRYP PFNGLNAMEDBUFFERSTORAGEMEMEXTPROC)(GLuint buffer, GLsizeiptr size, GLuint memory, GLuint64 offset);
+GLAPI PFNGLNAMEDBUFFERSTORAGEMEMEXTPROC glad_glNamedBufferStorageMemEXT;
+#define glNamedBufferStorageMemEXT glad_glNamedBufferStorageMemEXT
+typedef void (APIENTRYP PFNGLTEXSTORAGEMEM1DEXTPROC)(GLenum target, GLsizei levels, GLenum internalFormat, GLsizei width, GLuint memory, GLuint64 offset);
+GLAPI PFNGLTEXSTORAGEMEM1DEXTPROC glad_glTexStorageMem1DEXT;
+#define glTexStorageMem1DEXT glad_glTexStorageMem1DEXT
+typedef void (APIENTRYP PFNGLTEXTURESTORAGEMEM1DEXTPROC)(GLuint texture, GLsizei levels, GLenum internalFormat, GLsizei width, GLuint memory, GLuint64 offset);
+GLAPI PFNGLTEXTURESTORAGEMEM1DEXTPROC glad_glTextureStorageMem1DEXT;
+#define glTextureStorageMem1DEXT glad_glTextureStorageMem1DEXT
+#endif
+#ifndef GL_EXT_memory_object_fd
+#define GL_EXT_memory_object_fd 1
+GLAPI int GLAD_GL_EXT_memory_object_fd;
+typedef void (APIENTRYP PFNGLIMPORTMEMORYFDEXTPROC)(GLuint memory, GLuint64 size, GLenum handleType, GLint fd);
+GLAPI PFNGLIMPORTMEMORYFDEXTPROC glad_glImportMemoryFdEXT;
+#define glImportMemoryFdEXT glad_glImportMemoryFdEXT
+#endif
+#ifndef GL_EXT_memory_object_win32
+#define GL_EXT_memory_object_win32 1
+GLAPI int GLAD_GL_EXT_memory_object_win32;
+typedef void (APIENTRYP PFNGLIMPORTMEMORYWIN32HANDLEEXTPROC)(GLuint memory, GLuint64 size, GLenum handleType, void *handle);
+GLAPI PFNGLIMPORTMEMORYWIN32HANDLEEXTPROC glad_glImportMemoryWin32HandleEXT;
+#define glImportMemoryWin32HandleEXT glad_glImportMemoryWin32HandleEXT
+typedef void (APIENTRYP PFNGLIMPORTMEMORYWIN32NAMEEXTPROC)(GLuint memory, GLuint64 size, GLenum handleType, const void *name);
+GLAPI PFNGLIMPORTMEMORYWIN32NAMEEXTPROC glad_glImportMemoryWin32NameEXT;
+#define glImportMemoryWin32NameEXT glad_glImportMemoryWin32NameEXT
+#endif
+#ifndef GL_EXT_misc_attribute
+#define GL_EXT_misc_attribute 1
+GLAPI int GLAD_GL_EXT_misc_attribute;
+#endif
+#ifndef GL_EXT_multi_draw_arrays
+#define GL_EXT_multi_draw_arrays 1
+GLAPI int GLAD_GL_EXT_multi_draw_arrays;
+typedef void (APIENTRYP PFNGLMULTIDRAWARRAYSEXTPROC)(GLenum mode, const GLint *first, const GLsizei *count, GLsizei primcount);
+GLAPI PFNGLMULTIDRAWARRAYSEXTPROC glad_glMultiDrawArraysEXT;
+#define glMultiDrawArraysEXT glad_glMultiDrawArraysEXT
+typedef void (APIENTRYP PFNGLMULTIDRAWELEMENTSEXTPROC)(GLenum mode, const GLsizei *count, GLenum type, const void *const*indices, GLsizei primcount);
+GLAPI PFNGLMULTIDRAWELEMENTSEXTPROC glad_glMultiDrawElementsEXT;
+#define glMultiDrawElementsEXT glad_glMultiDrawElementsEXT
+#endif
+#ifndef GL_EXT_multisample
+#define GL_EXT_multisample 1
+GLAPI int GLAD_GL_EXT_multisample;
+typedef void (APIENTRYP PFNGLSAMPLEMASKEXTPROC)(GLclampf value, GLboolean invert);
+GLAPI PFNGLSAMPLEMASKEXTPROC glad_glSampleMaskEXT;
+#define glSampleMaskEXT glad_glSampleMaskEXT
+typedef void (APIENTRYP PFNGLSAMPLEPATTERNEXTPROC)(GLenum pattern);
+GLAPI PFNGLSAMPLEPATTERNEXTPROC glad_glSamplePatternEXT;
+#define glSamplePatternEXT glad_glSamplePatternEXT
+#endif
+#ifndef GL_EXT_multiview_tessellation_geometry_shader
+#define GL_EXT_multiview_tessellation_geometry_shader 1
+GLAPI int GLAD_GL_EXT_multiview_tessellation_geometry_shader;
+#endif
+#ifndef GL_EXT_multiview_texture_multisample
+#define GL_EXT_multiview_texture_multisample 1
+GLAPI int GLAD_GL_EXT_multiview_texture_multisample;
+#endif
+#ifndef GL_EXT_multiview_timer_query
+#define GL_EXT_multiview_timer_query 1
+GLAPI int GLAD_GL_EXT_multiview_timer_query;
+#endif
+#ifndef GL_EXT_packed_depth_stencil
+#define GL_EXT_packed_depth_stencil 1
+GLAPI int GLAD_GL_EXT_packed_depth_stencil;
+#endif
+#ifndef GL_EXT_packed_float
+#define GL_EXT_packed_float 1
+GLAPI int GLAD_GL_EXT_packed_float;
+#endif
+#ifndef GL_EXT_packed_pixels
+#define GL_EXT_packed_pixels 1
+GLAPI int GLAD_GL_EXT_packed_pixels;
+#endif
+#ifndef GL_EXT_paletted_texture
+#define GL_EXT_paletted_texture 1
+GLAPI int GLAD_GL_EXT_paletted_texture;
+typedef void (APIENTRYP PFNGLCOLORTABLEEXTPROC)(GLenum target, GLenum internalFormat, GLsizei width, GLenum format, GLenum type, const void *table);
+GLAPI PFNGLCOLORTABLEEXTPROC glad_glColorTableEXT;
+#define glColorTableEXT glad_glColorTableEXT
+typedef void (APIENTRYP PFNGLGETCOLORTABLEEXTPROC)(GLenum target, GLenum format, GLenum type, void *data);
+GLAPI PFNGLGETCOLORTABLEEXTPROC glad_glGetColorTableEXT;
+#define glGetColorTableEXT glad_glGetColorTableEXT
+typedef void (APIENTRYP PFNGLGETCOLORTABLEPARAMETERIVEXTPROC)(GLenum target, GLenum pname, GLint *params);
+GLAPI PFNGLGETCOLORTABLEPARAMETERIVEXTPROC glad_glGetColorTableParameterivEXT;
+#define glGetColorTableParameterivEXT glad_glGetColorTableParameterivEXT
+typedef void (APIENTRYP PFNGLGETCOLORTABLEPARAMETERFVEXTPROC)(GLenum target, GLenum pname, GLfloat *params);
+GLAPI PFNGLGETCOLORTABLEPARAMETERFVEXTPROC glad_glGetColorTableParameterfvEXT;
+#define glGetColorTableParameterfvEXT glad_glGetColorTableParameterfvEXT
+#endif
+#ifndef GL_EXT_pixel_buffer_object
+#define GL_EXT_pixel_buffer_object 1
+GLAPI int GLAD_GL_EXT_pixel_buffer_object;
+#endif
+#ifndef GL_EXT_pixel_transform
+#define GL_EXT_pixel_transform 1
+GLAPI int GLAD_GL_EXT_pixel_transform;
+typedef void (APIENTRYP PFNGLPIXELTRANSFORMPARAMETERIEXTPROC)(GLenum target, GLenum pname, GLint param);
+GLAPI PFNGLPIXELTRANSFORMPARAMETERIEXTPROC glad_glPixelTransformParameteriEXT;
+#define glPixelTransformParameteriEXT glad_glPixelTransformParameteriEXT
+typedef void (APIENTRYP PFNGLPIXELTRANSFORMPARAMETERFEXTPROC)(GLenum target, GLenum pname, GLfloat param);
+GLAPI PFNGLPIXELTRANSFORMPARAMETERFEXTPROC glad_glPixelTransformParameterfEXT;
+#define glPixelTransformParameterfEXT glad_glPixelTransformParameterfEXT
+typedef void (APIENTRYP PFNGLPIXELTRANSFORMPARAMETERIVEXTPROC)(GLenum target, GLenum pname, const GLint *params);
+GLAPI PFNGLPIXELTRANSFORMPARAMETERIVEXTPROC glad_glPixelTransformParameterivEXT;
+#define glPixelTransformParameterivEXT glad_glPixelTransformParameterivEXT
+typedef void (APIENTRYP PFNGLPIXELTRANSFORMPARAMETERFVEXTPROC)(GLenum target, GLenum pname, const GLfloat *params);
+GLAPI PFNGLPIXELTRANSFORMPARAMETERFVEXTPROC glad_glPixelTransformParameterfvEXT;
+#define glPixelTransformParameterfvEXT glad_glPixelTransformParameterfvEXT
+typedef void (APIENTRYP PFNGLGETPIXELTRANSFORMPARAMETERIVEXTPROC)(GLenum target, GLenum pname, GLint *params);
+GLAPI PFNGLGETPIXELTRANSFORMPARAMETERIVEXTPROC glad_glGetPixelTransformParameterivEXT;
+#define glGetPixelTransformParameterivEXT glad_glGetPixelTransformParameterivEXT
+typedef void (APIENTRYP PFNGLGETPIXELTRANSFORMPARAMETERFVEXTPROC)(GLenum target, GLenum pname, GLfloat *params);
+GLAPI PFNGLGETPIXELTRANSFORMPARAMETERFVEXTPROC glad_glGetPixelTransformParameterfvEXT;
+#define glGetPixelTransformParameterfvEXT glad_glGetPixelTransformParameterfvEXT
+#endif
+#ifndef GL_EXT_pixel_transform_color_table
+#define GL_EXT_pixel_transform_color_table 1
+GLAPI int GLAD_GL_EXT_pixel_transform_color_table;
+#endif
+#ifndef GL_EXT_point_parameters
+#define GL_EXT_point_parameters 1
+GLAPI int GLAD_GL_EXT_point_parameters;
+typedef void (APIENTRYP PFNGLPOINTPARAMETERFEXTPROC)(GLenum pname, GLfloat param);
+GLAPI PFNGLPOINTPARAMETERFEXTPROC glad_glPointParameterfEXT;
+#define glPointParameterfEXT glad_glPointParameterfEXT
+typedef void (APIENTRYP PFNGLPOINTPARAMETERFVEXTPROC)(GLenum pname, const GLfloat *params);
+GLAPI PFNGLPOINTPARAMETERFVEXTPROC glad_glPointParameterfvEXT;
+#define glPointParameterfvEXT glad_glPointParameterfvEXT
+#endif
+#ifndef GL_EXT_polygon_offset
+#define GL_EXT_polygon_offset 1
+GLAPI int GLAD_GL_EXT_polygon_offset;
+typedef void (APIENTRYP PFNGLPOLYGONOFFSETEXTPROC)(GLfloat factor, GLfloat bias);
+GLAPI PFNGLPOLYGONOFFSETEXTPROC glad_glPolygonOffsetEXT;
+#define glPolygonOffsetEXT glad_glPolygonOffsetEXT
+#endif
+#ifndef GL_EXT_polygon_offset_clamp
+#define GL_EXT_polygon_offset_clamp 1
+GLAPI int GLAD_GL_EXT_polygon_offset_clamp;
+typedef void (APIENTRYP PFNGLPOLYGONOFFSETCLAMPEXTPROC)(GLfloat factor, GLfloat units, GLfloat clamp);
+GLAPI PFNGLPOLYGONOFFSETCLAMPEXTPROC glad_glPolygonOffsetClampEXT;
+#define glPolygonOffsetClampEXT glad_glPolygonOffsetClampEXT
+#endif
+#ifndef GL_EXT_post_depth_coverage
+#define GL_EXT_post_depth_coverage 1
+GLAPI int GLAD_GL_EXT_post_depth_coverage;
+#endif
+#ifndef GL_EXT_provoking_vertex
+#define GL_EXT_provoking_vertex 1
+GLAPI int GLAD_GL_EXT_provoking_vertex;
+typedef void (APIENTRYP PFNGLPROVOKINGVERTEXEXTPROC)(GLenum mode);
+GLAPI PFNGLPROVOKINGVERTEXEXTPROC glad_glProvokingVertexEXT;
+#define glProvokingVertexEXT glad_glProvokingVertexEXT
+#endif
+#ifndef GL_EXT_raster_multisample
+#define GL_EXT_raster_multisample 1
+GLAPI int GLAD_GL_EXT_raster_multisample;
+typedef void (APIENTRYP PFNGLRASTERSAMPLESEXTPROC)(GLuint samples, GLboolean fixedsamplelocations);
+GLAPI PFNGLRASTERSAMPLESEXTPROC glad_glRasterSamplesEXT;
+#define glRasterSamplesEXT glad_glRasterSamplesEXT
+#endif
+#ifndef GL_EXT_rescale_normal
+#define GL_EXT_rescale_normal 1
+GLAPI int GLAD_GL_EXT_rescale_normal;
+#endif
+#ifndef GL_EXT_secondary_color
+#define GL_EXT_secondary_color 1
+GLAPI int GLAD_GL_EXT_secondary_color;
+typedef void (APIENTRYP PFNGLSECONDARYCOLOR3BEXTPROC)(GLbyte red, GLbyte green, GLbyte blue);
+GLAPI PFNGLSECONDARYCOLOR3BEXTPROC glad_glSecondaryColor3bEXT;
+#define glSecondaryColor3bEXT glad_glSecondaryColor3bEXT
+typedef void (APIENTRYP PFNGLSECONDARYCOLOR3BVEXTPROC)(const GLbyte *v);
+GLAPI PFNGLSECONDARYCOLOR3BVEXTPROC glad_glSecondaryColor3bvEXT;
+#define glSecondaryColor3bvEXT glad_glSecondaryColor3bvEXT
+typedef void (APIENTRYP PFNGLSECONDARYCOLOR3DEXTPROC)(GLdouble red, GLdouble green, GLdouble blue);
+GLAPI PFNGLSECONDARYCOLOR3DEXTPROC glad_glSecondaryColor3dEXT;
+#define glSecondaryColor3dEXT glad_glSecondaryColor3dEXT
+typedef void (APIENTRYP PFNGLSECONDARYCOLOR3DVEXTPROC)(const GLdouble *v);
+GLAPI PFNGLSECONDARYCOLOR3DVEXTPROC glad_glSecondaryColor3dvEXT;
+#define glSecondaryColor3dvEXT glad_glSecondaryColor3dvEXT
+typedef void (APIENTRYP PFNGLSECONDARYCOLOR3FEXTPROC)(GLfloat red, GLfloat green, GLfloat blue);
+GLAPI PFNGLSECONDARYCOLOR3FEXTPROC glad_glSecondaryColor3fEXT;
+#define glSecondaryColor3fEXT glad_glSecondaryColor3fEXT
+typedef void (APIENTRYP PFNGLSECONDARYCOLOR3FVEXTPROC)(const GLfloat *v);
+GLAPI PFNGLSECONDARYCOLOR3FVEXTPROC glad_glSecondaryColor3fvEXT;
+#define glSecondaryColor3fvEXT glad_glSecondaryColor3fvEXT
+typedef void (APIENTRYP PFNGLSECONDARYCOLOR3IEXTPROC)(GLint red, GLint green, GLint blue);
+GLAPI PFNGLSECONDARYCOLOR3IEXTPROC glad_glSecondaryColor3iEXT;
+#define glSecondaryColor3iEXT glad_glSecondaryColor3iEXT
+typedef void (APIENTRYP PFNGLSECONDARYCOLOR3IVEXTPROC)(const GLint *v);
+GLAPI PFNGLSECONDARYCOLOR3IVEXTPROC glad_glSecondaryColor3ivEXT;
+#define glSecondaryColor3ivEXT glad_glSecondaryColor3ivEXT
+typedef void (APIENTRYP PFNGLSECONDARYCOLOR3SEXTPROC)(GLshort red, GLshort green, GLshort blue);
+GLAPI PFNGLSECONDARYCOLOR3SEXTPROC glad_glSecondaryColor3sEXT;
+#define glSecondaryColor3sEXT glad_glSecondaryColor3sEXT
+typedef void (APIENTRYP PFNGLSECONDARYCOLOR3SVEXTPROC)(const GLshort *v);
+GLAPI PFNGLSECONDARYCOLOR3SVEXTPROC glad_glSecondaryColor3svEXT;
+#define glSecondaryColor3svEXT glad_glSecondaryColor3svEXT
+typedef void (APIENTRYP PFNGLSECONDARYCOLOR3UBEXTPROC)(GLubyte red, GLubyte green, GLubyte blue);
+GLAPI PFNGLSECONDARYCOLOR3UBEXTPROC glad_glSecondaryColor3ubEXT;
+#define glSecondaryColor3ubEXT glad_glSecondaryColor3ubEXT
+typedef void (APIENTRYP PFNGLSECONDARYCOLOR3UBVEXTPROC)(const GLubyte *v);
+GLAPI PFNGLSECONDARYCOLOR3UBVEXTPROC glad_glSecondaryColor3ubvEXT;
+#define glSecondaryColor3ubvEXT glad_glSecondaryColor3ubvEXT
+typedef void (APIENTRYP PFNGLSECONDARYCOLOR3UIEXTPROC)(GLuint red, GLuint green, GLuint blue);
+GLAPI PFNGLSECONDARYCOLOR3UIEXTPROC glad_glSecondaryColor3uiEXT;
+#define glSecondaryColor3uiEXT glad_glSecondaryColor3uiEXT
+typedef void (APIENTRYP PFNGLSECONDARYCOLOR3UIVEXTPROC)(const GLuint *v);
+GLAPI PFNGLSECONDARYCOLOR3UIVEXTPROC glad_glSecondaryColor3uivEXT;
+#define glSecondaryColor3uivEXT glad_glSecondaryColor3uivEXT
+typedef void (APIENTRYP PFNGLSECONDARYCOLOR3USEXTPROC)(GLushort red, GLushort green, GLushort blue);
+GLAPI PFNGLSECONDARYCOLOR3USEXTPROC glad_glSecondaryColor3usEXT;
+#define glSecondaryColor3usEXT glad_glSecondaryColor3usEXT
+typedef void (APIENTRYP PFNGLSECONDARYCOLOR3USVEXTPROC)(const GLushort *v);
+GLAPI PFNGLSECONDARYCOLOR3USVEXTPROC glad_glSecondaryColor3usvEXT;
+#define glSecondaryColor3usvEXT glad_glSecondaryColor3usvEXT
+typedef void (APIENTRYP PFNGLSECONDARYCOLORPOINTEREXTPROC)(GLint size, GLenum type, GLsizei stride, const void *pointer);
+GLAPI PFNGLSECONDARYCOLORPOINTEREXTPROC glad_glSecondaryColorPointerEXT;
+#define glSecondaryColorPointerEXT glad_glSecondaryColorPointerEXT
+#endif
+#ifndef GL_EXT_semaphore
+#define GL_EXT_semaphore 1
+GLAPI int GLAD_GL_EXT_semaphore;
+typedef void (APIENTRYP PFNGLGENSEMAPHORESEXTPROC)(GLsizei n, GLuint *semaphores);
+GLAPI PFNGLGENSEMAPHORESEXTPROC glad_glGenSemaphoresEXT;
+#define glGenSemaphoresEXT glad_glGenSemaphoresEXT
+typedef void (APIENTRYP PFNGLDELETESEMAPHORESEXTPROC)(GLsizei n, const GLuint *semaphores);
+GLAPI PFNGLDELETESEMAPHORESEXTPROC glad_glDeleteSemaphoresEXT;
+#define glDeleteSemaphoresEXT glad_glDeleteSemaphoresEXT
+typedef GLboolean (APIENTRYP PFNGLISSEMAPHOREEXTPROC)(GLuint semaphore);
+GLAPI PFNGLISSEMAPHOREEXTPROC glad_glIsSemaphoreEXT;
+#define glIsSemaphoreEXT glad_glIsSemaphoreEXT
+typedef void (APIENTRYP PFNGLSEMAPHOREPARAMETERUI64VEXTPROC)(GLuint semaphore, GLenum pname, const GLuint64 *params);
+GLAPI PFNGLSEMAPHOREPARAMETERUI64VEXTPROC glad_glSemaphoreParameterui64vEXT;
+#define glSemaphoreParameterui64vEXT glad_glSemaphoreParameterui64vEXT
+typedef void (APIENTRYP PFNGLGETSEMAPHOREPARAMETERUI64VEXTPROC)(GLuint semaphore, GLenum pname, GLuint64 *params);
+GLAPI PFNGLGETSEMAPHOREPARAMETERUI64VEXTPROC glad_glGetSemaphoreParameterui64vEXT;
+#define glGetSemaphoreParameterui64vEXT glad_glGetSemaphoreParameterui64vEXT
+typedef void (APIENTRYP PFNGLWAITSEMAPHOREEXTPROC)(GLuint semaphore, GLuint numBufferBarriers, const GLuint *buffers, GLuint numTextureBarriers, const GLuint *textures, const GLenum *srcLayouts);
+GLAPI PFNGLWAITSEMAPHOREEXTPROC glad_glWaitSemaphoreEXT;
+#define glWaitSemaphoreEXT glad_glWaitSemaphoreEXT
+typedef void (APIENTRYP PFNGLSIGNALSEMAPHOREEXTPROC)(GLuint semaphore, GLuint numBufferBarriers, const GLuint *buffers, GLuint numTextureBarriers, const GLuint *textures, const GLenum *dstLayouts);
+GLAPI PFNGLSIGNALSEMAPHOREEXTPROC glad_glSignalSemaphoreEXT;
+#define glSignalSemaphoreEXT glad_glSignalSemaphoreEXT
+#endif
+#ifndef GL_EXT_semaphore_fd
+#define GL_EXT_semaphore_fd 1
+GLAPI int GLAD_GL_EXT_semaphore_fd;
+typedef void (APIENTRYP PFNGLIMPORTSEMAPHOREFDEXTPROC)(GLuint semaphore, GLenum handleType, GLint fd);
+GLAPI PFNGLIMPORTSEMAPHOREFDEXTPROC glad_glImportSemaphoreFdEXT;
+#define glImportSemaphoreFdEXT glad_glImportSemaphoreFdEXT
+#endif
+#ifndef GL_EXT_semaphore_win32
+#define GL_EXT_semaphore_win32 1
+GLAPI int GLAD_GL_EXT_semaphore_win32;
+typedef void (APIENTRYP PFNGLIMPORTSEMAPHOREWIN32HANDLEEXTPROC)(GLuint semaphore, GLenum handleType, void *handle);
+GLAPI PFNGLIMPORTSEMAPHOREWIN32HANDLEEXTPROC glad_glImportSemaphoreWin32HandleEXT;
+#define glImportSemaphoreWin32HandleEXT glad_glImportSemaphoreWin32HandleEXT
+typedef void (APIENTRYP PFNGLIMPORTSEMAPHOREWIN32NAMEEXTPROC)(GLuint semaphore, GLenum handleType, const void *name);
+GLAPI PFNGLIMPORTSEMAPHOREWIN32NAMEEXTPROC glad_glImportSemaphoreWin32NameEXT;
+#define glImportSemaphoreWin32NameEXT glad_glImportSemaphoreWin32NameEXT
+#endif
+#ifndef GL_EXT_separate_shader_objects
+#define GL_EXT_separate_shader_objects 1
+GLAPI int GLAD_GL_EXT_separate_shader_objects;
+typedef void (APIENTRYP PFNGLUSESHADERPROGRAMEXTPROC)(GLenum type, GLuint program);
+GLAPI PFNGLUSESHADERPROGRAMEXTPROC glad_glUseShaderProgramEXT;
+#define glUseShaderProgramEXT glad_glUseShaderProgramEXT
+typedef void (APIENTRYP PFNGLACTIVEPROGRAMEXTPROC)(GLuint program);
+GLAPI PFNGLACTIVEPROGRAMEXTPROC glad_glActiveProgramEXT;
+#define glActiveProgramEXT glad_glActiveProgramEXT
+typedef GLuint (APIENTRYP PFNGLCREATESHADERPROGRAMEXTPROC)(GLenum type, const GLchar *string);
+GLAPI PFNGLCREATESHADERPROGRAMEXTPROC glad_glCreateShaderProgramEXT;
+#define glCreateShaderProgramEXT glad_glCreateShaderProgramEXT
+typedef void (APIENTRYP PFNGLACTIVESHADERPROGRAMEXTPROC)(GLuint pipeline, GLuint program);
+GLAPI PFNGLACTIVESHADERPROGRAMEXTPROC glad_glActiveShaderProgramEXT;
+#define glActiveShaderProgramEXT glad_glActiveShaderProgramEXT
+typedef void (APIENTRYP PFNGLBINDPROGRAMPIPELINEEXTPROC)(GLuint pipeline);
+GLAPI PFNGLBINDPROGRAMPIPELINEEXTPROC glad_glBindProgramPipelineEXT;
+#define glBindProgramPipelineEXT glad_glBindProgramPipelineEXT
+typedef GLuint (APIENTRYP PFNGLCREATESHADERPROGRAMVEXTPROC)(GLenum type, GLsizei count, const GLchar **strings);
+GLAPI PFNGLCREATESHADERPROGRAMVEXTPROC glad_glCreateShaderProgramvEXT;
+#define glCreateShaderProgramvEXT glad_glCreateShaderProgramvEXT
+typedef void (APIENTRYP PFNGLDELETEPROGRAMPIPELINESEXTPROC)(GLsizei n, const GLuint *pipelines);
+GLAPI PFNGLDELETEPROGRAMPIPELINESEXTPROC glad_glDeleteProgramPipelinesEXT;
+#define glDeleteProgramPipelinesEXT glad_glDeleteProgramPipelinesEXT
+typedef void (APIENTRYP PFNGLGENPROGRAMPIPELINESEXTPROC)(GLsizei n, GLuint *pipelines);
+GLAPI PFNGLGENPROGRAMPIPELINESEXTPROC glad_glGenProgramPipelinesEXT;
+#define glGenProgramPipelinesEXT glad_glGenProgramPipelinesEXT
+typedef void (APIENTRYP PFNGLGETPROGRAMPIPELINEINFOLOGEXTPROC)(GLuint pipeline, GLsizei bufSize, GLsizei *length, GLchar *infoLog);
+GLAPI PFNGLGETPROGRAMPIPELINEINFOLOGEXTPROC glad_glGetProgramPipelineInfoLogEXT;
+#define glGetProgramPipelineInfoLogEXT glad_glGetProgramPipelineInfoLogEXT
+typedef void (APIENTRYP PFNGLGETPROGRAMPIPELINEIVEXTPROC)(GLuint pipeline, GLenum pname, GLint *params);
+GLAPI PFNGLGETPROGRAMPIPELINEIVEXTPROC glad_glGetProgramPipelineivEXT;
+#define glGetProgramPipelineivEXT glad_glGetProgramPipelineivEXT
+typedef GLboolean (APIENTRYP PFNGLISPROGRAMPIPELINEEXTPROC)(GLuint pipeline);
+GLAPI PFNGLISPROGRAMPIPELINEEXTPROC glad_glIsProgramPipelineEXT;
+#define glIsProgramPipelineEXT glad_glIsProgramPipelineEXT
+typedef void (APIENTRYP PFNGLUSEPROGRAMSTAGESEXTPROC)(GLuint pipeline, GLbitfield stages, GLuint program);
+GLAPI PFNGLUSEPROGRAMSTAGESEXTPROC glad_glUseProgramStagesEXT;
+#define glUseProgramStagesEXT glad_glUseProgramStagesEXT
+typedef void (APIENTRYP PFNGLVALIDATEPROGRAMPIPELINEEXTPROC)(GLuint pipeline);
+GLAPI PFNGLVALIDATEPROGRAMPIPELINEEXTPROC glad_glValidateProgramPipelineEXT;
+#define glValidateProgramPipelineEXT glad_glValidateProgramPipelineEXT
+#endif
+#ifndef GL_EXT_separate_specular_color
+#define GL_EXT_separate_specular_color 1
+GLAPI int GLAD_GL_EXT_separate_specular_color;
+#endif
+#ifndef GL_EXT_shader_framebuffer_fetch
+#define GL_EXT_shader_framebuffer_fetch 1
+GLAPI int GLAD_GL_EXT_shader_framebuffer_fetch;
+#endif
+#ifndef GL_EXT_shader_framebuffer_fetch_non_coherent
+#define GL_EXT_shader_framebuffer_fetch_non_coherent 1
+GLAPI int GLAD_GL_EXT_shader_framebuffer_fetch_non_coherent;
+typedef void (APIENTRYP PFNGLFRAMEBUFFERFETCHBARRIEREXTPROC)(void);
+GLAPI PFNGLFRAMEBUFFERFETCHBARRIEREXTPROC glad_glFramebufferFetchBarrierEXT;
+#define glFramebufferFetchBarrierEXT glad_glFramebufferFetchBarrierEXT
+#endif
+#ifndef GL_EXT_shader_image_load_formatted
+#define GL_EXT_shader_image_load_formatted 1
+GLAPI int GLAD_GL_EXT_shader_image_load_formatted;
+#endif
+#ifndef GL_EXT_shader_image_load_store
+#define GL_EXT_shader_image_load_store 1
+GLAPI int GLAD_GL_EXT_shader_image_load_store;
+typedef void (APIENTRYP PFNGLBINDIMAGETEXTUREEXTPROC)(GLuint index, GLuint texture, GLint level, GLboolean layered, GLint layer, GLenum access, GLint format);
+GLAPI PFNGLBINDIMAGETEXTUREEXTPROC glad_glBindImageTextureEXT;
+#define glBindImageTextureEXT glad_glBindImageTextureEXT
+typedef void (APIENTRYP PFNGLMEMORYBARRIEREXTPROC)(GLbitfield barriers);
+GLAPI PFNGLMEMORYBARRIEREXTPROC glad_glMemoryBarrierEXT;
+#define glMemoryBarrierEXT glad_glMemoryBarrierEXT
+#endif
+#ifndef GL_EXT_shader_integer_mix
+#define GL_EXT_shader_integer_mix 1
+GLAPI int GLAD_GL_EXT_shader_integer_mix;
+#endif
+#ifndef GL_EXT_shadow_funcs
+#define GL_EXT_shadow_funcs 1
+GLAPI int GLAD_GL_EXT_shadow_funcs;
+#endif
+#ifndef GL_EXT_shared_texture_palette
+#define GL_EXT_shared_texture_palette 1
+GLAPI int GLAD_GL_EXT_shared_texture_palette;
+#endif
+#ifndef GL_EXT_sparse_texture2
+#define GL_EXT_sparse_texture2 1
+GLAPI int GLAD_GL_EXT_sparse_texture2;
+#endif
+#ifndef GL_EXT_stencil_clear_tag
+#define GL_EXT_stencil_clear_tag 1
+GLAPI int GLAD_GL_EXT_stencil_clear_tag;
+typedef void (APIENTRYP PFNGLSTENCILCLEARTAGEXTPROC)(GLsizei stencilTagBits, GLuint stencilClearTag);
+GLAPI PFNGLSTENCILCLEARTAGEXTPROC glad_glStencilClearTagEXT;
+#define glStencilClearTagEXT glad_glStencilClearTagEXT
+#endif
+#ifndef GL_EXT_stencil_two_side
+#define GL_EXT_stencil_two_side 1
+GLAPI int GLAD_GL_EXT_stencil_two_side;
+typedef void (APIENTRYP PFNGLACTIVESTENCILFACEEXTPROC)(GLenum face);
+GLAPI PFNGLACTIVESTENCILFACEEXTPROC glad_glActiveStencilFaceEXT;
+#define glActiveStencilFaceEXT glad_glActiveStencilFaceEXT
+#endif
+#ifndef GL_EXT_stencil_wrap
+#define GL_EXT_stencil_wrap 1
+GLAPI int GLAD_GL_EXT_stencil_wrap;
+#endif
+#ifndef GL_EXT_subtexture
+#define GL_EXT_subtexture 1
+GLAPI int GLAD_GL_EXT_subtexture;
+typedef void (APIENTRYP PFNGLTEXSUBIMAGE1DEXTPROC)(GLenum target, GLint level, GLint xoffset, GLsizei width, GLenum format, GLenum type, const void *pixels);
+GLAPI PFNGLTEXSUBIMAGE1DEXTPROC glad_glTexSubImage1DEXT;
+#define glTexSubImage1DEXT glad_glTexSubImage1DEXT
+typedef void (APIENTRYP PFNGLTEXSUBIMAGE2DEXTPROC)(GLenum target, GLint level, GLint xoffset, GLint yoffset, GLsizei width, GLsizei height, GLenum format, GLenum type, const void *pixels);
+GLAPI PFNGLTEXSUBIMAGE2DEXTPROC glad_glTexSubImage2DEXT;
+#define glTexSubImage2DEXT glad_glTexSubImage2DEXT
+#endif
+#ifndef GL_EXT_texture
+#define GL_EXT_texture 1
+GLAPI int GLAD_GL_EXT_texture;
+#endif
+#ifndef GL_EXT_texture3D
+#define GL_EXT_texture3D 1
+GLAPI int GLAD_GL_EXT_texture3D;
+typedef void (APIENTRYP PFNGLTEXIMAGE3DEXTPROC)(GLenum target, GLint level, GLenum internalformat, GLsizei width, GLsizei height, GLsizei depth, GLint border, GLenum format, GLenum type, const void *pixels);
+GLAPI PFNGLTEXIMAGE3DEXTPROC glad_glTexImage3DEXT;
+#define glTexImage3DEXT glad_glTexImage3DEXT
+typedef void (APIENTRYP PFNGLTEXSUBIMAGE3DEXTPROC)(GLenum target, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLsizei width, GLsizei height, GLsizei depth, GLenum format, GLenum type, const void *pixels);
+GLAPI PFNGLTEXSUBIMAGE3DEXTPROC glad_glTexSubImage3DEXT;
+#define glTexSubImage3DEXT glad_glTexSubImage3DEXT
+#endif
+#ifndef GL_EXT_texture_array
+#define GL_EXT_texture_array 1
+GLAPI int GLAD_GL_EXT_texture_array;
+typedef void (APIENTRYP PFNGLFRAMEBUFFERTEXTURELAYEREXTPROC)(GLenum target, GLenum attachment, GLuint texture, GLint level, GLint layer);
+GLAPI PFNGLFRAMEBUFFERTEXTURELAYEREXTPROC glad_glFramebufferTextureLayerEXT;
+#define glFramebufferTextureLayerEXT glad_glFramebufferTextureLayerEXT
+#endif
+#ifndef GL_EXT_texture_buffer_object
+#define GL_EXT_texture_buffer_object 1
+GLAPI int GLAD_GL_EXT_texture_buffer_object;
+typedef void (APIENTRYP PFNGLTEXBUFFEREXTPROC)(GLenum target, GLenum internalformat, GLuint buffer);
+GLAPI PFNGLTEXBUFFEREXTPROC glad_glTexBufferEXT;
+#define glTexBufferEXT glad_glTexBufferEXT
+#endif
+#ifndef GL_EXT_texture_compression_latc
+#define GL_EXT_texture_compression_latc 1
+GLAPI int GLAD_GL_EXT_texture_compression_latc;
+#endif
+#ifndef GL_EXT_texture_compression_rgtc
+#define GL_EXT_texture_compression_rgtc 1
+GLAPI int GLAD_GL_EXT_texture_compression_rgtc;
+#endif
+#ifndef GL_EXT_texture_compression_s3tc
+#define GL_EXT_texture_compression_s3tc 1
+GLAPI int GLAD_GL_EXT_texture_compression_s3tc;
+#endif
+#ifndef GL_EXT_texture_cube_map
+#define GL_EXT_texture_cube_map 1
+GLAPI int GLAD_GL_EXT_texture_cube_map;
+#endif
+#ifndef GL_EXT_texture_env_add
+#define GL_EXT_texture_env_add 1
+GLAPI int GLAD_GL_EXT_texture_env_add;
+#endif
+#ifndef GL_EXT_texture_env_combine
+#define GL_EXT_texture_env_combine 1
+GLAPI int GLAD_GL_EXT_texture_env_combine;
+#endif
+#ifndef GL_EXT_texture_env_dot3
+#define GL_EXT_texture_env_dot3 1
+GLAPI int GLAD_GL_EXT_texture_env_dot3;
+#endif
+#ifndef GL_EXT_texture_filter_anisotropic
+#define GL_EXT_texture_filter_anisotropic 1
+GLAPI int GLAD_GL_EXT_texture_filter_anisotropic;
+#endif
+#ifndef GL_EXT_texture_filter_minmax
+#define GL_EXT_texture_filter_minmax 1
+GLAPI int GLAD_GL_EXT_texture_filter_minmax;
+#endif
+#ifndef GL_EXT_texture_integer
+#define GL_EXT_texture_integer 1
+GLAPI int GLAD_GL_EXT_texture_integer;
+typedef void (APIENTRYP PFNGLTEXPARAMETERIIVEXTPROC)(GLenum target, GLenum pname, const GLint *params);
+GLAPI PFNGLTEXPARAMETERIIVEXTPROC glad_glTexParameterIivEXT;
+#define glTexParameterIivEXT glad_glTexParameterIivEXT
+typedef void (APIENTRYP PFNGLTEXPARAMETERIUIVEXTPROC)(GLenum target, GLenum pname, const GLuint *params);
+GLAPI PFNGLTEXPARAMETERIUIVEXTPROC glad_glTexParameterIuivEXT;
+#define glTexParameterIuivEXT glad_glTexParameterIuivEXT
+typedef void (APIENTRYP PFNGLGETTEXPARAMETERIIVEXTPROC)(GLenum target, GLenum pname, GLint *params);
+GLAPI PFNGLGETTEXPARAMETERIIVEXTPROC glad_glGetTexParameterIivEXT;
+#define glGetTexParameterIivEXT glad_glGetTexParameterIivEXT
+typedef void (APIENTRYP PFNGLGETTEXPARAMETERIUIVEXTPROC)(GLenum target, GLenum pname, GLuint *params);
+GLAPI PFNGLGETTEXPARAMETERIUIVEXTPROC glad_glGetTexParameterIuivEXT;
+#define glGetTexParameterIuivEXT glad_glGetTexParameterIuivEXT
+typedef void (APIENTRYP PFNGLCLEARCOLORIIEXTPROC)(GLint red, GLint green, GLint blue, GLint alpha);
+GLAPI PFNGLCLEARCOLORIIEXTPROC glad_glClearColorIiEXT;
+#define glClearColorIiEXT glad_glClearColorIiEXT
+typedef void (APIENTRYP PFNGLCLEARCOLORIUIEXTPROC)(GLuint red, GLuint green, GLuint blue, GLuint alpha);
+GLAPI PFNGLCLEARCOLORIUIEXTPROC glad_glClearColorIuiEXT;
+#define glClearColorIuiEXT glad_glClearColorIuiEXT
+#endif
+#ifndef GL_EXT_texture_lod_bias
+#define GL_EXT_texture_lod_bias 1
+GLAPI int GLAD_GL_EXT_texture_lod_bias;
+#endif
+#ifndef GL_EXT_texture_mirror_clamp
+#define GL_EXT_texture_mirror_clamp 1
+GLAPI int GLAD_GL_EXT_texture_mirror_clamp;
+#endif
+#ifndef GL_EXT_texture_object
+#define GL_EXT_texture_object 1
+GLAPI int GLAD_GL_EXT_texture_object;
+typedef GLboolean (APIENTRYP PFNGLARETEXTURESRESIDENTEXTPROC)(GLsizei n, const GLuint *textures, GLboolean *residences);
+GLAPI PFNGLARETEXTURESRESIDENTEXTPROC glad_glAreTexturesResidentEXT;
+#define glAreTexturesResidentEXT glad_glAreTexturesResidentEXT
+typedef void (APIENTRYP PFNGLBINDTEXTUREEXTPROC)(GLenum target, GLuint texture);
+GLAPI PFNGLBINDTEXTUREEXTPROC glad_glBindTextureEXT;
+#define glBindTextureEXT glad_glBindTextureEXT
+typedef void (APIENTRYP PFNGLDELETETEXTURESEXTPROC)(GLsizei n, const GLuint *textures);
+GLAPI PFNGLDELETETEXTURESEXTPROC glad_glDeleteTexturesEXT;
+#define glDeleteTexturesEXT glad_glDeleteTexturesEXT

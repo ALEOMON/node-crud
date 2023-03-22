@@ -13851,3 +13851,508 @@ GLAPI PFNGLGETCOMBINERINPUTPARAMETERIVNVPROC glad_glGetCombinerInputParameterivN
 #define glGetCombinerInputParameterivNV glad_glGetCombinerInputParameterivNV
 typedef void (APIENTRYP PFNGLGETCOMBINEROUTPUTPARAMETERFVNVPROC)(GLenum stage, GLenum portion, GLenum pname, GLfloat *params);
 GLAPI PFNGLGETCOMBINEROUTPUTPARAMETERFVNVPROC glad_glGetCombinerOutputParameterfvNV;
+#define glGetCombinerOutputParameterfvNV glad_glGetCombinerOutputParameterfvNV
+typedef void (APIENTRYP PFNGLGETCOMBINEROUTPUTPARAMETERIVNVPROC)(GLenum stage, GLenum portion, GLenum pname, GLint *params);
+GLAPI PFNGLGETCOMBINEROUTPUTPARAMETERIVNVPROC glad_glGetCombinerOutputParameterivNV;
+#define glGetCombinerOutputParameterivNV glad_glGetCombinerOutputParameterivNV
+typedef void (APIENTRYP PFNGLGETFINALCOMBINERINPUTPARAMETERFVNVPROC)(GLenum variable, GLenum pname, GLfloat *params);
+GLAPI PFNGLGETFINALCOMBINERINPUTPARAMETERFVNVPROC glad_glGetFinalCombinerInputParameterfvNV;
+#define glGetFinalCombinerInputParameterfvNV glad_glGetFinalCombinerInputParameterfvNV
+typedef void (APIENTRYP PFNGLGETFINALCOMBINERINPUTPARAMETERIVNVPROC)(GLenum variable, GLenum pname, GLint *params);
+GLAPI PFNGLGETFINALCOMBINERINPUTPARAMETERIVNVPROC glad_glGetFinalCombinerInputParameterivNV;
+#define glGetFinalCombinerInputParameterivNV glad_glGetFinalCombinerInputParameterivNV
+#endif
+#ifndef GL_NV_register_combiners2
+#define GL_NV_register_combiners2 1
+GLAPI int GLAD_GL_NV_register_combiners2;
+typedef void (APIENTRYP PFNGLCOMBINERSTAGEPARAMETERFVNVPROC)(GLenum stage, GLenum pname, const GLfloat *params);
+GLAPI PFNGLCOMBINERSTAGEPARAMETERFVNVPROC glad_glCombinerStageParameterfvNV;
+#define glCombinerStageParameterfvNV glad_glCombinerStageParameterfvNV
+typedef void (APIENTRYP PFNGLGETCOMBINERSTAGEPARAMETERFVNVPROC)(GLenum stage, GLenum pname, GLfloat *params);
+GLAPI PFNGLGETCOMBINERSTAGEPARAMETERFVNVPROC glad_glGetCombinerStageParameterfvNV;
+#define glGetCombinerStageParameterfvNV glad_glGetCombinerStageParameterfvNV
+#endif
+#ifndef GL_NV_representative_fragment_test
+#define GL_NV_representative_fragment_test 1
+GLAPI int GLAD_GL_NV_representative_fragment_test;
+#endif
+#ifndef GL_NV_robustness_video_memory_purge
+#define GL_NV_robustness_video_memory_purge 1
+GLAPI int GLAD_GL_NV_robustness_video_memory_purge;
+#endif
+#ifndef GL_NV_sample_locations
+#define GL_NV_sample_locations 1
+GLAPI int GLAD_GL_NV_sample_locations;
+typedef void (APIENTRYP PFNGLFRAMEBUFFERSAMPLELOCATIONSFVNVPROC)(GLenum target, GLuint start, GLsizei count, const GLfloat *v);
+GLAPI PFNGLFRAMEBUFFERSAMPLELOCATIONSFVNVPROC glad_glFramebufferSampleLocationsfvNV;
+#define glFramebufferSampleLocationsfvNV glad_glFramebufferSampleLocationsfvNV
+typedef void (APIENTRYP PFNGLNAMEDFRAMEBUFFERSAMPLELOCATIONSFVNVPROC)(GLuint framebuffer, GLuint start, GLsizei count, const GLfloat *v);
+GLAPI PFNGLNAMEDFRAMEBUFFERSAMPLELOCATIONSFVNVPROC glad_glNamedFramebufferSampleLocationsfvNV;
+#define glNamedFramebufferSampleLocationsfvNV glad_glNamedFramebufferSampleLocationsfvNV
+typedef void (APIENTRYP PFNGLRESOLVEDEPTHVALUESNVPROC)(void);
+GLAPI PFNGLRESOLVEDEPTHVALUESNVPROC glad_glResolveDepthValuesNV;
+#define glResolveDepthValuesNV glad_glResolveDepthValuesNV
+#endif
+#ifndef GL_NV_sample_mask_override_coverage
+#define GL_NV_sample_mask_override_coverage 1
+GLAPI int GLAD_GL_NV_sample_mask_override_coverage;
+#endif
+#ifndef GL_NV_scissor_exclusive
+#define GL_NV_scissor_exclusive 1
+GLAPI int GLAD_GL_NV_scissor_exclusive;
+typedef void (APIENTRYP PFNGLSCISSOREXCLUSIVENVPROC)(GLint x, GLint y, GLsizei width, GLsizei height);
+GLAPI PFNGLSCISSOREXCLUSIVENVPROC glad_glScissorExclusiveNV;
+#define glScissorExclusiveNV glad_glScissorExclusiveNV
+typedef void (APIENTRYP PFNGLSCISSOREXCLUSIVEARRAYVNVPROC)(GLuint first, GLsizei count, const GLint *v);
+GLAPI PFNGLSCISSOREXCLUSIVEARRAYVNVPROC glad_glScissorExclusiveArrayvNV;
+#define glScissorExclusiveArrayvNV glad_glScissorExclusiveArrayvNV
+#endif
+#ifndef GL_NV_shader_atomic_counters
+#define GL_NV_shader_atomic_counters 1
+GLAPI int GLAD_GL_NV_shader_atomic_counters;
+#endif
+#ifndef GL_NV_shader_atomic_float
+#define GL_NV_shader_atomic_float 1
+GLAPI int GLAD_GL_NV_shader_atomic_float;
+#endif
+#ifndef GL_NV_shader_atomic_float64
+#define GL_NV_shader_atomic_float64 1
+GLAPI int GLAD_GL_NV_shader_atomic_float64;
+#endif
+#ifndef GL_NV_shader_atomic_fp16_vector
+#define GL_NV_shader_atomic_fp16_vector 1
+GLAPI int GLAD_GL_NV_shader_atomic_fp16_vector;
+#endif
+#ifndef GL_NV_shader_atomic_int64
+#define GL_NV_shader_atomic_int64 1
+GLAPI int GLAD_GL_NV_shader_atomic_int64;
+#endif
+#ifndef GL_NV_shader_buffer_load
+#define GL_NV_shader_buffer_load 1
+GLAPI int GLAD_GL_NV_shader_buffer_load;
+typedef void (APIENTRYP PFNGLMAKEBUFFERRESIDENTNVPROC)(GLenum target, GLenum access);
+GLAPI PFNGLMAKEBUFFERRESIDENTNVPROC glad_glMakeBufferResidentNV;
+#define glMakeBufferResidentNV glad_glMakeBufferResidentNV
+typedef void (APIENTRYP PFNGLMAKEBUFFERNONRESIDENTNVPROC)(GLenum target);
+GLAPI PFNGLMAKEBUFFERNONRESIDENTNVPROC glad_glMakeBufferNonResidentNV;
+#define glMakeBufferNonResidentNV glad_glMakeBufferNonResidentNV
+typedef GLboolean (APIENTRYP PFNGLISBUFFERRESIDENTNVPROC)(GLenum target);
+GLAPI PFNGLISBUFFERRESIDENTNVPROC glad_glIsBufferResidentNV;
+#define glIsBufferResidentNV glad_glIsBufferResidentNV
+typedef void (APIENTRYP PFNGLMAKENAMEDBUFFERRESIDENTNVPROC)(GLuint buffer, GLenum access);
+GLAPI PFNGLMAKENAMEDBUFFERRESIDENTNVPROC glad_glMakeNamedBufferResidentNV;
+#define glMakeNamedBufferResidentNV glad_glMakeNamedBufferResidentNV
+typedef void (APIENTRYP PFNGLMAKENAMEDBUFFERNONRESIDENTNVPROC)(GLuint buffer);
+GLAPI PFNGLMAKENAMEDBUFFERNONRESIDENTNVPROC glad_glMakeNamedBufferNonResidentNV;
+#define glMakeNamedBufferNonResidentNV glad_glMakeNamedBufferNonResidentNV
+typedef GLboolean (APIENTRYP PFNGLISNAMEDBUFFERRESIDENTNVPROC)(GLuint buffer);
+GLAPI PFNGLISNAMEDBUFFERRESIDENTNVPROC glad_glIsNamedBufferResidentNV;
+#define glIsNamedBufferResidentNV glad_glIsNamedBufferResidentNV
+typedef void (APIENTRYP PFNGLGETBUFFERPARAMETERUI64VNVPROC)(GLenum target, GLenum pname, GLuint64EXT *params);
+GLAPI PFNGLGETBUFFERPARAMETERUI64VNVPROC glad_glGetBufferParameterui64vNV;
+#define glGetBufferParameterui64vNV glad_glGetBufferParameterui64vNV
+typedef void (APIENTRYP PFNGLGETNAMEDBUFFERPARAMETERUI64VNVPROC)(GLuint buffer, GLenum pname, GLuint64EXT *params);
+GLAPI PFNGLGETNAMEDBUFFERPARAMETERUI64VNVPROC glad_glGetNamedBufferParameterui64vNV;
+#define glGetNamedBufferParameterui64vNV glad_glGetNamedBufferParameterui64vNV
+typedef void (APIENTRYP PFNGLGETINTEGERUI64VNVPROC)(GLenum value, GLuint64EXT *result);
+GLAPI PFNGLGETINTEGERUI64VNVPROC glad_glGetIntegerui64vNV;
+#define glGetIntegerui64vNV glad_glGetIntegerui64vNV
+typedef void (APIENTRYP PFNGLUNIFORMUI64NVPROC)(GLint location, GLuint64EXT value);
+GLAPI PFNGLUNIFORMUI64NVPROC glad_glUniformui64NV;
+#define glUniformui64NV glad_glUniformui64NV
+typedef void (APIENTRYP PFNGLUNIFORMUI64VNVPROC)(GLint location, GLsizei count, const GLuint64EXT *value);
+GLAPI PFNGLUNIFORMUI64VNVPROC glad_glUniformui64vNV;
+#define glUniformui64vNV glad_glUniformui64vNV
+typedef void (APIENTRYP PFNGLPROGRAMUNIFORMUI64NVPROC)(GLuint program, GLint location, GLuint64EXT value);
+GLAPI PFNGLPROGRAMUNIFORMUI64NVPROC glad_glProgramUniformui64NV;
+#define glProgramUniformui64NV glad_glProgramUniformui64NV
+typedef void (APIENTRYP PFNGLPROGRAMUNIFORMUI64VNVPROC)(GLuint program, GLint location, GLsizei count, const GLuint64EXT *value);
+GLAPI PFNGLPROGRAMUNIFORMUI64VNVPROC glad_glProgramUniformui64vNV;
+#define glProgramUniformui64vNV glad_glProgramUniformui64vNV
+#endif
+#ifndef GL_NV_shader_buffer_store
+#define GL_NV_shader_buffer_store 1
+GLAPI int GLAD_GL_NV_shader_buffer_store;
+#endif
+#ifndef GL_NV_shader_storage_buffer_object
+#define GL_NV_shader_storage_buffer_object 1
+GLAPI int GLAD_GL_NV_shader_storage_buffer_object;
+#endif
+#ifndef GL_NV_shader_subgroup_partitioned
+#define GL_NV_shader_subgroup_partitioned 1
+GLAPI int GLAD_GL_NV_shader_subgroup_partitioned;
+#endif
+#ifndef GL_NV_shader_texture_footprint
+#define GL_NV_shader_texture_footprint 1
+GLAPI int GLAD_GL_NV_shader_texture_footprint;
+#endif
+#ifndef GL_NV_shader_thread_group
+#define GL_NV_shader_thread_group 1
+GLAPI int GLAD_GL_NV_shader_thread_group;
+#endif
+#ifndef GL_NV_shader_thread_shuffle
+#define GL_NV_shader_thread_shuffle 1
+GLAPI int GLAD_GL_NV_shader_thread_shuffle;
+#endif
+#ifndef GL_NV_shading_rate_image
+#define GL_NV_shading_rate_image 1
+GLAPI int GLAD_GL_NV_shading_rate_image;
+typedef void (APIENTRYP PFNGLBINDSHADINGRATEIMAGENVPROC)(GLuint texture);
+GLAPI PFNGLBINDSHADINGRATEIMAGENVPROC glad_glBindShadingRateImageNV;
+#define glBindShadingRateImageNV glad_glBindShadingRateImageNV
+typedef void (APIENTRYP PFNGLGETSHADINGRATEIMAGEPALETTENVPROC)(GLuint viewport, GLuint entry, GLenum *rate);
+GLAPI PFNGLGETSHADINGRATEIMAGEPALETTENVPROC glad_glGetShadingRateImagePaletteNV;
+#define glGetShadingRateImagePaletteNV glad_glGetShadingRateImagePaletteNV
+typedef void (APIENTRYP PFNGLGETSHADINGRATESAMPLELOCATIONIVNVPROC)(GLenum rate, GLuint samples, GLuint index, GLint *location);
+GLAPI PFNGLGETSHADINGRATESAMPLELOCATIONIVNVPROC glad_glGetShadingRateSampleLocationivNV;
+#define glGetShadingRateSampleLocationivNV glad_glGetShadingRateSampleLocationivNV
+typedef void (APIENTRYP PFNGLSHADINGRATEIMAGEBARRIERNVPROC)(GLboolean synchronize);
+GLAPI PFNGLSHADINGRATEIMAGEBARRIERNVPROC glad_glShadingRateImageBarrierNV;
+#define glShadingRateImageBarrierNV glad_glShadingRateImageBarrierNV
+typedef void (APIENTRYP PFNGLSHADINGRATEIMAGEPALETTENVPROC)(GLuint viewport, GLuint first, GLsizei count, const GLenum *rates);
+GLAPI PFNGLSHADINGRATEIMAGEPALETTENVPROC glad_glShadingRateImagePaletteNV;
+#define glShadingRateImagePaletteNV glad_glShadingRateImagePaletteNV
+typedef void (APIENTRYP PFNGLSHADINGRATESAMPLEORDERNVPROC)(GLenum order);
+GLAPI PFNGLSHADINGRATESAMPLEORDERNVPROC glad_glShadingRateSampleOrderNV;
+#define glShadingRateSampleOrderNV glad_glShadingRateSampleOrderNV
+typedef void (APIENTRYP PFNGLSHADINGRATESAMPLEORDERCUSTOMNVPROC)(GLenum rate, GLuint samples, const GLint *locations);
+GLAPI PFNGLSHADINGRATESAMPLEORDERCUSTOMNVPROC glad_glShadingRateSampleOrderCustomNV;
+#define glShadingRateSampleOrderCustomNV glad_glShadingRateSampleOrderCustomNV
+#endif
+#ifndef GL_NV_stereo_view_rendering
+#define GL_NV_stereo_view_rendering 1
+GLAPI int GLAD_GL_NV_stereo_view_rendering;
+#endif
+#ifndef GL_NV_tessellation_program5
+#define GL_NV_tessellation_program5 1
+GLAPI int GLAD_GL_NV_tessellation_program5;
+#endif
+#ifndef GL_NV_texgen_emboss
+#define GL_NV_texgen_emboss 1
+GLAPI int GLAD_GL_NV_texgen_emboss;
+#endif
+#ifndef GL_NV_texgen_reflection
+#define GL_NV_texgen_reflection 1
+GLAPI int GLAD_GL_NV_texgen_reflection;
+#endif
+#ifndef GL_NV_texture_barrier
+#define GL_NV_texture_barrier 1
+GLAPI int GLAD_GL_NV_texture_barrier;
+typedef void (APIENTRYP PFNGLTEXTUREBARRIERNVPROC)(void);
+GLAPI PFNGLTEXTUREBARRIERNVPROC glad_glTextureBarrierNV;
+#define glTextureBarrierNV glad_glTextureBarrierNV
+#endif
+#ifndef GL_NV_texture_compression_vtc
+#define GL_NV_texture_compression_vtc 1
+GLAPI int GLAD_GL_NV_texture_compression_vtc;
+#endif
+#ifndef GL_NV_texture_env_combine4
+#define GL_NV_texture_env_combine4 1
+GLAPI int GLAD_GL_NV_texture_env_combine4;
+#endif
+#ifndef GL_NV_texture_expand_normal
+#define GL_NV_texture_expand_normal 1
+GLAPI int GLAD_GL_NV_texture_expand_normal;
+#endif
+#ifndef GL_NV_texture_multisample
+#define GL_NV_texture_multisample 1
+GLAPI int GLAD_GL_NV_texture_multisample;
+typedef void (APIENTRYP PFNGLTEXIMAGE2DMULTISAMPLECOVERAGENVPROC)(GLenum target, GLsizei coverageSamples, GLsizei colorSamples, GLint internalFormat, GLsizei width, GLsizei height, GLboolean fixedSampleLocations);
+GLAPI PFNGLTEXIMAGE2DMULTISAMPLECOVERAGENVPROC glad_glTexImage2DMultisampleCoverageNV;
+#define glTexImage2DMultisampleCoverageNV glad_glTexImage2DMultisampleCoverageNV
+typedef void (APIENTRYP PFNGLTEXIMAGE3DMULTISAMPLECOVERAGENVPROC)(GLenum target, GLsizei coverageSamples, GLsizei colorSamples, GLint internalFormat, GLsizei width, GLsizei height, GLsizei depth, GLboolean fixedSampleLocations);
+GLAPI PFNGLTEXIMAGE3DMULTISAMPLECOVERAGENVPROC glad_glTexImage3DMultisampleCoverageNV;
+#define glTexImage3DMultisampleCoverageNV glad_glTexImage3DMultisampleCoverageNV
+typedef void (APIENTRYP PFNGLTEXTUREIMAGE2DMULTISAMPLENVPROC)(GLuint texture, GLenum target, GLsizei samples, GLint internalFormat, GLsizei width, GLsizei height, GLboolean fixedSampleLocations);
+GLAPI PFNGLTEXTUREIMAGE2DMULTISAMPLENVPROC glad_glTextureImage2DMultisampleNV;
+#define glTextureImage2DMultisampleNV glad_glTextureImage2DMultisampleNV
+typedef void (APIENTRYP PFNGLTEXTUREIMAGE3DMULTISAMPLENVPROC)(GLuint texture, GLenum target, GLsizei samples, GLint internalFormat, GLsizei width, GLsizei height, GLsizei depth, GLboolean fixedSampleLocations);
+GLAPI PFNGLTEXTUREIMAGE3DMULTISAMPLENVPROC glad_glTextureImage3DMultisampleNV;
+#define glTextureImage3DMultisampleNV glad_glTextureImage3DMultisampleNV
+typedef void (APIENTRYP PFNGLTEXTUREIMAGE2DMULTISAMPLECOVERAGENVPROC)(GLuint texture, GLenum target, GLsizei coverageSamples, GLsizei colorSamples, GLint internalFormat, GLsizei width, GLsizei height, GLboolean fixedSampleLocations);
+GLAPI PFNGLTEXTUREIMAGE2DMULTISAMPLECOVERAGENVPROC glad_glTextureImage2DMultisampleCoverageNV;
+#define glTextureImage2DMultisampleCoverageNV glad_glTextureImage2DMultisampleCoverageNV
+typedef void (APIENTRYP PFNGLTEXTUREIMAGE3DMULTISAMPLECOVERAGENVPROC)(GLuint texture, GLenum target, GLsizei coverageSamples, GLsizei colorSamples, GLint internalFormat, GLsizei width, GLsizei height, GLsizei depth, GLboolean fixedSampleLocations);
+GLAPI PFNGLTEXTUREIMAGE3DMULTISAMPLECOVERAGENVPROC glad_glTextureImage3DMultisampleCoverageNV;
+#define glTextureImage3DMultisampleCoverageNV glad_glTextureImage3DMultisampleCoverageNV
+#endif
+#ifndef GL_NV_texture_rectangle
+#define GL_NV_texture_rectangle 1
+GLAPI int GLAD_GL_NV_texture_rectangle;
+#endif
+#ifndef GL_NV_texture_rectangle_compressed
+#define GL_NV_texture_rectangle_compressed 1
+GLAPI int GLAD_GL_NV_texture_rectangle_compressed;
+#endif
+#ifndef GL_NV_texture_shader
+#define GL_NV_texture_shader 1
+GLAPI int GLAD_GL_NV_texture_shader;
+#endif
+#ifndef GL_NV_texture_shader2
+#define GL_NV_texture_shader2 1
+GLAPI int GLAD_GL_NV_texture_shader2;
+#endif
+#ifndef GL_NV_texture_shader3
+#define GL_NV_texture_shader3 1
+GLAPI int GLAD_GL_NV_texture_shader3;
+#endif
+#ifndef GL_NV_transform_feedback
+#define GL_NV_transform_feedback 1
+GLAPI int GLAD_GL_NV_transform_feedback;
+typedef void (APIENTRYP PFNGLBEGINTRANSFORMFEEDBACKNVPROC)(GLenum primitiveMode);
+GLAPI PFNGLBEGINTRANSFORMFEEDBACKNVPROC glad_glBeginTransformFeedbackNV;
+#define glBeginTransformFeedbackNV glad_glBeginTransformFeedbackNV
+typedef void (APIENTRYP PFNGLENDTRANSFORMFEEDBACKNVPROC)(void);
+GLAPI PFNGLENDTRANSFORMFEEDBACKNVPROC glad_glEndTransformFeedbackNV;
+#define glEndTransformFeedbackNV glad_glEndTransformFeedbackNV
+typedef void (APIENTRYP PFNGLTRANSFORMFEEDBACKATTRIBSNVPROC)(GLsizei count, const GLint *attribs, GLenum bufferMode);
+GLAPI PFNGLTRANSFORMFEEDBACKATTRIBSNVPROC glad_glTransformFeedbackAttribsNV;
+#define glTransformFeedbackAttribsNV glad_glTransformFeedbackAttribsNV
+typedef void (APIENTRYP PFNGLBINDBUFFERRANGENVPROC)(GLenum target, GLuint index, GLuint buffer, GLintptr offset, GLsizeiptr size);
+GLAPI PFNGLBINDBUFFERRANGENVPROC glad_glBindBufferRangeNV;
+#define glBindBufferRangeNV glad_glBindBufferRangeNV
+typedef void (APIENTRYP PFNGLBINDBUFFEROFFSETNVPROC)(GLenum target, GLuint index, GLuint buffer, GLintptr offset);
+GLAPI PFNGLBINDBUFFEROFFSETNVPROC glad_glBindBufferOffsetNV;
+#define glBindBufferOffsetNV glad_glBindBufferOffsetNV
+typedef void (APIENTRYP PFNGLBINDBUFFERBASENVPROC)(GLenum target, GLuint index, GLuint buffer);
+GLAPI PFNGLBINDBUFFERBASENVPROC glad_glBindBufferBaseNV;
+#define glBindBufferBaseNV glad_glBindBufferBaseNV
+typedef void (APIENTRYP PFNGLTRANSFORMFEEDBACKVARYINGSNVPROC)(GLuint program, GLsizei count, const GLint *locations, GLenum bufferMode);
+GLAPI PFNGLTRANSFORMFEEDBACKVARYINGSNVPROC glad_glTransformFeedbackVaryingsNV;
+#define glTransformFeedbackVaryingsNV glad_glTransformFeedbackVaryingsNV
+typedef void (APIENTRYP PFNGLACTIVEVARYINGNVPROC)(GLuint program, const GLchar *name);
+GLAPI PFNGLACTIVEVARYINGNVPROC glad_glActiveVaryingNV;
+#define glActiveVaryingNV glad_glActiveVaryingNV
+typedef GLint (APIENTRYP PFNGLGETVARYINGLOCATIONNVPROC)(GLuint program, const GLchar *name);
+GLAPI PFNGLGETVARYINGLOCATIONNVPROC glad_glGetVaryingLocationNV;
+#define glGetVaryingLocationNV glad_glGetVaryingLocationNV
+typedef void (APIENTRYP PFNGLGETACTIVEVARYINGNVPROC)(GLuint program, GLuint index, GLsizei bufSize, GLsizei *length, GLsizei *size, GLenum *type, GLchar *name);
+GLAPI PFNGLGETACTIVEVARYINGNVPROC glad_glGetActiveVaryingNV;
+#define glGetActiveVaryingNV glad_glGetActiveVaryingNV
+typedef void (APIENTRYP PFNGLGETTRANSFORMFEEDBACKVARYINGNVPROC)(GLuint program, GLuint index, GLint *location);
+GLAPI PFNGLGETTRANSFORMFEEDBACKVARYINGNVPROC glad_glGetTransformFeedbackVaryingNV;
+#define glGetTransformFeedbackVaryingNV glad_glGetTransformFeedbackVaryingNV
+typedef void (APIENTRYP PFNGLTRANSFORMFEEDBACKSTREAMATTRIBSNVPROC)(GLsizei count, const GLint *attribs, GLsizei nbuffers, const GLint *bufstreams, GLenum bufferMode);
+GLAPI PFNGLTRANSFORMFEEDBACKSTREAMATTRIBSNVPROC glad_glTransformFeedbackStreamAttribsNV;
+#define glTransformFeedbackStreamAttribsNV glad_glTransformFeedbackStreamAttribsNV
+#endif
+#ifndef GL_NV_transform_feedback2
+#define GL_NV_transform_feedback2 1
+GLAPI int GLAD_GL_NV_transform_feedback2;
+typedef void (APIENTRYP PFNGLBINDTRANSFORMFEEDBACKNVPROC)(GLenum target, GLuint id);
+GLAPI PFNGLBINDTRANSFORMFEEDBACKNVPROC glad_glBindTransformFeedbackNV;
+#define glBindTransformFeedbackNV glad_glBindTransformFeedbackNV
+typedef void (APIENTRYP PFNGLDELETETRANSFORMFEEDBACKSNVPROC)(GLsizei n, const GLuint *ids);
+GLAPI PFNGLDELETETRANSFORMFEEDBACKSNVPROC glad_glDeleteTransformFeedbacksNV;
+#define glDeleteTransformFeedbacksNV glad_glDeleteTransformFeedbacksNV
+typedef void (APIENTRYP PFNGLGENTRANSFORMFEEDBACKSNVPROC)(GLsizei n, GLuint *ids);
+GLAPI PFNGLGENTRANSFORMFEEDBACKSNVPROC glad_glGenTransformFeedbacksNV;
+#define glGenTransformFeedbacksNV glad_glGenTransformFeedbacksNV
+typedef GLboolean (APIENTRYP PFNGLISTRANSFORMFEEDBACKNVPROC)(GLuint id);
+GLAPI PFNGLISTRANSFORMFEEDBACKNVPROC glad_glIsTransformFeedbackNV;
+#define glIsTransformFeedbackNV glad_glIsTransformFeedbackNV
+typedef void (APIENTRYP PFNGLPAUSETRANSFORMFEEDBACKNVPROC)(void);
+GLAPI PFNGLPAUSETRANSFORMFEEDBACKNVPROC glad_glPauseTransformFeedbackNV;
+#define glPauseTransformFeedbackNV glad_glPauseTransformFeedbackNV
+typedef void (APIENTRYP PFNGLRESUMETRANSFORMFEEDBACKNVPROC)(void);
+GLAPI PFNGLRESUMETRANSFORMFEEDBACKNVPROC glad_glResumeTransformFeedbackNV;
+#define glResumeTransformFeedbackNV glad_glResumeTransformFeedbackNV
+typedef void (APIENTRYP PFNGLDRAWTRANSFORMFEEDBACKNVPROC)(GLenum mode, GLuint id);
+GLAPI PFNGLDRAWTRANSFORMFEEDBACKNVPROC glad_glDrawTransformFeedbackNV;
+#define glDrawTransformFeedbackNV glad_glDrawTransformFeedbackNV
+#endif
+#ifndef GL_NV_uniform_buffer_unified_memory
+#define GL_NV_uniform_buffer_unified_memory 1
+GLAPI int GLAD_GL_NV_uniform_buffer_unified_memory;
+#endif
+#ifndef GL_NV_vdpau_interop
+#define GL_NV_vdpau_interop 1
+GLAPI int GLAD_GL_NV_vdpau_interop;
+typedef void (APIENTRYP PFNGLVDPAUINITNVPROC)(const void *vdpDevice, const void *getProcAddress);
+GLAPI PFNGLVDPAUINITNVPROC glad_glVDPAUInitNV;
+#define glVDPAUInitNV glad_glVDPAUInitNV
+typedef void (APIENTRYP PFNGLVDPAUFININVPROC)(void);
+GLAPI PFNGLVDPAUFININVPROC glad_glVDPAUFiniNV;
+#define glVDPAUFiniNV glad_glVDPAUFiniNV
+typedef GLvdpauSurfaceNV (APIENTRYP PFNGLVDPAUREGISTERVIDEOSURFACENVPROC)(const void *vdpSurface, GLenum target, GLsizei numTextureNames, const GLuint *textureNames);
+GLAPI PFNGLVDPAUREGISTERVIDEOSURFACENVPROC glad_glVDPAURegisterVideoSurfaceNV;
+#define glVDPAURegisterVideoSurfaceNV glad_glVDPAURegisterVideoSurfaceNV
+typedef GLvdpauSurfaceNV (APIENTRYP PFNGLVDPAUREGISTEROUTPUTSURFACENVPROC)(const void *vdpSurface, GLenum target, GLsizei numTextureNames, const GLuint *textureNames);
+GLAPI PFNGLVDPAUREGISTEROUTPUTSURFACENVPROC glad_glVDPAURegisterOutputSurfaceNV;
+#define glVDPAURegisterOutputSurfaceNV glad_glVDPAURegisterOutputSurfaceNV
+typedef GLboolean (APIENTRYP PFNGLVDPAUISSURFACENVPROC)(GLvdpauSurfaceNV surface);
+GLAPI PFNGLVDPAUISSURFACENVPROC glad_glVDPAUIsSurfaceNV;
+#define glVDPAUIsSurfaceNV glad_glVDPAUIsSurfaceNV
+typedef void (APIENTRYP PFNGLVDPAUUNREGISTERSURFACENVPROC)(GLvdpauSurfaceNV surface);
+GLAPI PFNGLVDPAUUNREGISTERSURFACENVPROC glad_glVDPAUUnregisterSurfaceNV;
+#define glVDPAUUnregisterSurfaceNV glad_glVDPAUUnregisterSurfaceNV
+typedef void (APIENTRYP PFNGLVDPAUGETSURFACEIVNVPROC)(GLvdpauSurfaceNV surface, GLenum pname, GLsizei count, GLsizei *length, GLint *values);
+GLAPI PFNGLVDPAUGETSURFACEIVNVPROC glad_glVDPAUGetSurfaceivNV;
+#define glVDPAUGetSurfaceivNV glad_glVDPAUGetSurfaceivNV
+typedef void (APIENTRYP PFNGLVDPAUSURFACEACCESSNVPROC)(GLvdpauSurfaceNV surface, GLenum access);
+GLAPI PFNGLVDPAUSURFACEACCESSNVPROC glad_glVDPAUSurfaceAccessNV;
+#define glVDPAUSurfaceAccessNV glad_glVDPAUSurfaceAccessNV
+typedef void (APIENTRYP PFNGLVDPAUMAPSURFACESNVPROC)(GLsizei numSurfaces, const GLvdpauSurfaceNV *surfaces);
+GLAPI PFNGLVDPAUMAPSURFACESNVPROC glad_glVDPAUMapSurfacesNV;
+#define glVDPAUMapSurfacesNV glad_glVDPAUMapSurfacesNV
+typedef void (APIENTRYP PFNGLVDPAUUNMAPSURFACESNVPROC)(GLsizei numSurface, const GLvdpauSurfaceNV *surfaces);
+GLAPI PFNGLVDPAUUNMAPSURFACESNVPROC glad_glVDPAUUnmapSurfacesNV;
+#define glVDPAUUnmapSurfacesNV glad_glVDPAUUnmapSurfacesNV
+#endif
+#ifndef GL_NV_vdpau_interop2
+#define GL_NV_vdpau_interop2 1
+GLAPI int GLAD_GL_NV_vdpau_interop2;
+typedef GLvdpauSurfaceNV (APIENTRYP PFNGLVDPAUREGISTERVIDEOSURFACEWITHPICTURESTRUCTURENVPROC)(const void *vdpSurface, GLenum target, GLsizei numTextureNames, const GLuint *textureNames, GLboolean isFrameStructure);
+GLAPI PFNGLVDPAUREGISTERVIDEOSURFACEWITHPICTURESTRUCTURENVPROC glad_glVDPAURegisterVideoSurfaceWithPictureStructureNV;
+#define glVDPAURegisterVideoSurfaceWithPictureStructureNV glad_glVDPAURegisterVideoSurfaceWithPictureStructureNV
+#endif
+#ifndef GL_NV_vertex_array_range
+#define GL_NV_vertex_array_range 1
+GLAPI int GLAD_GL_NV_vertex_array_range;
+typedef void (APIENTRYP PFNGLFLUSHVERTEXARRAYRANGENVPROC)(void);
+GLAPI PFNGLFLUSHVERTEXARRAYRANGENVPROC glad_glFlushVertexArrayRangeNV;
+#define glFlushVertexArrayRangeNV glad_glFlushVertexArrayRangeNV
+typedef void (APIENTRYP PFNGLVERTEXARRAYRANGENVPROC)(GLsizei length, const void *pointer);
+GLAPI PFNGLVERTEXARRAYRANGENVPROC glad_glVertexArrayRangeNV;
+#define glVertexArrayRangeNV glad_glVertexArrayRangeNV
+#endif
+#ifndef GL_NV_vertex_array_range2
+#define GL_NV_vertex_array_range2 1
+GLAPI int GLAD_GL_NV_vertex_array_range2;
+#endif
+#ifndef GL_NV_vertex_attrib_integer_64bit
+#define GL_NV_vertex_attrib_integer_64bit 1
+GLAPI int GLAD_GL_NV_vertex_attrib_integer_64bit;
+typedef void (APIENTRYP PFNGLVERTEXATTRIBL1I64NVPROC)(GLuint index, GLint64EXT x);
+GLAPI PFNGLVERTEXATTRIBL1I64NVPROC glad_glVertexAttribL1i64NV;
+#define glVertexAttribL1i64NV glad_glVertexAttribL1i64NV
+typedef void (APIENTRYP PFNGLVERTEXATTRIBL2I64NVPROC)(GLuint index, GLint64EXT x, GLint64EXT y);
+GLAPI PFNGLVERTEXATTRIBL2I64NVPROC glad_glVertexAttribL2i64NV;
+#define glVertexAttribL2i64NV glad_glVertexAttribL2i64NV
+typedef void (APIENTRYP PFNGLVERTEXATTRIBL3I64NVPROC)(GLuint index, GLint64EXT x, GLint64EXT y, GLint64EXT z);
+GLAPI PFNGLVERTEXATTRIBL3I64NVPROC glad_glVertexAttribL3i64NV;
+#define glVertexAttribL3i64NV glad_glVertexAttribL3i64NV
+typedef void (APIENTRYP PFNGLVERTEXATTRIBL4I64NVPROC)(GLuint index, GLint64EXT x, GLint64EXT y, GLint64EXT z, GLint64EXT w);
+GLAPI PFNGLVERTEXATTRIBL4I64NVPROC glad_glVertexAttribL4i64NV;
+#define glVertexAttribL4i64NV glad_glVertexAttribL4i64NV
+typedef void (APIENTRYP PFNGLVERTEXATTRIBL1I64VNVPROC)(GLuint index, const GLint64EXT *v);
+GLAPI PFNGLVERTEXATTRIBL1I64VNVPROC glad_glVertexAttribL1i64vNV;
+#define glVertexAttribL1i64vNV glad_glVertexAttribL1i64vNV
+typedef void (APIENTRYP PFNGLVERTEXATTRIBL2I64VNVPROC)(GLuint index, const GLint64EXT *v);
+GLAPI PFNGLVERTEXATTRIBL2I64VNVPROC glad_glVertexAttribL2i64vNV;
+#define glVertexAttribL2i64vNV glad_glVertexAttribL2i64vNV
+typedef void (APIENTRYP PFNGLVERTEXATTRIBL3I64VNVPROC)(GLuint index, const GLint64EXT *v);
+GLAPI PFNGLVERTEXATTRIBL3I64VNVPROC glad_glVertexAttribL3i64vNV;
+#define glVertexAttribL3i64vNV glad_glVertexAttribL3i64vNV
+typedef void (APIENTRYP PFNGLVERTEXATTRIBL4I64VNVPROC)(GLuint index, const GLint64EXT *v);
+GLAPI PFNGLVERTEXATTRIBL4I64VNVPROC glad_glVertexAttribL4i64vNV;
+#define glVertexAttribL4i64vNV glad_glVertexAttribL4i64vNV
+typedef void (APIENTRYP PFNGLVERTEXATTRIBL1UI64NVPROC)(GLuint index, GLuint64EXT x);
+GLAPI PFNGLVERTEXATTRIBL1UI64NVPROC glad_glVertexAttribL1ui64NV;
+#define glVertexAttribL1ui64NV glad_glVertexAttribL1ui64NV
+typedef void (APIENTRYP PFNGLVERTEXATTRIBL2UI64NVPROC)(GLuint index, GLuint64EXT x, GLuint64EXT y);
+GLAPI PFNGLVERTEXATTRIBL2UI64NVPROC glad_glVertexAttribL2ui64NV;
+#define glVertexAttribL2ui64NV glad_glVertexAttribL2ui64NV
+typedef void (APIENTRYP PFNGLVERTEXATTRIBL3UI64NVPROC)(GLuint index, GLuint64EXT x, GLuint64EXT y, GLuint64EXT z);
+GLAPI PFNGLVERTEXATTRIBL3UI64NVPROC glad_glVertexAttribL3ui64NV;
+#define glVertexAttribL3ui64NV glad_glVertexAttribL3ui64NV
+typedef void (APIENTRYP PFNGLVERTEXATTRIBL4UI64NVPROC)(GLuint index, GLuint64EXT x, GLuint64EXT y, GLuint64EXT z, GLuint64EXT w);
+GLAPI PFNGLVERTEXATTRIBL4UI64NVPROC glad_glVertexAttribL4ui64NV;
+#define glVertexAttribL4ui64NV glad_glVertexAttribL4ui64NV
+typedef void (APIENTRYP PFNGLVERTEXATTRIBL1UI64VNVPROC)(GLuint index, const GLuint64EXT *v);
+GLAPI PFNGLVERTEXATTRIBL1UI64VNVPROC glad_glVertexAttribL1ui64vNV;
+#define glVertexAttribL1ui64vNV glad_glVertexAttribL1ui64vNV
+typedef void (APIENTRYP PFNGLVERTEXATTRIBL2UI64VNVPROC)(GLuint index, const GLuint64EXT *v);
+GLAPI PFNGLVERTEXATTRIBL2UI64VNVPROC glad_glVertexAttribL2ui64vNV;
+#define glVertexAttribL2ui64vNV glad_glVertexAttribL2ui64vNV
+typedef void (APIENTRYP PFNGLVERTEXATTRIBL3UI64VNVPROC)(GLuint index, const GLuint64EXT *v);
+GLAPI PFNGLVERTEXATTRIBL3UI64VNVPROC glad_glVertexAttribL3ui64vNV;
+#define glVertexAttribL3ui64vNV glad_glVertexAttribL3ui64vNV
+typedef void (APIENTRYP PFNGLVERTEXATTRIBL4UI64VNVPROC)(GLuint index, const GLuint64EXT *v);
+GLAPI PFNGLVERTEXATTRIBL4UI64VNVPROC glad_glVertexAttribL4ui64vNV;
+#define glVertexAttribL4ui64vNV glad_glVertexAttribL4ui64vNV
+typedef void (APIENTRYP PFNGLGETVERTEXATTRIBLI64VNVPROC)(GLuint index, GLenum pname, GLint64EXT *params);
+GLAPI PFNGLGETVERTEXATTRIBLI64VNVPROC glad_glGetVertexAttribLi64vNV;
+#define glGetVertexAttribLi64vNV glad_glGetVertexAttribLi64vNV
+typedef void (APIENTRYP PFNGLGETVERTEXATTRIBLUI64VNVPROC)(GLuint index, GLenum pname, GLuint64EXT *params);
+GLAPI PFNGLGETVERTEXATTRIBLUI64VNVPROC glad_glGetVertexAttribLui64vNV;
+#define glGetVertexAttribLui64vNV glad_glGetVertexAttribLui64vNV
+typedef void (APIENTRYP PFNGLVERTEXATTRIBLFORMATNVPROC)(GLuint index, GLint size, GLenum type, GLsizei stride);
+GLAPI PFNGLVERTEXATTRIBLFORMATNVPROC glad_glVertexAttribLFormatNV;
+#define glVertexAttribLFormatNV glad_glVertexAttribLFormatNV
+#endif
+#ifndef GL_NV_vertex_buffer_unified_memory
+#define GL_NV_vertex_buffer_unified_memory 1
+GLAPI int GLAD_GL_NV_vertex_buffer_unified_memory;
+typedef void (APIENTRYP PFNGLBUFFERADDRESSRANGENVPROC)(GLenum pname, GLuint index, GLuint64EXT address, GLsizeiptr length);
+GLAPI PFNGLBUFFERADDRESSRANGENVPROC glad_glBufferAddressRangeNV;
+#define glBufferAddressRangeNV glad_glBufferAddressRangeNV
+typedef void (APIENTRYP PFNGLVERTEXFORMATNVPROC)(GLint size, GLenum type, GLsizei stride);
+GLAPI PFNGLVERTEXFORMATNVPROC glad_glVertexFormatNV;
+#define glVertexFormatNV glad_glVertexFormatNV
+typedef void (APIENTRYP PFNGLNORMALFORMATNVPROC)(GLenum type, GLsizei stride);
+GLAPI PFNGLNORMALFORMATNVPROC glad_glNormalFormatNV;
+#define glNormalFormatNV glad_glNormalFormatNV
+typedef void (APIENTRYP PFNGLCOLORFORMATNVPROC)(GLint size, GLenum type, GLsizei stride);
+GLAPI PFNGLCOLORFORMATNVPROC glad_glColorFormatNV;
+#define glColorFormatNV glad_glColorFormatNV
+typedef void (APIENTRYP PFNGLINDEXFORMATNVPROC)(GLenum type, GLsizei stride);
+GLAPI PFNGLINDEXFORMATNVPROC glad_glIndexFormatNV;
+#define glIndexFormatNV glad_glIndexFormatNV
+typedef void (APIENTRYP PFNGLTEXCOORDFORMATNVPROC)(GLint size, GLenum type, GLsizei stride);
+GLAPI PFNGLTEXCOORDFORMATNVPROC glad_glTexCoordFormatNV;
+#define glTexCoordFormatNV glad_glTexCoordFormatNV
+typedef void (APIENTRYP PFNGLEDGEFLAGFORMATNVPROC)(GLsizei stride);
+GLAPI PFNGLEDGEFLAGFORMATNVPROC glad_glEdgeFlagFormatNV;
+#define glEdgeFlagFormatNV glad_glEdgeFlagFormatNV
+typedef void (APIENTRYP PFNGLSECONDARYCOLORFORMATNVPROC)(GLint size, GLenum type, GLsizei stride);
+GLAPI PFNGLSECONDARYCOLORFORMATNVPROC glad_glSecondaryColorFormatNV;
+#define glSecondaryColorFormatNV glad_glSecondaryColorFormatNV
+typedef void (APIENTRYP PFNGLFOGCOORDFORMATNVPROC)(GLenum type, GLsizei stride);
+GLAPI PFNGLFOGCOORDFORMATNVPROC glad_glFogCoordFormatNV;
+#define glFogCoordFormatNV glad_glFogCoordFormatNV
+typedef void (APIENTRYP PFNGLVERTEXATTRIBFORMATNVPROC)(GLuint index, GLint size, GLenum type, GLboolean normalized, GLsizei stride);
+GLAPI PFNGLVERTEXATTRIBFORMATNVPROC glad_glVertexAttribFormatNV;
+#define glVertexAttribFormatNV glad_glVertexAttribFormatNV
+typedef void (APIENTRYP PFNGLVERTEXATTRIBIFORMATNVPROC)(GLuint index, GLint size, GLenum type, GLsizei stride);
+GLAPI PFNGLVERTEXATTRIBIFORMATNVPROC glad_glVertexAttribIFormatNV;
+#define glVertexAttribIFormatNV glad_glVertexAttribIFormatNV
+typedef void (APIENTRYP PFNGLGETINTEGERUI64I_VNVPROC)(GLenum value, GLuint index, GLuint64EXT *result);
+GLAPI PFNGLGETINTEGERUI64I_VNVPROC glad_glGetIntegerui64i_vNV;
+#define glGetIntegerui64i_vNV glad_glGetIntegerui64i_vNV
+#endif
+#ifndef GL_NV_vertex_program
+#define GL_NV_vertex_program 1
+GLAPI int GLAD_GL_NV_vertex_program;
+typedef GLboolean (APIENTRYP PFNGLAREPROGRAMSRESIDENTNVPROC)(GLsizei n, const GLuint *programs, GLboolean *residences);
+GLAPI PFNGLAREPROGRAMSRESIDENTNVPROC glad_glAreProgramsResidentNV;
+#define glAreProgramsResidentNV glad_glAreProgramsResidentNV
+typedef void (APIENTRYP PFNGLBINDPROGRAMNVPROC)(GLenum target, GLuint id);
+GLAPI PFNGLBINDPROGRAMNVPROC glad_glBindProgramNV;
+#define glBindProgramNV glad_glBindProgramNV
+typedef void (APIENTRYP PFNGLDELETEPROGRAMSNVPROC)(GLsizei n, const GLuint *programs);
+GLAPI PFNGLDELETEPROGRAMSNVPROC glad_glDeleteProgramsNV;
+#define glDeleteProgramsNV glad_glDeleteProgramsNV
+typedef void (APIENTRYP PFNGLEXECUTEPROGRAMNVPROC)(GLenum target, GLuint id, const GLfloat *params);
+GLAPI PFNGLEXECUTEPROGRAMNVPROC glad_glExecuteProgramNV;
+#define glExecuteProgramNV glad_glExecuteProgramNV
+typedef void (APIENTRYP PFNGLGENPROGRAMSNVPROC)(GLsizei n, GLuint *programs);
+GLAPI PFNGLGENPROGRAMSNVPROC glad_glGenProgramsNV;
+#define glGenProgramsNV glad_glGenProgramsNV
+typedef void (APIENTRYP PFNGLGETPROGRAMPARAMETERDVNVPROC)(GLenum target, GLuint index, GLenum pname, GLdouble *params);
+GLAPI PFNGLGETPROGRAMPARAMETERDVNVPROC glad_glGetProgramParameterdvNV;
+#define glGetProgramParameterdvNV glad_glGetProgramParameterdvNV
+typedef void (APIENTRYP PFNGLGETPROGRAMPARAMETERFVNVPROC)(GLenum target, GLuint index, GLenum pname, GLfloat *params);
+GLAPI PFNGLGETPROGRAMPARAMETERFVNVPROC glad_glGetProgramParameterfvNV;
+#define glGetProgramParameterfvNV glad_glGetProgramParameterfvNV
+typedef void (APIENTRYP PFNGLGETPROGRAMIVNVPROC)(GLuint id, GLenum pname, GLint *params);
+GLAPI PFNGLGETPROGRAMIVNVPROC glad_glGetProgramivNV;
+#define glGetProgramivNV glad_glGetProgramivNV
+typedef void (APIENTRYP PFNGLGETPROGRAMSTRINGNVPROC)(GLuint id, GLenum pname, GLubyte *program);
+GLAPI PFNGLGETPROGRAMSTRINGNVPROC glad_glGetProgramStringNV;
+#define glGetProgramStringNV glad_glGetProgramStringNV
+typedef void (APIENTRYP PFNGLGETTRACKMATRIXIVNVPROC)(GLenum target, GLuint address, GLenum pname, GLint *params);
+GLAPI PFNGLGETTRACKMATRIXIVNVPROC glad_glGetTrackMatrixivNV;
+#define glGetTrackMatrixivNV glad_glGetTrackMatrixivNV
+typedef void (APIENTRYP PFNGLGETVERTEXATTRIBDVNVPROC)(GLuint index, GLenum pname, GLdouble *params);
+GLAPI PFNGLGETVERTEXATTRIBDVNVPROC glad_glGetVertexAttribdvNV;

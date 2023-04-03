@@ -15384,3 +15384,421 @@ typedef void (APIENTRYP PFNGLFRAMEZOOMSGIXPROC)(GLint factor);
 GLAPI PFNGLFRAMEZOOMSGIXPROC glad_glFrameZoomSGIX;
 #define glFrameZoomSGIX glad_glFrameZoomSGIX
 #endif
+#ifndef GL_SGIX_igloo_interface
+#define GL_SGIX_igloo_interface 1
+GLAPI int GLAD_GL_SGIX_igloo_interface;
+typedef void (APIENTRYP PFNGLIGLOOINTERFACESGIXPROC)(GLenum pname, const void *params);
+GLAPI PFNGLIGLOOINTERFACESGIXPROC glad_glIglooInterfaceSGIX;
+#define glIglooInterfaceSGIX glad_glIglooInterfaceSGIX
+#endif
+#ifndef GL_SGIX_instruments
+#define GL_SGIX_instruments 1
+GLAPI int GLAD_GL_SGIX_instruments;
+typedef GLint (APIENTRYP PFNGLGETINSTRUMENTSSGIXPROC)(void);
+GLAPI PFNGLGETINSTRUMENTSSGIXPROC glad_glGetInstrumentsSGIX;
+#define glGetInstrumentsSGIX glad_glGetInstrumentsSGIX
+typedef void (APIENTRYP PFNGLINSTRUMENTSBUFFERSGIXPROC)(GLsizei size, GLint *buffer);
+GLAPI PFNGLINSTRUMENTSBUFFERSGIXPROC glad_glInstrumentsBufferSGIX;
+#define glInstrumentsBufferSGIX glad_glInstrumentsBufferSGIX
+typedef GLint (APIENTRYP PFNGLPOLLINSTRUMENTSSGIXPROC)(GLint *marker_p);
+GLAPI PFNGLPOLLINSTRUMENTSSGIXPROC glad_glPollInstrumentsSGIX;
+#define glPollInstrumentsSGIX glad_glPollInstrumentsSGIX
+typedef void (APIENTRYP PFNGLREADINSTRUMENTSSGIXPROC)(GLint marker);
+GLAPI PFNGLREADINSTRUMENTSSGIXPROC glad_glReadInstrumentsSGIX;
+#define glReadInstrumentsSGIX glad_glReadInstrumentsSGIX
+typedef void (APIENTRYP PFNGLSTARTINSTRUMENTSSGIXPROC)(void);
+GLAPI PFNGLSTARTINSTRUMENTSSGIXPROC glad_glStartInstrumentsSGIX;
+#define glStartInstrumentsSGIX glad_glStartInstrumentsSGIX
+typedef void (APIENTRYP PFNGLSTOPINSTRUMENTSSGIXPROC)(GLint marker);
+GLAPI PFNGLSTOPINSTRUMENTSSGIXPROC glad_glStopInstrumentsSGIX;
+#define glStopInstrumentsSGIX glad_glStopInstrumentsSGIX
+#endif
+#ifndef GL_SGIX_interlace
+#define GL_SGIX_interlace 1
+GLAPI int GLAD_GL_SGIX_interlace;
+#endif
+#ifndef GL_SGIX_ir_instrument1
+#define GL_SGIX_ir_instrument1 1
+GLAPI int GLAD_GL_SGIX_ir_instrument1;
+#endif
+#ifndef GL_SGIX_list_priority
+#define GL_SGIX_list_priority 1
+GLAPI int GLAD_GL_SGIX_list_priority;
+typedef void (APIENTRYP PFNGLGETLISTPARAMETERFVSGIXPROC)(GLuint list, GLenum pname, GLfloat *params);
+GLAPI PFNGLGETLISTPARAMETERFVSGIXPROC glad_glGetListParameterfvSGIX;
+#define glGetListParameterfvSGIX glad_glGetListParameterfvSGIX
+typedef void (APIENTRYP PFNGLGETLISTPARAMETERIVSGIXPROC)(GLuint list, GLenum pname, GLint *params);
+GLAPI PFNGLGETLISTPARAMETERIVSGIXPROC glad_glGetListParameterivSGIX;
+#define glGetListParameterivSGIX glad_glGetListParameterivSGIX
+typedef void (APIENTRYP PFNGLLISTPARAMETERFSGIXPROC)(GLuint list, GLenum pname, GLfloat param);
+GLAPI PFNGLLISTPARAMETERFSGIXPROC glad_glListParameterfSGIX;
+#define glListParameterfSGIX glad_glListParameterfSGIX
+typedef void (APIENTRYP PFNGLLISTPARAMETERFVSGIXPROC)(GLuint list, GLenum pname, const GLfloat *params);
+GLAPI PFNGLLISTPARAMETERFVSGIXPROC glad_glListParameterfvSGIX;
+#define glListParameterfvSGIX glad_glListParameterfvSGIX
+typedef void (APIENTRYP PFNGLLISTPARAMETERISGIXPROC)(GLuint list, GLenum pname, GLint param);
+GLAPI PFNGLLISTPARAMETERISGIXPROC glad_glListParameteriSGIX;
+#define glListParameteriSGIX glad_glListParameteriSGIX
+typedef void (APIENTRYP PFNGLLISTPARAMETERIVSGIXPROC)(GLuint list, GLenum pname, const GLint *params);
+GLAPI PFNGLLISTPARAMETERIVSGIXPROC glad_glListParameterivSGIX;
+#define glListParameterivSGIX glad_glListParameterivSGIX
+#endif
+#ifndef GL_SGIX_pixel_texture
+#define GL_SGIX_pixel_texture 1
+GLAPI int GLAD_GL_SGIX_pixel_texture;
+typedef void (APIENTRYP PFNGLPIXELTEXGENSGIXPROC)(GLenum mode);
+GLAPI PFNGLPIXELTEXGENSGIXPROC glad_glPixelTexGenSGIX;
+#define glPixelTexGenSGIX glad_glPixelTexGenSGIX
+#endif
+#ifndef GL_SGIX_pixel_tiles
+#define GL_SGIX_pixel_tiles 1
+GLAPI int GLAD_GL_SGIX_pixel_tiles;
+#endif
+#ifndef GL_SGIX_polynomial_ffd
+#define GL_SGIX_polynomial_ffd 1
+GLAPI int GLAD_GL_SGIX_polynomial_ffd;
+typedef void (APIENTRYP PFNGLDEFORMATIONMAP3DSGIXPROC)(GLenum target, GLdouble u1, GLdouble u2, GLint ustride, GLint uorder, GLdouble v1, GLdouble v2, GLint vstride, GLint vorder, GLdouble w1, GLdouble w2, GLint wstride, GLint worder, const GLdouble *points);
+GLAPI PFNGLDEFORMATIONMAP3DSGIXPROC glad_glDeformationMap3dSGIX;
+#define glDeformationMap3dSGIX glad_glDeformationMap3dSGIX
+typedef void (APIENTRYP PFNGLDEFORMATIONMAP3FSGIXPROC)(GLenum target, GLfloat u1, GLfloat u2, GLint ustride, GLint uorder, GLfloat v1, GLfloat v2, GLint vstride, GLint vorder, GLfloat w1, GLfloat w2, GLint wstride, GLint worder, const GLfloat *points);
+GLAPI PFNGLDEFORMATIONMAP3FSGIXPROC glad_glDeformationMap3fSGIX;
+#define glDeformationMap3fSGIX glad_glDeformationMap3fSGIX
+typedef void (APIENTRYP PFNGLDEFORMSGIXPROC)(GLbitfield mask);
+GLAPI PFNGLDEFORMSGIXPROC glad_glDeformSGIX;
+#define glDeformSGIX glad_glDeformSGIX
+typedef void (APIENTRYP PFNGLLOADIDENTITYDEFORMATIONMAPSGIXPROC)(GLbitfield mask);
+GLAPI PFNGLLOADIDENTITYDEFORMATIONMAPSGIXPROC glad_glLoadIdentityDeformationMapSGIX;
+#define glLoadIdentityDeformationMapSGIX glad_glLoadIdentityDeformationMapSGIX
+#endif
+#ifndef GL_SGIX_reference_plane
+#define GL_SGIX_reference_plane 1
+GLAPI int GLAD_GL_SGIX_reference_plane;
+typedef void (APIENTRYP PFNGLREFERENCEPLANESGIXPROC)(const GLdouble *equation);
+GLAPI PFNGLREFERENCEPLANESGIXPROC glad_glReferencePlaneSGIX;
+#define glReferencePlaneSGIX glad_glReferencePlaneSGIX
+#endif
+#ifndef GL_SGIX_resample
+#define GL_SGIX_resample 1
+GLAPI int GLAD_GL_SGIX_resample;
+#endif
+#ifndef GL_SGIX_scalebias_hint
+#define GL_SGIX_scalebias_hint 1
+GLAPI int GLAD_GL_SGIX_scalebias_hint;
+#endif
+#ifndef GL_SGIX_shadow
+#define GL_SGIX_shadow 1
+GLAPI int GLAD_GL_SGIX_shadow;
+#endif
+#ifndef GL_SGIX_shadow_ambient
+#define GL_SGIX_shadow_ambient 1
+GLAPI int GLAD_GL_SGIX_shadow_ambient;
+#endif
+#ifndef GL_SGIX_sprite
+#define GL_SGIX_sprite 1
+GLAPI int GLAD_GL_SGIX_sprite;
+typedef void (APIENTRYP PFNGLSPRITEPARAMETERFSGIXPROC)(GLenum pname, GLfloat param);
+GLAPI PFNGLSPRITEPARAMETERFSGIXPROC glad_glSpriteParameterfSGIX;
+#define glSpriteParameterfSGIX glad_glSpriteParameterfSGIX
+typedef void (APIENTRYP PFNGLSPRITEPARAMETERFVSGIXPROC)(GLenum pname, const GLfloat *params);
+GLAPI PFNGLSPRITEPARAMETERFVSGIXPROC glad_glSpriteParameterfvSGIX;
+#define glSpriteParameterfvSGIX glad_glSpriteParameterfvSGIX
+typedef void (APIENTRYP PFNGLSPRITEPARAMETERISGIXPROC)(GLenum pname, GLint param);
+GLAPI PFNGLSPRITEPARAMETERISGIXPROC glad_glSpriteParameteriSGIX;
+#define glSpriteParameteriSGIX glad_glSpriteParameteriSGIX
+typedef void (APIENTRYP PFNGLSPRITEPARAMETERIVSGIXPROC)(GLenum pname, const GLint *params);
+GLAPI PFNGLSPRITEPARAMETERIVSGIXPROC glad_glSpriteParameterivSGIX;
+#define glSpriteParameterivSGIX glad_glSpriteParameterivSGIX
+#endif
+#ifndef GL_SGIX_subsample
+#define GL_SGIX_subsample 1
+GLAPI int GLAD_GL_SGIX_subsample;
+#endif
+#ifndef GL_SGIX_tag_sample_buffer
+#define GL_SGIX_tag_sample_buffer 1
+GLAPI int GLAD_GL_SGIX_tag_sample_buffer;
+typedef void (APIENTRYP PFNGLTAGSAMPLEBUFFERSGIXPROC)(void);
+GLAPI PFNGLTAGSAMPLEBUFFERSGIXPROC glad_glTagSampleBufferSGIX;
+#define glTagSampleBufferSGIX glad_glTagSampleBufferSGIX
+#endif
+#ifndef GL_SGIX_texture_add_env
+#define GL_SGIX_texture_add_env 1
+GLAPI int GLAD_GL_SGIX_texture_add_env;
+#endif
+#ifndef GL_SGIX_texture_coordinate_clamp
+#define GL_SGIX_texture_coordinate_clamp 1
+GLAPI int GLAD_GL_SGIX_texture_coordinate_clamp;
+#endif
+#ifndef GL_SGIX_texture_lod_bias
+#define GL_SGIX_texture_lod_bias 1
+GLAPI int GLAD_GL_SGIX_texture_lod_bias;
+#endif
+#ifndef GL_SGIX_texture_multi_buffer
+#define GL_SGIX_texture_multi_buffer 1
+GLAPI int GLAD_GL_SGIX_texture_multi_buffer;
+#endif
+#ifndef GL_SGIX_texture_scale_bias
+#define GL_SGIX_texture_scale_bias 1
+GLAPI int GLAD_GL_SGIX_texture_scale_bias;
+#endif
+#ifndef GL_SGIX_vertex_preclip
+#define GL_SGIX_vertex_preclip 1
+GLAPI int GLAD_GL_SGIX_vertex_preclip;
+#endif
+#ifndef GL_SGIX_ycrcb
+#define GL_SGIX_ycrcb 1
+GLAPI int GLAD_GL_SGIX_ycrcb;
+#endif
+#ifndef GL_SGIX_ycrcb_subsample
+#define GL_SGIX_ycrcb_subsample 1
+GLAPI int GLAD_GL_SGIX_ycrcb_subsample;
+#endif
+#ifndef GL_SGIX_ycrcba
+#define GL_SGIX_ycrcba 1
+GLAPI int GLAD_GL_SGIX_ycrcba;
+#endif
+#ifndef GL_SGI_color_matrix
+#define GL_SGI_color_matrix 1
+GLAPI int GLAD_GL_SGI_color_matrix;
+#endif
+#ifndef GL_SGI_color_table
+#define GL_SGI_color_table 1
+GLAPI int GLAD_GL_SGI_color_table;
+typedef void (APIENTRYP PFNGLCOLORTABLESGIPROC)(GLenum target, GLenum internalformat, GLsizei width, GLenum format, GLenum type, const void *table);
+GLAPI PFNGLCOLORTABLESGIPROC glad_glColorTableSGI;
+#define glColorTableSGI glad_glColorTableSGI
+typedef void (APIENTRYP PFNGLCOLORTABLEPARAMETERFVSGIPROC)(GLenum target, GLenum pname, const GLfloat *params);
+GLAPI PFNGLCOLORTABLEPARAMETERFVSGIPROC glad_glColorTableParameterfvSGI;
+#define glColorTableParameterfvSGI glad_glColorTableParameterfvSGI
+typedef void (APIENTRYP PFNGLCOLORTABLEPARAMETERIVSGIPROC)(GLenum target, GLenum pname, const GLint *params);
+GLAPI PFNGLCOLORTABLEPARAMETERIVSGIPROC glad_glColorTableParameterivSGI;
+#define glColorTableParameterivSGI glad_glColorTableParameterivSGI
+typedef void (APIENTRYP PFNGLCOPYCOLORTABLESGIPROC)(GLenum target, GLenum internalformat, GLint x, GLint y, GLsizei width);
+GLAPI PFNGLCOPYCOLORTABLESGIPROC glad_glCopyColorTableSGI;
+#define glCopyColorTableSGI glad_glCopyColorTableSGI
+typedef void (APIENTRYP PFNGLGETCOLORTABLESGIPROC)(GLenum target, GLenum format, GLenum type, void *table);
+GLAPI PFNGLGETCOLORTABLESGIPROC glad_glGetColorTableSGI;
+#define glGetColorTableSGI glad_glGetColorTableSGI
+typedef void (APIENTRYP PFNGLGETCOLORTABLEPARAMETERFVSGIPROC)(GLenum target, GLenum pname, GLfloat *params);
+GLAPI PFNGLGETCOLORTABLEPARAMETERFVSGIPROC glad_glGetColorTableParameterfvSGI;
+#define glGetColorTableParameterfvSGI glad_glGetColorTableParameterfvSGI
+typedef void (APIENTRYP PFNGLGETCOLORTABLEPARAMETERIVSGIPROC)(GLenum target, GLenum pname, GLint *params);
+GLAPI PFNGLGETCOLORTABLEPARAMETERIVSGIPROC glad_glGetColorTableParameterivSGI;
+#define glGetColorTableParameterivSGI glad_glGetColorTableParameterivSGI
+#endif
+#ifndef GL_SGI_texture_color_table
+#define GL_SGI_texture_color_table 1
+GLAPI int GLAD_GL_SGI_texture_color_table;
+#endif
+#ifndef GL_SUNX_constant_data
+#define GL_SUNX_constant_data 1
+GLAPI int GLAD_GL_SUNX_constant_data;
+typedef void (APIENTRYP PFNGLFINISHTEXTURESUNXPROC)(void);
+GLAPI PFNGLFINISHTEXTURESUNXPROC glad_glFinishTextureSUNX;
+#define glFinishTextureSUNX glad_glFinishTextureSUNX
+#endif
+#ifndef GL_SUN_convolution_border_modes
+#define GL_SUN_convolution_border_modes 1
+GLAPI int GLAD_GL_SUN_convolution_border_modes;
+#endif
+#ifndef GL_SUN_global_alpha
+#define GL_SUN_global_alpha 1
+GLAPI int GLAD_GL_SUN_global_alpha;
+typedef void (APIENTRYP PFNGLGLOBALALPHAFACTORBSUNPROC)(GLbyte factor);
+GLAPI PFNGLGLOBALALPHAFACTORBSUNPROC glad_glGlobalAlphaFactorbSUN;
+#define glGlobalAlphaFactorbSUN glad_glGlobalAlphaFactorbSUN
+typedef void (APIENTRYP PFNGLGLOBALALPHAFACTORSSUNPROC)(GLshort factor);
+GLAPI PFNGLGLOBALALPHAFACTORSSUNPROC glad_glGlobalAlphaFactorsSUN;
+#define glGlobalAlphaFactorsSUN glad_glGlobalAlphaFactorsSUN
+typedef void (APIENTRYP PFNGLGLOBALALPHAFACTORISUNPROC)(GLint factor);
+GLAPI PFNGLGLOBALALPHAFACTORISUNPROC glad_glGlobalAlphaFactoriSUN;
+#define glGlobalAlphaFactoriSUN glad_glGlobalAlphaFactoriSUN
+typedef void (APIENTRYP PFNGLGLOBALALPHAFACTORFSUNPROC)(GLfloat factor);
+GLAPI PFNGLGLOBALALPHAFACTORFSUNPROC glad_glGlobalAlphaFactorfSUN;
+#define glGlobalAlphaFactorfSUN glad_glGlobalAlphaFactorfSUN
+typedef void (APIENTRYP PFNGLGLOBALALPHAFACTORDSUNPROC)(GLdouble factor);
+GLAPI PFNGLGLOBALALPHAFACTORDSUNPROC glad_glGlobalAlphaFactordSUN;
+#define glGlobalAlphaFactordSUN glad_glGlobalAlphaFactordSUN
+typedef void (APIENTRYP PFNGLGLOBALALPHAFACTORUBSUNPROC)(GLubyte factor);
+GLAPI PFNGLGLOBALALPHAFACTORUBSUNPROC glad_glGlobalAlphaFactorubSUN;
+#define glGlobalAlphaFactorubSUN glad_glGlobalAlphaFactorubSUN
+typedef void (APIENTRYP PFNGLGLOBALALPHAFACTORUSSUNPROC)(GLushort factor);
+GLAPI PFNGLGLOBALALPHAFACTORUSSUNPROC glad_glGlobalAlphaFactorusSUN;
+#define glGlobalAlphaFactorusSUN glad_glGlobalAlphaFactorusSUN
+typedef void (APIENTRYP PFNGLGLOBALALPHAFACTORUISUNPROC)(GLuint factor);
+GLAPI PFNGLGLOBALALPHAFACTORUISUNPROC glad_glGlobalAlphaFactoruiSUN;
+#define glGlobalAlphaFactoruiSUN glad_glGlobalAlphaFactoruiSUN
+#endif
+#ifndef GL_SUN_mesh_array
+#define GL_SUN_mesh_array 1
+GLAPI int GLAD_GL_SUN_mesh_array;
+typedef void (APIENTRYP PFNGLDRAWMESHARRAYSSUNPROC)(GLenum mode, GLint first, GLsizei count, GLsizei width);
+GLAPI PFNGLDRAWMESHARRAYSSUNPROC glad_glDrawMeshArraysSUN;
+#define glDrawMeshArraysSUN glad_glDrawMeshArraysSUN
+#endif
+#ifndef GL_SUN_slice_accum
+#define GL_SUN_slice_accum 1
+GLAPI int GLAD_GL_SUN_slice_accum;
+#endif
+#ifndef GL_SUN_triangle_list
+#define GL_SUN_triangle_list 1
+GLAPI int GLAD_GL_SUN_triangle_list;
+typedef void (APIENTRYP PFNGLREPLACEMENTCODEUISUNPROC)(GLuint code);
+GLAPI PFNGLREPLACEMENTCODEUISUNPROC glad_glReplacementCodeuiSUN;
+#define glReplacementCodeuiSUN glad_glReplacementCodeuiSUN
+typedef void (APIENTRYP PFNGLREPLACEMENTCODEUSSUNPROC)(GLushort code);
+GLAPI PFNGLREPLACEMENTCODEUSSUNPROC glad_glReplacementCodeusSUN;
+#define glReplacementCodeusSUN glad_glReplacementCodeusSUN
+typedef void (APIENTRYP PFNGLREPLACEMENTCODEUBSUNPROC)(GLubyte code);
+GLAPI PFNGLREPLACEMENTCODEUBSUNPROC glad_glReplacementCodeubSUN;
+#define glReplacementCodeubSUN glad_glReplacementCodeubSUN
+typedef void (APIENTRYP PFNGLREPLACEMENTCODEUIVSUNPROC)(const GLuint *code);
+GLAPI PFNGLREPLACEMENTCODEUIVSUNPROC glad_glReplacementCodeuivSUN;
+#define glReplacementCodeuivSUN glad_glReplacementCodeuivSUN
+typedef void (APIENTRYP PFNGLREPLACEMENTCODEUSVSUNPROC)(const GLushort *code);
+GLAPI PFNGLREPLACEMENTCODEUSVSUNPROC glad_glReplacementCodeusvSUN;
+#define glReplacementCodeusvSUN glad_glReplacementCodeusvSUN
+typedef void (APIENTRYP PFNGLREPLACEMENTCODEUBVSUNPROC)(const GLubyte *code);
+GLAPI PFNGLREPLACEMENTCODEUBVSUNPROC glad_glReplacementCodeubvSUN;
+#define glReplacementCodeubvSUN glad_glReplacementCodeubvSUN
+typedef void (APIENTRYP PFNGLREPLACEMENTCODEPOINTERSUNPROC)(GLenum type, GLsizei stride, const void **pointer);
+GLAPI PFNGLREPLACEMENTCODEPOINTERSUNPROC glad_glReplacementCodePointerSUN;
+#define glReplacementCodePointerSUN glad_glReplacementCodePointerSUN
+#endif
+#ifndef GL_SUN_vertex
+#define GL_SUN_vertex 1
+GLAPI int GLAD_GL_SUN_vertex;
+typedef void (APIENTRYP PFNGLCOLOR4UBVERTEX2FSUNPROC)(GLubyte r, GLubyte g, GLubyte b, GLubyte a, GLfloat x, GLfloat y);
+GLAPI PFNGLCOLOR4UBVERTEX2FSUNPROC glad_glColor4ubVertex2fSUN;
+#define glColor4ubVertex2fSUN glad_glColor4ubVertex2fSUN
+typedef void (APIENTRYP PFNGLCOLOR4UBVERTEX2FVSUNPROC)(const GLubyte *c, const GLfloat *v);
+GLAPI PFNGLCOLOR4UBVERTEX2FVSUNPROC glad_glColor4ubVertex2fvSUN;
+#define glColor4ubVertex2fvSUN glad_glColor4ubVertex2fvSUN
+typedef void (APIENTRYP PFNGLCOLOR4UBVERTEX3FSUNPROC)(GLubyte r, GLubyte g, GLubyte b, GLubyte a, GLfloat x, GLfloat y, GLfloat z);
+GLAPI PFNGLCOLOR4UBVERTEX3FSUNPROC glad_glColor4ubVertex3fSUN;
+#define glColor4ubVertex3fSUN glad_glColor4ubVertex3fSUN
+typedef void (APIENTRYP PFNGLCOLOR4UBVERTEX3FVSUNPROC)(const GLubyte *c, const GLfloat *v);
+GLAPI PFNGLCOLOR4UBVERTEX3FVSUNPROC glad_glColor4ubVertex3fvSUN;
+#define glColor4ubVertex3fvSUN glad_glColor4ubVertex3fvSUN
+typedef void (APIENTRYP PFNGLCOLOR3FVERTEX3FSUNPROC)(GLfloat r, GLfloat g, GLfloat b, GLfloat x, GLfloat y, GLfloat z);
+GLAPI PFNGLCOLOR3FVERTEX3FSUNPROC glad_glColor3fVertex3fSUN;
+#define glColor3fVertex3fSUN glad_glColor3fVertex3fSUN
+typedef void (APIENTRYP PFNGLCOLOR3FVERTEX3FVSUNPROC)(const GLfloat *c, const GLfloat *v);
+GLAPI PFNGLCOLOR3FVERTEX3FVSUNPROC glad_glColor3fVertex3fvSUN;
+#define glColor3fVertex3fvSUN glad_glColor3fVertex3fvSUN
+typedef void (APIENTRYP PFNGLNORMAL3FVERTEX3FSUNPROC)(GLfloat nx, GLfloat ny, GLfloat nz, GLfloat x, GLfloat y, GLfloat z);
+GLAPI PFNGLNORMAL3FVERTEX3FSUNPROC glad_glNormal3fVertex3fSUN;
+#define glNormal3fVertex3fSUN glad_glNormal3fVertex3fSUN
+typedef void (APIENTRYP PFNGLNORMAL3FVERTEX3FVSUNPROC)(const GLfloat *n, const GLfloat *v);
+GLAPI PFNGLNORMAL3FVERTEX3FVSUNPROC glad_glNormal3fVertex3fvSUN;
+#define glNormal3fVertex3fvSUN glad_glNormal3fVertex3fvSUN
+typedef void (APIENTRYP PFNGLCOLOR4FNORMAL3FVERTEX3FSUNPROC)(GLfloat r, GLfloat g, GLfloat b, GLfloat a, GLfloat nx, GLfloat ny, GLfloat nz, GLfloat x, GLfloat y, GLfloat z);
+GLAPI PFNGLCOLOR4FNORMAL3FVERTEX3FSUNPROC glad_glColor4fNormal3fVertex3fSUN;
+#define glColor4fNormal3fVertex3fSUN glad_glColor4fNormal3fVertex3fSUN
+typedef void (APIENTRYP PFNGLCOLOR4FNORMAL3FVERTEX3FVSUNPROC)(const GLfloat *c, const GLfloat *n, const GLfloat *v);
+GLAPI PFNGLCOLOR4FNORMAL3FVERTEX3FVSUNPROC glad_glColor4fNormal3fVertex3fvSUN;
+#define glColor4fNormal3fVertex3fvSUN glad_glColor4fNormal3fVertex3fvSUN
+typedef void (APIENTRYP PFNGLTEXCOORD2FVERTEX3FSUNPROC)(GLfloat s, GLfloat t, GLfloat x, GLfloat y, GLfloat z);
+GLAPI PFNGLTEXCOORD2FVERTEX3FSUNPROC glad_glTexCoord2fVertex3fSUN;
+#define glTexCoord2fVertex3fSUN glad_glTexCoord2fVertex3fSUN
+typedef void (APIENTRYP PFNGLTEXCOORD2FVERTEX3FVSUNPROC)(const GLfloat *tc, const GLfloat *v);
+GLAPI PFNGLTEXCOORD2FVERTEX3FVSUNPROC glad_glTexCoord2fVertex3fvSUN;
+#define glTexCoord2fVertex3fvSUN glad_glTexCoord2fVertex3fvSUN
+typedef void (APIENTRYP PFNGLTEXCOORD4FVERTEX4FSUNPROC)(GLfloat s, GLfloat t, GLfloat p, GLfloat q, GLfloat x, GLfloat y, GLfloat z, GLfloat w);
+GLAPI PFNGLTEXCOORD4FVERTEX4FSUNPROC glad_glTexCoord4fVertex4fSUN;
+#define glTexCoord4fVertex4fSUN glad_glTexCoord4fVertex4fSUN
+typedef void (APIENTRYP PFNGLTEXCOORD4FVERTEX4FVSUNPROC)(const GLfloat *tc, const GLfloat *v);
+GLAPI PFNGLTEXCOORD4FVERTEX4FVSUNPROC glad_glTexCoord4fVertex4fvSUN;
+#define glTexCoord4fVertex4fvSUN glad_glTexCoord4fVertex4fvSUN
+typedef void (APIENTRYP PFNGLTEXCOORD2FCOLOR4UBVERTEX3FSUNPROC)(GLfloat s, GLfloat t, GLubyte r, GLubyte g, GLubyte b, GLubyte a, GLfloat x, GLfloat y, GLfloat z);
+GLAPI PFNGLTEXCOORD2FCOLOR4UBVERTEX3FSUNPROC glad_glTexCoord2fColor4ubVertex3fSUN;
+#define glTexCoord2fColor4ubVertex3fSUN glad_glTexCoord2fColor4ubVertex3fSUN
+typedef void (APIENTRYP PFNGLTEXCOORD2FCOLOR4UBVERTEX3FVSUNPROC)(const GLfloat *tc, const GLubyte *c, const GLfloat *v);
+GLAPI PFNGLTEXCOORD2FCOLOR4UBVERTEX3FVSUNPROC glad_glTexCoord2fColor4ubVertex3fvSUN;
+#define glTexCoord2fColor4ubVertex3fvSUN glad_glTexCoord2fColor4ubVertex3fvSUN
+typedef void (APIENTRYP PFNGLTEXCOORD2FCOLOR3FVERTEX3FSUNPROC)(GLfloat s, GLfloat t, GLfloat r, GLfloat g, GLfloat b, GLfloat x, GLfloat y, GLfloat z);
+GLAPI PFNGLTEXCOORD2FCOLOR3FVERTEX3FSUNPROC glad_glTexCoord2fColor3fVertex3fSUN;
+#define glTexCoord2fColor3fVertex3fSUN glad_glTexCoord2fColor3fVertex3fSUN
+typedef void (APIENTRYP PFNGLTEXCOORD2FCOLOR3FVERTEX3FVSUNPROC)(const GLfloat *tc, const GLfloat *c, const GLfloat *v);
+GLAPI PFNGLTEXCOORD2FCOLOR3FVERTEX3FVSUNPROC glad_glTexCoord2fColor3fVertex3fvSUN;
+#define glTexCoord2fColor3fVertex3fvSUN glad_glTexCoord2fColor3fVertex3fvSUN
+typedef void (APIENTRYP PFNGLTEXCOORD2FNORMAL3FVERTEX3FSUNPROC)(GLfloat s, GLfloat t, GLfloat nx, GLfloat ny, GLfloat nz, GLfloat x, GLfloat y, GLfloat z);
+GLAPI PFNGLTEXCOORD2FNORMAL3FVERTEX3FSUNPROC glad_glTexCoord2fNormal3fVertex3fSUN;
+#define glTexCoord2fNormal3fVertex3fSUN glad_glTexCoord2fNormal3fVertex3fSUN
+typedef void (APIENTRYP PFNGLTEXCOORD2FNORMAL3FVERTEX3FVSUNPROC)(const GLfloat *tc, const GLfloat *n, const GLfloat *v);
+GLAPI PFNGLTEXCOORD2FNORMAL3FVERTEX3FVSUNPROC glad_glTexCoord2fNormal3fVertex3fvSUN;
+#define glTexCoord2fNormal3fVertex3fvSUN glad_glTexCoord2fNormal3fVertex3fvSUN
+typedef void (APIENTRYP PFNGLTEXCOORD2FCOLOR4FNORMAL3FVERTEX3FSUNPROC)(GLfloat s, GLfloat t, GLfloat r, GLfloat g, GLfloat b, GLfloat a, GLfloat nx, GLfloat ny, GLfloat nz, GLfloat x, GLfloat y, GLfloat z);
+GLAPI PFNGLTEXCOORD2FCOLOR4FNORMAL3FVERTEX3FSUNPROC glad_glTexCoord2fColor4fNormal3fVertex3fSUN;
+#define glTexCoord2fColor4fNormal3fVertex3fSUN glad_glTexCoord2fColor4fNormal3fVertex3fSUN
+typedef void (APIENTRYP PFNGLTEXCOORD2FCOLOR4FNORMAL3FVERTEX3FVSUNPROC)(const GLfloat *tc, const GLfloat *c, const GLfloat *n, const GLfloat *v);
+GLAPI PFNGLTEXCOORD2FCOLOR4FNORMAL3FVERTEX3FVSUNPROC glad_glTexCoord2fColor4fNormal3fVertex3fvSUN;
+#define glTexCoord2fColor4fNormal3fVertex3fvSUN glad_glTexCoord2fColor4fNormal3fVertex3fvSUN
+typedef void (APIENTRYP PFNGLTEXCOORD4FCOLOR4FNORMAL3FVERTEX4FSUNPROC)(GLfloat s, GLfloat t, GLfloat p, GLfloat q, GLfloat r, GLfloat g, GLfloat b, GLfloat a, GLfloat nx, GLfloat ny, GLfloat nz, GLfloat x, GLfloat y, GLfloat z, GLfloat w);
+GLAPI PFNGLTEXCOORD4FCOLOR4FNORMAL3FVERTEX4FSUNPROC glad_glTexCoord4fColor4fNormal3fVertex4fSUN;
+#define glTexCoord4fColor4fNormal3fVertex4fSUN glad_glTexCoord4fColor4fNormal3fVertex4fSUN
+typedef void (APIENTRYP PFNGLTEXCOORD4FCOLOR4FNORMAL3FVERTEX4FVSUNPROC)(const GLfloat *tc, const GLfloat *c, const GLfloat *n, const GLfloat *v);
+GLAPI PFNGLTEXCOORD4FCOLOR4FNORMAL3FVERTEX4FVSUNPROC glad_glTexCoord4fColor4fNormal3fVertex4fvSUN;
+#define glTexCoord4fColor4fNormal3fVertex4fvSUN glad_glTexCoord4fColor4fNormal3fVertex4fvSUN
+typedef void (APIENTRYP PFNGLREPLACEMENTCODEUIVERTEX3FSUNPROC)(GLuint rc, GLfloat x, GLfloat y, GLfloat z);
+GLAPI PFNGLREPLACEMENTCODEUIVERTEX3FSUNPROC glad_glReplacementCodeuiVertex3fSUN;
+#define glReplacementCodeuiVertex3fSUN glad_glReplacementCodeuiVertex3fSUN
+typedef void (APIENTRYP PFNGLREPLACEMENTCODEUIVERTEX3FVSUNPROC)(const GLuint *rc, const GLfloat *v);
+GLAPI PFNGLREPLACEMENTCODEUIVERTEX3FVSUNPROC glad_glReplacementCodeuiVertex3fvSUN;
+#define glReplacementCodeuiVertex3fvSUN glad_glReplacementCodeuiVertex3fvSUN
+typedef void (APIENTRYP PFNGLREPLACEMENTCODEUICOLOR4UBVERTEX3FSUNPROC)(GLuint rc, GLubyte r, GLubyte g, GLubyte b, GLubyte a, GLfloat x, GLfloat y, GLfloat z);
+GLAPI PFNGLREPLACEMENTCODEUICOLOR4UBVERTEX3FSUNPROC glad_glReplacementCodeuiColor4ubVertex3fSUN;
+#define glReplacementCodeuiColor4ubVertex3fSUN glad_glReplacementCodeuiColor4ubVertex3fSUN
+typedef void (APIENTRYP PFNGLREPLACEMENTCODEUICOLOR4UBVERTEX3FVSUNPROC)(const GLuint *rc, const GLubyte *c, const GLfloat *v);
+GLAPI PFNGLREPLACEMENTCODEUICOLOR4UBVERTEX3FVSUNPROC glad_glReplacementCodeuiColor4ubVertex3fvSUN;
+#define glReplacementCodeuiColor4ubVertex3fvSUN glad_glReplacementCodeuiColor4ubVertex3fvSUN
+typedef void (APIENTRYP PFNGLREPLACEMENTCODEUICOLOR3FVERTEX3FSUNPROC)(GLuint rc, GLfloat r, GLfloat g, GLfloat b, GLfloat x, GLfloat y, GLfloat z);
+GLAPI PFNGLREPLACEMENTCODEUICOLOR3FVERTEX3FSUNPROC glad_glReplacementCodeuiColor3fVertex3fSUN;
+#define glReplacementCodeuiColor3fVertex3fSUN glad_glReplacementCodeuiColor3fVertex3fSUN
+typedef void (APIENTRYP PFNGLREPLACEMENTCODEUICOLOR3FVERTEX3FVSUNPROC)(const GLuint *rc, const GLfloat *c, const GLfloat *v);
+GLAPI PFNGLREPLACEMENTCODEUICOLOR3FVERTEX3FVSUNPROC glad_glReplacementCodeuiColor3fVertex3fvSUN;
+#define glReplacementCodeuiColor3fVertex3fvSUN glad_glReplacementCodeuiColor3fVertex3fvSUN
+typedef void (APIENTRYP PFNGLREPLACEMENTCODEUINORMAL3FVERTEX3FSUNPROC)(GLuint rc, GLfloat nx, GLfloat ny, GLfloat nz, GLfloat x, GLfloat y, GLfloat z);
+GLAPI PFNGLREPLACEMENTCODEUINORMAL3FVERTEX3FSUNPROC glad_glReplacementCodeuiNormal3fVertex3fSUN;
+#define glReplacementCodeuiNormal3fVertex3fSUN glad_glReplacementCodeuiNormal3fVertex3fSUN
+typedef void (APIENTRYP PFNGLREPLACEMENTCODEUINORMAL3FVERTEX3FVSUNPROC)(const GLuint *rc, const GLfloat *n, const GLfloat *v);
+GLAPI PFNGLREPLACEMENTCODEUINORMAL3FVERTEX3FVSUNPROC glad_glReplacementCodeuiNormal3fVertex3fvSUN;
+#define glReplacementCodeuiNormal3fVertex3fvSUN glad_glReplacementCodeuiNormal3fVertex3fvSUN
+typedef void (APIENTRYP PFNGLREPLACEMENTCODEUICOLOR4FNORMAL3FVERTEX3FSUNPROC)(GLuint rc, GLfloat r, GLfloat g, GLfloat b, GLfloat a, GLfloat nx, GLfloat ny, GLfloat nz, GLfloat x, GLfloat y, GLfloat z);
+GLAPI PFNGLREPLACEMENTCODEUICOLOR4FNORMAL3FVERTEX3FSUNPROC glad_glReplacementCodeuiColor4fNormal3fVertex3fSUN;
+#define glReplacementCodeuiColor4fNormal3fVertex3fSUN glad_glReplacementCodeuiColor4fNormal3fVertex3fSUN
+typedef void (APIENTRYP PFNGLREPLACEMENTCODEUICOLOR4FNORMAL3FVERTEX3FVSUNPROC)(const GLuint *rc, const GLfloat *c, const GLfloat *n, const GLfloat *v);
+GLAPI PFNGLREPLACEMENTCODEUICOLOR4FNORMAL3FVERTEX3FVSUNPROC glad_glReplacementCodeuiColor4fNormal3fVertex3fvSUN;
+#define glReplacementCodeuiColor4fNormal3fVertex3fvSUN glad_glReplacementCodeuiColor4fNormal3fVertex3fvSUN
+typedef void (APIENTRYP PFNGLREPLACEMENTCODEUITEXCOORD2FVERTEX3FSUNPROC)(GLuint rc, GLfloat s, GLfloat t, GLfloat x, GLfloat y, GLfloat z);
+GLAPI PFNGLREPLACEMENTCODEUITEXCOORD2FVERTEX3FSUNPROC glad_glReplacementCodeuiTexCoord2fVertex3fSUN;
+#define glReplacementCodeuiTexCoord2fVertex3fSUN glad_glReplacementCodeuiTexCoord2fVertex3fSUN
+typedef void (APIENTRYP PFNGLREPLACEMENTCODEUITEXCOORD2FVERTEX3FVSUNPROC)(const GLuint *rc, const GLfloat *tc, const GLfloat *v);
+GLAPI PFNGLREPLACEMENTCODEUITEXCOORD2FVERTEX3FVSUNPROC glad_glReplacementCodeuiTexCoord2fVertex3fvSUN;
+#define glReplacementCodeuiTexCoord2fVertex3fvSUN glad_glReplacementCodeuiTexCoord2fVertex3fvSUN
+typedef void (APIENTRYP PFNGLREPLACEMENTCODEUITEXCOORD2FNORMAL3FVERTEX3FSUNPROC)(GLuint rc, GLfloat s, GLfloat t, GLfloat nx, GLfloat ny, GLfloat nz, GLfloat x, GLfloat y, GLfloat z);
+GLAPI PFNGLREPLACEMENTCODEUITEXCOORD2FNORMAL3FVERTEX3FSUNPROC glad_glReplacementCodeuiTexCoord2fNormal3fVertex3fSUN;
+#define glReplacementCodeuiTexCoord2fNormal3fVertex3fSUN glad_glReplacementCodeuiTexCoord2fNormal3fVertex3fSUN
+typedef void (APIENTRYP PFNGLREPLACEMENTCODEUITEXCOORD2FNORMAL3FVERTEX3FVSUNPROC)(const GLuint *rc, const GLfloat *tc, const GLfloat *n, const GLfloat *v);
+GLAPI PFNGLREPLACEMENTCODEUITEXCOORD2FNORMAL3FVERTEX3FVSUNPROC glad_glReplacementCodeuiTexCoord2fNormal3fVertex3fvSUN;
+#define glReplacementCodeuiTexCoord2fNormal3fVertex3fvSUN glad_glReplacementCodeuiTexCoord2fNormal3fVertex3fvSUN
+typedef void (APIENTRYP PFNGLREPLACEMENTCODEUITEXCOORD2FCOLOR4FNORMAL3FVERTEX3FSUNPROC)(GLuint rc, GLfloat s, GLfloat t, GLfloat r, GLfloat g, GLfloat b, GLfloat a, GLfloat nx, GLfloat ny, GLfloat nz, GLfloat x, GLfloat y, GLfloat z);
+GLAPI PFNGLREPLACEMENTCODEUITEXCOORD2FCOLOR4FNORMAL3FVERTEX3FSUNPROC glad_glReplacementCodeuiTexCoord2fColor4fNormal3fVertex3fSUN;
+#define glReplacementCodeuiTexCoord2fColor4fNormal3fVertex3fSUN glad_glReplacementCodeuiTexCoord2fColor4fNormal3fVertex3fSUN
+typedef void (APIENTRYP PFNGLREPLACEMENTCODEUITEXCOORD2FCOLOR4FNORMAL3FVERTEX3FVSUNPROC)(const GLuint *rc, const GLfloat *tc, const GLfloat *c, const GLfloat *n, const GLfloat *v);
+GLAPI PFNGLREPLACEMENTCODEUITEXCOORD2FCOLOR4FNORMAL3FVERTEX3FVSUNPROC glad_glReplacementCodeuiTexCoord2fColor4fNormal3fVertex3fvSUN;
+#define glReplacementCodeuiTexCoord2fColor4fNormal3fVertex3fvSUN glad_glReplacementCodeuiTexCoord2fColor4fNormal3fVertex3fvSUN
+#endif
+#ifndef GL_WIN_phong_shading
+#define GL_WIN_phong_shading 1
+GLAPI int GLAD_GL_WIN_phong_shading;
+#endif
+#ifndef GL_WIN_specular_fog
+#define GL_WIN_specular_fog 1
+GLAPI int GLAD_GL_WIN_specular_fog;
+#endif
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif

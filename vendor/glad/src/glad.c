@@ -5395,3 +5395,491 @@ static void load_GL_ARB_gpu_shader_fp64(GLADloadproc load) {
 static void load_GL_ARB_gpu_shader_int64(GLADloadproc load) {
 	if(!GLAD_GL_ARB_gpu_shader_int64) return;
 	glad_glUniform1i64ARB = (PFNGLUNIFORM1I64ARBPROC)load("glUniform1i64ARB");
+	glad_glUniform2i64ARB = (PFNGLUNIFORM2I64ARBPROC)load("glUniform2i64ARB");
+	glad_glUniform3i64ARB = (PFNGLUNIFORM3I64ARBPROC)load("glUniform3i64ARB");
+	glad_glUniform4i64ARB = (PFNGLUNIFORM4I64ARBPROC)load("glUniform4i64ARB");
+	glad_glUniform1i64vARB = (PFNGLUNIFORM1I64VARBPROC)load("glUniform1i64vARB");
+	glad_glUniform2i64vARB = (PFNGLUNIFORM2I64VARBPROC)load("glUniform2i64vARB");
+	glad_glUniform3i64vARB = (PFNGLUNIFORM3I64VARBPROC)load("glUniform3i64vARB");
+	glad_glUniform4i64vARB = (PFNGLUNIFORM4I64VARBPROC)load("glUniform4i64vARB");
+	glad_glUniform1ui64ARB = (PFNGLUNIFORM1UI64ARBPROC)load("glUniform1ui64ARB");
+	glad_glUniform2ui64ARB = (PFNGLUNIFORM2UI64ARBPROC)load("glUniform2ui64ARB");
+	glad_glUniform3ui64ARB = (PFNGLUNIFORM3UI64ARBPROC)load("glUniform3ui64ARB");
+	glad_glUniform4ui64ARB = (PFNGLUNIFORM4UI64ARBPROC)load("glUniform4ui64ARB");
+	glad_glUniform1ui64vARB = (PFNGLUNIFORM1UI64VARBPROC)load("glUniform1ui64vARB");
+	glad_glUniform2ui64vARB = (PFNGLUNIFORM2UI64VARBPROC)load("glUniform2ui64vARB");
+	glad_glUniform3ui64vARB = (PFNGLUNIFORM3UI64VARBPROC)load("glUniform3ui64vARB");
+	glad_glUniform4ui64vARB = (PFNGLUNIFORM4UI64VARBPROC)load("glUniform4ui64vARB");
+	glad_glGetUniformi64vARB = (PFNGLGETUNIFORMI64VARBPROC)load("glGetUniformi64vARB");
+	glad_glGetUniformui64vARB = (PFNGLGETUNIFORMUI64VARBPROC)load("glGetUniformui64vARB");
+	glad_glGetnUniformi64vARB = (PFNGLGETNUNIFORMI64VARBPROC)load("glGetnUniformi64vARB");
+	glad_glGetnUniformui64vARB = (PFNGLGETNUNIFORMUI64VARBPROC)load("glGetnUniformui64vARB");
+	glad_glProgramUniform1i64ARB = (PFNGLPROGRAMUNIFORM1I64ARBPROC)load("glProgramUniform1i64ARB");
+	glad_glProgramUniform2i64ARB = (PFNGLPROGRAMUNIFORM2I64ARBPROC)load("glProgramUniform2i64ARB");
+	glad_glProgramUniform3i64ARB = (PFNGLPROGRAMUNIFORM3I64ARBPROC)load("glProgramUniform3i64ARB");
+	glad_glProgramUniform4i64ARB = (PFNGLPROGRAMUNIFORM4I64ARBPROC)load("glProgramUniform4i64ARB");
+	glad_glProgramUniform1i64vARB = (PFNGLPROGRAMUNIFORM1I64VARBPROC)load("glProgramUniform1i64vARB");
+	glad_glProgramUniform2i64vARB = (PFNGLPROGRAMUNIFORM2I64VARBPROC)load("glProgramUniform2i64vARB");
+	glad_glProgramUniform3i64vARB = (PFNGLPROGRAMUNIFORM3I64VARBPROC)load("glProgramUniform3i64vARB");
+	glad_glProgramUniform4i64vARB = (PFNGLPROGRAMUNIFORM4I64VARBPROC)load("glProgramUniform4i64vARB");
+	glad_glProgramUniform1ui64ARB = (PFNGLPROGRAMUNIFORM1UI64ARBPROC)load("glProgramUniform1ui64ARB");
+	glad_glProgramUniform2ui64ARB = (PFNGLPROGRAMUNIFORM2UI64ARBPROC)load("glProgramUniform2ui64ARB");
+	glad_glProgramUniform3ui64ARB = (PFNGLPROGRAMUNIFORM3UI64ARBPROC)load("glProgramUniform3ui64ARB");
+	glad_glProgramUniform4ui64ARB = (PFNGLPROGRAMUNIFORM4UI64ARBPROC)load("glProgramUniform4ui64ARB");
+	glad_glProgramUniform1ui64vARB = (PFNGLPROGRAMUNIFORM1UI64VARBPROC)load("glProgramUniform1ui64vARB");
+	glad_glProgramUniform2ui64vARB = (PFNGLPROGRAMUNIFORM2UI64VARBPROC)load("glProgramUniform2ui64vARB");
+	glad_glProgramUniform3ui64vARB = (PFNGLPROGRAMUNIFORM3UI64VARBPROC)load("glProgramUniform3ui64vARB");
+	glad_glProgramUniform4ui64vARB = (PFNGLPROGRAMUNIFORM4UI64VARBPROC)load("glProgramUniform4ui64vARB");
+}
+static void load_GL_ARB_imaging(GLADloadproc load) {
+	if(!GLAD_GL_ARB_imaging) return;
+	glad_glBlendColor = (PFNGLBLENDCOLORPROC)load("glBlendColor");
+	glad_glBlendEquation = (PFNGLBLENDEQUATIONPROC)load("glBlendEquation");
+	glad_glColorTable = (PFNGLCOLORTABLEPROC)load("glColorTable");
+	glad_glColorTableParameterfv = (PFNGLCOLORTABLEPARAMETERFVPROC)load("glColorTableParameterfv");
+	glad_glColorTableParameteriv = (PFNGLCOLORTABLEPARAMETERIVPROC)load("glColorTableParameteriv");
+	glad_glCopyColorTable = (PFNGLCOPYCOLORTABLEPROC)load("glCopyColorTable");
+	glad_glGetColorTable = (PFNGLGETCOLORTABLEPROC)load("glGetColorTable");
+	glad_glGetColorTableParameterfv = (PFNGLGETCOLORTABLEPARAMETERFVPROC)load("glGetColorTableParameterfv");
+	glad_glGetColorTableParameteriv = (PFNGLGETCOLORTABLEPARAMETERIVPROC)load("glGetColorTableParameteriv");
+	glad_glColorSubTable = (PFNGLCOLORSUBTABLEPROC)load("glColorSubTable");
+	glad_glCopyColorSubTable = (PFNGLCOPYCOLORSUBTABLEPROC)load("glCopyColorSubTable");
+	glad_glConvolutionFilter1D = (PFNGLCONVOLUTIONFILTER1DPROC)load("glConvolutionFilter1D");
+	glad_glConvolutionFilter2D = (PFNGLCONVOLUTIONFILTER2DPROC)load("glConvolutionFilter2D");
+	glad_glConvolutionParameterf = (PFNGLCONVOLUTIONPARAMETERFPROC)load("glConvolutionParameterf");
+	glad_glConvolutionParameterfv = (PFNGLCONVOLUTIONPARAMETERFVPROC)load("glConvolutionParameterfv");
+	glad_glConvolutionParameteri = (PFNGLCONVOLUTIONPARAMETERIPROC)load("glConvolutionParameteri");
+	glad_glConvolutionParameteriv = (PFNGLCONVOLUTIONPARAMETERIVPROC)load("glConvolutionParameteriv");
+	glad_glCopyConvolutionFilter1D = (PFNGLCOPYCONVOLUTIONFILTER1DPROC)load("glCopyConvolutionFilter1D");
+	glad_glCopyConvolutionFilter2D = (PFNGLCOPYCONVOLUTIONFILTER2DPROC)load("glCopyConvolutionFilter2D");
+	glad_glGetConvolutionFilter = (PFNGLGETCONVOLUTIONFILTERPROC)load("glGetConvolutionFilter");
+	glad_glGetConvolutionParameterfv = (PFNGLGETCONVOLUTIONPARAMETERFVPROC)load("glGetConvolutionParameterfv");
+	glad_glGetConvolutionParameteriv = (PFNGLGETCONVOLUTIONPARAMETERIVPROC)load("glGetConvolutionParameteriv");
+	glad_glGetSeparableFilter = (PFNGLGETSEPARABLEFILTERPROC)load("glGetSeparableFilter");
+	glad_glSeparableFilter2D = (PFNGLSEPARABLEFILTER2DPROC)load("glSeparableFilter2D");
+	glad_glGetHistogram = (PFNGLGETHISTOGRAMPROC)load("glGetHistogram");
+	glad_glGetHistogramParameterfv = (PFNGLGETHISTOGRAMPARAMETERFVPROC)load("glGetHistogramParameterfv");
+	glad_glGetHistogramParameteriv = (PFNGLGETHISTOGRAMPARAMETERIVPROC)load("glGetHistogramParameteriv");
+	glad_glGetMinmax = (PFNGLGETMINMAXPROC)load("glGetMinmax");
+	glad_glGetMinmaxParameterfv = (PFNGLGETMINMAXPARAMETERFVPROC)load("glGetMinmaxParameterfv");
+	glad_glGetMinmaxParameteriv = (PFNGLGETMINMAXPARAMETERIVPROC)load("glGetMinmaxParameteriv");
+	glad_glHistogram = (PFNGLHISTOGRAMPROC)load("glHistogram");
+	glad_glMinmax = (PFNGLMINMAXPROC)load("glMinmax");
+	glad_glResetHistogram = (PFNGLRESETHISTOGRAMPROC)load("glResetHistogram");
+	glad_glResetMinmax = (PFNGLRESETMINMAXPROC)load("glResetMinmax");
+}
+static void load_GL_ARB_indirect_parameters(GLADloadproc load) {
+	if(!GLAD_GL_ARB_indirect_parameters) return;
+	glad_glMultiDrawArraysIndirectCountARB = (PFNGLMULTIDRAWARRAYSINDIRECTCOUNTARBPROC)load("glMultiDrawArraysIndirectCountARB");
+	glad_glMultiDrawElementsIndirectCountARB = (PFNGLMULTIDRAWELEMENTSINDIRECTCOUNTARBPROC)load("glMultiDrawElementsIndirectCountARB");
+}
+static void load_GL_ARB_instanced_arrays(GLADloadproc load) {
+	if(!GLAD_GL_ARB_instanced_arrays) return;
+	glad_glVertexAttribDivisorARB = (PFNGLVERTEXATTRIBDIVISORARBPROC)load("glVertexAttribDivisorARB");
+}
+static void load_GL_ARB_internalformat_query(GLADloadproc load) {
+	if(!GLAD_GL_ARB_internalformat_query) return;
+	glad_glGetInternalformativ = (PFNGLGETINTERNALFORMATIVPROC)load("glGetInternalformativ");
+}
+static void load_GL_ARB_internalformat_query2(GLADloadproc load) {
+	if(!GLAD_GL_ARB_internalformat_query2) return;
+	glad_glGetInternalformati64v = (PFNGLGETINTERNALFORMATI64VPROC)load("glGetInternalformati64v");
+}
+static void load_GL_ARB_invalidate_subdata(GLADloadproc load) {
+	if(!GLAD_GL_ARB_invalidate_subdata) return;
+	glad_glInvalidateTexSubImage = (PFNGLINVALIDATETEXSUBIMAGEPROC)load("glInvalidateTexSubImage");
+	glad_glInvalidateTexImage = (PFNGLINVALIDATETEXIMAGEPROC)load("glInvalidateTexImage");
+	glad_glInvalidateBufferSubData = (PFNGLINVALIDATEBUFFERSUBDATAPROC)load("glInvalidateBufferSubData");
+	glad_glInvalidateBufferData = (PFNGLINVALIDATEBUFFERDATAPROC)load("glInvalidateBufferData");
+	glad_glInvalidateFramebuffer = (PFNGLINVALIDATEFRAMEBUFFERPROC)load("glInvalidateFramebuffer");
+	glad_glInvalidateSubFramebuffer = (PFNGLINVALIDATESUBFRAMEBUFFERPROC)load("glInvalidateSubFramebuffer");
+}
+static void load_GL_ARB_map_buffer_range(GLADloadproc load) {
+	if(!GLAD_GL_ARB_map_buffer_range) return;
+	glad_glMapBufferRange = (PFNGLMAPBUFFERRANGEPROC)load("glMapBufferRange");
+	glad_glFlushMappedBufferRange = (PFNGLFLUSHMAPPEDBUFFERRANGEPROC)load("glFlushMappedBufferRange");
+}
+static void load_GL_ARB_matrix_palette(GLADloadproc load) {
+	if(!GLAD_GL_ARB_matrix_palette) return;
+	glad_glCurrentPaletteMatrixARB = (PFNGLCURRENTPALETTEMATRIXARBPROC)load("glCurrentPaletteMatrixARB");
+	glad_glMatrixIndexubvARB = (PFNGLMATRIXINDEXUBVARBPROC)load("glMatrixIndexubvARB");
+	glad_glMatrixIndexusvARB = (PFNGLMATRIXINDEXUSVARBPROC)load("glMatrixIndexusvARB");
+	glad_glMatrixIndexuivARB = (PFNGLMATRIXINDEXUIVARBPROC)load("glMatrixIndexuivARB");
+	glad_glMatrixIndexPointerARB = (PFNGLMATRIXINDEXPOINTERARBPROC)load("glMatrixIndexPointerARB");
+}
+static void load_GL_ARB_multi_bind(GLADloadproc load) {
+	if(!GLAD_GL_ARB_multi_bind) return;
+	glad_glBindBuffersBase = (PFNGLBINDBUFFERSBASEPROC)load("glBindBuffersBase");
+	glad_glBindBuffersRange = (PFNGLBINDBUFFERSRANGEPROC)load("glBindBuffersRange");
+	glad_glBindTextures = (PFNGLBINDTEXTURESPROC)load("glBindTextures");
+	glad_glBindSamplers = (PFNGLBINDSAMPLERSPROC)load("glBindSamplers");
+	glad_glBindImageTextures = (PFNGLBINDIMAGETEXTURESPROC)load("glBindImageTextures");
+	glad_glBindVertexBuffers = (PFNGLBINDVERTEXBUFFERSPROC)load("glBindVertexBuffers");
+}
+static void load_GL_ARB_multi_draw_indirect(GLADloadproc load) {
+	if(!GLAD_GL_ARB_multi_draw_indirect) return;
+	glad_glMultiDrawArraysIndirect = (PFNGLMULTIDRAWARRAYSINDIRECTPROC)load("glMultiDrawArraysIndirect");
+	glad_glMultiDrawElementsIndirect = (PFNGLMULTIDRAWELEMENTSINDIRECTPROC)load("glMultiDrawElementsIndirect");
+}
+static void load_GL_ARB_multisample(GLADloadproc load) {
+	if(!GLAD_GL_ARB_multisample) return;
+	glad_glSampleCoverageARB = (PFNGLSAMPLECOVERAGEARBPROC)load("glSampleCoverageARB");
+}
+static void load_GL_ARB_multitexture(GLADloadproc load) {
+	if(!GLAD_GL_ARB_multitexture) return;
+	glad_glActiveTextureARB = (PFNGLACTIVETEXTUREARBPROC)load("glActiveTextureARB");
+	glad_glClientActiveTextureARB = (PFNGLCLIENTACTIVETEXTUREARBPROC)load("glClientActiveTextureARB");
+	glad_glMultiTexCoord1dARB = (PFNGLMULTITEXCOORD1DARBPROC)load("glMultiTexCoord1dARB");
+	glad_glMultiTexCoord1dvARB = (PFNGLMULTITEXCOORD1DVARBPROC)load("glMultiTexCoord1dvARB");
+	glad_glMultiTexCoord1fARB = (PFNGLMULTITEXCOORD1FARBPROC)load("glMultiTexCoord1fARB");
+	glad_glMultiTexCoord1fvARB = (PFNGLMULTITEXCOORD1FVARBPROC)load("glMultiTexCoord1fvARB");
+	glad_glMultiTexCoord1iARB = (PFNGLMULTITEXCOORD1IARBPROC)load("glMultiTexCoord1iARB");
+	glad_glMultiTexCoord1ivARB = (PFNGLMULTITEXCOORD1IVARBPROC)load("glMultiTexCoord1ivARB");
+	glad_glMultiTexCoord1sARB = (PFNGLMULTITEXCOORD1SARBPROC)load("glMultiTexCoord1sARB");
+	glad_glMultiTexCoord1svARB = (PFNGLMULTITEXCOORD1SVARBPROC)load("glMultiTexCoord1svARB");
+	glad_glMultiTexCoord2dARB = (PFNGLMULTITEXCOORD2DARBPROC)load("glMultiTexCoord2dARB");
+	glad_glMultiTexCoord2dvARB = (PFNGLMULTITEXCOORD2DVARBPROC)load("glMultiTexCoord2dvARB");
+	glad_glMultiTexCoord2fARB = (PFNGLMULTITEXCOORD2FARBPROC)load("glMultiTexCoord2fARB");
+	glad_glMultiTexCoord2fvARB = (PFNGLMULTITEXCOORD2FVARBPROC)load("glMultiTexCoord2fvARB");
+	glad_glMultiTexCoord2iARB = (PFNGLMULTITEXCOORD2IARBPROC)load("glMultiTexCoord2iARB");
+	glad_glMultiTexCoord2ivARB = (PFNGLMULTITEXCOORD2IVARBPROC)load("glMultiTexCoord2ivARB");
+	glad_glMultiTexCoord2sARB = (PFNGLMULTITEXCOORD2SARBPROC)load("glMultiTexCoord2sARB");
+	glad_glMultiTexCoord2svARB = (PFNGLMULTITEXCOORD2SVARBPROC)load("glMultiTexCoord2svARB");
+	glad_glMultiTexCoord3dARB = (PFNGLMULTITEXCOORD3DARBPROC)load("glMultiTexCoord3dARB");
+	glad_glMultiTexCoord3dvARB = (PFNGLMULTITEXCOORD3DVARBPROC)load("glMultiTexCoord3dvARB");
+	glad_glMultiTexCoord3fARB = (PFNGLMULTITEXCOORD3FARBPROC)load("glMultiTexCoord3fARB");
+	glad_glMultiTexCoord3fvARB = (PFNGLMULTITEXCOORD3FVARBPROC)load("glMultiTexCoord3fvARB");
+	glad_glMultiTexCoord3iARB = (PFNGLMULTITEXCOORD3IARBPROC)load("glMultiTexCoord3iARB");
+	glad_glMultiTexCoord3ivARB = (PFNGLMULTITEXCOORD3IVARBPROC)load("glMultiTexCoord3ivARB");
+	glad_glMultiTexCoord3sARB = (PFNGLMULTITEXCOORD3SARBPROC)load("glMultiTexCoord3sARB");
+	glad_glMultiTexCoord3svARB = (PFNGLMULTITEXCOORD3SVARBPROC)load("glMultiTexCoord3svARB");
+	glad_glMultiTexCoord4dARB = (PFNGLMULTITEXCOORD4DARBPROC)load("glMultiTexCoord4dARB");
+	glad_glMultiTexCoord4dvARB = (PFNGLMULTITEXCOORD4DVARBPROC)load("glMultiTexCoord4dvARB");
+	glad_glMultiTexCoord4fARB = (PFNGLMULTITEXCOORD4FARBPROC)load("glMultiTexCoord4fARB");
+	glad_glMultiTexCoord4fvARB = (PFNGLMULTITEXCOORD4FVARBPROC)load("glMultiTexCoord4fvARB");
+	glad_glMultiTexCoord4iARB = (PFNGLMULTITEXCOORD4IARBPROC)load("glMultiTexCoord4iARB");
+	glad_glMultiTexCoord4ivARB = (PFNGLMULTITEXCOORD4IVARBPROC)load("glMultiTexCoord4ivARB");
+	glad_glMultiTexCoord4sARB = (PFNGLMULTITEXCOORD4SARBPROC)load("glMultiTexCoord4sARB");
+	glad_glMultiTexCoord4svARB = (PFNGLMULTITEXCOORD4SVARBPROC)load("glMultiTexCoord4svARB");
+}
+static void load_GL_ARB_occlusion_query(GLADloadproc load) {
+	if(!GLAD_GL_ARB_occlusion_query) return;
+	glad_glGenQueriesARB = (PFNGLGENQUERIESARBPROC)load("glGenQueriesARB");
+	glad_glDeleteQueriesARB = (PFNGLDELETEQUERIESARBPROC)load("glDeleteQueriesARB");
+	glad_glIsQueryARB = (PFNGLISQUERYARBPROC)load("glIsQueryARB");
+	glad_glBeginQueryARB = (PFNGLBEGINQUERYARBPROC)load("glBeginQueryARB");
+	glad_glEndQueryARB = (PFNGLENDQUERYARBPROC)load("glEndQueryARB");
+	glad_glGetQueryivARB = (PFNGLGETQUERYIVARBPROC)load("glGetQueryivARB");
+	glad_glGetQueryObjectivARB = (PFNGLGETQUERYOBJECTIVARBPROC)load("glGetQueryObjectivARB");
+	glad_glGetQueryObjectuivARB = (PFNGLGETQUERYOBJECTUIVARBPROC)load("glGetQueryObjectuivARB");
+}
+static void load_GL_ARB_parallel_shader_compile(GLADloadproc load) {
+	if(!GLAD_GL_ARB_parallel_shader_compile) return;
+	glad_glMaxShaderCompilerThreadsARB = (PFNGLMAXSHADERCOMPILERTHREADSARBPROC)load("glMaxShaderCompilerThreadsARB");
+}
+static void load_GL_ARB_point_parameters(GLADloadproc load) {
+	if(!GLAD_GL_ARB_point_parameters) return;
+	glad_glPointParameterfARB = (PFNGLPOINTPARAMETERFARBPROC)load("glPointParameterfARB");
+	glad_glPointParameterfvARB = (PFNGLPOINTPARAMETERFVARBPROC)load("glPointParameterfvARB");
+}
+static void load_GL_ARB_polygon_offset_clamp(GLADloadproc load) {
+	if(!GLAD_GL_ARB_polygon_offset_clamp) return;
+	glad_glPolygonOffsetClamp = (PFNGLPOLYGONOFFSETCLAMPPROC)load("glPolygonOffsetClamp");
+}
+static void load_GL_ARB_program_interface_query(GLADloadproc load) {
+	if(!GLAD_GL_ARB_program_interface_query) return;
+	glad_glGetProgramInterfaceiv = (PFNGLGETPROGRAMINTERFACEIVPROC)load("glGetProgramInterfaceiv");
+	glad_glGetProgramResourceIndex = (PFNGLGETPROGRAMRESOURCEINDEXPROC)load("glGetProgramResourceIndex");
+	glad_glGetProgramResourceName = (PFNGLGETPROGRAMRESOURCENAMEPROC)load("glGetProgramResourceName");
+	glad_glGetProgramResourceiv = (PFNGLGETPROGRAMRESOURCEIVPROC)load("glGetProgramResourceiv");
+	glad_glGetProgramResourceLocation = (PFNGLGETPROGRAMRESOURCELOCATIONPROC)load("glGetProgramResourceLocation");
+	glad_glGetProgramResourceLocationIndex = (PFNGLGETPROGRAMRESOURCELOCATIONINDEXPROC)load("glGetProgramResourceLocationIndex");
+}
+static void load_GL_ARB_provoking_vertex(GLADloadproc load) {
+	if(!GLAD_GL_ARB_provoking_vertex) return;
+	glad_glProvokingVertex = (PFNGLPROVOKINGVERTEXPROC)load("glProvokingVertex");
+}
+static void load_GL_ARB_robustness(GLADloadproc load) {
+	if(!GLAD_GL_ARB_robustness) return;
+	glad_glGetGraphicsResetStatusARB = (PFNGLGETGRAPHICSRESETSTATUSARBPROC)load("glGetGraphicsResetStatusARB");
+	glad_glGetnTexImageARB = (PFNGLGETNTEXIMAGEARBPROC)load("glGetnTexImageARB");
+	glad_glReadnPixelsARB = (PFNGLREADNPIXELSARBPROC)load("glReadnPixelsARB");
+	glad_glGetnCompressedTexImageARB = (PFNGLGETNCOMPRESSEDTEXIMAGEARBPROC)load("glGetnCompressedTexImageARB");
+	glad_glGetnUniformfvARB = (PFNGLGETNUNIFORMFVARBPROC)load("glGetnUniformfvARB");
+	glad_glGetnUniformivARB = (PFNGLGETNUNIFORMIVARBPROC)load("glGetnUniformivARB");
+	glad_glGetnUniformuivARB = (PFNGLGETNUNIFORMUIVARBPROC)load("glGetnUniformuivARB");
+	glad_glGetnUniformdvARB = (PFNGLGETNUNIFORMDVARBPROC)load("glGetnUniformdvARB");
+	glad_glGetnMapdvARB = (PFNGLGETNMAPDVARBPROC)load("glGetnMapdvARB");
+	glad_glGetnMapfvARB = (PFNGLGETNMAPFVARBPROC)load("glGetnMapfvARB");
+	glad_glGetnMapivARB = (PFNGLGETNMAPIVARBPROC)load("glGetnMapivARB");
+	glad_glGetnPixelMapfvARB = (PFNGLGETNPIXELMAPFVARBPROC)load("glGetnPixelMapfvARB");
+	glad_glGetnPixelMapuivARB = (PFNGLGETNPIXELMAPUIVARBPROC)load("glGetnPixelMapuivARB");
+	glad_glGetnPixelMapusvARB = (PFNGLGETNPIXELMAPUSVARBPROC)load("glGetnPixelMapusvARB");
+	glad_glGetnPolygonStippleARB = (PFNGLGETNPOLYGONSTIPPLEARBPROC)load("glGetnPolygonStippleARB");
+	glad_glGetnColorTableARB = (PFNGLGETNCOLORTABLEARBPROC)load("glGetnColorTableARB");
+	glad_glGetnConvolutionFilterARB = (PFNGLGETNCONVOLUTIONFILTERARBPROC)load("glGetnConvolutionFilterARB");
+	glad_glGetnSeparableFilterARB = (PFNGLGETNSEPARABLEFILTERARBPROC)load("glGetnSeparableFilterARB");
+	glad_glGetnHistogramARB = (PFNGLGETNHISTOGRAMARBPROC)load("glGetnHistogramARB");
+	glad_glGetnMinmaxARB = (PFNGLGETNMINMAXARBPROC)load("glGetnMinmaxARB");
+}
+static void load_GL_ARB_sample_locations(GLADloadproc load) {
+	if(!GLAD_GL_ARB_sample_locations) return;
+	glad_glFramebufferSampleLocationsfvARB = (PFNGLFRAMEBUFFERSAMPLELOCATIONSFVARBPROC)load("glFramebufferSampleLocationsfvARB");
+	glad_glNamedFramebufferSampleLocationsfvARB = (PFNGLNAMEDFRAMEBUFFERSAMPLELOCATIONSFVARBPROC)load("glNamedFramebufferSampleLocationsfvARB");
+	glad_glEvaluateDepthValuesARB = (PFNGLEVALUATEDEPTHVALUESARBPROC)load("glEvaluateDepthValuesARB");
+}
+static void load_GL_ARB_sample_shading(GLADloadproc load) {
+	if(!GLAD_GL_ARB_sample_shading) return;
+	glad_glMinSampleShadingARB = (PFNGLMINSAMPLESHADINGARBPROC)load("glMinSampleShadingARB");
+}
+static void load_GL_ARB_sampler_objects(GLADloadproc load) {
+	if(!GLAD_GL_ARB_sampler_objects) return;
+	glad_glGenSamplers = (PFNGLGENSAMPLERSPROC)load("glGenSamplers");
+	glad_glDeleteSamplers = (PFNGLDELETESAMPLERSPROC)load("glDeleteSamplers");
+	glad_glIsSampler = (PFNGLISSAMPLERPROC)load("glIsSampler");
+	glad_glBindSampler = (PFNGLBINDSAMPLERPROC)load("glBindSampler");
+	glad_glSamplerParameteri = (PFNGLSAMPLERPARAMETERIPROC)load("glSamplerParameteri");
+	glad_glSamplerParameteriv = (PFNGLSAMPLERPARAMETERIVPROC)load("glSamplerParameteriv");
+	glad_glSamplerParameterf = (PFNGLSAMPLERPARAMETERFPROC)load("glSamplerParameterf");
+	glad_glSamplerParameterfv = (PFNGLSAMPLERPARAMETERFVPROC)load("glSamplerParameterfv");
+	glad_glSamplerParameterIiv = (PFNGLSAMPLERPARAMETERIIVPROC)load("glSamplerParameterIiv");
+	glad_glSamplerParameterIuiv = (PFNGLSAMPLERPARAMETERIUIVPROC)load("glSamplerParameterIuiv");
+	glad_glGetSamplerParameteriv = (PFNGLGETSAMPLERPARAMETERIVPROC)load("glGetSamplerParameteriv");
+	glad_glGetSamplerParameterIiv = (PFNGLGETSAMPLERPARAMETERIIVPROC)load("glGetSamplerParameterIiv");
+	glad_glGetSamplerParameterfv = (PFNGLGETSAMPLERPARAMETERFVPROC)load("glGetSamplerParameterfv");
+	glad_glGetSamplerParameterIuiv = (PFNGLGETSAMPLERPARAMETERIUIVPROC)load("glGetSamplerParameterIuiv");
+}
+static void load_GL_ARB_separate_shader_objects(GLADloadproc load) {
+	if(!GLAD_GL_ARB_separate_shader_objects) return;
+	glad_glUseProgramStages = (PFNGLUSEPROGRAMSTAGESPROC)load("glUseProgramStages");
+	glad_glActiveShaderProgram = (PFNGLACTIVESHADERPROGRAMPROC)load("glActiveShaderProgram");
+	glad_glCreateShaderProgramv = (PFNGLCREATESHADERPROGRAMVPROC)load("glCreateShaderProgramv");
+	glad_glBindProgramPipeline = (PFNGLBINDPROGRAMPIPELINEPROC)load("glBindProgramPipeline");
+	glad_glDeleteProgramPipelines = (PFNGLDELETEPROGRAMPIPELINESPROC)load("glDeleteProgramPipelines");
+	glad_glGenProgramPipelines = (PFNGLGENPROGRAMPIPELINESPROC)load("glGenProgramPipelines");
+	glad_glIsProgramPipeline = (PFNGLISPROGRAMPIPELINEPROC)load("glIsProgramPipeline");
+	glad_glGetProgramPipelineiv = (PFNGLGETPROGRAMPIPELINEIVPROC)load("glGetProgramPipelineiv");
+	glad_glProgramParameteri = (PFNGLPROGRAMPARAMETERIPROC)load("glProgramParameteri");
+	glad_glProgramUniform1i = (PFNGLPROGRAMUNIFORM1IPROC)load("glProgramUniform1i");
+	glad_glProgramUniform1iv = (PFNGLPROGRAMUNIFORM1IVPROC)load("glProgramUniform1iv");
+	glad_glProgramUniform1f = (PFNGLPROGRAMUNIFORM1FPROC)load("glProgramUniform1f");
+	glad_glProgramUniform1fv = (PFNGLPROGRAMUNIFORM1FVPROC)load("glProgramUniform1fv");
+	glad_glProgramUniform1d = (PFNGLPROGRAMUNIFORM1DPROC)load("glProgramUniform1d");
+	glad_glProgramUniform1dv = (PFNGLPROGRAMUNIFORM1DVPROC)load("glProgramUniform1dv");
+	glad_glProgramUniform1ui = (PFNGLPROGRAMUNIFORM1UIPROC)load("glProgramUniform1ui");
+	glad_glProgramUniform1uiv = (PFNGLPROGRAMUNIFORM1UIVPROC)load("glProgramUniform1uiv");
+	glad_glProgramUniform2i = (PFNGLPROGRAMUNIFORM2IPROC)load("glProgramUniform2i");
+	glad_glProgramUniform2iv = (PFNGLPROGRAMUNIFORM2IVPROC)load("glProgramUniform2iv");
+	glad_glProgramUniform2f = (PFNGLPROGRAMUNIFORM2FPROC)load("glProgramUniform2f");
+	glad_glProgramUniform2fv = (PFNGLPROGRAMUNIFORM2FVPROC)load("glProgramUniform2fv");
+	glad_glProgramUniform2d = (PFNGLPROGRAMUNIFORM2DPROC)load("glProgramUniform2d");
+	glad_glProgramUniform2dv = (PFNGLPROGRAMUNIFORM2DVPROC)load("glProgramUniform2dv");
+	glad_glProgramUniform2ui = (PFNGLPROGRAMUNIFORM2UIPROC)load("glProgramUniform2ui");
+	glad_glProgramUniform2uiv = (PFNGLPROGRAMUNIFORM2UIVPROC)load("glProgramUniform2uiv");
+	glad_glProgramUniform3i = (PFNGLPROGRAMUNIFORM3IPROC)load("glProgramUniform3i");
+	glad_glProgramUniform3iv = (PFNGLPROGRAMUNIFORM3IVPROC)load("glProgramUniform3iv");
+	glad_glProgramUniform3f = (PFNGLPROGRAMUNIFORM3FPROC)load("glProgramUniform3f");
+	glad_glProgramUniform3fv = (PFNGLPROGRAMUNIFORM3FVPROC)load("glProgramUniform3fv");
+	glad_glProgramUniform3d = (PFNGLPROGRAMUNIFORM3DPROC)load("glProgramUniform3d");
+	glad_glProgramUniform3dv = (PFNGLPROGRAMUNIFORM3DVPROC)load("glProgramUniform3dv");
+	glad_glProgramUniform3ui = (PFNGLPROGRAMUNIFORM3UIPROC)load("glProgramUniform3ui");
+	glad_glProgramUniform3uiv = (PFNGLPROGRAMUNIFORM3UIVPROC)load("glProgramUniform3uiv");
+	glad_glProgramUniform4i = (PFNGLPROGRAMUNIFORM4IPROC)load("glProgramUniform4i");
+	glad_glProgramUniform4iv = (PFNGLPROGRAMUNIFORM4IVPROC)load("glProgramUniform4iv");
+	glad_glProgramUniform4f = (PFNGLPROGRAMUNIFORM4FPROC)load("glProgramUniform4f");
+	glad_glProgramUniform4fv = (PFNGLPROGRAMUNIFORM4FVPROC)load("glProgramUniform4fv");
+	glad_glProgramUniform4d = (PFNGLPROGRAMUNIFORM4DPROC)load("glProgramUniform4d");
+	glad_glProgramUniform4dv = (PFNGLPROGRAMUNIFORM4DVPROC)load("glProgramUniform4dv");
+	glad_glProgramUniform4ui = (PFNGLPROGRAMUNIFORM4UIPROC)load("glProgramUniform4ui");
+	glad_glProgramUniform4uiv = (PFNGLPROGRAMUNIFORM4UIVPROC)load("glProgramUniform4uiv");
+	glad_glProgramUniformMatrix2fv = (PFNGLPROGRAMUNIFORMMATRIX2FVPROC)load("glProgramUniformMatrix2fv");
+	glad_glProgramUniformMatrix3fv = (PFNGLPROGRAMUNIFORMMATRIX3FVPROC)load("glProgramUniformMatrix3fv");
+	glad_glProgramUniformMatrix4fv = (PFNGLPROGRAMUNIFORMMATRIX4FVPROC)load("glProgramUniformMatrix4fv");
+	glad_glProgramUniformMatrix2dv = (PFNGLPROGRAMUNIFORMMATRIX2DVPROC)load("glProgramUniformMatrix2dv");
+	glad_glProgramUniformMatrix3dv = (PFNGLPROGRAMUNIFORMMATRIX3DVPROC)load("glProgramUniformMatrix3dv");
+	glad_glProgramUniformMatrix4dv = (PFNGLPROGRAMUNIFORMMATRIX4DVPROC)load("glProgramUniformMatrix4dv");
+	glad_glProgramUniformMatrix2x3fv = (PFNGLPROGRAMUNIFORMMATRIX2X3FVPROC)load("glProgramUniformMatrix2x3fv");
+	glad_glProgramUniformMatrix3x2fv = (PFNGLPROGRAMUNIFORMMATRIX3X2FVPROC)load("glProgramUniformMatrix3x2fv");
+	glad_glProgramUniformMatrix2x4fv = (PFNGLPROGRAMUNIFORMMATRIX2X4FVPROC)load("glProgramUniformMatrix2x4fv");
+	glad_glProgramUniformMatrix4x2fv = (PFNGLPROGRAMUNIFORMMATRIX4X2FVPROC)load("glProgramUniformMatrix4x2fv");
+	glad_glProgramUniformMatrix3x4fv = (PFNGLPROGRAMUNIFORMMATRIX3X4FVPROC)load("glProgramUniformMatrix3x4fv");
+	glad_glProgramUniformMatrix4x3fv = (PFNGLPROGRAMUNIFORMMATRIX4X3FVPROC)load("glProgramUniformMatrix4x3fv");
+	glad_glProgramUniformMatrix2x3dv = (PFNGLPROGRAMUNIFORMMATRIX2X3DVPROC)load("glProgramUniformMatrix2x3dv");
+	glad_glProgramUniformMatrix3x2dv = (PFNGLPROGRAMUNIFORMMATRIX3X2DVPROC)load("glProgramUniformMatrix3x2dv");
+	glad_glProgramUniformMatrix2x4dv = (PFNGLPROGRAMUNIFORMMATRIX2X4DVPROC)load("glProgramUniformMatrix2x4dv");
+	glad_glProgramUniformMatrix4x2dv = (PFNGLPROGRAMUNIFORMMATRIX4X2DVPROC)load("glProgramUniformMatrix4x2dv");
+	glad_glProgramUniformMatrix3x4dv = (PFNGLPROGRAMUNIFORMMATRIX3X4DVPROC)load("glProgramUniformMatrix3x4dv");
+	glad_glProgramUniformMatrix4x3dv = (PFNGLPROGRAMUNIFORMMATRIX4X3DVPROC)load("glProgramUniformMatrix4x3dv");
+	glad_glValidateProgramPipeline = (PFNGLVALIDATEPROGRAMPIPELINEPROC)load("glValidateProgramPipeline");
+	glad_glGetProgramPipelineInfoLog = (PFNGLGETPROGRAMPIPELINEINFOLOGPROC)load("glGetProgramPipelineInfoLog");
+}
+static void load_GL_ARB_shader_atomic_counters(GLADloadproc load) {
+	if(!GLAD_GL_ARB_shader_atomic_counters) return;
+	glad_glGetActiveAtomicCounterBufferiv = (PFNGLGETACTIVEATOMICCOUNTERBUFFERIVPROC)load("glGetActiveAtomicCounterBufferiv");
+}
+static void load_GL_ARB_shader_image_load_store(GLADloadproc load) {
+	if(!GLAD_GL_ARB_shader_image_load_store) return;
+	glad_glBindImageTexture = (PFNGLBINDIMAGETEXTUREPROC)load("glBindImageTexture");
+	glad_glMemoryBarrier = (PFNGLMEMORYBARRIERPROC)load("glMemoryBarrier");
+}
+static void load_GL_ARB_shader_objects(GLADloadproc load) {
+	if(!GLAD_GL_ARB_shader_objects) return;
+	glad_glDeleteObjectARB = (PFNGLDELETEOBJECTARBPROC)load("glDeleteObjectARB");
+	glad_glGetHandleARB = (PFNGLGETHANDLEARBPROC)load("glGetHandleARB");
+	glad_glDetachObjectARB = (PFNGLDETACHOBJECTARBPROC)load("glDetachObjectARB");
+	glad_glCreateShaderObjectARB = (PFNGLCREATESHADEROBJECTARBPROC)load("glCreateShaderObjectARB");
+	glad_glShaderSourceARB = (PFNGLSHADERSOURCEARBPROC)load("glShaderSourceARB");
+	glad_glCompileShaderARB = (PFNGLCOMPILESHADERARBPROC)load("glCompileShaderARB");
+	glad_glCreateProgramObjectARB = (PFNGLCREATEPROGRAMOBJECTARBPROC)load("glCreateProgramObjectARB");
+	glad_glAttachObjectARB = (PFNGLATTACHOBJECTARBPROC)load("glAttachObjectARB");
+	glad_glLinkProgramARB = (PFNGLLINKPROGRAMARBPROC)load("glLinkProgramARB");
+	glad_glUseProgramObjectARB = (PFNGLUSEPROGRAMOBJECTARBPROC)load("glUseProgramObjectARB");
+	glad_glValidateProgramARB = (PFNGLVALIDATEPROGRAMARBPROC)load("glValidateProgramARB");
+	glad_glUniform1fARB = (PFNGLUNIFORM1FARBPROC)load("glUniform1fARB");
+	glad_glUniform2fARB = (PFNGLUNIFORM2FARBPROC)load("glUniform2fARB");
+	glad_glUniform3fARB = (PFNGLUNIFORM3FARBPROC)load("glUniform3fARB");
+	glad_glUniform4fARB = (PFNGLUNIFORM4FARBPROC)load("glUniform4fARB");
+	glad_glUniform1iARB = (PFNGLUNIFORM1IARBPROC)load("glUniform1iARB");
+	glad_glUniform2iARB = (PFNGLUNIFORM2IARBPROC)load("glUniform2iARB");
+	glad_glUniform3iARB = (PFNGLUNIFORM3IARBPROC)load("glUniform3iARB");
+	glad_glUniform4iARB = (PFNGLUNIFORM4IARBPROC)load("glUniform4iARB");
+	glad_glUniform1fvARB = (PFNGLUNIFORM1FVARBPROC)load("glUniform1fvARB");
+	glad_glUniform2fvARB = (PFNGLUNIFORM2FVARBPROC)load("glUniform2fvARB");
+	glad_glUniform3fvARB = (PFNGLUNIFORM3FVARBPROC)load("glUniform3fvARB");
+	glad_glUniform4fvARB = (PFNGLUNIFORM4FVARBPROC)load("glUniform4fvARB");
+	glad_glUniform1ivARB = (PFNGLUNIFORM1IVARBPROC)load("glUniform1ivARB");
+	glad_glUniform2ivARB = (PFNGLUNIFORM2IVARBPROC)load("glUniform2ivARB");
+	glad_glUniform3ivARB = (PFNGLUNIFORM3IVARBPROC)load("glUniform3ivARB");
+	glad_glUniform4ivARB = (PFNGLUNIFORM4IVARBPROC)load("glUniform4ivARB");
+	glad_glUniformMatrix2fvARB = (PFNGLUNIFORMMATRIX2FVARBPROC)load("glUniformMatrix2fvARB");
+	glad_glUniformMatrix3fvARB = (PFNGLUNIFORMMATRIX3FVARBPROC)load("glUniformMatrix3fvARB");
+	glad_glUniformMatrix4fvARB = (PFNGLUNIFORMMATRIX4FVARBPROC)load("glUniformMatrix4fvARB");
+	glad_glGetObjectParameterfvARB = (PFNGLGETOBJECTPARAMETERFVARBPROC)load("glGetObjectParameterfvARB");
+	glad_glGetObjectParameterivARB = (PFNGLGETOBJECTPARAMETERIVARBPROC)load("glGetObjectParameterivARB");
+	glad_glGetInfoLogARB = (PFNGLGETINFOLOGARBPROC)load("glGetInfoLogARB");
+	glad_glGetAttachedObjectsARB = (PFNGLGETATTACHEDOBJECTSARBPROC)load("glGetAttachedObjectsARB");
+	glad_glGetUniformLocationARB = (PFNGLGETUNIFORMLOCATIONARBPROC)load("glGetUniformLocationARB");
+	glad_glGetActiveUniformARB = (PFNGLGETACTIVEUNIFORMARBPROC)load("glGetActiveUniformARB");
+	glad_glGetUniformfvARB = (PFNGLGETUNIFORMFVARBPROC)load("glGetUniformfvARB");
+	glad_glGetUniformivARB = (PFNGLGETUNIFORMIVARBPROC)load("glGetUniformivARB");
+	glad_glGetShaderSourceARB = (PFNGLGETSHADERSOURCEARBPROC)load("glGetShaderSourceARB");
+}
+static void load_GL_ARB_shader_storage_buffer_object(GLADloadproc load) {
+	if(!GLAD_GL_ARB_shader_storage_buffer_object) return;
+	glad_glShaderStorageBlockBinding = (PFNGLSHADERSTORAGEBLOCKBINDINGPROC)load("glShaderStorageBlockBinding");
+}
+static void load_GL_ARB_shader_subroutine(GLADloadproc load) {
+	if(!GLAD_GL_ARB_shader_subroutine) return;
+	glad_glGetSubroutineUniformLocation = (PFNGLGETSUBROUTINEUNIFORMLOCATIONPROC)load("glGetSubroutineUniformLocation");
+	glad_glGetSubroutineIndex = (PFNGLGETSUBROUTINEINDEXPROC)load("glGetSubroutineIndex");
+	glad_glGetActiveSubroutineUniformiv = (PFNGLGETACTIVESUBROUTINEUNIFORMIVPROC)load("glGetActiveSubroutineUniformiv");
+	glad_glGetActiveSubroutineUniformName = (PFNGLGETACTIVESUBROUTINEUNIFORMNAMEPROC)load("glGetActiveSubroutineUniformName");
+	glad_glGetActiveSubroutineName = (PFNGLGETACTIVESUBROUTINENAMEPROC)load("glGetActiveSubroutineName");
+	glad_glUniformSubroutinesuiv = (PFNGLUNIFORMSUBROUTINESUIVPROC)load("glUniformSubroutinesuiv");
+	glad_glGetUniformSubroutineuiv = (PFNGLGETUNIFORMSUBROUTINEUIVPROC)load("glGetUniformSubroutineuiv");
+	glad_glGetProgramStageiv = (PFNGLGETPROGRAMSTAGEIVPROC)load("glGetProgramStageiv");
+}
+static void load_GL_ARB_shading_language_include(GLADloadproc load) {
+	if(!GLAD_GL_ARB_shading_language_include) return;
+	glad_glNamedStringARB = (PFNGLNAMEDSTRINGARBPROC)load("glNamedStringARB");
+	glad_glDeleteNamedStringARB = (PFNGLDELETENAMEDSTRINGARBPROC)load("glDeleteNamedStringARB");
+	glad_glCompileShaderIncludeARB = (PFNGLCOMPILESHADERINCLUDEARBPROC)load("glCompileShaderIncludeARB");
+	glad_glIsNamedStringARB = (PFNGLISNAMEDSTRINGARBPROC)load("glIsNamedStringARB");
+	glad_glGetNamedStringARB = (PFNGLGETNAMEDSTRINGARBPROC)load("glGetNamedStringARB");
+	glad_glGetNamedStringivARB = (PFNGLGETNAMEDSTRINGIVARBPROC)load("glGetNamedStringivARB");
+}
+static void load_GL_ARB_sparse_buffer(GLADloadproc load) {
+	if(!GLAD_GL_ARB_sparse_buffer) return;
+	glad_glBufferPageCommitmentARB = (PFNGLBUFFERPAGECOMMITMENTARBPROC)load("glBufferPageCommitmentARB");
+	glad_glNamedBufferPageCommitmentEXT = (PFNGLNAMEDBUFFERPAGECOMMITMENTEXTPROC)load("glNamedBufferPageCommitmentEXT");
+	glad_glNamedBufferPageCommitmentARB = (PFNGLNAMEDBUFFERPAGECOMMITMENTARBPROC)load("glNamedBufferPageCommitmentARB");
+}
+static void load_GL_ARB_sparse_texture(GLADloadproc load) {
+	if(!GLAD_GL_ARB_sparse_texture) return;
+	glad_glTexPageCommitmentARB = (PFNGLTEXPAGECOMMITMENTARBPROC)load("glTexPageCommitmentARB");
+}
+static void load_GL_ARB_sync(GLADloadproc load) {
+	if(!GLAD_GL_ARB_sync) return;
+	glad_glFenceSync = (PFNGLFENCESYNCPROC)load("glFenceSync");
+	glad_glIsSync = (PFNGLISSYNCPROC)load("glIsSync");
+	glad_glDeleteSync = (PFNGLDELETESYNCPROC)load("glDeleteSync");
+	glad_glClientWaitSync = (PFNGLCLIENTWAITSYNCPROC)load("glClientWaitSync");
+	glad_glWaitSync = (PFNGLWAITSYNCPROC)load("glWaitSync");
+	glad_glGetInteger64v = (PFNGLGETINTEGER64VPROC)load("glGetInteger64v");
+	glad_glGetSynciv = (PFNGLGETSYNCIVPROC)load("glGetSynciv");
+}
+static void load_GL_ARB_tessellation_shader(GLADloadproc load) {
+	if(!GLAD_GL_ARB_tessellation_shader) return;
+	glad_glPatchParameteri = (PFNGLPATCHPARAMETERIPROC)load("glPatchParameteri");
+	glad_glPatchParameterfv = (PFNGLPATCHPARAMETERFVPROC)load("glPatchParameterfv");
+}
+static void load_GL_ARB_texture_barrier(GLADloadproc load) {
+	if(!GLAD_GL_ARB_texture_barrier) return;
+	glad_glTextureBarrier = (PFNGLTEXTUREBARRIERPROC)load("glTextureBarrier");
+}
+static void load_GL_ARB_texture_buffer_object(GLADloadproc load) {
+	if(!GLAD_GL_ARB_texture_buffer_object) return;
+	glad_glTexBufferARB = (PFNGLTEXBUFFERARBPROC)load("glTexBufferARB");
+}
+static void load_GL_ARB_texture_buffer_range(GLADloadproc load) {
+	if(!GLAD_GL_ARB_texture_buffer_range) return;
+	glad_glTexBufferRange = (PFNGLTEXBUFFERRANGEPROC)load("glTexBufferRange");
+}
+static void load_GL_ARB_texture_compression(GLADloadproc load) {
+	if(!GLAD_GL_ARB_texture_compression) return;
+	glad_glCompressedTexImage3DARB = (PFNGLCOMPRESSEDTEXIMAGE3DARBPROC)load("glCompressedTexImage3DARB");
+	glad_glCompressedTexImage2DARB = (PFNGLCOMPRESSEDTEXIMAGE2DARBPROC)load("glCompressedTexImage2DARB");
+	glad_glCompressedTexImage1DARB = (PFNGLCOMPRESSEDTEXIMAGE1DARBPROC)load("glCompressedTexImage1DARB");
+	glad_glCompressedTexSubImage3DARB = (PFNGLCOMPRESSEDTEXSUBIMAGE3DARBPROC)load("glCompressedTexSubImage3DARB");
+	glad_glCompressedTexSubImage2DARB = (PFNGLCOMPRESSEDTEXSUBIMAGE2DARBPROC)load("glCompressedTexSubImage2DARB");
+	glad_glCompressedTexSubImage1DARB = (PFNGLCOMPRESSEDTEXSUBIMAGE1DARBPROC)load("glCompressedTexSubImage1DARB");
+	glad_glGetCompressedTexImageARB = (PFNGLGETCOMPRESSEDTEXIMAGEARBPROC)load("glGetCompressedTexImageARB");
+}
+static void load_GL_ARB_texture_multisample(GLADloadproc load) {
+	if(!GLAD_GL_ARB_texture_multisample) return;
+	glad_glTexImage2DMultisample = (PFNGLTEXIMAGE2DMULTISAMPLEPROC)load("glTexImage2DMultisample");
+	glad_glTexImage3DMultisample = (PFNGLTEXIMAGE3DMULTISAMPLEPROC)load("glTexImage3DMultisample");
+	glad_glGetMultisamplefv = (PFNGLGETMULTISAMPLEFVPROC)load("glGetMultisamplefv");
+	glad_glSampleMaski = (PFNGLSAMPLEMASKIPROC)load("glSampleMaski");
+}
+static void load_GL_ARB_texture_storage(GLADloadproc load) {
+	if(!GLAD_GL_ARB_texture_storage) return;
+	glad_glTexStorage1D = (PFNGLTEXSTORAGE1DPROC)load("glTexStorage1D");
+	glad_glTexStorage2D = (PFNGLTEXSTORAGE2DPROC)load("glTexStorage2D");
+	glad_glTexStorage3D = (PFNGLTEXSTORAGE3DPROC)load("glTexStorage3D");
+}
+static void load_GL_ARB_texture_storage_multisample(GLADloadproc load) {
+	if(!GLAD_GL_ARB_texture_storage_multisample) return;
+	glad_glTexStorage2DMultisample = (PFNGLTEXSTORAGE2DMULTISAMPLEPROC)load("glTexStorage2DMultisample");
+	glad_glTexStorage3DMultisample = (PFNGLTEXSTORAGE3DMULTISAMPLEPROC)load("glTexStorage3DMultisample");
+}
+static void load_GL_ARB_texture_view(GLADloadproc load) {
+	if(!GLAD_GL_ARB_texture_view) return;
+	glad_glTextureView = (PFNGLTEXTUREVIEWPROC)load("glTextureView");
+}
+static void load_GL_ARB_timer_query(GLADloadproc load) {
+	if(!GLAD_GL_ARB_timer_query) return;
+	glad_glQueryCounter = (PFNGLQUERYCOUNTERPROC)load("glQueryCounter");
+	glad_glGetQueryObjecti64v = (PFNGLGETQUERYOBJECTI64VPROC)load("glGetQueryObjecti64v");
+	glad_glGetQueryObjectui64v = (PFNGLGETQUERYOBJECTUI64VPROC)load("glGetQueryObjectui64v");
+}
+static void load_GL_ARB_transform_feedback2(GLADloadproc load) {
+	if(!GLAD_GL_ARB_transform_feedback2) return;
+	glad_glBindTransformFeedback = (PFNGLBINDTRANSFORMFEEDBACKPROC)load("glBindTransformFeedback");
+	glad_glDeleteTransformFeedbacks = (PFNGLDELETETRANSFORMFEEDBACKSPROC)load("glDeleteTransformFeedbacks");
+	glad_glGenTransformFeedbacks = (PFNGLGENTRANSFORMFEEDBACKSPROC)load("glGenTransformFeedbacks");
+	glad_glIsTransformFeedback = (PFNGLISTRANSFORMFEEDBACKPROC)load("glIsTransformFeedback");
+	glad_glPauseTransformFeedback = (PFNGLPAUSETRANSFORMFEEDBACKPROC)load("glPauseTransformFeedback");
+	glad_glResumeTransformFeedback = (PFNGLRESUMETRANSFORMFEEDBACKPROC)load("glResumeTransformFeedback");
+	glad_glDrawTransformFeedback = (PFNGLDRAWTRANSFORMFEEDBACKPROC)load("glDrawTransformFeedback");
+}
+static void load_GL_ARB_transform_feedback3(GLADloadproc load) {
+	if(!GLAD_GL_ARB_transform_feedback3) return;
+	glad_glDrawTransformFeedbackStream = (PFNGLDRAWTRANSFORMFEEDBACKSTREAMPROC)load("glDrawTransformFeedbackStream");
+	glad_glBeginQueryIndexed = (PFNGLBEGINQUERYINDEXEDPROC)load("glBeginQueryIndexed");
+	glad_glEndQueryIndexed = (PFNGLENDQUERYINDEXEDPROC)load("glEndQueryIndexed");
+	glad_glGetQueryIndexediv = (PFNGLGETQUERYINDEXEDIVPROC)load("glGetQueryIndexediv");
+}
+static void load_GL_ARB_transform_feedback_instanced(GLADloadproc load) {
+	if(!GLAD_GL_ARB_transform_feedback_instanced) return;
+	glad_glDrawTransformFeedbackInstanced = (PFNGLDRAWTRANSFORMFEEDBACKINSTANCEDPROC)load("glDrawTransformFeedbackInstanced");
